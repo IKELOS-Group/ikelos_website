@@ -1,0 +1,39 @@
+// src/components/Services.js
+import React from 'react';
+import '../Services.css'; // Make sure the path is correct
+
+const Services = () => {
+  return (
+    <div className="services-container">
+      <h1>Our Services</h1>
+      
+      <div className="service">
+        <h2>Brand and IP Protection</h2>
+        <p>In an era where intellectual property is as valuable as tangible assets, our Brand and IP Protection services stand as your first line of defense. We safeguard your invaluable intellectual assets against infringement, ensuring your creative and business efforts are securely yours.</p>
+      </div>
+      
+      <div className="service">
+        <h2>Individual Threat Surface Management</h2>
+        <p>Your personal digital footprint is more exposed than ever. Our Individual Threat Surface Management is tailored to minimize risks and shield your digital presence from emerging threats, ensuring your private information stays private.</p>
+      </div>
+      
+      <div className="service">
+        <h2>Attack Vector Management</h2>
+        <p>We identify and fortify potential vulnerabilities in your systems. Our proactive approach in Attack Vector Management not only anticipates threats but also strategically mitigates them, ensuring a fortified barrier against digital intrusions.</p>
+      </div>
+      
+      <div className="service">
+        <h2>Security Consulting</h2>
+        <p>Our team of experts brings a wealth of knowledge and experience in security consulting. We provide insightful, bespoke advice and strategies, empowering you to make informed decisions in securing your operations and assets.</p>
+      </div>
+      
+      <div className="service">
+        <h2>Financial Security</h2>
+        <p>In the volatile domain of financial assets, our Financial Security services offer robust protection strategies. From transaction security to fraud prevention, we ensure your financial activities are conducted with utmost security and confidence.</p>
+      </div>
+      
+    </div>
+  );
+};
+
+export default Services;
