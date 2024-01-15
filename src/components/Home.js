@@ -51,16 +51,6 @@ const Home = () => {
       
       {/* Additional sections like blog-highlights and newsletter-sign-up */}
       
-      <div className="blog-highlights">
-<p>From our blog</p>
-{/* Insert blog posts */}
-</div>
-
-
-  <div className="newsletter-sign-up">
-    <p>Stay updated with the latest security insights</p>
-    <button className="cta-button">SIGN UP FOR NEWSLETTER</button>
-  </div>
 </div>
   )};
 

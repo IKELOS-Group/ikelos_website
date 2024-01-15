@@ -7,10 +7,10 @@ const Navbar = () => {
     <nav className="navbar">
       <h1>Ikelos Group</h1>
       <div className="links">
-        <Link to="/">Home</Link>
+        <Link to="/contact">Contact</Link>
         <Link to="/about">About</Link>
         <Link to="/services">Services</Link>
-        <Link to="/contact">Contact</Link>
+        <Link to="/">Home</Link>
       </div>
     </nav>
   );

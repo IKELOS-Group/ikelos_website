@@ -5,8 +5,7 @@ import '../Contact.css'; // Import the CSS file for Contact
 const Contact = () => {
   return (
     <div className="contact-container">
-      <h1>Contact Us</h1>
-      {/* Content goes here */}
+      <h1><a href="mailto:info@ikelosgroup.com">Email us</a></h1>
     </div>
   );
 };
