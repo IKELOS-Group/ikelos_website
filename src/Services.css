@@ -1,0 +1,44 @@
+.services-container {
+    text-align: center;
+    padding-top: 135px;
+  }
+  
+  .services-list {
+    margin-bottom: 20px;
+  }
+  
+  .service-button {
+    background: none;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    margin: 0 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .service-button:hover {
+    color: black;
+    background-color: #ddd;
+    border-radius: 5px;
+  }
+  
+  .service-description {
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  .service-description p {
+    white-space: normal;
+    margin-top: 20px;
+  }
+  
+  .service-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+  }

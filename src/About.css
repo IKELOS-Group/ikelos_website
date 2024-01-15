@@ -1,0 +1,33 @@
+/* About.css */
+.about-container {
+  padding-top: 100px; /* Adjust as needed for navbar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh; /* Full viewport height */
+  padding: 50px; /* Add padding for smaller screens */
+  flex-direction: column;
+}
+
+.about-text {
+  max-width: 800px; /* Adjust the width as necessary */
+  margin: 0 auto; /* Centers the text block horizontally */
+}
+
+/* This can be adjusted as needed for responsive design */
+@media (max-width: 768px) {
+  .about-text {
+    max-width: 90%;
+  }
+}
+
+.service-description {
+  max-width: 500px; /* Maximum width of the text container */
+  margin: 20px auto; /* Centers the container */
+  text-align: center; /* Centers the text within the container */
+}
+
+.service-description p {
+  white-space: normal; /* Allows the text to wrap */
+}

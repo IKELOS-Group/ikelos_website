@@ -1,0 +1,97 @@
+/* Home.css */
+.home-container {
+    color: white;
+    text-align: center;
+    padding-top: 135; /* Removed, since we'll use height: 100vh for full screen */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+    background: url('./images/bg.jpg') no-repeat center center fixed; /* Assuming this is the correct path */
+    background-size: cover;
+  }
+
+  .hero-section {
+    /* Ensure that this section has enough space for its contents */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Adjust based on your design */
+}
+  
+  /* Remove .hero-section if .home-container already covers the full height and background image */
+  .hero-section h2 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    color: white; /* Assuming you want the heading in white */
+    margin: 0; /* Keep margin 0 for a clean look */
+  }
+  
+  .hero-section button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #333;
+    background: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .hero-section button:hover {
+    background: #ddd;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    background-color: #000; /* Changed to black */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the navbar is above other content */
+  }
+  
+  /* Navbar link styles */
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+  }
+  
+  /* Active link styles */
+  .navbar a.active {
+    border-bottom: 2px solid white;
+  }
+  
+  /* Ensure body and html take up full viewport height with no margin or padding */
+  body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Any other global styles */
+  * {
+    box-sizing: border-box;
+  }
+
+  .testimonials-teaser, .blog-highlights, .newsletter-sign-up {
+    margin-top: 40px; /* Spacing from the previous section */
+  }
+  
+  .testimonials-teaser p, .blog-highlights p, .newsletter-sign-up p {
+    color: #fff;
+    font-size: 1.2rem;
+    /* Additional styling */
+  }
+  
+  .newsletter-sign-up button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    /* Styling to match the theme of the site */
+  }
+  
