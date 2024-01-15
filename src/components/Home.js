@@ -5,13 +5,13 @@ import '../Home.css'; // Ensure the CSS file path is correct
 // Placeholder testimonial data
 const testimonials = [
   {
-    quote: "The Ikelos Group is amazing.",
-    author: "Satisfied Customer Name",
+    quote: "IKELOS Group solves all of our security needs!",
+    author: "Paul J.",
   },
 
   {
-    quote: "Hire them yesterday.",
-    author: "Satisfied Customer Name 2",
+    quote: "[IKELOS Group] brings security to the non-computer-y folk.",
+    author: "Thomas P.",
   },
   // More testimonials can be added here
 ];
