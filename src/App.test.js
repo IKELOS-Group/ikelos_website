@@ -57,13 +57,17 @@ test('research link lands at its section without a subsequent scroll reset', asy
   expect(window.scrollTo).not.toHaveBeenCalled();
 });
 
-test('contact gives the real email and explains how to arrange a secure channel', () => {
+test('contact provides general email and PGP contact with the public key and fingerprint', () => {
   window.history.replaceState({}, '', '/contact');
   render(<App />);
   const main = screen.getByRole('main');
   expect(within(main).getByRole('link', { name: /info@ikelosgroup.com/i })).toHaveAttribute('href', 'mailto:info@ikelosgroup.com');
-  expect(within(main).getByText(/secure communication channel can be arranged/i)).toBeInTheDocument();
-  expect(within(main).getByText(/keep your first message high level/i)).toBeInTheDocument();
+  expect(within(main).getByRole('link', { name: /secure_email@ikelosgroup.com/i })).toHaveAttribute('href', 'mailto:secure_email@ikelosgroup.com');
+  const keyLink = within(main).getByRole('link', { name: /download public PGP key/i });
+  expect(keyLink).toHaveAttribute('href', '/keys/ikelos-secure-email.asc');
+  expect(keyLink).toHaveAttribute('download', 'ikelos-secure-email.asc');
+  expect(within(main).getByText('5AD6 A645 E697 72E5 AA7C 0277 DB44 9499 7C6F 00D3')).toBeInTheDocument();
+  expect(within(main).getByText(/does not encrypt your message automatically/i)).toBeInTheDocument();
 });
 
 test('unknown routes provide a route home', async () => {

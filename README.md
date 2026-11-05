@@ -19,7 +19,7 @@ Shared styling and responsive rules are in `src/index.css`. Page content is in `
 
 The supplied logo remains in `assets/`; its byte-identical copy in `src/assets/` is bundled by React. `Brand.js` frames the artwork, and CSS applies the warm monochrome treatment against the dark background without editing the source image. The slogan is “In Silentio, Vincimus.”
 
-Contact links use `info@ikelosgroup.com`. Initial email is for high-level inquiries and arranging a suitable channel; it is not presented as encrypted contact. Do not add unverified specialties, credentials, clients, testimonials, metrics, or secure-contact identifiers.
+General inquiries use `info@ikelosgroup.com`. PGP-encrypted correspondence uses `secure_email@ikelosgroup.com`; visitors must encrypt messages in their own OpenPGP-capable mail app. The public key is served at `/keys/ikelos-secure-email.asc`, copied byte-for-byte from the supplied `.asc` file in `assets/`. Its primary fingerprint is `5AD6 A645 E697 72E5 AA7C 0277 DB44 9499 7C6F 00D3`. When rotating the key, update the published file, displayed fingerprint, and contact test together, and verify the built download. Publish only public keys. Do not add unverified specialties, credentials, clients, testimonials, or metrics.
 
 ## Static hosting
 

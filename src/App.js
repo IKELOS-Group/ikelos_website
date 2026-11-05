@@ -13,7 +13,7 @@ const pageMeta = {
   '/': ['Bespoke vulnerability research & cybersecurity consulting', 'IKELOS Group provides bespoke vulnerability research and cybersecurity consulting. Start a conversation about your security questions.'],
   '/services': ['Capabilities', 'Explore bespoke vulnerability research and cybersecurity consulting from IKELOS Group.'],
   '/about': ['Approach', 'A focused approach to bespoke security work: understand the question, agree the scope, and investigate.'],
-  '/contact': ['Contact', 'Discuss a potential engagement with IKELOS Group. Email us to begin a conversation and arrange a suitable communication channel.'],
+  '/contact': ['Contact', 'Contact IKELOS Group for general inquiries or encrypted PGP correspondence. Download our public key and view its fingerprint.'],
 };
 
 function PageShell() {

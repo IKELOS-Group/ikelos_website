@@ -130,7 +130,7 @@ p { line-height: 1.7; }
 .process-list h3 { font-size: 1.25rem; margin-top: 28px; }
 .process-list p { color: var(--muted); font-size: .88rem; margin-top: 16px; }
 .contact-hero { padding-bottom: 60px; }
-.contact-grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: 60px; border-top: 1px solid var(--line); padding-block: 55px 70px; }
+.contact-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px; border-top: 1px solid var(--line); padding-block: 55px 70px; }
 .contact-primary > .eyebrow { color: var(--accent); margin-bottom: 22px; }
 .contact-primary h2 { font-size: 1.6rem; }
 .email-link { display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: clamp(1.15rem, 2.8vw, 2.6rem); letter-spacing: -.035em; border-bottom: 1px solid #69725a; padding-block: 22px; margin-bottom: 24px; }
@@ -138,9 +138,17 @@ p { line-height: 1.7; }
 .contact-primary > p:not(.eyebrow) { color: var(--muted); max-width: 480px; font-size: .9rem; }
 .contact-note { display: block; font-family: var(--mono); font-size: .58rem; line-height: 1.8; color: var(--muted); margin-top: 30px; }
 .contact-aside { background: var(--surface); border: 1px solid var(--line); padding: 30px; }
-.channel-icon { color: var(--accent); display: block; margin-bottom: 24px; font-size: 1.4rem; }
 .contact-aside h2 { font-size: 1.5rem; }
 .contact-aside p { color: var(--muted); font-size: .85rem; margin-top: 18px; }
+.contact-aside > .eyebrow { color: var(--accent); font-size: .66rem; margin: 0 0 22px; }
+.secure-email-link { font-size: clamp(1rem, 1.65vw, 1.4rem); overflow-wrap: anywhere; gap: 12px; }
+.secure-email-link > span:last-child { flex-shrink: 0; }
+.key-download { max-width: 100%; margin-top: 24px; font-size: .75rem; }
+.key-details { border-top: 1px solid var(--line); margin: 28px 0 0; padding-top: 22px; }
+.key-details dt { color: var(--muted); }
+.key-details dd { margin: 12px 0 0; }
+.key-details code { font-family: var(--mono); font-size: .8rem; line-height: 1.8; overflow-wrap: anywhere; }
+.contact-aside .encryption-note { font-size: .75rem; }
 .contact-closing { display: flex; gap: 14px; align-items: center; padding-bottom: 65px; color: var(--muted); font-size: .8rem; }
 @media (min-width: 1550px) { .home-hero { padding-top: 100px; } }
 @media (max-width: 1100px) {
@@ -198,6 +206,7 @@ p { line-height: 1.7; }
   .process-list h3 { margin-top: 18px; }
   .contact-grid { grid-template-columns: 1fr; gap: 35px; padding-block: 40px; }
   .email-link { font-size: clamp(1.15rem, 5.2vw, 2rem); }
+  .secure-email-link { font-size: 1rem; }
   .contact-closing { padding-bottom: 45px; align-items: baseline; }
 }
 @media (prefers-reduced-motion: reduce) {
