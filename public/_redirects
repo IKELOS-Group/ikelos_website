@@ -1,0 +1,4 @@
+/.well-known/matrix/server https://matrix.ikelosgroup.com/.well-known/matrix/server
+/.well-known/matrix/client https://matrix.ikelosgroup.com/.well-known/matrix/client
+/.well-known/matrix/support https://matrix.ikelosgroup.com/.well-known/matrix/support
+/* /index.html 200

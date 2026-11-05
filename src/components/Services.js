@@ -1,58 +1,12 @@
-// src/components/Services.js
-import React, { useState } from 'react';
-import '../Services.css'; // Make sure the path is correct
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { EngagementCTA, SectionLabel } from './Shared';
 
-import brandIPImage from '../images/brand-ip.jpg';
-import threatSurfaceImage from '../images/threat-surface.jpg';
-import vectorManagementImage from '../images/attack-vector.jpg';
-import securityConsultingImage from '../images/consulting.jpg';
-import financialSecurityImage from '../images/financial.jpg';
-
-const servicesData = {
-    'Brand and IP Protection': {
-      description: 'In an era where intellectual property is as valuable as tangible assets, our Brand and IP Protection services stand as your first line of defense. We safeguard your invaluable intellectual assets against infringement, ensuring your creative and business efforts are securely yours.',
-      image: brandIPImage,
-    },
-    'Individual Threat Surface Management': {
-      description: 'Your personal digital footprint is more exposed than ever. Our Individual Threat Surface Management is tailored to minimize risks and shield your digital presence from emerging threats, ensuring your private information stays private.',
-      image: threatSurfaceImage,
-    },
-    'Attack Vector Management': {
-      description: 'We identify and fortify potential vulnerabilities in your systems. Our proactive approach in Attack Vector Management not only anticipates threats but also strategically mitigates them, ensuring a fortified barrier against digital intrusions.',
-      image: vectorManagementImage,
-    },
-    'Security Consulting': {
-      description: 'Our team of experts brings a wealth of knowledge and experience in security consulting. We provide insightful, bespoke advice and strategies, empowering you to make informed decisions in securing your operations and assets.',
-      image: securityConsultingImage,
-    },
-    'Financial Security': {
-      description: 'In the volatile domain of financial assets, our Financial Security services offer robust protection strategies. From transaction security to fraud prevention, we ensure your financial activities are conducted with utmost security and confidence.',
-      image: financialSecurityImage,
-    },
-  };
-
-const Services = () => {
-    const [activeService, setActiveService] = useState('Brand and IP Protection');
-  
-    return (
-      <div className="services-container">
-        <div className="services-list">
-          {Object.keys(servicesData).map((service) => (
-            <button
-              key={service}
-              className={`service-button ${activeService === service ? 'active' : ''}`}
-              onClick={() => setActiveService(service)}
-            >
-              {service}
-            </button>
-          ))}
-        </div>
-        <div className="service-description">
-          <p>{servicesData[activeService].description}</p>
-          <img src={servicesData[activeService].image} alt={activeService} className="service-image" />
-        </div>
-      </div>
-    );
-  };
-  
-  export default Services;
+export default function Services() {
+  return <>
+    <section className="page-hero wrap"><p className="eyebrow">IKELOS GROUP / Capabilities</p><h1>Specific questions.<br /><span className="text-muted">Focused expertise.</span></h1><p className="page-lede">Bespoke vulnerability research and cybersecurity consulting. Two ways to bring clarity to the security questions facing your organization.</p><div className="page-jump-links"><a href="#research">01 / Research <span aria-hidden="true">↓</span></a><a href="#consulting">02 / Advisory <span aria-hidden="true">↓</span></a></div></section>
+    <section id="research" className="service-section wrap" aria-labelledby="research-title"><SectionLabel number="01">Research</SectionLabel><div className="service-main"><h2 id="research-title">Bespoke vulnerability research.</h2><p className="large-copy">A closer look at the weaknesses that may be present in your systems.</p><p>Every research question has its own context. Bespoke work allows the investigation to be shaped around the system, the area of concern, and the understanding you need.</p><p>We start by discussing the question and agreeing the boundaries of the engagement. The specific research activities and outputs are defined as part of that scope.</p><Link to="/contact" className="text-link">Discuss a research question <span aria-hidden="true">↗</span></Link></div><aside className="service-aside"><p className="eyebrow">Conversation starters</p><ul><li>What do you need to understand?</li><li>Which system or area is in scope?</li><li>What would a useful answer enable?</li></ul></aside></section>
+    <section id="consulting" className="service-section wrap" aria-labelledby="consulting-title"><SectionLabel number="02">Advisory</SectionLabel><div className="service-main"><h2 id="consulting-title">Cybersecurity consulting.</h2><p className="large-copy">A considered security perspective on the decisions ahead.</p><p>Security decisions sit within a wider set of business and technical constraints. Our consulting focuses on understanding that context and helping you examine the questions that matter.</p><p>Begin with the decision, concern, or uncertainty you are facing. Together, we define where advice is needed and what the engagement should address.</p><Link to="/contact" className="text-link">Discuss a consulting engagement <span aria-hidden="true">↗</span></Link></div><aside className="service-aside"><p className="eyebrow">Conversation starters</p><ul><li>What decision are you working toward?</li><li>What constraints shape your options?</li><li>Where would another perspective help?</li></ul></aside></section>
+    <EngagementCTA />
+  </>;
+}

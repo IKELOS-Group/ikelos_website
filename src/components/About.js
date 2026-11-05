@@ -1,29 +1,11 @@
-// src/components/About.js
 import React from 'react';
-import '../About.css'; // Import the CSS file for About
+import { EngagementCTA, SectionLabel } from './Shared';
 
-const About = () => {
-  return (
-    <div className="about-container">
-      <div className="about-text">
-        <h1>Welcome to IKELOS GROUP - Your Comprehensive Security Partner</h1>
-        
-        <p>At IKELOS GROUP, we redefine the essence of holistic security solutions. We are not just a company; we are your steadfast ally in navigating the complex landscape of security challenges in the modern world. Our suite of specialized services is meticulously designed to cater to a diverse range of security needs, ensuring your peace of mind in an ever-evolving threat landscape.</p>
-        
-        <h2>Why Choose IKELOS GROUP?</h2>
-
-        <p>Expertise & Experience: Our team comprises seasoned professionals with extensive experience in various security domains.</p>
-
-        <p>Customized Solutions: We understand that each client's needs are unique. Our solutions are tailored to meet your specific security requirements.</p>
-
-        <p>Proactive Approach: We believe in staying ahead of threats. Our proactive strategies are designed to anticipate and neutralize threats before they materialize.</p>
-
-        <p>Confidentiality Assured: Your security and privacy are our top priorities. We maintain the highest standards of confidentiality and discretion in all our engagements.</p>
-
-        <p>Embark on your journey towards a secure future with IKELOS GROUP – where your security is our mission. Let us be your trusted partner in navigating the complex and dynamic world of security.</p>
-      </div>
-    </div>
-  );
-};
-
-export default About;
+export default function About() {
+  return <>
+    <section className="page-hero wrap"><p className="eyebrow">IKELOS GROUP / Approach</p><h1>Deliberate by design.<br /><span className="text-muted">Specific by scope.</span></h1><p className="page-lede">IKELOS Group focuses on bespoke vulnerability research and cybersecurity consulting. The starting point is your question. The work takes shape from there.</p></section>
+    <section className="principle-section wrap"><SectionLabel number="01">Perspective</SectionLabel><div><h2>Context before conclusions.</h2><p className="large-copy">Useful security work begins with understanding what matters, and why.</p><p>We take the time to understand the concern behind the brief: the system you are examining, the decision you need to make, or the uncertainty you want to resolve. That context gives the engagement its direction.</p><p>Our public presence describes our work and how to begin a conversation. Engagement-specific details belong in a channel agreed together.</p></div></section>
+    <section className="process-section wrap" aria-labelledby="process-title"><div className="section-intro"><SectionLabel number="02">The engagement</SectionLabel><h2 id="process-title">A clear starting point.</h2></div><ol className="process-list"><li><span className="process-number">01</span><h3>Understand the question.</h3><p>Begin with a high-level conversation about your needs, context, and the questions you want the engagement to address.</p></li><li><span className="process-number">02</span><h3>Agree the scope.</h3><p>Define objectives, boundaries, and expected outputs together before the work begins.</p></li><li><span className="process-number">03</span><h3>Focus the work.</h3><p>Carry out the research or consulting against that agreed scope, keeping the original question in view.</p></li></ol></section>
+    <EngagementCTA />
+  </>;
+}
