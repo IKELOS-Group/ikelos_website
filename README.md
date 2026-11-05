@@ -4,7 +4,9 @@ A responsive React website for bespoke vulnerability research and cybersecurity 
 
 ## Development
 
-Use Node.js 22 and npm. Run `npm ci`, then `npm start` for local development.
+Use Node.js 22.22.2 (pinned in `.nvmrc`) and npm. With nvm installed, run `nvm use`. Run `npm ci`, then `npm start` for local development.
+
+TypeScript is pinned to 4.9.5 as a build dependency to satisfy `react-scripts@5.0.1`'s peer range, even though this site uses JavaScript. Commit both `package.json` and `package-lock.json` when changing dependencies, and verify with a clean `npm ci` before deployment.
 
 - `npm test -- --watchAll=false`: component and navigation checks.
 - `npm run build`: production output in `build/`.
@@ -20,6 +22,8 @@ The supplied logo remains in `assets/`; its byte-identical copy in `src/assets/`
 Contact links use `info@ikelosgroup.com`. Initial email is for high-level inquiries and arranging a suitable channel; it is not presented as encrypted contact. Do not add unverified specialties, credentials, clients, testimonials, metrics, or secure-contact identifiers.
 
 ## Static hosting
+
+For Cloudflare Pages, use build command `npm run build` and output directory `build`. The `.nvmrc` selects the tested Node version. If the project has a `NODE_VERSION` environment override, set it to `22.22.2` as well.
 
 Deploy the contents of `build/` to the existing static host when authorized. `public/_redirects` is copied into the build; it retains the Matrix discovery redirects before the SPA fallback. The root `_redirects` mirrors this configuration for existing host workflows. Keep both copies in sync.
 
