@@ -1,27 +1,59 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { EngagementCTA, ResearchDiagram, SectionLabel } from './Shared';
+
+const services = [
+  ['System security analysis', 'Understand the system’s purpose, dependencies, and security assumptions to identify the questions that matter.', 'System models and prioritized research questions.', 'analysis'],
+  ['Vulnerability research', 'Investigate hardware, firmware, protocols, and control logic under defined access and operating conditions.', 'Reproducible evidence of exploitability, prerequisites, and limits.', 'research'],
+  ['Engineering advisory', 'Use technical evidence to guide architecture, integration, remediation, and verification decisions.', 'Engineering recommendations and retest criteria.', 'consulting'],
+];
+
+const triggers = [
+  ['Deployment decisions', 'Establish what could compromise the intended operation before deployment.'],
+  ['System integration or acceptance', 'Test interfaces, dependencies, and operating assumptions as the parts come together.'],
+  ['Unresolved security assumptions', 'Investigate uncertainty before it becomes a design commitment.'],
+  ['Remediation priorities', 'Identify changes that address the operational consequence and how to verify them.'],
+];
 
 export default function Home() {
   return <>
     <section className="home-hero wrap">
-      <div className="hero-copy"><p className="eyebrow"><span className="square-dot" /><span lang="la">In Silentio, Vincimus</span></p>
-        <h1>Look deeper.<br />Know <span className="accent-text">more.</span></h1>
-        <p className="hero-descriptor">Bespoke vulnerability research.<br />Cybersecurity consulting.</p>
-        <p className="hero-description">For the security questions that need a closer look. Research and advice shaped around your systems, your context, and what you need to understand.</p>
-        <div className="hero-actions"><Link className="button" to="/contact">Discuss an engagement <span aria-hidden="true">↗</span></Link><Link className="text-link" to="/services">Explore capabilities <span aria-hidden="true">↓</span></Link></div>
-      </div>
-      <ResearchDiagram />
-      <div className="hero-footnote"><span>IKELOS GROUP / RESEARCH & ADVISORY</span><span>Specific questions. Clear direction.</span></div>
-    </section>
-    <section className="capabilities-section wrap" aria-labelledby="capabilities-title">
-      <div className="section-intro"><SectionLabel number="01">Capabilities</SectionLabel><div><h2 id="capabilities-title">Depth where it matters.</h2><p>Two connected disciplines. Each shaped by the question at hand.</p></div></div>
-      <div className="capability-grid">
-        <Link to="/services#research" className="capability-card"><div className="card-top"><span className="eyebrow">01 / Research</span><span className="card-arrow" aria-hidden="true">↗</span></div><div className="capability-glyph research-glyph" aria-hidden="true"><span /><span /><span /></div><h3>Bespoke vulnerability<br />research</h3><p>Investigate security weaknesses in the context that matters to you. Focused work starts with a well-defined question.</p><span className="card-link">Explore research <span aria-hidden="true">↗</span></span></Link>
-        <Link to="/services#consulting" className="capability-card"><div className="card-top"><span className="eyebrow">02 / Advisory</span><span className="card-arrow" aria-hidden="true">↗</span></div><div className="capability-glyph consulting-glyph" aria-hidden="true"><span /><span /><span /></div><h3>Cybersecurity<br />consulting</h3><p>Bring a security perspective to complex decisions. Advice grounded in your priorities, constraints, and operating context.</p><span className="card-link">Explore consulting <span aria-hidden="true">↗</span></span></Link>
+      <div className="hero-copy">
+        <h1>Understand how your system can be exploited—and what that means for operation.</h1>
+        <p className="hero-description">IKELOS Group starts with system purpose, operating constraints, and dependencies. This top-down, target-agnostic approach directs vulnerability research into the relevant implementation and connects technical findings to engineering decisions.</p>
+        <Link className="button" to="/contact">Discuss an engagement</Link>
       </div>
     </section>
-    <section className="approach-teaser wrap" aria-labelledby="approach-title"><SectionLabel number="02">Our approach</SectionLabel><div><h2 id="approach-title">The work starts<br />with <span className="text-muted">understanding.</span></h2><p>Before an investigation, a conversation. We begin with what you need to know, establish the scope together, and focus the engagement around it.</p><Link className="text-link" to="/about">How we approach the work <span aria-hidden="true">↗</span></Link></div><div className="approach-index" aria-hidden="true"><span>01 <b>Understand</b></span><span>02 <b>Define</b></span><span>03 <b>Investigate</b></span></div></section>
-    <EngagementCTA />
+
+    <section className="section wrap" aria-labelledby="services-title">
+      <h2 id="services-title">Services</h2>
+      <div className="service-grid">{services.map(([title, description, output, id]) => <article key={id}>
+        <h3>{title}</h3>
+        <p>{description}</p>
+        <p><strong>Output:</strong> {output}</p>
+        <Link className="text-link" to={`/services#${id}`}>Explore {title.toLowerCase()}</Link>
+      </article>)}</div>
+    </section>
+
+    <section className="section wrap content-section" aria-labelledby="triggers-title">
+      <h2 id="triggers-title">Reasons to engage</h2>
+      <ul className="engagement-reasons">{triggers.map(([title, copy]) => <li key={title}><strong>{title}.</strong> {copy}</li>)}</ul>
+    </section>
+
+    <section className="section wrap content-section maritime-preview" aria-labelledby="maritime-title">
+      <h2 id="maritime-title">Maritime example: navigation confidence</h2>
+      <div className="prose">
+        <p className="scenario-label">Hypothetical scenario</p>
+        <p>Invalid GPS-derived input places an Electronic Chart Display and Information System (ECDIS) into an unexpected state, undermining crew confidence without root or administrator access. The system includes the crew’s interpretation and reliance on the information. This hypothetical scenario illustrates analytical reasoning; it is not an IKELOS customer engagement or a verified finding.</p>
+        <Link className="text-link" to="/about#walkthrough">Follow the maritime walkthrough</Link>
+      </div>
+    </section>
+
+    <section className="section wrap content-section" aria-labelledby="partner-title">
+      <h2 id="partner-title">Specialist delivery partnership</h2>
+      <div className="prose">
+        <p>IKELOS can own a defined research workstream within your broader engagement, from system modeling and research planning through implementation investigation and validation, producing evidence for your engineering and stakeholder deliverables.</p>
+        <Link className="text-link" to="/services#partner">Explore specialist partnership</Link>
+      </div>
+    </section>
   </>;
 }
