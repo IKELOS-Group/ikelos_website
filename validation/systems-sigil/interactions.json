@@ -1,0 +1,12 @@
+{
+  "checks": [
+    "32 direct hashes clear the fixed header; business email visible at all four widths",
+    "Five model panels, arrow/Home/End, intro skip, scroll independence at 375",
+    "Five model panels, arrow/Home/End, intro skip, scroll independence at 1440",
+    "Mobile menu focus containment, Escape, focus/scroll return, route focus, axe",
+    "Keyboard skip link, visible CTA focus, reduced-motion settled state",
+    "Browser key download filename and bytes",
+    "404 recovery"
+  ],
+  "errors": []
+}

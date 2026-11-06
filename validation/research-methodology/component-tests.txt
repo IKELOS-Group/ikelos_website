@@ -1,0 +1,68 @@
+
+> ikelos-group-website@0.1.0 test
+> react-scripts test --watchAll=false --runInBand
+
+  console.error
+    Warning: `ReactDOMTestUtils.act` is deprecated in favor of `React.act`. Import `act` from `react` instead of `react-dom/test-utils`. See https://react.dev/warnings/react-dom-test-utils for more info.
+
+      17 |
+      18 | test('home exposes positioning, research model, capabilities, and scoped evidence', () => {
+    > 19 |   render(<App />);
+         |         ^
+      20 |   const main = within(screen.getByRole('main'));
+      21 |   expect(main.getByRole('heading', { level: 1 })).toHaveTextContent('First Principles.Decisive Effects.');
+      22 |   expect(main.getByRole('link', { name: /Discuss an engagement/ })).toHaveAttribute('href', '/contact');
+
+      at printWarning (node_modules/react-dom/cjs/react-dom-test-utils.development.js:71:30)
+      at error (node_modules/react-dom/cjs/react-dom-test-utils.development.js:45:7)
+      at actWithWarning (node_modules/react-dom/cjs/react-dom-test-utils.development.js:1736:7)
+      at node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/App.test.js:19:9)
+      at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
+      at runJest (node_modules/@jest/core/build/runJest.js:404:19)
+      at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
+      at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
+
+(node:23) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+PASS src/App.test.js
+  ✓ home exposes positioning, research model, capabilities, and scoped evidence (134 ms)
+  ✓ home links System security analysis to its capability section (59 ms)
+  ✓ home links Vulnerability research to its capability section (48 ms)
+  ✓ home links Engineering advisory to its capability section (46 ms)
+  ✓ engagement navigation updates route, focus, metadata, and scroll (41 ms)
+  ✓ direct entry to /services has a plain heading, navigation, and metadata (20 ms)
+  ✓ direct entry to /about has a plain heading, navigation, and metadata (19 ms)
+  ✓ direct entry to /contact has a plain heading, navigation, and metadata (15 ms)
+  ✓ mobile modal traps focus, restores scroll and focus on Escape, and closes after navigation (74 ms)
+  ✓ direct entry to /services#analysis preserves its destination without resetting scroll (9 ms)
+  ✓ direct entry to /services#research preserves its destination without resetting scroll (6 ms)
+  ✓ direct entry to /services#consulting preserves its destination without resetting scroll (7 ms)
+  ✓ direct entry to /services#partner preserves its destination without resetting scroll (8 ms)
+  ✓ direct entry to /contact#encrypted-email preserves its destination without resetting scroll (4 ms)
+  ✓ direct entry to /contact#partnerships preserves its destination without resetting scroll (4 ms)
+  ✓ direct entry to /about#walkthrough preserves its destination without resetting scroll (6 ms)
+  ✓ direct entry to /about#stuxnet preserves its destination without resetting scroll (5 ms)
+  ✓ same-page System security analysis link scrolls without a route reset (16 ms)
+  ✓ same-page Vulnerability research link scrolls without a route reset (15 ms)
+  ✓ same-page Engineering advisory link scrolls without a route reset (19 ms)
+  ✓ same-page Specialist partnership link scrolls without a route reset (13 ms)
+  ✓ capabilities groups technical methods and deliverables under three services (23 ms)
+  ✓ maritime preview leads to the complete, qualified walkthrough and decision brief (111 ms)
+  ✓ approach orders six stages, evidence standards, walkthrough, and an always-visible historical note (42 ms)
+  ✓ contextual partnership path connects scope and contact prompts (47 ms)
+  ✓ contact leads with the business email, then the compact workflow, partnership prompts, and PGP (29 ms)
+  ✓ unknown routes provide a route home (20 ms)
+  ✓ research workflow selects six analytical stages without a tab interface (136 ms)
+  ✓ causal scenario and validation distinguish assumptions, technical effects, and consequences (113 ms)
+  ✓ component inspection exposes assumptions and evidence without changing the research stage (61 ms)
+  ✓ intro can be skipped without blocking contact actions (53 ms)
+  ✓ reduced motion starts with settled hero and static narrative (25 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       32 passed, 32 total
+Snapshots:   0 total
+Time:        1.896 s, estimated 2 s
+Ran all test suites.

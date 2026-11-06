@@ -1,0 +1,2554 @@
+{
+  "browser": "153.0.8010.12",
+  "results": [
+    {
+      "width": 320,
+      "route": "/",
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              {
+                "target": [
+                  ".menu-toggle"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".hero-coordinate"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  ".hero-content > .eyebrow"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  "#hero-title"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  "#hero-title > span"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".hero-bottom > p"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
+              },
+              {
+                "target": [
+                  ".text-link[href$=\"services\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".hero-edge > span"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "a[href$=\"#research-narrative\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "a[href$=\"#research-narrative\"] > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  ".buyer-intro > div > .eyebrow"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "#narrative-title"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".positioning-boundary > div:nth-child(1) > .label"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".positioning-boundary > div:nth-child(1) > h3"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".boundary-statement"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".boundary-fit"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".positioning-boundary > div:nth-child(2) > .text-link[href$=\"about\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".decision-chain > li:nth-child(1)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".decision-chain > li:nth-child(2)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".decision-chain > li:nth-child(3)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".decision-chain > li:nth-child(4)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-intro > .eyebrow"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  "#systems-title"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-lede"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-case-header > div > .rm-kicker"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-case-header > div > h3"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-case-header > p"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-case-header > p > strong"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  "button[aria-label=\"Mission & Consequence\"] > span:nth-child(2) > strong"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  "button[aria-label=\"Mission & Consequence\"] > span:nth-child(2) > .rm-stage-short"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-loop-note > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  ".rm-view-header > span:nth-child(1)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-view-index"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  "text[y=\"115\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[y=\"146\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[x=\"205\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[y=\"293\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[y=\"475\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[y=\"337\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[y=\"355\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[x=\"20\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".rm-model-caption"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".rm-envelope-label"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".rm-layer-note > span"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".rm-layer-note > strong"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".rm-diagram-key > span:nth-child(1)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-diagram-key > span:nth-child(2)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-diagram-key > span:nth-child(3)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-inspect-hint"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-analysis-heading > div > .rm-kicker"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  "#rm-stage-title"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-analysis-heading > p"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-trace > span:nth-child(1)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-trace > ol > li:nth-child(1)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-trace > ol > li:nth-child(2)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-trace > ol > li:nth-child(3)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  "article:nth-child(1) > h4"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-analysis-columns > article:nth-child(1) > p"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  "article:nth-child(2) > h4"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-analysis-columns > article:nth-child(2) > p"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  "article:nth-child(3) > h4"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-analysis-columns > article:nth-child(3) > p"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  "p[role=\"status\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-analysis-footer > button"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-analysis-footer > button > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  ".rm-method-note > .rm-kicker"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-method-note > p"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              }
+            ]
+          }
+        ]
+      },
+      "fonts": {
+        "inter": true,
+        "orbitron": true
+      }
+    },
+    {
+      "width": 320,
+      "route": "/services",
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              {
+                "target": [
+                  ".page-hero > .eyebrow"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  "h1"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  ".page-statement"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  ".page-lede"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  "a[href$=\"services#analysis\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  "a[href$=\"services#research\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  "a[href$=\"services#consulting\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  "a[href$=\"services#partner\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              }
+            ]
+          }
+        ]
+      },
+      "fonts": {
+        "inter": true,
+        "orbitron": true
+      }
+    },
+    {
+      "width": 320,
+      "route": "/about",
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              {
+                "target": [
+                  ".page-hero > .eyebrow"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  "h1"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  ".page-statement"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  ".page-lede"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  "a[href$=\"about#governance\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  "a[href$=\"about#evidence-policy\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  "a[href$=\"about#walkthrough\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              }
+            ]
+          }
+        ]
+      },
+      "fonts": {
+        "inter": true,
+        "orbitron": true
+      }
+    },
+    {
+      "width": 320,
+      "route": "/contact",
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              {
+                "target": [
+                  ".eyebrow"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  "h1"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  ".email-link[href=\"mailto:info@ikelosgroup.com\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  ".page-lede"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  ".contact-intro-note"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  ".page-jump-links > a[href$=\"contact#partnerships\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  "a[href$=\"contact#encrypted-email\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              }
+            ]
+          }
+        ]
+      },
+      "fonts": {
+        "inter": true,
+        "orbitron": true
+      }
+    },
+    {
+      "width": 375,
+      "route": "/",
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              {
+                "target": [
+                  ".menu-toggle"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".hero-coordinate"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  ".hero-content > .eyebrow"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  "#hero-title"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  "#hero-title > span"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".hero-bottom > p"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
+              },
+              {
+                "target": [
+                  ".text-link[href$=\"services\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".hero-edge > span"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "a[href$=\"#research-narrative\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "a[href$=\"#research-narrative\"] > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  ".buyer-intro > div > .eyebrow"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "#narrative-title"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".positioning-boundary > div:nth-child(1) > .label"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".positioning-boundary > div:nth-child(1) > h3"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".boundary-statement"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".boundary-fit"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".positioning-boundary > div:nth-child(2) > .text-link[href$=\"about\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".decision-chain > li:nth-child(1)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".decision-chain > li:nth-child(2)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".decision-chain > li:nth-child(3)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".decision-chain > li:nth-child(4)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-intro > .eyebrow"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  "#systems-title"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-lede"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-case-header > div > .rm-kicker"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-case-header > div > h3"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-case-header > p"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-case-header > p > strong"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  "button[aria-label=\"Mission & Consequence\"] > span:nth-child(2) > strong"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  "button[aria-label=\"Mission & Consequence\"] > span:nth-child(2) > .rm-stage-short"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-loop-note > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  ".rm-view-header > span:nth-child(1)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-view-index"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  "text[y=\"115\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[y=\"146\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[x=\"205\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[y=\"293\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[y=\"475\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[y=\"337\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[y=\"355\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[x=\"20\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".rm-model-caption"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".rm-envelope-label"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".rm-layer-note > span"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".rm-layer-note > strong"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".rm-layer-note > p"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
+              },
+              {
+                "target": [
+                  ".rm-diagram-key > span:nth-child(1)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-diagram-key > span:nth-child(2)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-diagram-key > span:nth-child(3)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-inspect-hint"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-analysis-heading > div > .rm-kicker"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  "#rm-stage-title"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-analysis-heading > p"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-trace > span:nth-child(1)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-trace > ol > li:nth-child(1)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-trace > ol > li:nth-child(2)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-trace > ol > li:nth-child(3)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  "article:nth-child(1) > h4"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-analysis-columns > article:nth-child(1) > p"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  "article:nth-child(2) > h4"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-analysis-columns > article:nth-child(2) > p"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  "article:nth-child(3) > h4"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-analysis-columns > article:nth-child(3) > p"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  "p[role=\"status\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-analysis-footer > button"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-analysis-footer > button > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  ".rm-method-note > .rm-kicker"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-method-note > p"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              }
+            ]
+          }
+        ]
+      },
+      "fonts": {
+        "inter": true,
+        "orbitron": true
+      }
+    },
+    {
+      "width": 375,
+      "route": "/services",
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              {
+                "target": [
+                  ".page-hero > .eyebrow"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  "h1"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  ".page-statement"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  ".page-lede"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  "a[href$=\"services#analysis\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  "a[href$=\"services#research\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  "a[href$=\"services#consulting\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  "a[href$=\"services#partner\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              }
+            ]
+          }
+        ]
+      },
+      "fonts": {
+        "inter": true,
+        "orbitron": true
+      }
+    },
+    {
+      "width": 375,
+      "route": "/about",
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              {
+                "target": [
+                  ".page-hero > .eyebrow"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  "h1"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  ".page-statement"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  ".page-lede"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  "a[href$=\"about#governance\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  "a[href$=\"about#evidence-policy\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  "a[href$=\"about#walkthrough\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              }
+            ]
+          }
+        ]
+      },
+      "fonts": {
+        "inter": true,
+        "orbitron": true
+      }
+    },
+    {
+      "width": 375,
+      "route": "/contact",
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              {
+                "target": [
+                  ".eyebrow"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  "h1"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  ".email-link[href=\"mailto:info@ikelosgroup.com\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  ".page-lede"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  ".contact-intro-note"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  ".page-jump-links > a[href$=\"contact#partnerships\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  "a[href$=\"contact#encrypted-email\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              }
+            ]
+          }
+        ]
+      },
+      "fonts": {
+        "inter": true,
+        "orbitron": true
+      }
+    },
+    {
+      "width": 768,
+      "route": "/",
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              {
+                "target": [
+                  ".primary-nav > a[href$=\"services\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".primary-nav > a[href$=\"about\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".primary-nav > a[href$=\"contact\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".hero-coordinate"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  ".hero-content > .eyebrow"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  "#hero-title"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  "#hero-title > span"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".hero-bottom > p"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
+              },
+              {
+                "target": [
+                  ".text-link[href$=\"services\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".hero-edge > span"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "a[href$=\"#research-narrative\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "a[href$=\"#research-narrative\"] > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  ".positioning-boundary > div:nth-child(1) > .label"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".positioning-boundary > div:nth-child(1) > h3"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".boundary-statement"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".boundary-fit"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".positioning-boundary > div:nth-child(2) > .text-link[href$=\"about\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".decision-chain > li:nth-child(1)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".decision-chain > li:nth-child(2)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".decision-chain > li:nth-child(3)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".decision-chain > li:nth-child(4)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-intro > .eyebrow"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  "#systems-title"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-lede"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-case-header > div > .rm-kicker"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-case-header > div > h3"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-case-header > p"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-case-header > p > strong"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  "button[aria-label=\"Mission & Consequence\"] > span:nth-child(2) > strong"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  "button[aria-label=\"Mission & Consequence\"] > span:nth-child(2) > .rm-stage-short"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-loop-note > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  ".rm-view-header > span:nth-child(1)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-view-index"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  "text[x=\"470\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[x=\"40\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[x=\"318\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[x=\"298\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[x=\"600\"][y=\"235\"][text-anchor=\"middle\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[x=\"468\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[y=\"451\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[y=\"342\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[y=\"358\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[x=\"340\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[x=\"710\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".rm-model-caption"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".rm-model-caption > span"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".rm-envelope-label"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".rm-layer-note > span"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".rm-layer-note > strong"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".rm-layer-note > p"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".rm-component-sensor > .rm-component-sub"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
+              },
+              {
+                "target": [
+                  ".rm-diagram-key > span:nth-child(1)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-diagram-key > span:nth-child(2)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-diagram-key > span:nth-child(3)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-inspect-hint"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-analysis-heading > div > .rm-kicker"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  "#rm-stage-title"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-analysis-heading > p"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-trace > span:nth-child(1)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-trace > ol > li:nth-child(1)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-trace > ol > li:nth-child(2)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-trace > ol > li:nth-child(3)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-trace > span:nth-child(3)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  "article:nth-child(1) > h4"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-analysis-columns > article:nth-child(1) > p"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  "article:nth-child(2) > h4"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-analysis-columns > article:nth-child(2) > p"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  "article:nth-child(3) > h4"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-analysis-columns > article:nth-child(3) > p"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  "p[role=\"status\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-analysis-footer > button"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-analysis-footer > button > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  ".rm-method-note > .rm-kicker"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-method-note > p"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              }
+            ]
+          }
+        ]
+      },
+      "fonts": {
+        "inter": true,
+        "orbitron": true
+      }
+    },
+    {
+      "width": 768,
+      "route": "/services",
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              {
+                "target": [
+                  ".page-hero > .eyebrow"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  "h1"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  ".page-statement"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  ".page-lede"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  "a[href$=\"services#analysis\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  "a[href$=\"services#research\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  "a[href$=\"services#consulting\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  "a[href$=\"services#partner\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              }
+            ]
+          }
+        ]
+      },
+      "fonts": {
+        "inter": true,
+        "orbitron": true
+      }
+    },
+    {
+      "width": 768,
+      "route": "/about",
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              {
+                "target": [
+                  ".page-hero > .eyebrow"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  "h1"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  ".page-statement"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  ".page-lede"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  "a[href$=\"about#governance\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  "a[href$=\"about#evidence-policy\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  "a[href$=\"about#walkthrough\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              }
+            ]
+          }
+        ]
+      },
+      "fonts": {
+        "inter": true,
+        "orbitron": true
+      }
+    },
+    {
+      "width": 768,
+      "route": "/contact",
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              {
+                "target": [
+                  ".eyebrow"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  "h1"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  ".email-link[href=\"mailto:info@ikelosgroup.com\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  ".page-lede"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  ".contact-intro-note"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  ".page-jump-links > a[href$=\"contact#partnerships\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  "a[href$=\"contact#encrypted-email\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              }
+            ]
+          }
+        ]
+      },
+      "fonts": {
+        "inter": true,
+        "orbitron": true
+      }
+    },
+    {
+      "width": 1440,
+      "route": "/",
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              {
+                "target": [
+                  ".primary-nav > a[href$=\"services\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".primary-nav > a[href$=\"about\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".primary-nav > a[href$=\"contact\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".hero-coordinate"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  ".hero-content > .eyebrow"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  "#hero-title"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  "#hero-title > span"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".hero-bottom > p"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
+              },
+              {
+                "target": [
+                  ".text-link[href$=\"services\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".hero-edge > span"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "a[href$=\"#research-narrative\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "a[href$=\"#research-narrative\"] > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  ".positioning-boundary > div:nth-child(1) > .label"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".positioning-boundary > div:nth-child(1) > h3"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".boundary-statement"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".boundary-fit"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".positioning-boundary > div:nth-child(2) > .text-link[href$=\"about\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".decision-chain > li:nth-child(1)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".decision-chain > li:nth-child(2)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".decision-chain > li:nth-child(3)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".decision-chain > li:nth-child(4)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-intro > .eyebrow"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  "#systems-title"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-lede"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-case-header > div > .rm-kicker"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-case-header > div > h3"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-case-header > p"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-case-header > p > strong"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  "button[aria-label=\"Mission & Consequence\"] > span:nth-child(2) > strong"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  "button[aria-label=\"Mission & Consequence\"] > span:nth-child(2) > .rm-stage-short"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-loop-note > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  ".rm-view-header > span:nth-child(1)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-view-index"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  "text[x=\"470\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[x=\"40\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[x=\"318\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[x=\"298\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[x=\"600\"][y=\"235\"][text-anchor=\"middle\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[x=\"468\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[y=\"451\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[y=\"342\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[y=\"358\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[x=\"340\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  "text[x=\"710\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".rm-model-caption"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".rm-model-caption > span"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".rm-envelope-label"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".rm-layer-note > span"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".rm-layer-note > strong"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".rm-layer-note > p"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+              },
+              {
+                "target": [
+                  ".rm-diagram-key > span:nth-child(1)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-diagram-key > span:nth-child(2)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-diagram-key > span:nth-child(3)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-inspect-hint"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-analysis-heading > div > .rm-kicker"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  "#rm-stage-title"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-analysis-heading > p"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-trace > span:nth-child(1)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-trace > ol > li:nth-child(1)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-trace > ol > li:nth-child(2)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-trace > ol > li:nth-child(3)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-trace > span:nth-child(3)"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  "article:nth-child(1) > h4"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-analysis-columns > article:nth-child(1) > p"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  "article:nth-child(2) > h4"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-analysis-columns > article:nth-child(2) > p"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  "article:nth-child(3) > h4"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-analysis-columns > article:nth-child(3) > p"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  "p[role=\"status\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-analysis-footer > button"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-analysis-footer > button > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  ".rm-method-note > .rm-kicker"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              },
+              {
+                "target": [
+                  ".rm-method-note > p"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+              }
+            ]
+          }
+        ]
+      },
+      "fonts": {
+        "inter": true,
+        "orbitron": true
+      }
+    },
+    {
+      "width": 1440,
+      "route": "/services",
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              {
+                "target": [
+                  ".page-hero > .eyebrow"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  "h1"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  ".page-statement"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  ".page-lede"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  "a[href$=\"services#analysis\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  "a[href$=\"services#research\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  "a[href$=\"services#consulting\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  "a[href$=\"services#partner\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              }
+            ]
+          }
+        ]
+      },
+      "fonts": {
+        "inter": true,
+        "orbitron": true
+      }
+    },
+    {
+      "width": 1440,
+      "route": "/about",
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              {
+                "target": [
+                  ".page-hero > .eyebrow"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  "h1"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  ".page-statement"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  ".page-lede"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  "a[href$=\"about#governance\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  "a[href$=\"about#evidence-policy\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  "a[href$=\"about#walkthrough\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              }
+            ]
+          }
+        ]
+      },
+      "fonts": {
+        "inter": true,
+        "orbitron": true
+      }
+    },
+    {
+      "width": 1440,
+      "route": "/contact",
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              {
+                "target": [
+                  ".eyebrow"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  "h1"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  ".email-link[href=\"mailto:info@ikelosgroup.com\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  ".page-lede"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  ".contact-intro-note"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  ".page-jump-links > a[href$=\"contact#partnerships\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [
+                  "a[href$=\"contact#encrypted-email\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              }
+            ]
+          }
+        ]
+      },
+      "fonts": {
+        "inter": true,
+        "orbitron": true
+      }
+    }
+  ],
+  "errors": [],
+  "checkedLinks": [
+    "/#main-content",
+    "/",
+    "/services",
+    "/about",
+    "/contact",
+    "/#research-narrative",
+    "/services#analysis",
+    "/services#research",
+    "/services#consulting",
+    "/about#evidence-policy",
+    "/services#partner",
+    "/contact#partnerships",
+    "/services#main-content",
+    "/about#main-content",
+    "/about#governance",
+    "/about#walkthrough",
+    "/#research-methodology",
+    "/#sample-deliverable",
+    "/contact#main-content",
+    "/contact#encrypted-email",
+    "/keys/ikelos-secure-email.asc"
+  ],
+  "externalRequests": []
+}

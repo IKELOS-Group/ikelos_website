@@ -1,0 +1,142 @@
+.hero-bottom > p { max-width: 660px; }
+.hero-actions { min-width: 310px; }
+.buyer-intro, .sample-intro, .organization-section, .sample-referral {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 70px;
+  align-items: start;
+}
+.buyer-intro > p { font-size: 20px; color: var(--muted); padding-top: 44px; }
+.buying-triggers { list-style: none; padding: 0; margin: 56px 0 0; }
+.buying-triggers li {
+  display: grid;
+  grid-template-columns: 55px minmax(0, .8fr) minmax(0, 1.2fr);
+  gap: 25px;
+  border-top: 1px solid var(--steel);
+  padding: 27px 0;
+}
+.trigger-index { font: 13px var(--display); color: var(--accent); padding-top: 7px; }
+.buying-triggers h3 { font-size: 23px; }
+.buying-triggers p, .boundary-fit { color: var(--muted); }
+.positioning-boundary {
+  display: grid;
+  grid-template-columns: 1fr 1.8fr;
+  gap: 35px 65px;
+  padding: 45px;
+  margin-top: 45px;
+  border: 1px solid var(--steel);
+  background: radial-gradient(ellipse at top left, #22313F, #10161D 75%);
+}
+.positioning-boundary .label { color: var(--muted); margin-bottom: 18px; }
+.positioning-boundary h3 { font: 500 clamp(24px,2.2vw,32px)/1.3 var(--display); letter-spacing: -.035em; }
+.boundary-statement { font-size: 21px; line-height: 1.65; }
+.boundary-fit { font-size: 14px; margin-top: 22px; }
+.positioning-boundary .text-link { margin-top: 24px; }
+.decision-chain { list-style: none; margin: 0; padding: 0; grid-column: 1 / -1; display: grid; grid-template-columns: repeat(4,1fr); }
+.decision-chain li { border-top: 1px solid var(--accent); padding: 18px 24px 0 0; position: relative; font-size: 12px; color: var(--muted); }
+.decision-chain li::before { content: ''; position: absolute; top: -4px; left: 0; height: 7px; width: 7px; border: 1px solid var(--accent); background: var(--surface); }
+.service-grid .pathway-output { font-size: 14px; padding-top: 20px; border-top: 1px solid var(--steel); }
+.pathway-output strong { display: block; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 8px; }
+.sample-intro { grid-template-columns: 1.2fr 1fr; }
+.sample-intro > p { color: var(--muted); margin-top: 42px; }
+.sample-package { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1.3fr); gap: 70px; margin-top: 55px; padding-block: 35px; border-top: 2px solid var(--text); border-bottom: 1px solid var(--line); }
+.sample-cover h3 { font: 500 clamp(22px,2.2vw,30px)/1.35 var(--display); margin-top: 22px; }
+.sample-label { font-size: 12px; color: var(--muted); margin-top: 16px; }
+.sample-cover dl { margin: 30px 0 0; }
+.sample-cover dl > div + div { margin-top: 22px; }
+.sample-cover dt { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; font-weight: 600; }
+.sample-cover dd { margin: 7px 0 0; color: var(--muted); font-size: 15px; }
+.sample-reading { margin-top: 30px; color: var(--muted); font-size: 13px; max-width: 350px; }
+.sample-records details { border-bottom: 1px solid var(--line); }
+.sample-records summary { display: flex; align-items: center; gap: 24px; min-height: 68px; padding: 12px 0; cursor: pointer; list-style: none; font-size: 17px; font-weight: 500; }
+.sample-records summary::-webkit-details-marker { display: none; }
+.sample-code { color: var(--muted); font: 12px var(--mono); }
+.sample-toggle { font-size: 22px; margin-left: auto; padding-inline: 8px; }
+.sample-records details[open] .sample-toggle { transform: rotate(45deg); }
+.sample-records details[open] summary { color: var(--accent); }
+summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.sample-record-body { padding: 0 12px 26px 60px; color: var(--muted); font-size: 14px; }
+.record-status { font: 600 11px/1.6 var(--sans); text-transform: uppercase; letter-spacing: .06em; color: var(--text); margin-bottom: 12px; }
+.sample-policy-link { margin-top: 24px; }
+.organization-section { border-bottom: 1px solid var(--steel); }
+.organization-section h2 { font-size: clamp(24px,2.8vw,38px); }
+.organization-section p:not(.eyebrow) { color: var(--muted); margin-top: 22px; max-width: 500px; }
+.organization-facts { margin: 0 0 18px; }
+.organization-facts > div + div { margin-top: 20px; }
+.organization-facts dt { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; }
+.organization-facts dd { margin: 8px 0 0; color: var(--muted); }
+.organization-facts a { display: inline-flex; align-items: center; min-height: 44px; color: var(--text); border-bottom: 1px solid var(--steel); overflow-wrap: anywhere; max-width: 100%; }
+.engagement-decision { margin: 0 0 30px; padding-left: 22px; border-left: 2px solid var(--accent); }
+.engagement-decision > div + div { margin-top: 20px; }
+.engagement-decision dt { font-size: 11px; text-transform: uppercase; font-weight: 600; letter-spacing: .1em; color: var(--text); }
+.engagement-decision dd { font-size: 15px; line-height: 1.65; margin: 6px 0 0; color: var(--muted); }
+.research-topics .engagement-decision { margin-top: 26px; }
+.governance-workflow::after { content: none; }
+.methodology-link { margin-top: 35px; }
+.prose .evidence-policy { color: var(--text); font-size: 20px; }
+.sample-referral { gap: 40px; }
+.sample-referral h2 { font-size: 30px; margin-top: 20px; }
+.sample-referral p:not(.label) { color: var(--muted); }
+.sample-referral .text-link { margin-top: 24px; }
+#scoping-title + .prose .button { margin-top: 28px; }
+.historical-note { font-size: 14px; color: var(--muted); }
+.historical-note details { border-top: 1px solid var(--steel); }
+.historical-note summary { min-height: 48px; padding-block: 16px; cursor: pointer; }
+.historical-note .prose { padding-block: 12px 20px; }
+.contact-intro-note { margin-top: 18px; max-width: 640px; color: var(--muted); font-size: 14px; }
+.workflow-followup { grid-column: 2; color: var(--muted); font-size: 14px; }
+.initial-workflow { row-gap: 24px; }
+.prose .handling-notice { border-left: 2px solid var(--accent); padding: 0 0 0 22px; margin-bottom: 30px; font-size: 14px; }
+
+@media (max-width: 1100px) {
+  .hero-bottom { gap: 32px; }
+  .hero-actions { min-width: 290px; }
+  .hero-actions .button { gap: 15px; padding-inline: 16px; }
+  .buyer-intro, .sample-intro, .sample-package, .organization-section { gap: 40px; }
+  .positioning-boundary { padding: 30px; gap: 30px; }
+  .sample-records summary { gap: 14px; }
+  .sample-record-body { padding-left: 48px; }
+}
+@media (max-width: 850px) {
+  .hero-content { padding-top: 100px; }
+  .home-hero { min-height: max(850px,100svh); }
+  .buyer-intro, .sample-intro { grid-template-columns: 1fr; gap: 25px; }
+  .buyer-intro > p, .sample-intro > p { padding: 0; margin: 0; max-width: 650px; }
+  .buying-triggers li { grid-template-columns: 30px minmax(0,.9fr) minmax(0,1.2fr); gap: 20px; }
+  .buying-triggers h3 { font-size: 21px; }
+  .positioning-boundary { grid-template-columns: 1fr; }
+  .positioning-boundary h3 br { display: none; }
+  .sample-package { gap: 30px; grid-template-columns: 1fr 1fr; }
+  .sample-records summary { font-size: 15px; gap: 10px; }
+  .sample-record-body { padding-left: 0; }
+  .sample-referral { grid-template-columns: 1fr; gap: 25px; }
+  .workflow-followup { grid-column: auto; }
+}
+@media (max-width: 600px) {
+  .home-hero { padding-top: 170px; min-height: max(840px,100svh); }
+  .hero-content { padding-top: 75px; }
+  .hero-actions { min-width: 0; }
+  .hero-actions .button { width: 100%; min-width: 0; }
+  .hero-sigil { top: 55px; }
+  .hero-bottom > p { font-size: 14px; }
+  .buyer-intro > p { font-size: 17px; }
+  .buying-triggers { margin-top: 35px; }
+  .buying-triggers li { grid-template-columns: 25px minmax(0,1fr); gap: 12px; padding-block: 24px; }
+  .buying-triggers li p { grid-column: 2; font-size: 15px; }
+  .positioning-boundary { padding: 24px 18px; margin-top: 25px; }
+  .boundary-statement { font-size: 18px; }
+  .positioning-boundary .label { font-size: 10px; }
+  .decision-chain { grid-template-columns: 1fr 1fr; gap: 26px 10px; }
+  .decision-chain li { padding-right: 0; }
+  .sample-intro, .sample-package, .organization-section { grid-template-columns: 1fr; gap: 30px; }
+  .sample-package { margin-top: 35px; padding-block: 26px; }
+  .sample-cover { padding-bottom: 8px; }
+  .sample-records summary { font-size: 16px; min-height: 64px; }
+  .sample-record-body { padding-inline: 0; }
+  .sample-cover dd { font-size: 14px; }
+  .sample-referral h2 { font-size: 25px; }
+  .engage-bottom > div { min-width: 0; width: 100%; }
+  .engage-bottom .button, #scoping-title + .prose .button { gap: 16px; padding-inline: 16px; }
+  .engagement-decision { padding-left: 17px; }
+  .prose .evidence-policy { font-size: 18px; }
+}

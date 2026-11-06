@@ -1,0 +1,4141 @@
+{
+  "browser": "153.0.8010.12",
+  "results": [
+    {
+      "width": 320,
+      "stage": 1,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              [
+                ".rm-intro > .eyebrow"
+              ],
+              [
+                "#systems-title"
+              ],
+              [
+                ".rm-lede"
+              ],
+              [
+                ".rm-case-header > div > .rm-kicker"
+              ],
+              [
+                ".rm-case-header > div > h3"
+              ],
+              [
+                ".rm-case-header > p"
+              ],
+              [
+                "p > strong"
+              ],
+              [
+                "button[aria-label=\"Mission & Consequence\"] > span:nth-child(2) > strong"
+              ],
+              [
+                "button[aria-label=\"Mission & Consequence\"] > span:nth-child(2) > .rm-stage-short"
+              ],
+              [
+                ".rm-loop-note > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-view-header > span:nth-child(1)"
+              ],
+              [
+                ".rm-view-index"
+              ],
+              [
+                "text[y=\"115\"]"
+              ],
+              [
+                "text[y=\"146\"]"
+              ],
+              [
+                "text[x=\"205\"]"
+              ],
+              [
+                "text[y=\"293\"]"
+              ],
+              [
+                "text[y=\"475\"]"
+              ],
+              [
+                "text[y=\"337\"]"
+              ],
+              [
+                "text[y=\"355\"]"
+              ],
+              [
+                "text[x=\"20\"]"
+              ],
+              [
+                ".rm-model-caption"
+              ],
+              [
+                ".rm-envelope-label"
+              ],
+              [
+                ".rm-layer-note > span"
+              ],
+              [
+                ".rm-layer-note > strong"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(1)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(2)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(3)"
+              ],
+              [
+                ".rm-inspect-hint"
+              ],
+              [
+                ".rm-analysis-heading > div > .rm-kicker"
+              ],
+              [
+                "#rm-stage-title"
+              ],
+              [
+                ".rm-analysis-heading > p"
+              ],
+              [
+                ".rm-trace > span:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(2)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(3)"
+              ],
+              [
+                "article:nth-child(1) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(1) > p"
+              ],
+              [
+                "article:nth-child(2) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(2) > p"
+              ],
+              [
+                "article:nth-child(3) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(3) > p"
+              ],
+              [
+                "p[role=\"status\"]"
+              ],
+              [
+                ".rm-analysis-footer > button"
+              ],
+              [
+                ".rm-analysis-footer > button > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-method-note > .rm-kicker"
+              ],
+              [
+                ".rm-method-note > p"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "width": 320,
+      "stage": 2,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              [
+                ".rm-intro > .eyebrow"
+              ],
+              [
+                "#systems-title"
+              ],
+              [
+                ".rm-lede"
+              ],
+              [
+                ".rm-case-header > div > .rm-kicker"
+              ],
+              [
+                ".rm-case-header > div > h3"
+              ],
+              [
+                ".rm-case-header > p"
+              ],
+              [
+                "p > strong"
+              ],
+              [
+                "button[aria-label=\"System Modeling\"] > span:nth-child(2) > strong"
+              ],
+              [
+                "button[aria-label=\"System Modeling\"] > span:nth-child(2) > .rm-stage-short"
+              ],
+              [
+                ".rm-loop-note > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-view-header > span:nth-child(1)"
+              ],
+              [
+                ".rm-view-index"
+              ],
+              [
+                "text[y=\"115\"]"
+              ],
+              [
+                "text[y=\"146\"]"
+              ],
+              [
+                "text[x=\"205\"]"
+              ],
+              [
+                "text[y=\"293\"]"
+              ],
+              [
+                "text[y=\"475\"]"
+              ],
+              [
+                "text[y=\"337\"]"
+              ],
+              [
+                "text[y=\"355\"]"
+              ],
+              [
+                "text[x=\"20\"]"
+              ],
+              [
+                ".rm-model-caption"
+              ],
+              [
+                ".rm-envelope-label"
+              ],
+              [
+                ".rm-layer-note > span"
+              ],
+              [
+                ".rm-layer-note > strong"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(1)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(2)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(3)"
+              ],
+              [
+                ".rm-inspect-hint"
+              ],
+              [
+                ".rm-analysis-heading > div > .rm-kicker"
+              ],
+              [
+                "#rm-stage-title"
+              ],
+              [
+                ".rm-analysis-heading > p"
+              ],
+              [
+                ".rm-trace > span:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(2)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(3)"
+              ],
+              [
+                "article:nth-child(1) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(1) > p"
+              ],
+              [
+                "article:nth-child(2) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(2) > p"
+              ],
+              [
+                "article:nth-child(3) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(3) > p"
+              ],
+              [
+                "p[role=\"status\"]"
+              ],
+              [
+                ".rm-analysis-footer > button"
+              ],
+              [
+                ".rm-analysis-footer > button > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-method-note > .rm-kicker"
+              ],
+              [
+                ".rm-method-note > p"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "width": 320,
+      "stage": 3,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              [
+                ".rm-intro > .eyebrow"
+              ],
+              [
+                "#systems-title"
+              ],
+              [
+                ".rm-lede"
+              ],
+              [
+                ".rm-case-header > div > .rm-kicker"
+              ],
+              [
+                ".rm-case-header > div > h3"
+              ],
+              [
+                ".rm-case-header > p"
+              ],
+              [
+                "p > strong"
+              ],
+              [
+                "button[aria-label=\"Causal & Attack Analysis\"] > span:nth-child(2) > strong"
+              ],
+              [
+                "button[aria-label=\"Causal & Attack Analysis\"] > span:nth-child(2) > .rm-stage-short"
+              ],
+              [
+                ".rm-loop-note > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-view-header > span:nth-child(1)"
+              ],
+              [
+                ".rm-view-index"
+              ],
+              [
+                "text[y=\"115\"]"
+              ],
+              [
+                "text[y=\"146\"]"
+              ],
+              [
+                "text[x=\"205\"]"
+              ],
+              [
+                "text[y=\"293\"]"
+              ],
+              [
+                "text[y=\"475\"]"
+              ],
+              [
+                "text[y=\"337\"]"
+              ],
+              [
+                "text[y=\"355\"]"
+              ],
+              [
+                "text[x=\"20\"]"
+              ],
+              [
+                ".rm-model-caption"
+              ],
+              [
+                ".rm-envelope-label"
+              ],
+              [
+                ".rm-layer-note > span"
+              ],
+              [
+                ".rm-layer-note > strong"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(1)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(2)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(3)"
+              ],
+              [
+                ".rm-inspect-hint"
+              ],
+              [
+                ".rm-analysis-heading > div > .rm-kicker"
+              ],
+              [
+                "#rm-stage-title"
+              ],
+              [
+                ".rm-analysis-heading > p"
+              ],
+              [
+                ".rm-trace > span:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(2)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(3)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(4)"
+              ],
+              [
+                "article:nth-child(1) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(1) > p"
+              ],
+              [
+                "article:nth-child(2) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(2) > p"
+              ],
+              [
+                "article:nth-child(3) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(3) > p"
+              ],
+              [
+                "p[role=\"status\"]"
+              ],
+              [
+                ".rm-analysis-footer > button"
+              ],
+              [
+                ".rm-analysis-footer > button > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-method-note > .rm-kicker"
+              ],
+              [
+                ".rm-method-note > p"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "width": 320,
+      "stage": 4,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              [
+                ".rm-intro > .eyebrow"
+              ],
+              [
+                "#systems-title"
+              ],
+              [
+                ".rm-lede"
+              ],
+              [
+                ".rm-case-header > div > .rm-kicker"
+              ],
+              [
+                ".rm-case-header > div > h3"
+              ],
+              [
+                ".rm-case-header > p"
+              ],
+              [
+                "p > strong"
+              ],
+              [
+                "button[aria-label=\"Technical Investigation\"] > span:nth-child(2) > strong"
+              ],
+              [
+                "button[aria-label=\"Technical Investigation\"] > span:nth-child(2) > .rm-stage-short"
+              ],
+              [
+                ".rm-loop-note > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-view-header > span:nth-child(1)"
+              ],
+              [
+                ".rm-view-index"
+              ],
+              [
+                "text[y=\"115\"]"
+              ],
+              [
+                "text[y=\"146\"]"
+              ],
+              [
+                "text[x=\"205\"]"
+              ],
+              [
+                "text[y=\"293\"]"
+              ],
+              [
+                "text[y=\"475\"]"
+              ],
+              [
+                "text[y=\"337\"]"
+              ],
+              [
+                "text[y=\"355\"]"
+              ],
+              [
+                "text[x=\"20\"]"
+              ],
+              [
+                ".rm-model-caption"
+              ],
+              [
+                ".rm-envelope-label"
+              ],
+              [
+                ".rm-layer-note > span"
+              ],
+              [
+                ".rm-layer-note > strong"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(1)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(2)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(3)"
+              ],
+              [
+                ".rm-inspect-hint"
+              ],
+              [
+                ".rm-analysis-heading > div > .rm-kicker"
+              ],
+              [
+                "#rm-stage-title"
+              ],
+              [
+                ".rm-analysis-heading > p"
+              ],
+              [
+                ".rm-trace > span:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(2)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(3)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(4)"
+              ],
+              [
+                "article:nth-child(1) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(1) > p"
+              ],
+              [
+                "article:nth-child(2) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(2) > p"
+              ],
+              [
+                "article:nth-child(3) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(3) > p"
+              ],
+              [
+                "p[role=\"status\"]"
+              ],
+              [
+                ".rm-analysis-footer > button"
+              ],
+              [
+                ".rm-analysis-footer > button > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-method-note > .rm-kicker"
+              ],
+              [
+                ".rm-method-note > p"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "width": 320,
+      "stage": 5,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              [
+                ".rm-intro > .eyebrow"
+              ],
+              [
+                "#systems-title"
+              ],
+              [
+                ".rm-lede"
+              ],
+              [
+                ".rm-case-header > div > .rm-kicker"
+              ],
+              [
+                ".rm-case-header > div > h3"
+              ],
+              [
+                ".rm-case-header > p"
+              ],
+              [
+                "p > strong"
+              ],
+              [
+                "button[aria-label=\"Exploit Validation\"] > span:nth-child(2) > strong"
+              ],
+              [
+                "button[aria-label=\"Exploit Validation\"] > span:nth-child(2) > .rm-stage-short"
+              ],
+              [
+                ".rm-loop-note > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-view-header > span:nth-child(1)"
+              ],
+              [
+                ".rm-view-index"
+              ],
+              [
+                "text[y=\"115\"]"
+              ],
+              [
+                "text[y=\"146\"]"
+              ],
+              [
+                "text[x=\"205\"]"
+              ],
+              [
+                "text[y=\"293\"]"
+              ],
+              [
+                "text[y=\"475\"]"
+              ],
+              [
+                "text[y=\"337\"]"
+              ],
+              [
+                "text[y=\"355\"]"
+              ],
+              [
+                "text[x=\"20\"]"
+              ],
+              [
+                "g[transform=\"translate(85 266)\"] > text[y=\"4\"][text-anchor=\"middle\"]"
+              ],
+              [
+                "g[transform=\"translate(275 266)\"] > text[y=\"4\"][text-anchor=\"middle\"]"
+              ],
+              [
+                "g[transform=\"translate(275 447)\"] > text[y=\"4\"][text-anchor=\"middle\"]"
+              ],
+              [
+                "g[transform=\"translate(275 627)\"] > text[y=\"4\"][text-anchor=\"middle\"]"
+              ],
+              [
+                ".rm-model-caption"
+              ],
+              [
+                ".rm-envelope-label"
+              ],
+              [
+                ".rm-layer-note > span"
+              ],
+              [
+                ".rm-layer-note > strong"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(1)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(2)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(3)"
+              ],
+              [
+                ".rm-inspect-hint"
+              ],
+              [
+                ".rm-analysis-heading > div > .rm-kicker"
+              ],
+              [
+                "#rm-stage-title"
+              ],
+              [
+                ".rm-analysis-heading > p"
+              ],
+              [
+                ".rm-trace > span:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(2)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(3)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(4)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(5)"
+              ],
+              [
+                "article:nth-child(1) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(1) > p"
+              ],
+              [
+                "article:nth-child(2) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(2) > p"
+              ],
+              [
+                "article:nth-child(3) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(3) > p"
+              ],
+              [
+                ".rm-evidence-chain > button[aria-controls=\"rm-component-inspector\"]:nth-child(1) > span:nth-child(1)"
+              ],
+              [
+                ".rm-evidence-chain > button[aria-controls=\"rm-component-inspector\"]:nth-child(1) > strong"
+              ],
+              [
+                ".rm-evidence-chain > button[aria-controls=\"rm-component-inspector\"]:nth-child(1) > span:nth-child(3)"
+              ],
+              [
+                ".rm-evidence-chain > button[aria-controls=\"rm-component-inspector\"]:nth-child(2) > span:nth-child(1)"
+              ],
+              [
+                ".rm-evidence-chain > button[aria-controls=\"rm-component-inspector\"]:nth-child(2) > strong"
+              ],
+              [
+                ".rm-evidence-chain > button[aria-controls=\"rm-component-inspector\"]:nth-child(2) > span:nth-child(3)"
+              ],
+              [
+                ".rm-evidence-chain > button[aria-controls=\"rm-component-inspector\"]:nth-child(3) > span:nth-child(1)"
+              ],
+              [
+                ".rm-evidence-chain > button[aria-controls=\"rm-component-inspector\"]:nth-child(3) > strong"
+              ],
+              [
+                ".rm-evidence-chain > button[aria-controls=\"rm-component-inspector\"]:nth-child(3) > span:nth-child(3)"
+              ],
+              [
+                "p[role=\"status\"]"
+              ],
+              [
+                ".rm-analysis-footer > button"
+              ],
+              [
+                ".rm-analysis-footer > button > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-method-note > .rm-kicker"
+              ],
+              [
+                ".rm-method-note > p"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "width": 320,
+      "stage": 6,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              [
+                ".rm-intro > .eyebrow"
+              ],
+              [
+                "#systems-title"
+              ],
+              [
+                ".rm-lede"
+              ],
+              [
+                ".rm-case-header > div > .rm-kicker"
+              ],
+              [
+                ".rm-case-header > div > h3"
+              ],
+              [
+                ".rm-case-header > p"
+              ],
+              [
+                "p > strong"
+              ],
+              [
+                "button[aria-label=\"Engineering Resolution\"] > span:nth-child(2) > strong"
+              ],
+              [
+                "button[aria-label=\"Engineering Resolution\"] > span:nth-child(2) > .rm-stage-short"
+              ],
+              [
+                ".rm-loop-note > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-view-header > span:nth-child(1)"
+              ],
+              [
+                ".rm-view-index"
+              ],
+              [
+                "text[y=\"115\"]"
+              ],
+              [
+                "text[y=\"146\"]"
+              ],
+              [
+                "text[x=\"205\"]"
+              ],
+              [
+                "text[y=\"293\"]"
+              ],
+              [
+                "text[y=\"475\"]"
+              ],
+              [
+                "text[y=\"337\"]"
+              ],
+              [
+                "text[y=\"355\"]"
+              ],
+              [
+                "text[x=\"20\"]"
+              ],
+              [
+                "text[y=\"680\"]"
+              ],
+              [
+                ".rm-model-caption"
+              ],
+              [
+                ".rm-envelope-label"
+              ],
+              [
+                ".rm-layer-note > span"
+              ],
+              [
+                ".rm-layer-note > strong"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(1)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(2)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(3)"
+              ],
+              [
+                ".rm-inspect-hint"
+              ],
+              [
+                ".rm-analysis-heading > div > .rm-kicker"
+              ],
+              [
+                "#rm-stage-title"
+              ],
+              [
+                ".rm-analysis-heading > p"
+              ],
+              [
+                ".rm-trace > span:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(2)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(3)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(4)"
+              ],
+              [
+                "article:nth-child(1) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(1) > p"
+              ],
+              [
+                "article:nth-child(2) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(2) > p"
+              ],
+              [
+                "article:nth-child(3) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(3) > p"
+              ],
+              [
+                "p[role=\"status\"]"
+              ],
+              [
+                ".rm-analysis-footer > button"
+              ],
+              [
+                ".rm-analysis-footer > button > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-method-note > .rm-kicker"
+              ],
+              [
+                ".rm-method-note > p"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "width": 375,
+      "stage": 1,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              [
+                ".rm-intro > .eyebrow"
+              ],
+              [
+                "#systems-title"
+              ],
+              [
+                ".rm-lede"
+              ],
+              [
+                ".rm-case-header > div > .rm-kicker"
+              ],
+              [
+                ".rm-case-header > div > h3"
+              ],
+              [
+                ".rm-case-header > p"
+              ],
+              [
+                "p > strong"
+              ],
+              [
+                "button[aria-label=\"Mission & Consequence\"] > span:nth-child(2) > strong"
+              ],
+              [
+                "button[aria-label=\"Mission & Consequence\"] > span:nth-child(2) > .rm-stage-short"
+              ],
+              [
+                ".rm-loop-note > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-view-header > span:nth-child(1)"
+              ],
+              [
+                ".rm-view-index"
+              ],
+              [
+                "text[y=\"115\"]"
+              ],
+              [
+                "text[y=\"146\"]"
+              ],
+              [
+                "text[x=\"205\"]"
+              ],
+              [
+                "text[y=\"293\"]"
+              ],
+              [
+                "text[y=\"475\"]"
+              ],
+              [
+                "text[y=\"337\"]"
+              ],
+              [
+                "text[y=\"355\"]"
+              ],
+              [
+                "text[x=\"20\"]"
+              ],
+              [
+                ".rm-model-caption"
+              ],
+              [
+                ".rm-envelope-label"
+              ],
+              [
+                ".rm-layer-note > span"
+              ],
+              [
+                ".rm-layer-note > strong"
+              ],
+              [
+                ".rm-layer-note > p"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(1)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(2)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(3)"
+              ],
+              [
+                ".rm-inspect-hint"
+              ],
+              [
+                ".rm-analysis-heading > div > .rm-kicker"
+              ],
+              [
+                "#rm-stage-title"
+              ],
+              [
+                ".rm-analysis-heading > p"
+              ],
+              [
+                ".rm-trace > span:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(2)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(3)"
+              ],
+              [
+                "article:nth-child(1) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(1) > p"
+              ],
+              [
+                "article:nth-child(2) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(2) > p"
+              ],
+              [
+                "article:nth-child(3) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(3) > p"
+              ],
+              [
+                "p[role=\"status\"]"
+              ],
+              [
+                ".rm-analysis-footer > button"
+              ],
+              [
+                ".rm-analysis-footer > button > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-method-note > .rm-kicker"
+              ],
+              [
+                ".rm-method-note > p"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "width": 375,
+      "stage": 2,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              [
+                ".rm-intro > .eyebrow"
+              ],
+              [
+                "#systems-title"
+              ],
+              [
+                ".rm-lede"
+              ],
+              [
+                ".rm-case-header > div > .rm-kicker"
+              ],
+              [
+                ".rm-case-header > div > h3"
+              ],
+              [
+                ".rm-case-header > p"
+              ],
+              [
+                "p > strong"
+              ],
+              [
+                "button[aria-label=\"System Modeling\"] > span:nth-child(2) > strong"
+              ],
+              [
+                "button[aria-label=\"System Modeling\"] > span:nth-child(2) > .rm-stage-short"
+              ],
+              [
+                ".rm-loop-note > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-view-header > span:nth-child(1)"
+              ],
+              [
+                ".rm-view-index"
+              ],
+              [
+                "text[y=\"115\"]"
+              ],
+              [
+                "text[y=\"146\"]"
+              ],
+              [
+                "text[x=\"205\"]"
+              ],
+              [
+                "text[y=\"293\"]"
+              ],
+              [
+                "text[y=\"475\"]"
+              ],
+              [
+                "text[y=\"337\"]"
+              ],
+              [
+                "text[y=\"355\"]"
+              ],
+              [
+                "text[x=\"20\"]"
+              ],
+              [
+                ".rm-model-caption"
+              ],
+              [
+                ".rm-envelope-label"
+              ],
+              [
+                ".rm-layer-note > span"
+              ],
+              [
+                ".rm-layer-note > strong"
+              ],
+              [
+                ".rm-layer-note > p"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(1)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(2)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(3)"
+              ],
+              [
+                ".rm-inspect-hint"
+              ],
+              [
+                ".rm-analysis-heading > div > .rm-kicker"
+              ],
+              [
+                "#rm-stage-title"
+              ],
+              [
+                ".rm-analysis-heading > p"
+              ],
+              [
+                ".rm-trace > span:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(2)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(3)"
+              ],
+              [
+                "article:nth-child(1) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(1) > p"
+              ],
+              [
+                "article:nth-child(2) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(2) > p"
+              ],
+              [
+                "article:nth-child(3) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(3) > p"
+              ],
+              [
+                "p[role=\"status\"]"
+              ],
+              [
+                ".rm-analysis-footer > button"
+              ],
+              [
+                ".rm-analysis-footer > button > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-method-note > .rm-kicker"
+              ],
+              [
+                ".rm-method-note > p"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "width": 375,
+      "stage": 3,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              [
+                ".rm-intro > .eyebrow"
+              ],
+              [
+                "#systems-title"
+              ],
+              [
+                ".rm-lede"
+              ],
+              [
+                ".rm-case-header > div > .rm-kicker"
+              ],
+              [
+                ".rm-case-header > div > h3"
+              ],
+              [
+                ".rm-case-header > p"
+              ],
+              [
+                "p > strong"
+              ],
+              [
+                "button[aria-label=\"Causal & Attack Analysis\"] > span:nth-child(2) > strong"
+              ],
+              [
+                "button[aria-label=\"Causal & Attack Analysis\"] > span:nth-child(2) > .rm-stage-short"
+              ],
+              [
+                ".rm-loop-note > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-view-header > span:nth-child(1)"
+              ],
+              [
+                ".rm-view-index"
+              ],
+              [
+                "text[y=\"115\"]"
+              ],
+              [
+                "text[y=\"146\"]"
+              ],
+              [
+                "text[x=\"205\"]"
+              ],
+              [
+                "text[y=\"293\"]"
+              ],
+              [
+                "text[y=\"475\"]"
+              ],
+              [
+                "text[y=\"337\"]"
+              ],
+              [
+                "text[y=\"355\"]"
+              ],
+              [
+                "text[x=\"20\"]"
+              ],
+              [
+                ".rm-model-caption"
+              ],
+              [
+                ".rm-envelope-label"
+              ],
+              [
+                ".rm-layer-note > span"
+              ],
+              [
+                ".rm-layer-note > strong"
+              ],
+              [
+                ".rm-layer-note > p"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(1)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(2)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(3)"
+              ],
+              [
+                ".rm-inspect-hint"
+              ],
+              [
+                ".rm-analysis-heading > div > .rm-kicker"
+              ],
+              [
+                "#rm-stage-title"
+              ],
+              [
+                ".rm-analysis-heading > p"
+              ],
+              [
+                ".rm-trace > span:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(2)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(3)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(4)"
+              ],
+              [
+                "article:nth-child(1) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(1) > p"
+              ],
+              [
+                "article:nth-child(2) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(2) > p"
+              ],
+              [
+                "article:nth-child(3) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(3) > p"
+              ],
+              [
+                "p[role=\"status\"]"
+              ],
+              [
+                ".rm-analysis-footer > button"
+              ],
+              [
+                ".rm-analysis-footer > button > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-method-note > .rm-kicker"
+              ],
+              [
+                ".rm-method-note > p"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "width": 375,
+      "stage": 4,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              [
+                ".rm-intro > .eyebrow"
+              ],
+              [
+                "#systems-title"
+              ],
+              [
+                ".rm-lede"
+              ],
+              [
+                ".rm-case-header > div > .rm-kicker"
+              ],
+              [
+                ".rm-case-header > div > h3"
+              ],
+              [
+                ".rm-case-header > p"
+              ],
+              [
+                "p > strong"
+              ],
+              [
+                "button[aria-label=\"Technical Investigation\"] > span:nth-child(2) > strong"
+              ],
+              [
+                "button[aria-label=\"Technical Investigation\"] > span:nth-child(2) > .rm-stage-short"
+              ],
+              [
+                ".rm-loop-note > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-view-header > span:nth-child(1)"
+              ],
+              [
+                ".rm-view-index"
+              ],
+              [
+                "text[y=\"115\"]"
+              ],
+              [
+                "text[y=\"146\"]"
+              ],
+              [
+                "text[x=\"205\"]"
+              ],
+              [
+                "text[y=\"293\"]"
+              ],
+              [
+                "text[y=\"475\"]"
+              ],
+              [
+                "text[y=\"337\"]"
+              ],
+              [
+                "text[y=\"355\"]"
+              ],
+              [
+                "text[x=\"20\"]"
+              ],
+              [
+                ".rm-model-caption"
+              ],
+              [
+                ".rm-envelope-label"
+              ],
+              [
+                ".rm-layer-note > span"
+              ],
+              [
+                ".rm-layer-note > strong"
+              ],
+              [
+                ".rm-layer-note > p"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(1)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(2)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(3)"
+              ],
+              [
+                ".rm-inspect-hint"
+              ],
+              [
+                ".rm-analysis-heading > div > .rm-kicker"
+              ],
+              [
+                "#rm-stage-title"
+              ],
+              [
+                ".rm-analysis-heading > p"
+              ],
+              [
+                ".rm-trace > span:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(2)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(3)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(4)"
+              ],
+              [
+                "article:nth-child(1) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(1) > p"
+              ],
+              [
+                "article:nth-child(2) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(2) > p"
+              ],
+              [
+                "article:nth-child(3) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(3) > p"
+              ],
+              [
+                "p[role=\"status\"]"
+              ],
+              [
+                ".rm-analysis-footer > button"
+              ],
+              [
+                ".rm-analysis-footer > button > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-method-note > .rm-kicker"
+              ],
+              [
+                ".rm-method-note > p"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "width": 375,
+      "stage": 5,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              [
+                ".rm-intro > .eyebrow"
+              ],
+              [
+                "#systems-title"
+              ],
+              [
+                ".rm-lede"
+              ],
+              [
+                ".rm-case-header > div > .rm-kicker"
+              ],
+              [
+                ".rm-case-header > div > h3"
+              ],
+              [
+                ".rm-case-header > p"
+              ],
+              [
+                "p > strong"
+              ],
+              [
+                "button[aria-label=\"Exploit Validation\"] > span:nth-child(2) > strong"
+              ],
+              [
+                "button[aria-label=\"Exploit Validation\"] > span:nth-child(2) > .rm-stage-short"
+              ],
+              [
+                ".rm-loop-note > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-view-header > span:nth-child(1)"
+              ],
+              [
+                ".rm-view-index"
+              ],
+              [
+                "text[y=\"115\"]"
+              ],
+              [
+                "text[y=\"146\"]"
+              ],
+              [
+                "text[x=\"205\"]"
+              ],
+              [
+                "text[y=\"293\"]"
+              ],
+              [
+                "text[y=\"475\"]"
+              ],
+              [
+                "text[y=\"337\"]"
+              ],
+              [
+                "text[y=\"355\"]"
+              ],
+              [
+                "text[x=\"20\"]"
+              ],
+              [
+                "g[transform=\"translate(85 266)\"] > text[y=\"4\"][text-anchor=\"middle\"]"
+              ],
+              [
+                "g[transform=\"translate(275 266)\"] > text[y=\"4\"][text-anchor=\"middle\"]"
+              ],
+              [
+                "g[transform=\"translate(275 447)\"] > text[y=\"4\"][text-anchor=\"middle\"]"
+              ],
+              [
+                "g[transform=\"translate(275 627)\"] > text[y=\"4\"][text-anchor=\"middle\"]"
+              ],
+              [
+                ".rm-model-caption"
+              ],
+              [
+                ".rm-envelope-label"
+              ],
+              [
+                ".rm-layer-note > span"
+              ],
+              [
+                ".rm-layer-note > strong"
+              ],
+              [
+                ".rm-layer-note > p"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(1)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(2)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(3)"
+              ],
+              [
+                ".rm-inspect-hint"
+              ],
+              [
+                ".rm-analysis-heading > div > .rm-kicker"
+              ],
+              [
+                "#rm-stage-title"
+              ],
+              [
+                ".rm-analysis-heading > p"
+              ],
+              [
+                ".rm-trace > span:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(2)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(3)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(4)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(5)"
+              ],
+              [
+                "article:nth-child(1) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(1) > p"
+              ],
+              [
+                "article:nth-child(2) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(2) > p"
+              ],
+              [
+                "article:nth-child(3) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(3) > p"
+              ],
+              [
+                ".rm-evidence-chain > button[aria-controls=\"rm-component-inspector\"]:nth-child(1) > span:nth-child(1)"
+              ],
+              [
+                ".rm-evidence-chain > button[aria-controls=\"rm-component-inspector\"]:nth-child(1) > strong"
+              ],
+              [
+                ".rm-evidence-chain > button[aria-controls=\"rm-component-inspector\"]:nth-child(1) > span:nth-child(3)"
+              ],
+              [
+                ".rm-evidence-chain > button[aria-controls=\"rm-component-inspector\"]:nth-child(2) > span:nth-child(1)"
+              ],
+              [
+                ".rm-evidence-chain > button[aria-controls=\"rm-component-inspector\"]:nth-child(2) > strong"
+              ],
+              [
+                ".rm-evidence-chain > button[aria-controls=\"rm-component-inspector\"]:nth-child(2) > span:nth-child(3)"
+              ],
+              [
+                ".rm-evidence-chain > button[aria-controls=\"rm-component-inspector\"]:nth-child(3) > span:nth-child(1)"
+              ],
+              [
+                ".rm-evidence-chain > button[aria-controls=\"rm-component-inspector\"]:nth-child(3) > strong"
+              ],
+              [
+                ".rm-evidence-chain > button[aria-controls=\"rm-component-inspector\"]:nth-child(3) > span:nth-child(3)"
+              ],
+              [
+                "p[role=\"status\"]"
+              ],
+              [
+                ".rm-analysis-footer > button"
+              ],
+              [
+                ".rm-analysis-footer > button > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-method-note > .rm-kicker"
+              ],
+              [
+                ".rm-method-note > p"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "width": 375,
+      "stage": 6,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              [
+                ".rm-intro > .eyebrow"
+              ],
+              [
+                "#systems-title"
+              ],
+              [
+                ".rm-lede"
+              ],
+              [
+                ".rm-case-header > div > .rm-kicker"
+              ],
+              [
+                ".rm-case-header > div > h3"
+              ],
+              [
+                ".rm-case-header > p"
+              ],
+              [
+                "p > strong"
+              ],
+              [
+                "button[aria-label=\"Engineering Resolution\"] > span:nth-child(2) > strong"
+              ],
+              [
+                "button[aria-label=\"Engineering Resolution\"] > span:nth-child(2) > .rm-stage-short"
+              ],
+              [
+                ".rm-loop-note > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-view-header > span:nth-child(1)"
+              ],
+              [
+                ".rm-view-index"
+              ],
+              [
+                "text[y=\"115\"]"
+              ],
+              [
+                "text[y=\"146\"]"
+              ],
+              [
+                "text[x=\"205\"]"
+              ],
+              [
+                "text[y=\"293\"]"
+              ],
+              [
+                "text[y=\"475\"]"
+              ],
+              [
+                "text[y=\"337\"]"
+              ],
+              [
+                "text[y=\"355\"]"
+              ],
+              [
+                "text[x=\"20\"]"
+              ],
+              [
+                "text[y=\"680\"]"
+              ],
+              [
+                ".rm-model-caption"
+              ],
+              [
+                ".rm-envelope-label"
+              ],
+              [
+                ".rm-layer-note > span"
+              ],
+              [
+                ".rm-layer-note > strong"
+              ],
+              [
+                ".rm-layer-note > p"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(1)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(2)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(3)"
+              ],
+              [
+                ".rm-inspect-hint"
+              ],
+              [
+                ".rm-analysis-heading > div > .rm-kicker"
+              ],
+              [
+                "#rm-stage-title"
+              ],
+              [
+                ".rm-analysis-heading > p"
+              ],
+              [
+                ".rm-trace > span:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(2)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(3)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(4)"
+              ],
+              [
+                "article:nth-child(1) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(1) > p"
+              ],
+              [
+                "article:nth-child(2) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(2) > p"
+              ],
+              [
+                "article:nth-child(3) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(3) > p"
+              ],
+              [
+                "p[role=\"status\"]"
+              ],
+              [
+                ".rm-analysis-footer > button"
+              ],
+              [
+                ".rm-analysis-footer > button > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-method-note > .rm-kicker"
+              ],
+              [
+                ".rm-method-note > p"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "width": 768,
+      "stage": 1,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              [
+                ".rm-intro > .eyebrow"
+              ],
+              [
+                "#systems-title"
+              ],
+              [
+                ".rm-lede"
+              ],
+              [
+                ".rm-case-header > div > .rm-kicker"
+              ],
+              [
+                ".rm-case-header > div > h3"
+              ],
+              [
+                ".rm-case-header > p"
+              ],
+              [
+                "p > strong"
+              ],
+              [
+                "button[aria-label=\"Mission & Consequence\"] > span:nth-child(2) > strong"
+              ],
+              [
+                "button[aria-label=\"Mission & Consequence\"] > span:nth-child(2) > .rm-stage-short"
+              ],
+              [
+                ".rm-loop-note > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-view-header > span:nth-child(1)"
+              ],
+              [
+                ".rm-view-index"
+              ],
+              [
+                "text[x=\"470\"]"
+              ],
+              [
+                "text[x=\"40\"]"
+              ],
+              [
+                "text[x=\"318\"]"
+              ],
+              [
+                "text[x=\"298\"]"
+              ],
+              [
+                "text[x=\"600\"][y=\"235\"][text-anchor=\"middle\"]"
+              ],
+              [
+                "text[x=\"468\"]"
+              ],
+              [
+                "text[y=\"451\"]"
+              ],
+              [
+                "text[y=\"342\"]"
+              ],
+              [
+                "text[y=\"358\"]"
+              ],
+              [
+                "text[x=\"340\"]"
+              ],
+              [
+                "text[x=\"710\"]"
+              ],
+              [
+                ".rm-model-caption"
+              ],
+              [
+                ".rm-model-caption > span"
+              ],
+              [
+                ".rm-envelope-label"
+              ],
+              [
+                ".rm-layer-note > span"
+              ],
+              [
+                ".rm-layer-note > strong"
+              ],
+              [
+                ".rm-layer-note > p"
+              ],
+              [
+                ".rm-component-sensor > .rm-component-sub"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(1)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(2)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(3)"
+              ],
+              [
+                ".rm-inspect-hint"
+              ],
+              [
+                ".rm-analysis-heading > div > .rm-kicker"
+              ],
+              [
+                "#rm-stage-title"
+              ],
+              [
+                ".rm-analysis-heading > p"
+              ],
+              [
+                ".rm-trace > span:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(2)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(3)"
+              ],
+              [
+                ".rm-trace > span:nth-child(3)"
+              ],
+              [
+                "article:nth-child(1) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(1) > p"
+              ],
+              [
+                "article:nth-child(2) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(2) > p"
+              ],
+              [
+                "article:nth-child(3) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(3) > p"
+              ],
+              [
+                "p[role=\"status\"]"
+              ],
+              [
+                ".rm-analysis-footer > button"
+              ],
+              [
+                ".rm-analysis-footer > button > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-method-note > .rm-kicker"
+              ],
+              [
+                ".rm-method-note > p"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "width": 768,
+      "stage": 2,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              [
+                ".rm-intro > .eyebrow"
+              ],
+              [
+                "#systems-title"
+              ],
+              [
+                ".rm-lede"
+              ],
+              [
+                ".rm-case-header > div > .rm-kicker"
+              ],
+              [
+                ".rm-case-header > div > h3"
+              ],
+              [
+                ".rm-case-header > p"
+              ],
+              [
+                "p > strong"
+              ],
+              [
+                "button[aria-label=\"System Modeling\"] > span:nth-child(2) > strong"
+              ],
+              [
+                "button[aria-label=\"System Modeling\"] > span:nth-child(2) > .rm-stage-short"
+              ],
+              [
+                ".rm-loop-note > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-view-header > span:nth-child(1)"
+              ],
+              [
+                ".rm-view-index"
+              ],
+              [
+                "text[x=\"470\"]"
+              ],
+              [
+                "text[x=\"40\"]"
+              ],
+              [
+                "text[x=\"318\"]"
+              ],
+              [
+                "text[x=\"298\"]"
+              ],
+              [
+                "text[x=\"600\"][y=\"235\"][text-anchor=\"middle\"]"
+              ],
+              [
+                "text[x=\"468\"]"
+              ],
+              [
+                "text[y=\"451\"]"
+              ],
+              [
+                "text[y=\"342\"]"
+              ],
+              [
+                "text[y=\"358\"]"
+              ],
+              [
+                "text[x=\"340\"]"
+              ],
+              [
+                "text[x=\"710\"]"
+              ],
+              [
+                ".rm-model-caption"
+              ],
+              [
+                ".rm-model-caption > span"
+              ],
+              [
+                ".rm-envelope-label"
+              ],
+              [
+                ".rm-layer-note > span"
+              ],
+              [
+                ".rm-layer-note > strong"
+              ],
+              [
+                ".rm-layer-note > p"
+              ],
+              [
+                ".rm-component-sensor > .rm-component-sub"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(1)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(2)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(3)"
+              ],
+              [
+                ".rm-inspect-hint"
+              ],
+              [
+                ".rm-analysis-heading > div > .rm-kicker"
+              ],
+              [
+                "#rm-stage-title"
+              ],
+              [
+                ".rm-analysis-heading > p"
+              ],
+              [
+                ".rm-trace > span:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(2)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(3)"
+              ],
+              [
+                ".rm-trace > span:nth-child(3)"
+              ],
+              [
+                "article:nth-child(1) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(1) > p"
+              ],
+              [
+                "article:nth-child(2) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(2) > p"
+              ],
+              [
+                "article:nth-child(3) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(3) > p"
+              ],
+              [
+                "p[role=\"status\"]"
+              ],
+              [
+                ".rm-analysis-footer > button"
+              ],
+              [
+                ".rm-analysis-footer > button > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-method-note > .rm-kicker"
+              ],
+              [
+                ".rm-method-note > p"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "width": 768,
+      "stage": 3,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              [
+                ".rm-intro > .eyebrow"
+              ],
+              [
+                "#systems-title"
+              ],
+              [
+                ".rm-lede"
+              ],
+              [
+                ".rm-case-header > div > .rm-kicker"
+              ],
+              [
+                ".rm-case-header > div > h3"
+              ],
+              [
+                ".rm-case-header > p"
+              ],
+              [
+                "p > strong"
+              ],
+              [
+                "button[aria-label=\"Causal & Attack Analysis\"] > span:nth-child(2) > strong"
+              ],
+              [
+                "button[aria-label=\"Causal & Attack Analysis\"] > span:nth-child(2) > .rm-stage-short"
+              ],
+              [
+                ".rm-loop-note > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-view-header > span:nth-child(1)"
+              ],
+              [
+                ".rm-view-index"
+              ],
+              [
+                "text[x=\"470\"]"
+              ],
+              [
+                "text[x=\"40\"]"
+              ],
+              [
+                "text[x=\"318\"]"
+              ],
+              [
+                "text[x=\"298\"]"
+              ],
+              [
+                "text[x=\"600\"][y=\"235\"][text-anchor=\"middle\"]"
+              ],
+              [
+                "text[x=\"468\"]"
+              ],
+              [
+                "text[y=\"451\"]"
+              ],
+              [
+                "text[y=\"342\"]"
+              ],
+              [
+                "text[y=\"358\"]"
+              ],
+              [
+                "text[x=\"340\"]"
+              ],
+              [
+                "text[x=\"710\"]"
+              ],
+              [
+                ".rm-model-caption"
+              ],
+              [
+                ".rm-model-caption > span"
+              ],
+              [
+                ".rm-envelope-label"
+              ],
+              [
+                ".rm-layer-note > span"
+              ],
+              [
+                ".rm-layer-note > strong"
+              ],
+              [
+                ".rm-layer-note > p"
+              ],
+              [
+                ".rm-component-sensor > .rm-component-sub"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(1)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(2)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(3)"
+              ],
+              [
+                ".rm-inspect-hint"
+              ],
+              [
+                ".rm-analysis-heading > div > .rm-kicker"
+              ],
+              [
+                "#rm-stage-title"
+              ],
+              [
+                ".rm-analysis-heading > p"
+              ],
+              [
+                ".rm-trace > span:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(2)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(3)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(4)"
+              ],
+              [
+                ".rm-trace > span:nth-child(3)"
+              ],
+              [
+                "article:nth-child(1) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(1) > p"
+              ],
+              [
+                "article:nth-child(2) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(2) > p"
+              ],
+              [
+                "article:nth-child(3) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(3) > p"
+              ],
+              [
+                "p[role=\"status\"]"
+              ],
+              [
+                ".rm-analysis-footer > button"
+              ],
+              [
+                ".rm-analysis-footer > button > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-method-note > .rm-kicker"
+              ],
+              [
+                ".rm-method-note > p"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "width": 768,
+      "stage": 4,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              [
+                ".rm-intro > .eyebrow"
+              ],
+              [
+                "#systems-title"
+              ],
+              [
+                ".rm-lede"
+              ],
+              [
+                ".rm-case-header > div > .rm-kicker"
+              ],
+              [
+                ".rm-case-header > div > h3"
+              ],
+              [
+                ".rm-case-header > p"
+              ],
+              [
+                "p > strong"
+              ],
+              [
+                "button[aria-label=\"Technical Investigation\"] > span:nth-child(2) > strong"
+              ],
+              [
+                "button[aria-label=\"Technical Investigation\"] > span:nth-child(2) > .rm-stage-short"
+              ],
+              [
+                ".rm-loop-note > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-view-header > span:nth-child(1)"
+              ],
+              [
+                ".rm-view-index"
+              ],
+              [
+                "text[x=\"470\"]"
+              ],
+              [
+                "text[x=\"40\"]"
+              ],
+              [
+                "text[x=\"318\"]"
+              ],
+              [
+                "text[x=\"298\"]"
+              ],
+              [
+                "text[x=\"600\"][y=\"235\"][text-anchor=\"middle\"]"
+              ],
+              [
+                "text[x=\"468\"]"
+              ],
+              [
+                "text[y=\"451\"]"
+              ],
+              [
+                "text[y=\"342\"]"
+              ],
+              [
+                "text[y=\"358\"]"
+              ],
+              [
+                "text[x=\"340\"]"
+              ],
+              [
+                "text[x=\"710\"]"
+              ],
+              [
+                ".rm-model-caption"
+              ],
+              [
+                ".rm-model-caption > span"
+              ],
+              [
+                ".rm-envelope-label"
+              ],
+              [
+                ".rm-layer-note > span"
+              ],
+              [
+                ".rm-layer-note > strong"
+              ],
+              [
+                ".rm-layer-note > p"
+              ],
+              [
+                ".rm-component-sensor > .rm-component-sub"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(1)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(2)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(3)"
+              ],
+              [
+                ".rm-inspect-hint"
+              ],
+              [
+                ".rm-analysis-heading > div > .rm-kicker"
+              ],
+              [
+                "#rm-stage-title"
+              ],
+              [
+                ".rm-analysis-heading > p"
+              ],
+              [
+                ".rm-trace > span:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(2)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(3)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(4)"
+              ],
+              [
+                ".rm-trace > span:nth-child(3)"
+              ],
+              [
+                "article:nth-child(1) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(1) > p"
+              ],
+              [
+                "article:nth-child(2) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(2) > p"
+              ],
+              [
+                "article:nth-child(3) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(3) > p"
+              ],
+              [
+                "p[role=\"status\"]"
+              ],
+              [
+                ".rm-analysis-footer > button"
+              ],
+              [
+                ".rm-analysis-footer > button > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-method-note > .rm-kicker"
+              ],
+              [
+                ".rm-method-note > p"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "width": 768,
+      "stage": 5,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              [
+                ".rm-intro > .eyebrow"
+              ],
+              [
+                "#systems-title"
+              ],
+              [
+                ".rm-lede"
+              ],
+              [
+                ".rm-case-header > div > .rm-kicker"
+              ],
+              [
+                ".rm-case-header > div > h3"
+              ],
+              [
+                ".rm-case-header > p"
+              ],
+              [
+                "p > strong"
+              ],
+              [
+                "button[aria-label=\"Exploit Validation\"] > span:nth-child(2) > strong"
+              ],
+              [
+                "button[aria-label=\"Exploit Validation\"] > span:nth-child(2) > .rm-stage-short"
+              ],
+              [
+                ".rm-loop-note > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-view-header > span:nth-child(1)"
+              ],
+              [
+                ".rm-view-index"
+              ],
+              [
+                "text[x=\"470\"]"
+              ],
+              [
+                "text[x=\"40\"]"
+              ],
+              [
+                "text[x=\"318\"]"
+              ],
+              [
+                "text[x=\"298\"]"
+              ],
+              [
+                "text[x=\"600\"][y=\"235\"][text-anchor=\"middle\"]"
+              ],
+              [
+                "text[x=\"468\"]"
+              ],
+              [
+                "text[y=\"451\"]"
+              ],
+              [
+                "text[y=\"342\"]"
+              ],
+              [
+                "text[y=\"358\"]"
+              ],
+              [
+                "text[x=\"340\"]"
+              ],
+              [
+                "text[x=\"710\"]"
+              ],
+              [
+                "g[transform=\"translate(145 318)\"] > text[y=\"4\"][text-anchor=\"middle\"]"
+              ],
+              [
+                "g[transform=\"translate(450 318)\"] > text[y=\"4\"][text-anchor=\"middle\"]"
+              ],
+              [
+                "g[transform=\"translate(450 533)\"] > text[y=\"4\"][text-anchor=\"middle\"]"
+              ],
+              [
+                "g[transform=\"translate(750 533)\"] > text[y=\"4\"][text-anchor=\"middle\"]"
+              ],
+              [
+                ".rm-model-caption"
+              ],
+              [
+                ".rm-model-caption > span"
+              ],
+              [
+                ".rm-envelope-label"
+              ],
+              [
+                ".rm-layer-note > span"
+              ],
+              [
+                ".rm-layer-note > strong"
+              ],
+              [
+                ".rm-layer-note > p"
+              ],
+              [
+                ".rm-component-sensor > .rm-component-sub"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(1)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(2)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(3)"
+              ],
+              [
+                ".rm-inspect-hint"
+              ],
+              [
+                ".rm-analysis-heading > div > .rm-kicker"
+              ],
+              [
+                "#rm-stage-title"
+              ],
+              [
+                ".rm-analysis-heading > p"
+              ],
+              [
+                ".rm-trace > span:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(2)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(3)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(4)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(5)"
+              ],
+              [
+                ".rm-trace > span:nth-child(3)"
+              ],
+              [
+                "article:nth-child(1) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(1) > p"
+              ],
+              [
+                "article:nth-child(2) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(2) > p"
+              ],
+              [
+                "article:nth-child(3) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(3) > p"
+              ],
+              [
+                ".rm-evidence-chain > button[aria-controls=\"rm-component-inspector\"]:nth-child(1) > span:nth-child(1)"
+              ],
+              [
+                ".rm-evidence-chain > button[aria-controls=\"rm-component-inspector\"]:nth-child(1) > strong"
+              ],
+              [
+                ".rm-evidence-chain > button[aria-controls=\"rm-component-inspector\"]:nth-child(1) > span:nth-child(3)"
+              ],
+              [
+                ".rm-evidence-chain > button[aria-controls=\"rm-component-inspector\"]:nth-child(2) > span:nth-child(1)"
+              ],
+              [
+                ".rm-evidence-chain > button[aria-controls=\"rm-component-inspector\"]:nth-child(2) > strong"
+              ],
+              [
+                ".rm-evidence-chain > button[aria-controls=\"rm-component-inspector\"]:nth-child(2) > span:nth-child(3)"
+              ],
+              [
+                ".rm-evidence-chain > button[aria-controls=\"rm-component-inspector\"]:nth-child(3) > span:nth-child(1)"
+              ],
+              [
+                ".rm-evidence-chain > button[aria-controls=\"rm-component-inspector\"]:nth-child(3) > strong"
+              ],
+              [
+                ".rm-evidence-chain > button[aria-controls=\"rm-component-inspector\"]:nth-child(3) > span:nth-child(3)"
+              ],
+              [
+                "p[role=\"status\"]"
+              ],
+              [
+                ".rm-analysis-footer > button"
+              ],
+              [
+                ".rm-analysis-footer > button > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-method-note > .rm-kicker"
+              ],
+              [
+                ".rm-method-note > p"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "width": 768,
+      "stage": 6,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              [
+                ".rm-intro > .eyebrow"
+              ],
+              [
+                "#systems-title"
+              ],
+              [
+                ".rm-lede"
+              ],
+              [
+                ".rm-case-header > div > .rm-kicker"
+              ],
+              [
+                ".rm-case-header > div > h3"
+              ],
+              [
+                ".rm-case-header > p"
+              ],
+              [
+                "p > strong"
+              ],
+              [
+                "button[aria-label=\"Engineering Resolution\"] > span:nth-child(2) > strong"
+              ],
+              [
+                "button[aria-label=\"Engineering Resolution\"] > span:nth-child(2) > .rm-stage-short"
+              ],
+              [
+                ".rm-loop-note > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-view-header > span:nth-child(1)"
+              ],
+              [
+                ".rm-view-index"
+              ],
+              [
+                "text[x=\"470\"]"
+              ],
+              [
+                "text[x=\"40\"]"
+              ],
+              [
+                "text[x=\"318\"]"
+              ],
+              [
+                "text[x=\"298\"]"
+              ],
+              [
+                "text[x=\"600\"][y=\"235\"][text-anchor=\"middle\"]"
+              ],
+              [
+                "text[x=\"468\"]"
+              ],
+              [
+                "text[y=\"451\"]"
+              ],
+              [
+                "text[y=\"342\"]"
+              ],
+              [
+                "text[y=\"358\"]"
+              ],
+              [
+                "text[x=\"340\"]"
+              ],
+              [
+                "text[x=\"710\"]"
+              ],
+              [
+                "text[x=\"35\"]"
+              ],
+              [
+                ".rm-model-caption"
+              ],
+              [
+                ".rm-model-caption > span"
+              ],
+              [
+                ".rm-envelope-label"
+              ],
+              [
+                ".rm-layer-note > span"
+              ],
+              [
+                ".rm-layer-note > strong"
+              ],
+              [
+                ".rm-layer-note > p"
+              ],
+              [
+                ".rm-component-sensor > .rm-component-sub"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(1)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(2)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(3)"
+              ],
+              [
+                ".rm-inspect-hint"
+              ],
+              [
+                ".rm-analysis-heading > div > .rm-kicker"
+              ],
+              [
+                "#rm-stage-title"
+              ],
+              [
+                ".rm-analysis-heading > p"
+              ],
+              [
+                ".rm-trace > span:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(2)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(3)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(4)"
+              ],
+              [
+                ".rm-trace > span:nth-child(3)"
+              ],
+              [
+                "article:nth-child(1) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(1) > p"
+              ],
+              [
+                "article:nth-child(2) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(2) > p"
+              ],
+              [
+                "article:nth-child(3) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(3) > p"
+              ],
+              [
+                "p[role=\"status\"]"
+              ],
+              [
+                ".rm-analysis-footer > button"
+              ],
+              [
+                ".rm-analysis-footer > button > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-method-note > .rm-kicker"
+              ],
+              [
+                ".rm-method-note > p"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "width": 1440,
+      "stage": 1,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              [
+                ".rm-intro > .eyebrow"
+              ],
+              [
+                "#systems-title"
+              ],
+              [
+                ".rm-lede"
+              ],
+              [
+                ".rm-case-header > div > .rm-kicker"
+              ],
+              [
+                ".rm-case-header > div > h3"
+              ],
+              [
+                ".rm-case-header > p"
+              ],
+              [
+                "p > strong"
+              ],
+              [
+                "button[aria-label=\"Mission & Consequence\"] > span:nth-child(2) > strong"
+              ],
+              [
+                "button[aria-label=\"Mission & Consequence\"] > span:nth-child(2) > .rm-stage-short"
+              ],
+              [
+                ".rm-loop-note > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-view-header > span:nth-child(1)"
+              ],
+              [
+                ".rm-view-index"
+              ],
+              [
+                "text[x=\"470\"]"
+              ],
+              [
+                "text[x=\"40\"]"
+              ],
+              [
+                "text[x=\"318\"]"
+              ],
+              [
+                "text[x=\"298\"]"
+              ],
+              [
+                "text[x=\"600\"][y=\"235\"][text-anchor=\"middle\"]"
+              ],
+              [
+                "text[x=\"468\"]"
+              ],
+              [
+                "text[y=\"451\"]"
+              ],
+              [
+                "text[y=\"342\"]"
+              ],
+              [
+                "text[y=\"358\"]"
+              ],
+              [
+                "text[x=\"340\"]"
+              ],
+              [
+                "text[x=\"710\"]"
+              ],
+              [
+                ".rm-model-caption"
+              ],
+              [
+                ".rm-model-caption > span"
+              ],
+              [
+                ".rm-envelope-label"
+              ],
+              [
+                ".rm-layer-note > span"
+              ],
+              [
+                ".rm-layer-note > strong"
+              ],
+              [
+                ".rm-layer-note > p"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(1)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(2)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(3)"
+              ],
+              [
+                ".rm-inspect-hint"
+              ],
+              [
+                ".rm-analysis-heading > div > .rm-kicker"
+              ],
+              [
+                "#rm-stage-title"
+              ],
+              [
+                ".rm-analysis-heading > p"
+              ],
+              [
+                ".rm-trace > span:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(2)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(3)"
+              ],
+              [
+                ".rm-trace > span:nth-child(3)"
+              ],
+              [
+                "article:nth-child(1) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(1) > p"
+              ],
+              [
+                "article:nth-child(2) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(2) > p"
+              ],
+              [
+                "article:nth-child(3) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(3) > p"
+              ],
+              [
+                "p[role=\"status\"]"
+              ],
+              [
+                ".rm-analysis-footer > button"
+              ],
+              [
+                ".rm-analysis-footer > button > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-method-note > .rm-kicker"
+              ],
+              [
+                ".rm-method-note > p"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "width": 1440,
+      "stage": 2,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              [
+                ".rm-intro > .eyebrow"
+              ],
+              [
+                "#systems-title"
+              ],
+              [
+                ".rm-lede"
+              ],
+              [
+                ".rm-case-header > div > .rm-kicker"
+              ],
+              [
+                ".rm-case-header > div > h3"
+              ],
+              [
+                ".rm-case-header > p"
+              ],
+              [
+                "p > strong"
+              ],
+              [
+                "button[aria-label=\"System Modeling\"] > span:nth-child(2) > strong"
+              ],
+              [
+                "button[aria-label=\"System Modeling\"] > span:nth-child(2) > .rm-stage-short"
+              ],
+              [
+                ".rm-loop-note > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-view-header > span:nth-child(1)"
+              ],
+              [
+                ".rm-view-index"
+              ],
+              [
+                "text[x=\"470\"]"
+              ],
+              [
+                "text[x=\"40\"]"
+              ],
+              [
+                "text[x=\"318\"]"
+              ],
+              [
+                "text[x=\"298\"]"
+              ],
+              [
+                "text[x=\"600\"][y=\"235\"][text-anchor=\"middle\"]"
+              ],
+              [
+                "text[x=\"468\"]"
+              ],
+              [
+                "text[y=\"451\"]"
+              ],
+              [
+                "text[y=\"342\"]"
+              ],
+              [
+                "text[y=\"358\"]"
+              ],
+              [
+                "text[x=\"340\"]"
+              ],
+              [
+                "text[x=\"710\"]"
+              ],
+              [
+                ".rm-model-caption"
+              ],
+              [
+                ".rm-model-caption > span"
+              ],
+              [
+                ".rm-envelope-label"
+              ],
+              [
+                ".rm-layer-note > span"
+              ],
+              [
+                ".rm-layer-note > strong"
+              ],
+              [
+                ".rm-layer-note > p"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(1)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(2)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(3)"
+              ],
+              [
+                ".rm-inspect-hint"
+              ],
+              [
+                ".rm-analysis-heading > div > .rm-kicker"
+              ],
+              [
+                "#rm-stage-title"
+              ],
+              [
+                ".rm-analysis-heading > p"
+              ],
+              [
+                ".rm-trace > span:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(2)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(3)"
+              ],
+              [
+                ".rm-trace > span:nth-child(3)"
+              ],
+              [
+                "article:nth-child(1) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(1) > p"
+              ],
+              [
+                "article:nth-child(2) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(2) > p"
+              ],
+              [
+                "article:nth-child(3) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(3) > p"
+              ],
+              [
+                "p[role=\"status\"]"
+              ],
+              [
+                ".rm-analysis-footer > button"
+              ],
+              [
+                ".rm-analysis-footer > button > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-method-note > .rm-kicker"
+              ],
+              [
+                ".rm-method-note > p"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "width": 1440,
+      "stage": 3,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              [
+                ".rm-intro > .eyebrow"
+              ],
+              [
+                "#systems-title"
+              ],
+              [
+                ".rm-lede"
+              ],
+              [
+                ".rm-case-header > div > .rm-kicker"
+              ],
+              [
+                ".rm-case-header > div > h3"
+              ],
+              [
+                ".rm-case-header > p"
+              ],
+              [
+                "p > strong"
+              ],
+              [
+                "button[aria-label=\"Causal & Attack Analysis\"] > span:nth-child(2) > strong"
+              ],
+              [
+                "button[aria-label=\"Causal & Attack Analysis\"] > span:nth-child(2) > .rm-stage-short"
+              ],
+              [
+                ".rm-loop-note > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-view-header > span:nth-child(1)"
+              ],
+              [
+                ".rm-view-index"
+              ],
+              [
+                "text[x=\"470\"]"
+              ],
+              [
+                "text[x=\"40\"]"
+              ],
+              [
+                "text[x=\"318\"]"
+              ],
+              [
+                "text[x=\"298\"]"
+              ],
+              [
+                "text[x=\"600\"][y=\"235\"][text-anchor=\"middle\"]"
+              ],
+              [
+                "text[x=\"468\"]"
+              ],
+              [
+                "text[y=\"451\"]"
+              ],
+              [
+                "text[y=\"342\"]"
+              ],
+              [
+                "text[y=\"358\"]"
+              ],
+              [
+                "text[x=\"340\"]"
+              ],
+              [
+                "text[x=\"710\"]"
+              ],
+              [
+                ".rm-model-caption"
+              ],
+              [
+                ".rm-model-caption > span"
+              ],
+              [
+                ".rm-envelope-label"
+              ],
+              [
+                ".rm-layer-note > span"
+              ],
+              [
+                ".rm-layer-note > strong"
+              ],
+              [
+                ".rm-layer-note > p"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(1)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(2)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(3)"
+              ],
+              [
+                ".rm-inspect-hint"
+              ],
+              [
+                ".rm-analysis-heading > div > .rm-kicker"
+              ],
+              [
+                "#rm-stage-title"
+              ],
+              [
+                ".rm-analysis-heading > p"
+              ],
+              [
+                ".rm-trace > span:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(2)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(3)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(4)"
+              ],
+              [
+                ".rm-trace > span:nth-child(3)"
+              ],
+              [
+                "article:nth-child(1) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(1) > p"
+              ],
+              [
+                "article:nth-child(2) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(2) > p"
+              ],
+              [
+                "article:nth-child(3) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(3) > p"
+              ],
+              [
+                "p[role=\"status\"]"
+              ],
+              [
+                ".rm-analysis-footer > button"
+              ],
+              [
+                ".rm-analysis-footer > button > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-method-note > .rm-kicker"
+              ],
+              [
+                ".rm-method-note > p"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "width": 1440,
+      "stage": 4,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              [
+                ".rm-intro > .eyebrow"
+              ],
+              [
+                "#systems-title"
+              ],
+              [
+                ".rm-lede"
+              ],
+              [
+                ".rm-case-header > div > .rm-kicker"
+              ],
+              [
+                ".rm-case-header > div > h3"
+              ],
+              [
+                ".rm-case-header > p"
+              ],
+              [
+                "p > strong"
+              ],
+              [
+                "button[aria-label=\"Technical Investigation\"] > span:nth-child(2) > strong"
+              ],
+              [
+                "button[aria-label=\"Technical Investigation\"] > span:nth-child(2) > .rm-stage-short"
+              ],
+              [
+                ".rm-loop-note > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-view-header > span:nth-child(1)"
+              ],
+              [
+                ".rm-view-index"
+              ],
+              [
+                "text[x=\"470\"]"
+              ],
+              [
+                "text[x=\"40\"]"
+              ],
+              [
+                "text[x=\"318\"]"
+              ],
+              [
+                "text[x=\"298\"]"
+              ],
+              [
+                "text[x=\"600\"][y=\"235\"][text-anchor=\"middle\"]"
+              ],
+              [
+                "text[x=\"468\"]"
+              ],
+              [
+                "text[y=\"451\"]"
+              ],
+              [
+                "text[y=\"342\"]"
+              ],
+              [
+                "text[y=\"358\"]"
+              ],
+              [
+                "text[x=\"340\"]"
+              ],
+              [
+                "text[x=\"710\"]"
+              ],
+              [
+                ".rm-model-caption"
+              ],
+              [
+                ".rm-model-caption > span"
+              ],
+              [
+                ".rm-envelope-label"
+              ],
+              [
+                ".rm-layer-note > span"
+              ],
+              [
+                ".rm-layer-note > strong"
+              ],
+              [
+                ".rm-layer-note > p"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(1)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(2)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(3)"
+              ],
+              [
+                ".rm-inspect-hint"
+              ],
+              [
+                ".rm-analysis-heading > div > .rm-kicker"
+              ],
+              [
+                "#rm-stage-title"
+              ],
+              [
+                ".rm-analysis-heading > p"
+              ],
+              [
+                ".rm-trace > span:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(2)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(3)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(4)"
+              ],
+              [
+                ".rm-trace > span:nth-child(3)"
+              ],
+              [
+                "article:nth-child(1) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(1) > p"
+              ],
+              [
+                "article:nth-child(2) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(2) > p"
+              ],
+              [
+                "article:nth-child(3) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(3) > p"
+              ],
+              [
+                "p[role=\"status\"]"
+              ],
+              [
+                ".rm-analysis-footer > button"
+              ],
+              [
+                ".rm-analysis-footer > button > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-method-note > .rm-kicker"
+              ],
+              [
+                ".rm-method-note > p"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "width": 1440,
+      "stage": 5,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              [
+                ".rm-intro > .eyebrow"
+              ],
+              [
+                "#systems-title"
+              ],
+              [
+                ".rm-lede"
+              ],
+              [
+                ".rm-case-header > div > .rm-kicker"
+              ],
+              [
+                ".rm-case-header > div > h3"
+              ],
+              [
+                ".rm-case-header > p"
+              ],
+              [
+                "p > strong"
+              ],
+              [
+                "button[aria-label=\"Exploit Validation\"] > span:nth-child(2) > strong"
+              ],
+              [
+                "button[aria-label=\"Exploit Validation\"] > span:nth-child(2) > .rm-stage-short"
+              ],
+              [
+                ".rm-loop-note > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-view-header > span:nth-child(1)"
+              ],
+              [
+                ".rm-view-index"
+              ],
+              [
+                "text[x=\"470\"]"
+              ],
+              [
+                "text[x=\"40\"]"
+              ],
+              [
+                "text[x=\"318\"]"
+              ],
+              [
+                "text[x=\"298\"]"
+              ],
+              [
+                "text[x=\"600\"][y=\"235\"][text-anchor=\"middle\"]"
+              ],
+              [
+                "text[x=\"468\"]"
+              ],
+              [
+                "text[y=\"451\"]"
+              ],
+              [
+                "text[y=\"342\"]"
+              ],
+              [
+                "text[y=\"358\"]"
+              ],
+              [
+                "text[x=\"340\"]"
+              ],
+              [
+                "text[x=\"710\"]"
+              ],
+              [
+                "g[transform=\"translate(145 318)\"] > text[y=\"4\"][text-anchor=\"middle\"]"
+              ],
+              [
+                "g[transform=\"translate(450 318)\"] > text[y=\"4\"][text-anchor=\"middle\"]"
+              ],
+              [
+                "g[transform=\"translate(450 533)\"] > text[y=\"4\"][text-anchor=\"middle\"]"
+              ],
+              [
+                "g[transform=\"translate(750 533)\"] > text[y=\"4\"][text-anchor=\"middle\"]"
+              ],
+              [
+                ".rm-model-caption"
+              ],
+              [
+                ".rm-model-caption > span"
+              ],
+              [
+                ".rm-envelope-label"
+              ],
+              [
+                ".rm-layer-note > span"
+              ],
+              [
+                ".rm-layer-note > strong"
+              ],
+              [
+                ".rm-layer-note > p"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(1)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(2)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(3)"
+              ],
+              [
+                ".rm-inspect-hint"
+              ],
+              [
+                ".rm-analysis-heading > div > .rm-kicker"
+              ],
+              [
+                "#rm-stage-title"
+              ],
+              [
+                ".rm-analysis-heading > p"
+              ],
+              [
+                ".rm-trace > span:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(2)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(3)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(4)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(5)"
+              ],
+              [
+                ".rm-trace > span:nth-child(3)"
+              ],
+              [
+                "article:nth-child(1) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(1) > p"
+              ],
+              [
+                "article:nth-child(2) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(2) > p"
+              ],
+              [
+                "article:nth-child(3) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(3) > p"
+              ],
+              [
+                ".rm-evidence-chain > button[aria-controls=\"rm-component-inspector\"]:nth-child(1) > span:nth-child(1)"
+              ],
+              [
+                ".rm-evidence-chain > button[aria-controls=\"rm-component-inspector\"]:nth-child(1) > strong"
+              ],
+              [
+                ".rm-evidence-chain > button[aria-controls=\"rm-component-inspector\"]:nth-child(1) > span:nth-child(3)"
+              ],
+              [
+                ".rm-evidence-chain > button[aria-controls=\"rm-component-inspector\"]:nth-child(2) > span:nth-child(1)"
+              ],
+              [
+                ".rm-evidence-chain > button[aria-controls=\"rm-component-inspector\"]:nth-child(2) > strong"
+              ],
+              [
+                ".rm-evidence-chain > button[aria-controls=\"rm-component-inspector\"]:nth-child(2) > span:nth-child(3)"
+              ],
+              [
+                ".rm-evidence-chain > button[aria-controls=\"rm-component-inspector\"]:nth-child(3) > span:nth-child(1)"
+              ],
+              [
+                ".rm-evidence-chain > button[aria-controls=\"rm-component-inspector\"]:nth-child(3) > strong"
+              ],
+              [
+                ".rm-evidence-chain > button[aria-controls=\"rm-component-inspector\"]:nth-child(3) > span:nth-child(3)"
+              ],
+              [
+                "p[role=\"status\"]"
+              ],
+              [
+                ".rm-analysis-footer > button"
+              ],
+              [
+                ".rm-analysis-footer > button > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-method-note > .rm-kicker"
+              ],
+              [
+                ".rm-method-note > p"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "width": 1440,
+      "stage": 6,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": [
+              [
+                ".rm-intro > .eyebrow"
+              ],
+              [
+                "#systems-title"
+              ],
+              [
+                ".rm-lede"
+              ],
+              [
+                ".rm-case-header > div > .rm-kicker"
+              ],
+              [
+                ".rm-case-header > div > h3"
+              ],
+              [
+                ".rm-case-header > p"
+              ],
+              [
+                "p > strong"
+              ],
+              [
+                "button[aria-label=\"Engineering Resolution\"] > span:nth-child(2) > strong"
+              ],
+              [
+                "button[aria-label=\"Engineering Resolution\"] > span:nth-child(2) > .rm-stage-short"
+              ],
+              [
+                ".rm-loop-note > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-view-header > span:nth-child(1)"
+              ],
+              [
+                ".rm-view-index"
+              ],
+              [
+                "text[x=\"470\"]"
+              ],
+              [
+                "text[x=\"40\"]"
+              ],
+              [
+                "text[x=\"318\"]"
+              ],
+              [
+                "text[x=\"298\"]"
+              ],
+              [
+                "text[x=\"600\"][y=\"235\"][text-anchor=\"middle\"]"
+              ],
+              [
+                "text[x=\"468\"]"
+              ],
+              [
+                "text[y=\"451\"]"
+              ],
+              [
+                "text[y=\"342\"]"
+              ],
+              [
+                "text[y=\"358\"]"
+              ],
+              [
+                "text[x=\"340\"]"
+              ],
+              [
+                "text[x=\"710\"]"
+              ],
+              [
+                "text[x=\"35\"]"
+              ],
+              [
+                ".rm-model-caption"
+              ],
+              [
+                ".rm-model-caption > span"
+              ],
+              [
+                ".rm-envelope-label"
+              ],
+              [
+                ".rm-layer-note > span"
+              ],
+              [
+                ".rm-layer-note > strong"
+              ],
+              [
+                ".rm-layer-note > p"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(1)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(2)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(3)"
+              ],
+              [
+                ".rm-inspect-hint"
+              ],
+              [
+                ".rm-analysis-heading > div > .rm-kicker"
+              ],
+              [
+                "#rm-stage-title"
+              ],
+              [
+                ".rm-analysis-heading > p"
+              ],
+              [
+                ".rm-trace > span:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(2)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(3)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(4)"
+              ],
+              [
+                ".rm-trace > span:nth-child(3)"
+              ],
+              [
+                "article:nth-child(1) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(1) > p"
+              ],
+              [
+                "article:nth-child(2) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(2) > p"
+              ],
+              [
+                "article:nth-child(3) > h4"
+              ],
+              [
+                ".rm-analysis-columns > article:nth-child(3) > p"
+              ],
+              [
+                "p[role=\"status\"]"
+              ],
+              [
+                ".rm-analysis-footer > button"
+              ],
+              [
+                ".rm-analysis-footer > button > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-method-note > .rm-kicker"
+              ],
+              [
+                ".rm-method-note > p"
+              ]
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "checks": [
+    "Six stages, six components, fixed geometry, evidence inspection, keyboard, iteration and scroll independence: 320px",
+    "Six stages, six components, fixed geometry, evidence inspection, keyboard, iteration and scroll independence: 375px",
+    "Six stages, six components, fixed geometry, evidence inspection, keyboard, iteration and scroll independence: 768px",
+    "Six stages, six components, fixed geometry, evidence inspection, keyboard, iteration and scroll independence: 1440px",
+    "Reduced motion and keyboard-activated causal overlay"
+  ],
+  "errors": []
+}

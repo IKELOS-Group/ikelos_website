@@ -1,0 +1,70 @@
+{
+  "key_bytes_equal": true,
+  "key_sha256": "2d6b272c861bca73413947d60d5567382a883a1d8389c4013bd48255094bab5e",
+  "primary_fingerprint": "5AD6 A645 E697 72E5 AA7C 0277 DB44 9499 7C6F 00D3",
+  "redirects_identical": true,
+  "redirects": [
+    "/.well-known/matrix/server https://matrix.ikelosgroup.com/.well-known/matrix/server",
+    "/.well-known/matrix/client https://matrix.ikelosgroup.com/.well-known/matrix/client",
+    "/.well-known/matrix/support https://matrix.ikelosgroup.com/.well-known/matrix/support",
+    "/* /index.html 200"
+  ],
+  "fonts": {
+    "inter-latin-variable.woff2": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+    "orbitron-latin-variable.woff2": "c25a9f9da5d9f3db1bf2a01474722dc9b377675b7bbab6d0dfda6902794fd1ed"
+  },
+  "public_files": [
+    "public/manifest.json",
+    "public/_redirects",
+    "public/robots.txt",
+    "public/favicon.svg",
+    "public/index.html",
+    "public/brand/icon-180.png",
+    "public/brand/wordmark-dark.svg",
+    "public/brand/wordmark-color.svg",
+    "public/brand/icon-512.png",
+    "public/brand/wordmark-light.svg",
+    "public/brand/icon-192.png",
+    "public/brand/icon-32.png",
+    "public/brand/emblem-color.svg",
+    "public/brand/emblem-dark.svg",
+    "public/brand/emblem-light.svg",
+    "public/keys/ikelos-secure-email.asc",
+    "public/fonts/Inter-OFL.txt",
+    "public/fonts/inter-latin-variable.woff2",
+    "public/fonts/fonts.css",
+    "public/fonts/orbitron-latin-variable.woff2",
+    "public/fonts/Orbitron-OFL.txt"
+  ],
+  "authored_contact_channels_only": true,
+  "production_files": {
+    "build/static/css/main.d715f400.css": {
+      "bytes": 30288,
+      "sha256": "17ce0f5aebbffb48a7a5d0f4a7884e8bc5e274ac94fec7c71951a28cf66fe43e"
+    },
+    "build/static/media/systems-sigil.a83ea3705a38eb504fd8398b3097296b.svg": {
+      "bytes": 716,
+      "sha256": "77579091f840c1c5cc64a9d5bdae175ae3e6bf823ad9b9814118797e0455d4b1"
+    },
+    "build/static/js/main.94577cb0.js.LICENSE.txt": {
+      "bytes": 1652,
+      "sha256": "fc4f8b8f682fc1422111dfa8009a4c5df1649bd58efb94321ee1a304540c954c"
+    },
+    "build/static/js/453.66be4ab2.chunk.js": {
+      "bytes": 4459,
+      "sha256": "d16606c06c2b15467d4e2c5862fbc82f491fe7a3da925f3ef2f20d589c76ab6c"
+    },
+    "build/static/js/main.94577cb0.js": {
+      "bytes": 214735,
+      "sha256": "3195b95fcce19a7140079be8bf55aef160c5c53b79a60c9abe9e15299437ed06"
+    }
+  },
+  "contrast": {
+    "body_on_slate": 15.39,
+    "muted_on_slate": 8.68,
+    "button": 6.11,
+    "light_section_body": 15.39,
+    "light_section_muted": 6.67,
+    "focus_on_slate": 6.11
+  }
+}

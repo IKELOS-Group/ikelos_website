@@ -1,105 +1,136 @@
-IKELOS design simplification — validation record
+Historical record: the model and buyer-facing content described below have
+been superseded. See validation/buyer-positioning/review.txt for the current
+implementation, verification results, and screenshots. This record retains
+the initial redesign history.
+
+IKELOS Systems Sigil redesign — local validation
 Date: 2026-11-05
-Scope: Local implementation in the existing working tree. No deployment, merge, or push.
+Branch: brand/systems-sigil-redesign
+Scope: Local implementation and review. No push, commit, merge, or deployment.
+Supplied untracked briefs, board, source artwork, and public key preserved.
 
 Implementation
-- Text-led homepage with one engagement button, three services, compact reasons to
-  engage, a 52-word hypothetical maritime preview, and contextual partnership link.
-- Capabilities organized into system security analysis, vulnerability research,
-  and engineering advisory; deliverables remain with the relevant service.
-- Approach retains six iterative stages, evidence distinctions, the complete
-  maritime walkthrough and brief, and a compact, always-visible Stuxnet note.
-- Contact leads with the business email and retains the four-step workflow,
-  partnership prompts, encryption instructions, fingerprint, and download.
-- Plain navigation, descriptive headings, sentence-case labels, and reduced
-  decoration. Logo, palette, four routes, and all seven prior hashes retained;
-  /services#analysis added. README and metadata updated. No dependencies added.
+- Reconstructed segmented Systems Sigil and geometric wordmark as SVG paths;
+  color, light monochrome, and dark monochrome variants; SVG favicon and PNG
+  sizes 32, 180, 192, 512. Original raster artwork remains unchanged.
+- Six exact Steel Doctrine color tokens with atmospheric alpha variations.
+  Self-hosted Inter and Orbitron WOFF2, original SIL OFL notices, font-display
+  swap, system fallbacks, and preload hints. No external font requests.
+- Full-viewport dimensional hero with architectural lines, progressive nodes,
+  connections, vector, and emblem assembly; approximately three seconds.
+  Headline, navigation, and engagement/capability actions usable immediately.
+  Skip animation and reduced-motion settled states.
+- Independent observer-driven research narrative and manually controlled
+  five-state fictional system model. Shared geometry, trust boundary labels,
+  conditional explanations, persistent illustrative-status text, keyboard tabs,
+  line-style distinctions, and vertical mobile diagrams. No invented results.
+- Capabilities use six original conceptual diagrams and specific engineering
+  questions, methods, and scoped outputs. All approved technical content and
+  service anchors preserved. Cold-white evidence passage on Home.
+- Approach preserves six iterative stages, feedback relationship, STPA-Sec
+  qualifications, evidence distinctions, maritime walkthrough/decision brief,
+  and the qualified historical note. Contact preserves its business-first
+  workflow, partnership prompts, public key, fingerprint, and encryption steps.
+- Transparent-to-solid navigation via IntersectionObserver. Mobile modal
+  contains focus, supports Escape, restores focus/scroll, and releases inert
+  content before route focus. Listeners, observers, and timers cleaned up.
+- Four routes, eight hashes, meaningful 404, skip link, route focus, title/meta
+  descriptions, Open Graph text, and no-JavaScript company-contact fallback.
+  No new dependencies, backend, analytics, or browser cryptography.
 
-Component tests
-Command (Node.js 22.22.2): CI=true npm test -- --watchAll=false --runInBand
-Result: 1 suite passed; 27 tests passed.
-Coverage includes revised reading order, service groups and methods, navigation,
-route focus and scroll behavior, eight direct hashes, four same-page service
-links, mobile menu dismissal, hypothetical/historical qualifications, all six
-workflow stages, evidence distinctions, partnership path, email and key links.
-Existing dependency warnings: ReactDOMTestUtils.act deprecation and Node punycode
-deprecation. They did not fail the tests; dependencies were not changed.
+Commands and results (Node.js 22.22.2)
+1. npm ci --no-audit --no-fund
+   Passed: 1512 packages installed from committed lockfile, unchanged.
+   Existing transitive package deprecation notices remain; no dependency
+   migration was part of this task.
+2. CI=true npm test -- --watchAll=false --runInBand
+   Passed: 1 suite, 30 tests.
+   Coverage: routing, metadata, route focus and scroll, eight direct hashes,
+   same-page links, technical qualifications, contact/encryption/download,
+   five model states, arrow/Home/End controls, modal focus containment and
+   dismissal, animation skipping, reduced motion, and 404 recovery.
+   Existing ReactDOMTestUtils.act and punycode deprecation notices remain.
+3. npm run build
+   Passed: Compiled successfully, no build warnings.
+   Main JS: 67.13 kB gzip; CSS: 6.67 kB gzip; existing chunk: 1.77 kB gzip.
+4. git diff --check
+   Passed.
 
-Production build
-Command: npm run build
-Result: Compiled successfully.
-Main bundle: build/static/js/main.7be6258c.js (61.65 kB gzip)
-Stylesheet: build/static/css/main.ac9b70f0.css (2.79 kB gzip)
-Whitespace check: git diff --check passed.
+Production browser verification
+Chromium 153.0.8010.12 (installed Playwright browser) against a temporary localhost SPA
+preview of build/. Existing environment Playwright and dependency-tree axe-core
+were used; no browser packages added to the application.
+- All four routes at 320, 375, 768, 1440px: 16 combinations. Heights 812px for
+  narrow widths and 1000px for tablet/desktop. No horizontal overflow; one h1;
+  local Inter/Orbitron loading confirmed. No runtime or HTTP errors.
+- No axe WCAG 2 A/AA or 2.1 AA violations across those 16 combinations. The
+  mobile modal also passes axe. Automated contrast checks include incomplete
+  results for layered backgrounds; manual visual and token-contrast review
+  supplements them. This is not an accessibility certification.
+- Eight hashes checked at all four widths (32 cases): target clears fixed
+  header after fonts load. Business email visible in initial Contact viewport.
+- Five model states captured at 375/1440px. Direct selection, Left/Right wrap,
+  Home/End, associated panel, and scroll independence verified.
+- Intro skipping, reduced-motion settled visuals and no animation, keyboard
+  skip link, visible CTA focus, menu focus containment, Escape, focus/scroll
+  restoration, and post-navigation main focus verified in the browser.
+- Internal links and all identity/font/icon assets resolve locally; only the
+  two approved organizational mailto addresses. No external browser requests.
+- Browser key download filename and byte equality verified. 404 recovery works.
 
-Browser verification
-Used preinstalled Playwright/Chromium and axe-core against the production build
-on a local SPA preview server; no project dependencies were installed.
-All four routes checked at widths 320, 375, 768, and 1440px. Narrow viewports were
-812px tall; tablet and desktop viewports were 1000px tall.
-- 16 route/viewport combinations: no overflow, one h1, no axe WCAG 2 A/AA or 2.1 AA violations; minimum sampled type 14px; no uppercase transforms.
-- Homepage headline 48px maximum, 34px on narrow screens, column <=820px; single CTA; no diagram or decision brief.
-- Hypothetical labels remain visible; Approach has all six workflow stages, five walkthrough steps, full brief, and historical note.
-- Business email fully visible in initial 375×812 Contact viewport.
-- Skip link; Escape dismissal and focus return; outside click; mobile navigation closes menu and focuses main.
-- All eight direct hash destinations show their heading below sticky header at all four widths.
-- Same-page jumps for all four service links and both Contact links.
-- Contextual partnership and maritime paths, cross-route hash focus.
-- PGP browser download filename and byte equality with public key.
-- Reduced-motion preference disables transitions.
-- Visible keyboard focus on desktop engagement button.
-- Internal links, allowed email addresses, 404 recovery, no runtime or HTTP errors.
-No axe WCAG 2 A/AA or 2.1 AA violations or incomplete checks in any of the 16
-route/viewport combinations. This is an automated check, not an accessibility
-certification. Direct hash positioning was checked at all four widths (32 cases).
+Visual review and refinement
+Reviewed desktop/mobile hero, full Home, capability layouts, Contact prominence,
+model states, mobile menu, Approach workflow, and decision brief. Refined logo
+proportions, 320px navigation spacing, mobile contrast, vertical narrative
+labels, and model arrows. Animated emblem details added after initial render
+review. Menu cleanup moved to a layout effect so inert removal precedes route
+focus; browser checks await the completed router transition.
 
-Visual review
-Reviewed full-page and initial-viewport captures of all routes, plus focused
-maritime, brief, historical-note, and keyboard-focus captures. Reading order,
-text wrapping, persistent labels, navigation, and fingerprint reflow checked.
-Body copy is 16px; navigation and utility links are at least 14px. The homepage
-headline is 48px on desktop and 34px at narrow widths, in a <=820px column.
-The full example has the only contrasting document panel. No text clipping or
-horizontal scrolling was found. The Contact email is fully visible at 375×812:
-top 178.44px; bottom 215.83px.
+Measured text contrast ratios
+- Cold White / Deep Slate: 15.39:1
+- Mist Gray / Deep Slate: 8.68:1
+- Deep Slate / Signal Cyan button: 6.11:1
+- Hardened Steel / Cold White: 6.67:1
+- Signal Cyan focus / Deep Slate: 6.11:1
 
-Measured text contrast ratios:
-- body: 15.61:1
-- muted: 8.71:1
-- accent_button: 11.13:1
-- document_body: 12.35:1
-- document_muted: 6.6:1
-- focus_on_dark: 11.13:1
-
-Public interfaces and assets
-- Business mailto: info@ikelosgroup.com.
-- Encrypted mailto: secure_email@ikelosgroup.com.
-- Download URL: /keys/ikelos-secure-email.asc.
-- Browser download filename: ikelos-secure-email.asc.
-- Source, public, and built public-key files are byte-identical (860 bytes).
-- Public-key SHA-256:
-  2d6b272c861bca73413947d60d5567382a883a1d8389c4013bd48255094bab5e
-- Primary fingerprint verified with GnuPG --show-keys --with-colons --fingerprint:
+Assets, privacy, and static-host contracts
+- Supplied, public, built, and browser-downloaded public-key bytes match.
+  SHA-256: 2d6b272c861bca73413947d60d5567382a883a1d8389c4013bd48255094bab5e
+- GnuPG --show-keys --with-colons --fingerprint verified primary fingerprint:
   5AD6 A645 E697 72E5 AA7C 0277 DB44 9499 7C6F 00D3
-- Supplied and bundled logo bytes match; source artwork was not edited.
-- Root, public, and built redirect files match.
+- Root/public/built redirects match; all three Matrix rules precede SPA fallback.
+- Authored content and served asset inventory reviewed for personal material.
+  No staff names, profiles, personal channels, Person metadata, or private key
+  material added. Required third-party font copyright notices retained.
+- Old raster logo/source board not bundled into the production app.
+- Font and production-asset SHA-256 records: artifact-audit.json.
 
-Review artifacts
-Directory: /tmp/ikelos-simplification-review/
-- results.json: browser checks, all viewport results, and inspected links.
-- artifact-audit.json: key/asset checks, contrast ratios, final bundle hashes.
-- browser-check.cjs: exact local browser verification script.
-- {home,services,about,contact}-{320,375,768,1440}.png: full-page captures.
-- Same names with -viewport.png: initial viewport captures.
-- walkthrough-intro, walkthrough-step, decision-brief, and stuxnet captures at
-  each width. Sticky header hidden only for these detail captures to avoid
-  covering the cropped content; full-page/viewport captures use normal styling.
-- focus-mobile.png and focus-desktop.png: visible keyboard focus.
-Total screenshots: 50.
+Main changed files
+src/index.css; src/App.js; src/App.test.js; src/components/{Brand,Navbar,Home,
+Hero,Motion,ResearchNarrative,SystemsModel,CapabilityArt,Services,About,Contact}.js;
+src/assets/systems-sigil.svg; public/{index.html,favicon.svg,manifest.json};
+public/brand/; public/fonts/; README.md; scripts/browser-review.cjs;
+validation/design-review.txt; validation/systems-sigil/.
+
+Review artifacts (repository-relative)
+validation/systems-sigil/
+- {home,services,about,contact}-{320,375,768,1440}.png: full pages.
+- Matching -viewport.png: initial screens (32 route screenshots total).
+- model-{0..4}-{375,1440}.png: all five states (10 screenshots).
+- workflow, decision-brief, historical-note at 375/1440 (6 screenshots).
+- menu-375.png, focus-mobile.png, focus-desktop.png,
+  reduced-motion-1440.png (4 screenshots).
+- results.json, interactions.json, artifact-audit.json, component-tests.txt,
+  production-build.txt.
+Total: 52 screenshots. Header is hidden only during element-detail captures to
+avoid obscuring cropped content; route and viewport captures use normal styling.
+Reproducible browser script: scripts/browser-review.cjs; configuration documented
+in README. The local temporary preview server is stopped after validation.
 
 Limits
-Visual and browser verification used Chromium, not Safari or Firefox. Direct
-route loading was checked through the local SPA fallback; production hosting,
-Matrix redirects on the live host, and external source availability were not
-retested. The Symantec source URL and historical claims were preserved. The
-local preview server is temporary; screenshots and records remain on disk.
+No known local launch blocker. No deployment performed. Live Cloudflare Pages
+behavior, production Matrix responses, external historical-source availability,
+and Safari/Firefox were not reverified. No network/CPU-throttled performance or
+screen-reader audit was performed. SVG identity is a clean reconstruction from
+the supplied raster board, not an original vector master. These local checks do
+not replace authorized live-host and cross-browser release review.

@@ -15,30 +15,23 @@ const services = [
   ['Engineering advisory', 'consulting'],
 ];
 
-test('home uses a text-led introduction and the revised reading order', () => {
+test('home exposes positioning, research model, capabilities, and scoped evidence', () => {
   render(<App />);
   const main = within(screen.getByRole('main'));
-  expect(main.getByRole('heading', { level: 1 })).toHaveTextContent('Understand how your system can be exploited—and what that means for operation.');
-  expect(main.getAllByRole('heading', { level: 2 }).map(el => el.textContent)).toEqual([
-    'Services', 'Reasons to engage', 'Maritime example: navigation confidence', 'Specialist delivery partnership',
-  ]);
-  expect(main.getAllByRole('link', { name: 'Discuss an engagement' })).toHaveLength(1);
-  expect(main.queryByRole('figure')).not.toBeInTheDocument();
-  expect(main.queryByRole('complementary')).not.toBeInTheDocument();
-  expect(main.queryByText('Illustrative decision brief')).not.toBeInTheDocument();
-  const preview = main.getByRole('region', { name: 'Maritime example: navigation confidence' });
-  expect(within(preview).getByText('Hypothetical scenario')).toBeVisible();
-  const copy = within(preview).getByText(/not an IKELOS customer engagement or a verified finding/);
-  expect(copy.textContent.split(/\s+/).length).toBeLessThanOrEqual(80);
-  expect(preview.querySelector('.document-panel')).toBeNull();
-  const reasons = main.getByRole('region', { name: 'Reasons to engage' });
-  expect(within(reasons).getAllByRole('listitem')).toHaveLength(4);
-  expect(within(reasons).getByRole('list').tagName).toBe('UL');
+  expect(main.getByRole('heading', { level: 1 })).toHaveTextContent('First Principles.Decisive Effects.');
+  expect(main.getAllByRole('link', { name: /Scope a technical investigation/ })[0]).toHaveAttribute('href', '/contact');
+  expect(main.getByRole('link', { name: /Explore capabilities/ })).toHaveAttribute('href', '/services');
+  expect(main.getByRole('navigation', { name: 'Research workflow' })).toBeVisible();
+  expect(main.getByText('Research plan · No test results')).toBeVisible();
+  const buyingCase = document.getElementById('research-narrative');
+  expect(buyingCase).toHaveTextContent('the security assumptions behind that decision remain untested');
+  expect(buyingCase).toHaveTextContent('boundary between system architecture and implementation research');
+  expect(buyingCase.compareDocumentPosition(document.getElementById('research-methodology')) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
 });
 
 test.each(services)('home links %s to its capability section', (name, id) => {
   render(<App />);
-  fireEvent.click(screen.getByRole('link', { name: `Explore ${name.toLowerCase()}` }));
+  fireEvent.click(screen.getByRole('link', { name: new RegExp(`Explore ${name.toLowerCase()}`) }));
   expect(window.location.pathname + window.location.hash).toBe(`/services#${id}`);
   expect(within(document.getElementById(id)).getByRole('heading', { level: 2, name })).toBeVisible();
   expect(Element.prototype.scrollIntoView.mock.instances[0]).toBe(document.getElementById(id));
@@ -48,7 +41,7 @@ test.each(services)('home links %s to its capability section', (name, id) => {
 
 test('engagement navigation updates route, focus, metadata, and scroll', () => {
   render(<App />);
-  fireEvent.click(screen.getByRole('link', { name: 'Discuss an engagement' }));
+  fireEvent.click(screen.getAllByRole('link', { name: /Scope a technical investigation/ })[0]);
   expect(window.location.pathname).toBe('/contact');
   expect(screen.getByRole('heading', { level: 1, name: 'Contact' })).toBeVisible();
   expect(screen.getByRole('main')).toHaveFocus();
@@ -73,21 +66,28 @@ test.each([
   expect(nav.getByRole('link', { name: title })).toHaveAttribute('aria-current', 'page');
 });
 
-test('mobile menu exposes state, closes on Escape and outside click, and closes after navigation', () => {
+test('mobile modal traps focus, restores scroll and focus on Escape, and closes after navigation', () => {
   render(<App />);
   const toggle = screen.getByRole('button', { name: /menu/i });
   fireEvent.click(toggle);
-  expect(toggle).toHaveAttribute('aria-expanded', 'true');
-  expect(screen.getByRole('navigation', { name: 'Main navigation' })).toHaveClass('is-open');
+  const dialog = screen.getByRole('dialog', { name: 'Navigation menu' });
+  const close = within(dialog).getByRole('button', { name: /Close/ });
+  expect(close).toHaveFocus();
+  expect(document.body.style.overflow).toBe('hidden');
+  expect(screen.getByRole('main')).toHaveAttribute('inert');
+  fireEvent.keyDown(document, { key: 'Tab', shiftKey: true });
+  expect(within(dialog).getByRole('link', { name: 'info@ikelosgroup.com' })).toHaveFocus();
+  fireEvent.keyDown(document, { key: 'Tab' });
+  expect(close).toHaveFocus();
   fireEvent.keyDown(document, { key: 'Escape' });
-  expect(toggle).toHaveAttribute('aria-expanded', 'false');
   expect(toggle).toHaveFocus();
+  expect(screen.queryByRole('dialog')).not.toBeInTheDocument();
+  expect(document.body.style.overflow).toBe('');
+  expect(screen.getByRole('main')).not.toHaveAttribute('inert');
   fireEvent.click(toggle);
-  fireEvent.pointerDown(screen.getByRole('main'));
+  fireEvent.click(within(screen.getByRole('navigation', { name: 'Mobile navigation' })).getByRole('link', { name: 'Capabilities' }));
   expect(toggle).toHaveAttribute('aria-expanded', 'false');
-  fireEvent.click(toggle);
-  fireEvent.click(within(screen.getByRole('navigation', { name: 'Main navigation' })).getByRole('link', { name: 'Capabilities' }));
-  expect(toggle).toHaveAttribute('aria-expanded', 'false');
+  expect(screen.getByRole('main')).toHaveFocus();
   expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Capabilities');
 });
 
@@ -126,62 +126,58 @@ test('capabilities groups technical methods and deliverables under three service
   ]);
   const research = document.getElementById('research');
   expect(within(research).getAllByRole('heading', { level: 3 })).toHaveLength(5);
-  for (const method of ['emulation', 'fuzzing', 'trusted execution environment analysis', 'test fixtures', 'proof-of-concept', 'Foreign materiel exploitation']) {
+  for (const method of ['emulation', 'fuzzing', 'test fixtures', 'proof-of-concept', 'Research tooling and test platforms']) {
     expect(research).toHaveTextContent(method);
   }
   expect(document.getElementById('analysis')).toHaveTextContent('STPA-Sec');
   expect(document.getElementById('consulting')).toHaveTextContent('retest criteria');
+  for (const id of ['analysis', 'research', 'consulting', 'partner']) {
+    expect(document.getElementById(id)).toHaveTextContent('Engage when');
+    expect(document.getElementById(id)).toHaveTextContent('Decision supported');
+  }
+  for (const topic of within(research).getAllByRole('article')) {
+    expect(topic).toHaveTextContent('Engage when');
+    expect(topic).toHaveTextContent('Decision supported');
+  }
 });
 
-test('maritime preview leads to the complete, qualified walkthrough and decision brief', () => {
+test('legacy maritime destination leads to an inspectable sample with honest evidence status', () => {
+  window.history.replaceState({}, '', '/about#walkthrough');
   render(<App />);
-  fireEvent.click(screen.getByRole('link', { name: 'Follow the maritime walkthrough' }));
-  expect(window.location.pathname + window.location.hash).toBe('/about#walkthrough');
+  fireEvent.click(screen.getByRole('link', { name: /Open the illustrative evidence package/ }));
+  expect(window.location.pathname + window.location.hash).toBe('/#sample-deliverable');
   expect(screen.getByRole('main')).toHaveFocus();
-  expect(window.scrollTo).not.toHaveBeenCalled();
-  const walkthrough = within(document.getElementById('walkthrough'));
-  expect(walkthrough.getByText('Hypothetical scenario', { exact: true })).toBeVisible();
-  expect(walkthrough.getByText(/not an IKELOS customer engagement or a verified finding/)).toBeVisible();
-  expect(walkthrough.getAllByRole('listitem')).toHaveLength(5);
-  for (const name of ['Dependable navigation information', 'Dependencies and assumptions', 'Unexpected behavior', 'Diminished operational confidence', 'Engineering decisions']) {
-    expect(walkthrough.getAllByRole('heading', { name })[0]).toBeVisible();
+  const sample = within(document.getElementById('sample-deliverable'));
+  expect(sample.getByText('Illustrative sample · Fictional system · No test results')).toBeVisible();
+  for (const title of ['Assumption register', 'Hypothesis status', 'Test conditions', 'Evidence', 'Limitations', 'Consequence analysis', 'Decision', 'Retest criteria']) {
+    const detail = sample.getByText(title, { exact: true, selector: 'summary span' }).closest('details');
+    fireEvent.click(detail.querySelector('summary'));
+    expect(detail).toHaveAttribute('open');
+    expect(detail.querySelector('.record-status')).toBeVisible();
   }
-  expect(walkthrough.getByText(/D4M describes deny, degrade, disrupt, destroy, and manipulate/)).toHaveTextContent('does not establish the other effects');
-  expect(walkthrough.getByText(/demonstrate the assumed ability to influence the input/)).toHaveTextContent('Unexpected behavior alone does not establish an operational effect');
-  const brief = within(walkthrough.getByRole('complementary', { name: 'Dependable navigation information' }));
-  expect(brief.getByText('Illustrative decision brief')).toBeVisible();
-  expect(brief.getByText(/Hypothetical scenario/)).toBeVisible();
-  expect(brief.getByText(/not measured findings or completed remediation/)).toBeVisible();
-  for (const name of ['Objective', 'Scenario consequence', 'Evidence needed', 'Engineering decisions']) {
-    expect(brief.getByText(name, { selector: 'dt' })).toBeVisible();
-  }
+  expect(sample.getByText('Required / Not collected')).toBeVisible();
+  expect(sample.getByText('Modeled / Not demonstrated')).toBeVisible();
+  expect(sample.getByText('Pending / Evidence required')).toBeVisible();
+  expect(sample.getByText(/The accountable stakeholder determines/)).toHaveTextContent('commission further testing');
 });
 
-test('approach orders six stages, evidence standards, walkthrough, and an always-visible historical note', () => {
+test('approach governs an engagement, centralizes the evidence policy, and demotes historical reading', () => {
   window.history.replaceState({}, '', '/about');
   render(<App />);
-  expect(within(screen.getByRole('main')).getAllByRole('heading', { level: 2 }).map(el => el.textContent)).toEqual([
-    'Six-stage iterative workflow', 'Evidence standards', 'Maritime walkthrough: navigation confidence', 'Historical note: Stuxnet',
-  ]);
-  const workflow = screen.getByRole('region', { name: 'Six-stage iterative workflow' });
-  expect(within(workflow).getAllByRole('listitem')).toHaveLength(6);
-  expect(within(workflow).getByText(/evidence feeds back into the model/i)).toBeVisible();
-  expect(screen.getByText(/System-Theoretic Process Analysis for Security/)).toHaveTextContent('not the official steps of STPA-Sec');
-  for (const name of ['Observation', 'Hypothesis', 'Validated finding']) {
-    expect(screen.getByText(name, { selector: 'dt' })).toBeVisible();
-  }
-  const history = within(document.getElementById('stuxnet'));
-  expect(history.getByRole('heading', { name: 'Historical note: Stuxnet' })).toBeVisible();
-  expect(history.getByRole('link', { name: /read the Symantec analysis/i })).toHaveAttribute('href', 'https://nsarchive2.gwu.edu/NSAEBB/NSAEBB424/docs/Cyber-044.pdf');
-  expect(history.getByText(/retrospective systems-engineering interpretation/)).toBeVisible();
-  expect(history.getByText(/not an IKELOS engagement/)).toHaveTextContent('does not illustrate an absence of privileged access');
-  expect(history.getByText(/does not establish which development method/)).toHaveTextContent('STPA-Sec');
-  expect(document.querySelector('a[href="#stuxnet"]')).toBeNull();
+  const workflow = screen.getByRole('list', { name: 'Engagement governance' });
+  for (const term of ['written testing authority', 'approved communications', 'stop conditions', 'scope review', 'retest criteria']) expect(workflow).toHaveTextContent(term);
+  expect(screen.getByRole('link', { name: /Explore the six-stage research methodology/ })).toHaveAttribute('href', '/#research-methodology');
+  expect(document.getElementById('evidence-policy')).toHaveTextContent('demonstrated findings, bounded negative results, unresolved hypotheses, and coverage limitations separately');
+  const history = document.getElementById('stuxnet');
+  expect(history.querySelector('details')).not.toHaveAttribute('open');
+  fireEvent.click(history.querySelector('summary'));
+  expect(within(history).getByRole('link', { name: /read the Symantec analysis/i })).toHaveAttribute('href', 'https://nsarchive2.gwu.edu/NSAEBB/NSAEBB424/docs/Cyber-044.pdf');
+  expect(history).toHaveTextContent('not IKELOS work or evidence that STPA-Sec was used');
 });
 
 test('contextual partnership path connects scope and contact prompts', () => {
   render(<App />);
-  fireEvent.click(screen.getByRole('link', { name: 'Explore specialist partnership' }));
+  fireEvent.click(screen.getByRole('link', { name: /Explore specialist partnership/ }));
   expect(window.location.pathname + window.location.hash).toBe('/services#partner');
   const partner = within(document.getElementById('partner'));
   expect(partner.getByText(/defined research workstream/)).toBeVisible();
@@ -215,6 +211,8 @@ test('contact leads with the business email, then the compact workflow, partners
   expect(main.getByText('5AD6 A645 E697 72E5 AA7C 0277 DB44 9499 7C6F 00D3')).toBeVisible();
   expect(main.getByText(/does not encrypt your message automatically/)).toBeVisible();
   expect(main.getByText(/OpenPGP-capable mail app/)).toBeVisible();
+  expect(within(encryption).getByText(/Do not send classified information/)).toHaveTextContent('CUI, export-controlled data, credentials, or proprietary technical material');
+  expect(encryption).toHaveTextContent('does not by itself authorize transmission of controlled information');
 });
 
 test('unknown routes provide a route home', () => {
@@ -223,4 +221,72 @@ test('unknown routes provide a route home', () => {
   expect(document.title).toBe('Page not found — IKELOS Group');
   fireEvent.click(screen.getByRole('link', { name: 'Return home' }));
   expect(window.location.pathname).toBe('/');
+});
+
+test('research workflow selects six analytical stages without a tab interface', () => {
+  render(<App />);
+  const workflow = within(screen.getByRole('navigation', { name: 'Research workflow' }));
+  const controls = workflow.getAllByRole('button');
+  expect(controls).toHaveLength(6);
+  expect(screen.queryByRole('tablist')).not.toBeInTheDocument();
+  expect(screen.getByRole('group', { name: 'Inspect system components' })).toHaveAccessibleDescription(/Process sensors return temperature and flow feedback/);
+  expect(controls[0]).toHaveAttribute('aria-current', 'step');
+  fireEvent.keyDown(controls[0], { key: 'ArrowDown' });
+  expect(controls[1]).toHaveFocus();
+  expect(screen.getByRole('region', { name: 'Model authority, action, and feedback together.' })).toHaveTextContent('Physical connectivity alone does not establish');
+  fireEvent.keyDown(controls[1], { key: 'End' });
+  expect(controls[5]).toHaveFocus();
+  expect(screen.getByText(/if the candidate path is demonstrated/)).toBeVisible();
+  fireEvent.click(screen.getByRole('button', { name: /Revisit System Modeling/ }));
+  expect(controls[1]).toHaveAttribute('aria-current', 'step');
+  fireEvent.keyDown(controls[1], { key: 'Home' });
+  expect(controls[0]).toHaveFocus();
+  fireEvent.keyDown(controls[0], { key: 'ArrowLeft' });
+  expect(controls[5]).toHaveFocus();
+  for (const control of controls) {
+    fireEvent.click(control);
+    expect(control).toHaveAttribute('aria-current', 'step');
+    expect(screen.getByText('Research plan · No test results')).toBeVisible();
+  }
+});
+
+test('causal scenario and validation distinguish assumptions, technical effects, and consequences', () => {
+  render(<App />);
+  const workflow = within(screen.getByRole('navigation', { name: 'Research workflow' }));
+  fireEvent.click(workflow.getByRole('button', { name: 'Causal & Attack Analysis' }));
+  expect(screen.getByText(/ICA-01: reduce pump demand/)).toHaveTextContent('if an attacker can influence accepted calibration');
+  expect(screen.getByText(/Attack hypotheses are not validated vulnerabilities/)).toBeVisible();
+  fireEvent.click(workflow.getByRole('button', { name: 'Exploit Validation' }));
+  expect(screen.getByText(/A supported or contradicted hypothesis/)).toBeVisible();
+  expect(screen.getByText(/Distinguish an emulated result/)).toBeVisible();
+  expect(screen.getByText('Validation plan · Evidence requirements defined')).toBeVisible();
+  fireEvent.click(screen.getByRole('button', { name: 'Inspect evidence requirement E-02' }));
+  expect(screen.getByRole('button', { name: 'Inspect control computer' })).toHaveAttribute('aria-pressed', 'true');
+  expect(screen.getByRole('region', { name: 'Control computer' })).toHaveTextContent('Implementation trace');
+  expect(screen.getByText(/not the official STPA-Sec steps/)).toHaveTextContent('Modeled consequences remain distinct from experimentally demonstrated consequences');
+});
+
+test('component inspection exposes assumptions and evidence without changing the research stage', () => {
+  render(<App />);
+  fireEvent.click(screen.getByRole('button', { name: 'Inspect process sensors' }));
+  expect(screen.getByRole('region', { name: 'Process sensors' })).toHaveTextContent('stale, conflicting, or biased');
+  expect(screen.getByRole('button', { name: 'Mission & Consequence' })).toHaveAttribute('aria-current', 'step');
+  expect(screen.getByRole('status')).toHaveTextContent('Consequence modeled');
+});
+
+test('intro can be skipped without blocking contact actions', () => {
+  render(<App />);
+  expect(screen.getAllByRole('link', { name: /Scope a technical investigation/ })[0]).toBeVisible();
+  fireEvent.click(screen.getByRole('button', { name: /Skip animation/ }));
+  expect(screen.queryByRole('button', { name: /Skip animation/ })).not.toBeInTheDocument();
+  expect(document.querySelector('.home-hero')).toHaveClass('is-settled');
+});
+
+test('reduced motion starts with settled hero and static narrative', () => {
+  const original = window.matchMedia;
+  window.matchMedia = jest.fn(() => ({matches:true, addEventListener:jest.fn(), removeEventListener:jest.fn()}));
+  render(<App />);
+  expect(document.querySelector('.home-hero')).toHaveClass('is-settled');
+  expect(screen.queryByRole('button', { name: /Skip animation/ })).not.toBeInTheDocument();
+  window.matchMedia = original;
 });

@@ -8,12 +8,13 @@ import Services from './components/Services';
 import Contact from './components/Contact';
 import { Link } from 'react-router-dom';
 import './index.css';
+import './components/BuyerPositioning.css';
 
 const pageMeta = {
-  '/': ['System exploitability & operational consequences', 'Understand system exploitability and operational consequences with IKELOS Group. System security analysis, vulnerability research, and engineering advisory.'],
+  '/': ['First Principles. Decisive Effects.', 'IKELOS investigates system-level weaknesses and produces evidence for deployment, acceptance, remediation, and mission-risk decisions. Scope a technical investigation.'],
   '/services': ['Capabilities', 'System security analysis, vulnerability research, and engineering advisory. Engage IKELOS as a specialist delivery partner for a defined research workstream.'],
-  '/about': ['Approach', 'A top-down, target-agnostic practice connecting system models, implementation research, and validated evidence to operational consequences and engineering decisions.'],
-  '/contact': ['Contact', 'Discuss an engagement or specialist delivery partnership with IKELOS Group. Review our initial workflow and access encrypted PGP correspondence.'],
+  '/about': ['Approach', 'How an IKELOS engagement works: scope, authorization, access, test boundaries, evidence, stakeholder decisions, and retesting. Review our evidence policy.'],
+  '/contact': ['Contact', 'Scope a technical investigation or specialist partnership with IKELOS Group. Review engagement preparation and encrypted correspondence instructions.'],
 };
 
 function PageShell() {
@@ -23,6 +24,8 @@ function PageShell() {
     const [title, description] = pageMeta[pathname] || ['Page not found', 'Find your way back to IKELOS Group.'];
     document.title = `${title} — IKELOS Group`;
     document.querySelector('meta[name="description"]')?.setAttribute('content', description);
+    document.querySelector('meta[property="og:title"]')?.setAttribute('content', `${title} — IKELOS Group`);
+    document.querySelector('meta[property="og:description"]')?.setAttribute('content', description);
     if (hash) {
       document.getElementById(hash.slice(1))?.scrollIntoView();
     } else if (previousPath.current !== pathname) {

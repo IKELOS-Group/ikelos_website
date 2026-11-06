@@ -1,49 +1,89 @@
-# IKELOS Group website
+# IKELOS Group — Systems Sigil
 
-A responsive React website for system security analysis, vulnerability research, and engineering advisory, connecting system exploitability and operational consequences to engineering decisions. Uses React Router and Create React App; no backend, analytics, external fonts, or contact-form service.
+A static React 18 website for systems security engineering and advanced vulnerability research. React Router and Create React App remain in place. No backend, analytics, external font requests, or contact-form service.
 
-## Development
+## Develop and build
 
-Use Node.js 22.22.2 (pinned in `.nvmrc`) and npm. With nvm installed, run `nvm use`. Run `npm ci`, then `npm start` for local development.
+Use Node.js **22.22.2**, pinned in `.nvmrc`:
 
-TypeScript is pinned to 4.9.5 as a build dependency to satisfy `react-scripts@5.0.1`'s peer range, even though this site uses JavaScript. Commit both `package.json` and `package-lock.json` when changing dependencies, and verify with a clean `npm ci` before deployment.
+```sh
+nvm use
+npm ci
+npm start
+npm test -- --watchAll=false --runInBand
+npm run build
+```
 
-- `npm test -- --watchAll=false`: component and navigation checks.
-- `npm run build`: production output in `build/`.
+Production output is `build/`. TypeScript 4.9.5 remains a build dependency for the `react-scripts@5` peer range; application code is JavaScript. No dependencies were added for the redesign.
 
-Routes: `/`, `/services` (Capabilities), `/about` (Approach), `/contact`. Preserved destinations: `/services#research`, `/services#consulting`, `/about#walkthrough`, `/contact#encrypted-email`, `/about#stuxnet`, `/services#partner`, and `/contact#partnerships`. System security analysis adds `/services#analysis`.
+This work is on `brand/systems-sigil-redesign`. Validation was performed locally; no merge or deployment has been performed.
 
-## Content and design
+## Identity and presentation
 
-Shared styling and responsive rules are in `src/index.css`. Page content is in `src/components`. The illustrative decision brief is in `Shared.js`; it appears only on Approach.
+The supplied Systems Sigil board supersedes the previous cosmetic restrictions. Source artwork remains unchanged in the repository. Original SVG paths reconstruct its segmented hexagonal emblem, central nodes, diagonal vector, and geometric lettering. These are an interpretation of the raster board, not an extracted original vector master.
 
-The supplied logo remains in `assets/`; its byte-identical copy in `src/assets/` is bundled by React. `Brand.js` frames the artwork, and CSS applies the warm monochrome treatment against the dark background without editing the source image. The artwork retains its supplied motto; do not repeat the motto as standalone text.
+- `public/brand/wordmark-{color,light,dark}.svg`: horizontal identity.
+- `public/brand/emblem-{color,light,dark}.svg`: standalone identity.
+- `public/favicon.svg` and `public/brand/icon-{32,180,192,512}.png`: favicon, Apple touch icon, and manifest assets.
+- `src/assets/systems-sigil.svg`: inline animation copy of the color emblem.
+- `public/fonts/`: locally served Inter and Orbitron variable WOFF2 fonts, CSS, and original SIL Open Font License notices. Font files were retrieved from Fontsource's jsDelivr distribution on 2026-11-05; licenses from Google Fonts' `ofl/inter/OFL.txt` and `ofl/orbitron/OFL.txt`. No font provider receives visitor requests. Font hashes are in the artifact audit.
 
-General inquiries use `info@ikelosgroup.com`. PGP-encrypted correspondence uses `secure_email@ikelosgroup.com`; visitors must encrypt messages in their own OpenPGP-capable mail app. The public key is served at `/keys/ikelos-secure-email.asc`, copied byte-for-byte from the supplied `.asc` file in `assets/`. Its primary fingerprint is `5AD6 A645 E697 72E5 AA7C 0277 DB44 9499 7C6F 00D3`. When rotating the key, update the published file, displayed fingerprint, and contact test together, and verify the built download. Publish only public keys. Do not add unverified specialties, credentials, clients, testimonials, or metrics.
+Steel Doctrine tokens in `src/index.css`: Deep Slate `#10161D`, Steel Blue Gray `#22313F`, Hardened Steel `#405463`, Mist Gray `#A6B5C3`, Cold White `#E6EDF3`, Signal Cyan `#5D9FB0`. Orbitron supplies display headings; Inter supplies body and controls, with system fallbacks and `font-display: swap`.
 
-## Research content and accessibility
+`Hero.js` combines dimensional SVG geometry, perspective, architectural lines, and gradients. The approximately three-second intro progressively reveals structure, connections, nodes, and vector. The headline, navigation, and actions are immediately usable. Skip animation settles the composition; reduced motion starts settled. No WebGL or animation framework is required.
 
-The text-led homepage opens with “Understand how your system can be exploited—and what that means for operation.” One concise paragraph explains the top-down, target-agnostic approach, followed by one engagement button. Reading order: introduction → three services with concrete outputs and section links → compact reasons to engage → short hypothetical maritime preview → specialist delivery partnership. The footer supplies the closing contact path. The homepage has no research diagram, full decision brief, separate method preview, or generic outputs list.
+`ResearchNarrative.js` establishes the buying case before the methodology: deployment/acceptance, integration/change, vulnerability/consequence, and remediation/verification. The architecture-to-implementation positioning explains how IKELOS complements engineering, security, and test teams. This replaces the earlier scroll-driven narrative diagram; scrolling never overrides workbench selection. Section 02 is an interactive systems-engineering research workbench implemented in `SystemsModel.js`, `researchMethodology.js`, and `ResearchMethodology.css`. Its six directly selectable stages replace the old five-tab interface:
 
-Capabilities (`/services`) groups the practice into **System security analysis**, **Vulnerability research**, and **Engineering advisory**. Hardware and firmware, protocol and logic, cyber-physical implementation, physical-access conditions, and custom tooling are subordinate research topics. Deliverables stay within their relevant service. Specialist delivery partnership follows as an arrangement spanning the services; it is not a fourth service.
+1. Mission & Consequence
+2. System Modeling
+3. Causal & Attack Analysis
+4. Technical Investigation
+5. Exploit Validation
+6. Engineering Resolution
 
-Approach (`/about`) contains the six-stage iterative workflow, evidence standards distinguishing observations, hypotheses, and validated findings, the full maritime walkthrough and decision brief, and a compact historical note. Only the maritime example and brief use the contrasting document treatment. The workflow explains the appropriate use and limits of STPA-Sec. Metadata describes the practice without foregrounding the historical example.
+One explicitly fictional thermal-control module retains its geometry as visitors explore mission losses, a functional control structure, insecure control actions, a candidate causal scenario, targeted implementation questions, evidence requirements, and conditional engineering decisions. Operator authority, maintenance configuration, a controller/process model, pump actuation, the thermal process, and temperature/flow feedback are distinct. Selectable components expose assumptions, technical questions, and evidence to seek. The evidence chain separates access, implementation effects, control effects, and operational consequences. No experimental findings or successful exploit are simulated.
 
-The maritime example is prominently labeled **Hypothetical scenario** on Home and at `/about#walkthrough`. It describes invalid GPS-derived input placing an ECDIS into an unexpected state, undermining crew confidence without root or administrator access. The system includes crew interpretation and reliance on the information. The illustrative decision brief separates objective, scenario consequence, evidence needed, and decisions about input handling, fault indication, recovery, and independent verification. No measured result, remediation outcome, or customer engagement is claimed. The deeper walkthrough explains D4M once and discusses degradation without asserting the other effects.
+The stage rail uses native buttons with `aria-current="step"`, ordinary Tab/Enter/Space access, and additional arrow/Home/End navigation. Components use pressed-state buttons with an associated inspector. The resolution stage can explicitly return to modeling; any stage can be reopened. Scrolling never changes the selected stage. Responsive diagrams preserve control/feedback topology; reduced motion removes transitions. STPA-Sec informs the analysis but these six stages are IKELOS's broader workflow, not official STPA-Sec steps. Hypotheses, modeled consequences, experimental evidence, and proposed controls remain explicitly distinguished.
 
-The always-visible **Historical note: Stuxnet** section at `/about#stuxnet` links to Symantec’s [W32.Stuxnet Dossier](https://nsarchive2.gwu.edu/NSAEBB/NSAEBB424/docs/Cyber-044.pdf). It connects industrial process knowledge, control behavior, operator visibility, and intended operational effects. The systems-engineering connection is explicitly retrospective; it does not attribute STPA-Sec or another development method to the creators. Neither example is evidence of an IKELOS engagement. Keep both non-replicable: no packet contents, protocol identifiers, equipment versions, injection procedures, exploit sequences, code, or process parameters. Do not add crashes, grounding, equipment damage, complete navigation denial, or invented outcomes to the maritime example.
+Terminology was checked against the MIT-hosted [STPA-Sec systems analysis paper](https://web.mit.edu/smadnick/www/wp/2018-12.pdf). The thermal-control scenario and trace identifiers are original illustrative material, not claims from that paper or a customer engagement.
 
-Partnership positioning describes a **specialist delivery partner** that can own a defined research workstream, contributing system modeling, research planning, implementation investigation, validation, and evidence for the partner’s engineering and stakeholder deliverables. Responsibilities, interfaces, reporting, confidentiality, and IP arrangements are conversation topics, not standard terms or established relationships. Both engagement and partnership inquiries use `info@ikelosgroup.com`. Contact leads with its heading and `info@ikelosgroup.com`, followed by a short introduction. It publishes the confirmed initial workflow as a compact ordered list: introductory discussion → confidentiality arrangements as needed → objectives and access review → scoped proposal. Business inquiries and partnership prompts precede the retained encrypted-correspondence section.
-Design tokens, responsive layouts, visible focus states, and reduced-motion rules live in `src/index.css`. Preserve the palette, system fonts, and logo treatment. Use plain descriptive headings, sentence-case sans-serif labels (at least 12px), navigation and utility links at least 14px, and primary body copy at 16px. Reserve monospace for workflow numerals and fingerprints. The homepage headline is at most 48px, approximately 34px on narrow screens, with an 820px maximum text column. Accent color is concentrated on the engagement button, active navigation, and focus indicators. Avoid decorative section numbers, link arrows, and repeated panels. Retain the existing route focus and hash scrolling behavior when adding sections. Company-only content applies to visible copy, metadata, public files, and bundled source. Do not add personnel profiles or identifiers.
+## Pages and content contracts
 
-For release review, inspect all four routes at mobile, tablet, and desktop widths (375, 768, and 1440px), plus 320px reflow, including keyboard navigation, all eight hash destinations, persistent example labels, workflow legibility, contrast, reduced motion, partnership paths, and contact links. Confirm the business email appears within the initial 375×812 Contact viewport. Capture updated screenshots and record the actual checks and any limitations. Compare the supplied, public, and built PGP key bytes and verify its primary fingerprint with an OpenPGP tool. Check both redirect files against the built copy; review public assets and bundles for prohibited personal material. Automated component checks do not replace visual review or live-host redirect checks.
+Routes remain `/`, `/services`, `/about`, and `/contact`, with a meaningful in-app 404. All eight destinations remain available:
 
-The [2026-11-05 validation record](validation/design-review.txt) documents 27 passing component tests, the production build, 16 browser route/viewport checks, navigation and download verification, and the local screenshot locations and review limits.
+- `/services#analysis`, `#research`, `#consulting`, `#partner`
+- `/about#walkthrough`, `#stuxnet`
+- `/contact#partnerships`, `#encrypted-email`
 
-## Static hosting
+Home leads with the concrete value proposition, four buying triggers, and the architecture-to-implementation differentiator. The methodology workbench is followed by decision-focused engagement pathways, an inspectable sample evidence package, established company details, and a technical-scoping invitation. `BuyerPositioning.css` extends the original palette and responsive layout.
 
-For Cloudflare Pages, use build command `npm run build` and output directory `build`. The `.nvmrc` selects the tested Node version. If the project has a `NODE_VERSION` environment override, set it to `22.22.2` as well.
+The maritime example is now the representative NAV-01 evidence package at `/#sample-deliverable`, implemented in `Shared.js`. Eight native, keyboard-accessible disclosures expose the assumption register, hypothesis status, proposed test conditions, evidence requirements, limitations, modeled consequences, conditional decision, and retest criteria. It is labeled illustrative once; individual records carry evidence status. There are no fabricated findings or measured results. This sample demonstrates deliverable structure, not prior execution. No publishable research, customer history, or organizational credentials were supplied; only the existing company name and organizational contact channels appear. Add future research or credentials only when verified and approved for publication.
 
-Deploy the contents of `build/` to the existing static host when authorized. `public/_redirects` is copied into the build; it retains the Matrix discovery redirects before the SPA fallback. The root `_redirects` mirrors this configuration for existing host workflows. Keep both copies in sync.
+Capabilities retains conceptual diagrams, technical methods, and scoped outputs, and adds “Engage when” and “Decision supported” to every service and research discipline. “Research tooling and test platforms” replaces the ambiguous capability-development label. Foreign materiel exploitation and trusted execution environment analysis are omitted pending support for those specific public claims. Engineering advisory and partnership retain their anchors.
 
-A host that does not support `_redirects` needs equivalent redirect rules plus a fallback to `index.html` for client-side routes. Check direct requests and refreshes for every route, and the three Matrix discovery endpoints, after deployment. Hosting configuration and deployed behavior cannot be verified from this repository alone.
+Approach now explains engagement governance: scope and decision ownership, authorization/access/handling, safe test boundaries, reporting and scope review, stakeholder decisions, retesting, and handover. The evidence policy is centralized at `/about#evidence-policy`; the six-stage technical workflow remains on the homepage. `/about#walkthrough` leads to the inspectable sample. `/about#stuxnet` remains a secondary collapsed historical-reading disclosure with the existing source and a clear distinction from IKELOS work or attribution of STPA-Sec to the creators. Do not add equipment versions, exploit procedures, customers, credentials, or unsupported specialties.
+
+Contact leads with the organizational business email and the existing four-step introductory workflow, followed by partnership prompts and encrypted correspondence. Keep all company-only privacy requirements: no personnel biographies, personal contact details, individual career histories, testimonials, or Person metadata in rendered content or published assets. Third-party font copyright notices are retained as required by their licenses.
+
+## Contact and hosting contracts
+
+General inquiries: `info@ikelosgroup.com`. Encrypted correspondence: `secure_email@ikelosgroup.com`. Visitors must import the public key into an OpenPGP-capable mail application and enable encryption themselves. Opening a mailto link does not encrypt a message.
+
+Contact asks for a non-sensitive introduction. The explicit handling notice prohibits sending classified information, CUI, export-controlled data, credentials, or proprietary technical material before handling requirements and an approved channel are established. It makes clear that OpenPGP alone does not authorize transmission of controlled information. No clearance, accreditation, contracting eligibility, or secure-facility claim is implied.
+
+Public-key URL and download filename: `/keys/ikelos-secure-email.asc`, `ikelos-secure-email.asc`. Primary fingerprint: `5AD6 A645 E697 72E5 AA7C 0277 DB44 9499 7C6F 00D3`. Preserve the supplied public key byte-for-byte; verify the source, public, and built files and fingerprint when changing it. Never publish private key material.
+
+Cloudflare Pages: build command `npm run build`, output `build`, Node `22.22.2`. Root `_redirects` and `public/_redirects` must remain identical. Matrix server/client/support redirects precede the SPA fallback. Keep the no-JavaScript company-contact fallback in `public/index.html`.
+
+Navigation becomes solid after the top sentinel leaves view. The mobile modal contains focus, closes on Escape, returns focus and scroll when dismissed, and releases the page before route focus. Route changes update title, description, and Open Graph text and focus the main content. Hash jumps retain sticky-header clearance. Observers, media-query listeners, and intro timers are cleaned up; there is no continuous animation loop.
+
+## Local validation and review
+
+The latest results and limitations are in [validation/buyer-positioning/review.txt](validation/buyer-positioning/review.txt). [validation/buyer-positioning/](validation/buyer-positioning/) contains the four-route/four-width screenshots, initial views, buying case, collapsed/expanded sample, keyboard focus, menu, and evidence-policy captures; its `methodology/` directory contains all six workbench states. The earlier [Systems Sigil review](validation/design-review.txt) and [methodology review](validation/research-methodology/review.txt) remain historical records; current captures supersede their changed page content.
+
+The browser script is `scripts/browser-review.cjs`. It uses the environment's existing Playwright/Chromium and the dependency tree's axe-core without adding project dependencies. To use another environment, provide `PLAYWRIGHT_MODULE` and `CHROMIUM_EXECUTABLE`, and optionally `PREVIEW_URL` and `REVIEW_OUTPUT`. Run a static SPA preview of `build/` first. `--interactions` checks keyboard, all eight legacy hashes plus new destinations, sample disclosures, menu, and downloads; `--icons` rasterizes the SVG favicon into the public icon assets and should be followed by a build.
+
+Browser checks cover Chromium only. Live hosting, Matrix responses on the deployed host, and Safari/Firefox behavior remain unverified. Local checks are not an accessibility certification or deployment authorization.
+
+
+For the methodology feature, run `scripts/methodology-review.cjs` with the same browser environment variables and local production preview described above. It checks all six stages at 320, 375, 768, and 1440 pixels, component/evidence inspection, keyboard navigation, iteration, stable geometry, annotations, reduced motion, runtime errors, and axe accessibility results. Dependency inputs did not change; the existing installation was reused.
