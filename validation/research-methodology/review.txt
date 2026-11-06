@@ -1,0 +1,119 @@
+Historical record: the six-stage workbench remains, with streamlined status
+copy. The scroll narrative and surrounding pages have since changed. See
+validation/buyer-positioning/review.txt for current results and screenshots.
+
+IKELOS — Section 02 research methodology refactor
+Date: 2026-11-05
+Branch: brand/systems-sigil-redesign
+Local-only work. No push, merge, commit, or deployment.
+
+Result
+Replaced the five-tab "One system. Five ways to question it" interface with a
+six-stage systems-engineering research workbench. Uses the requested title and
+introduction verbatim. Preserves Systems Sigil, Steel Doctrine, existing routes,
+contact/security contracts, and the independent scroll-driven narrative.
+
+Implementation
+- Six directly selectable stages with native buttons and aria-current="step":
+  Mission & Consequence; System Modeling; Causal & Attack Analysis; Technical
+  Investigation; Exploit Validation; Engineering Resolution.
+- One explicitly fictional remote thermal-control module. A persistent control
+  structure distinguishes operator authority, maintenance configuration,
+  controller/process model, pump drive, thermal circuit, and temperature/flow
+  feedback. Control and service boundaries, directed relationships, and the
+  closed feedback loop are drawn explicitly. Mobile preserves that topology.
+- Stage-dependent mission envelope, candidate causal-path overlays, research
+  focus, evidence acquisition markers, and proposed control barriers. Labels,
+  dashed paths, double outlines, and captions supplement color. No fake data,
+  results, telemetry, exploit success, or completed remediation is displayed.
+- Selectable components expose their assumptions, technical questions, and
+  evidence requirements. A text topology description supports screen readers.
+- Traceable analysis: L-01 mission availability; H-01 insufficient cooling;
+  SC-01 adequate cooling constraint; M-01 control model; A-01 configuration
+  authority assumption; ICA-01 insufficient pump demand in the specified
+  operating context; CS-01 candidate calibration/process-model causal scenario;
+  Q-01..03 targeted implementation questions; E-01..04 evidence requirements;
+  D-01 engineering decision and V-01 verification.
+- Validation separates access/authority, implementation effect, control effect,
+  and operational consequence. The evidence chain supports component inspection.
+  Negative/inconclusive results and insufficient access are explicit outcomes.
+- Engineering Resolution offers a real return to System Modeling. All stages
+  can be reopened directly; research is not presented as a completion checklist.
+- STPA-Sec's role in systems analysis is explicit; the six stages are IKELOS's
+  broader workflow, not official STPA-Sec steps. Attack hypotheses, modeled
+  consequences, experimental findings, and proposed controls remain distinct.
+
+Content basis
+The supplied six-stage brief defines the methodology. Technical terminology was
+checked against the MIT-hosted STPA-Sec paper:
+https://web.mit.edu/smadnick/www/wp/2018-12.pdf
+The thermal scenario, component assumptions, trace identifiers, questions, and
+visualization are original illustrative material, not results from that paper
+or an IKELOS engagement. No new organizational credentials or specialties added.
+
+Main files
+src/components/SystemsModel.js — workbench, responsive control structure,
+  stage selection, component inspection, traceability, and evidence interaction.
+src/components/researchMethodology.js — six-stage content and component records.
+src/components/ResearchMethodology.css — scoped visuals and responsive layout.
+src/components/NarrativeDiagram.js — extracted existing narrative-only diagram.
+src/components/ResearchNarrative.js — imports the independent narrative diagram.
+src/index.css — removes obsolete tab/panel and old signature-diagram styles.
+src/App.test.js — updates old assertions and adds new behavior/semantics checks.
+scripts/methodology-review.cjs — reproducible focused production browser review.
+scripts/browser-review.cjs — updates general regression workflow for six stages.
+README.md; validation/design-review.txt — current documentation/history pointer.
+
+Validation (Node.js 22.22.2)
+- Dependency inputs unchanged; reused the prior clean npm installation.
+- CI=true npm test -- --watchAll=false --runInBand: 32 tests, 1 suite passed.
+  Retains route/hash/focus/contact/encryption/download coverage. Adds six-stage
+  selection, arrow/Home/End controls, iterative return, component/evidence
+  inspection, topology description, and technical-distinction checks.
+  Existing ReactDOMTestUtils.act and punycode deprecation notices remain.
+- npm run build: compiled successfully, no build warnings.
+  Main JS 72.62 kB gzip; stylesheet 8.68 kB gzip; existing chunk 1.77 kB gzip.
+- git diff --check: passed.
+
+Production browser review
+Chromium 153.0.8010.12, local SPA preview of build/.
+- 6 stages x 4 widths (320, 375, 768, 1440): 24 checked combinations.
+- No horizontal overflow, runtime errors, or HTTP errors.
+- No axe WCAG 2 A/AA or 2.1 AA violations in any of the 24 combinations.
+  Contrast checks on gradient/layered backgrounds have incomplete results;
+  manual visual review supplements them. This is not accessibility certification.
+- All six component inspections and all four evidence controls verified.
+- Stable node dimensions across stages; annotation boxes do not overlap nodes.
+- Ordinary native button behavior plus Left/Right/Up/Down, Home/End verified.
+- Iterative return to System Modeling and scroll independence verified.
+- Reduced motion removes transitions; keyboard-activated causal overlay and
+  visible focus captured. Other routes smoke-checked; full component regression
+  preserves their existing contracts.
+
+Visual refinement
+Reviewed desktop and mobile workbenches, causal diagrams, validation evidence,
+and full section captures. Fixed a low-contrast selected evidence label (cyan
+on Steel Blue Gray), corrected named-group ARIA, aligned the dashed causal path
+with actual configuration/control/actuation relationships, and refined compact
+node geometry and caption placement. The insecure-action example now specifies
+pump demand below the required cooling level rather than any reduction.
+Screenshot capture waits for transitions to settle. Header and off-screen skip
+link are hidden only during element captures to prevent screenshot artifacts;
+production behavior is unchanged. No script-driven autoplay or scroll hijacking.
+
+Artifacts: validation/research-methodology/
+- methodology-{320,375,768,1440}.png: complete section in initial mission stage.
+- structure-{1..6}-{375,1440}.png: six control-structure/inspector states.
+- analysis-{1..6}-{375,1440}.png: six analytical explanations/evidence states.
+- causal-diagram-{320,375,768,1440}.png: focused causal topology.
+- keyboard-reduced-motion.png: focused control with settled causal overlay.
+- results.json; component-tests.txt; production-build.txt; artifact-audit.json.
+Total: 33 screenshots. Older five-state screenshots remain as initial-redesign
+history and are superseded for section 02 by these artifacts.
+
+Limits
+Local Chromium only; Safari, Firefox, assistive-technology user testing,
+performance under network/CPU throttling, and live-host behavior were not tested.
+The scenario is explanatory and is not a complete STPA-Sec analysis or a real
+research result. No known local functional blocker remains. The temporary local
+preview is stopped after verification.

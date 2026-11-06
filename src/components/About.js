@@ -1,84 +1,32 @@
 import React from 'react';
-import { DecisionBrief } from './Shared';
+import { Link } from 'react-router-dom';
 
-const stages = [
-  ['Define the operational problem.', 'Establish intended functions, operating modes, critical outcomes, assessment boundaries, and attacker access assumptions.', 'Assessment objectives, scope, and documented assumptions.'],
-  ['Model the system.', 'Map components, interfaces, trust boundaries, control actions, feedback, dependencies, and relevant physical processes.', 'A system model showing security-relevant relationships.'],
-  ['Develop attack hypotheses.', 'Examine security assumptions, commands, message sequences, timing, and control interactions that could reach unknown or unsafe states or produce an unacceptable outcome.', 'Prioritized hypotheses tied to system functions and consequences.'],
-  ['Investigate the implementation.', 'Apply targeted reverse engineering, hardware interface characterization, protocol analysis, emulation, fuzzing, black-box investigation, or custom tooling as the system requires.', 'Observed states and transitions, technical observations, and candidate attack paths.'],
-  ['Validate exploitability.', 'Test candidate paths under defined access and operating conditions. Develop proof-of-concept demonstrations where appropriate and record prerequisites, repeatability, observed impact, and limitations.', 'Evidence distinguishing confirmed findings from unresolved hypotheses.'],
-  ['Support engineering decisions.', 'Connect findings to operational consequences and recommend changes to design, implementation, integration, or operating controls. Define retest criteria where included in scope.', 'Prioritized engineering recommendations supported by the evidence.'],
-];
-const walkthrough = [
-  ['Dependable navigation information', 'Begin with the operational purpose: the crew needs information it can rely on for navigation. Crew interpretation, confidence, and dependence on that information are part of the system.'],
-  ['Dependencies and assumptions', 'Model the relationship between GPS-derived input, the Electronic Chart Display and Information System (ECDIS), its fault indications, and the crew. Ask what the system assumes about input validity and how uncertainty is communicated.'],
-  ['Unexpected behavior', 'In this hypothetical scenario, invalid GPS-derived input places the ECDIS into an unexpected state without obtaining root or administrator access. Investigate the input-handling assumption and the resulting system behavior.'],
-  ['Diminished operational confidence', 'The unexpected behavior undermines crew confidence in the information the ECDIS provides. Establishing that effect would require evidence of both the system’s behavior and its influence on crew interpretation and reliance.'],
-  ['Engineering decisions', 'Use the evidence to decide how inputs should be handled, how faults should be indicated, what recovery requires, and how the information can be independently verified. Define the evidence needed to evaluate each change.'],
+const milestones = [
+  ['Scope the decision', 'Identify the decision owner, critical functions, unresolved assumptions, operating constraints, and timeline. Define what evidence would change the decision and what can be investigated with the access available.', 'A bounded research question, scope, deliverables, and completion criteria.'],
+  ['Authorize and prepare', 'Establish written testing authority, target ownership, in-scope assets and interfaces, access permissions, and third-party dependencies. Agree confidentiality, intellectual property, data handling, retention, and approved communications before exchanging restricted material.', 'Authorization and access conditions, handling requirements, and responsibilities.'],
+  ['Set the test boundaries', 'Agree the test environment, permitted activities, safety constraints, stop conditions, recovery procedures, and escalation contacts. Document any differences between laboratory conditions and the operational system.', 'A test plan with explicit operating limits, recovery arrangements, and coverage boundaries.'],
+  ['Investigate and review', 'Use system-led and technique-adaptive research to test prioritized hypotheses. Review observations and emerging consequences with the responsible stakeholders. Changes in access, models, or priorities trigger a scope review before work expands.', 'Traceable evidence, progress reviews, and documented decisions about the next research step.'],
+  ['Decide, retest, and hand over', 'Connect technical evidence to engineering options, operational constraints, and residual uncertainty. Agree which changes and follow-up tests belong in scope. Provide the decision brief and supporting records for stakeholder review.', 'Engineering recommendations, a decision record, and retest criteria tied to the original question.'],
 ];
 
 export default function About() {
   return <>
     <section className="page-hero wrap">
-      <h1>Approach</h1>
-      <p className="page-lede">Our top-down, target-agnostic approach begins with system purpose, constraints, and relationships. We investigate the implementation to establish exploitability, understand operational consequences, and support engineering decisions with evidence.</p>
+      <p className="eyebrow">Engagement governance / IKELOS Group</p><h1>Approach</h1><p className="page-statement">A clear question.<br/>An accountable investigation.</p>
+      <p className="page-lede">Agree the decision, authority, access, and evidence before research begins. Keep stakeholders informed as the investigation changes what is known—and what needs to be tested next.</p>
+      <nav className="page-jump-links" aria-label="Approach sections"><Link to="#governance">How we work</Link><Link to="#evidence-policy">Evidence policy</Link><Link to="#walkthrough">Sample deliverable</Link></nav>
     </section>
-
-    <section className="section wrap" aria-labelledby="workflow-title">
-      <div className="section-intro prose">
-        <h2 id="workflow-title">Six-stage iterative workflow</h2>
-        <p>This is IKELOS’s engagement workflow, adapted to scope. System purpose, unacceptable outcomes, and control relationships guide the questions; the target determines the investigative techniques and tooling.</p>
-        <p>Where appropriate, System-Theoretic Process Analysis for Security (STPA-Sec) helps formulate and prioritize research questions. These are not the official steps of STPA-Sec. The analysis does not scan for exploits, certify a system, or prove a proposed attack works; implementation research and experimental validation provide that evidence.</p>
-      </div>
-      <ol className="workflow" aria-label="Engagement workflow">{stages.map(([title, copy, output], i) => <li key={title}>
-        <span className="workflow-number" aria-hidden="true">0{i + 1}</span>
-        <div><h3>{title.replace(/\.$/, '')}</h3><p>{copy}</p></div>
-        <div className="stage-output"><span className="label">Output</span><p>{output}</p></div>
-      </li>)}</ol>
-      <p className="iteration-note">Evidence feeds back into the model. New observations can change the access assumptions, reveal a missing dependency, or reorder the research priorities.</p>
+    <section id="governance" className="section wrap" aria-labelledby="governance-title">
+      <div className="section-intro prose"><p className="eyebrow">From scoping to handover</p><h2 id="governance-title">Govern the work.<br/>Keep the decision in view.</h2><p>These agreements frame the research. They are revisited when evidence changes the model, the access assumptions, or the priorities. Your engineering and security teams remain part of the decision process.</p></div>
+      <ol className="workflow governance-workflow" aria-label="Engagement governance">{milestones.map(([title, copy, output], i) => <li key={title}><span className="workflow-number" aria-hidden="true">0{i+1}</span><div><h3>{title}</h3><p>{copy}</p></div><div className="stage-output"><span className="label">Agreement / output</span><p>{output}</p></div></li>)}</ol>
+      <Link className="text-link methodology-link" to="/#research-methodology">Explore the six-stage research methodology <span aria-hidden="true">↗</span></Link>
     </section>
-
-    <section className="section wrap" aria-labelledby="confidence-title">
-      <div className="section-intro prose">
-        <h2 id="confidence-title">Evidence standards</h2>
-        <p>An unknown state is not automatically unsafe or exploitable. Reports distinguish what was seen, what it suggests, and what testing established.</p>
-      </div>
-      <dl className="evidence-states">
-        <div><dt>Observation</dt><dd>A recorded behavior or implementation detail, with the conditions under which it was observed.</dd></div>
-        <div><dt>Hypothesis</dt><dd>A proposed attack path or consequence that requires further investigation and validation.</dd></div>
-        <div><dt>Validated finding</dt><dd>A conclusion supported by repeatable evidence under documented access and operating conditions, with stated limitations.</dd></div>
-      </dl>
-      <p className="scope-note">An engagement does not guarantee successful compromise, discovery of a new vulnerability, exhaustive coverage, or proof that a system is secure. Unresolved hypotheses and coverage limits remain explicit.</p>
+    <section id="evidence-policy" className="section wrap content-section" aria-labelledby="confidence-title">
+      <div><p className="eyebrow">Evidence policy</p><h2 id="confidence-title">Conclusions with<br/>defined boundaries.</h2></div>
+      <div className="prose"><p className="evidence-policy">We report demonstrated findings, bounded negative results, unresolved hypotheses, and coverage limitations separately. Conclusions are limited to the documented access, configuration, and operating conditions.</p><p>Modeled consequences guide the investigation. Experimentally demonstrated consequences require evidence that connects access, implementation behavior, system effect, and operational context.</p><p>The decision brief identifies what the evidence supports, what remains unresolved, and which engineering or follow-up research choices are available.</p></div>
     </section>
-
-    <section id="walkthrough" className="section wrap" aria-labelledby="walkthrough-title">
-      <div className="document-panel">
-        <div className="section-intro prose">
-          <p className="scenario-label">Hypothetical scenario</p>
-          <h2 id="walkthrough-title">Maritime walkthrough: navigation confidence</h2>
-          <p>This scenario illustrates analytical reasoning, not an IKELOS customer engagement or a verified finding. Start with dependable navigation information and follow the dependencies through to the engineering decisions.</p>
-        </div>
-        <ol className="walkthrough" aria-label="Maritime walkthrough">{walkthrough.map(([title, copy], i) => <li key={title}>
-          <span className="workflow-number" aria-hidden="true">0{i + 1}</span><h3>{title}</h3><p>{copy}</p>
-        </li>)}</ol>
-        <div className="walkthrough-brief">
-          <div className="prose">
-            <h3>Access conditions and operational effects</h3>
-            <p>D4M describes deny, degrade, disrupt, destroy, and manipulate. This hypothetical example concerns degradation of an operational capability; it does not establish the other effects.</p>
-            <p>To establish exploitability, an investigation would also need to demonstrate the assumed ability to influence the input under defined access conditions. Unexpected behavior alone does not establish an operational effect.</p>
-          </div>
-          <DecisionBrief />
-        </div>
-      </div>
-    </section>
-
-    <section id="stuxnet" className="section wrap historical-note" aria-labelledby="stuxnet-title">
-      <div className="prose">
-        <h2 id="stuxnet-title">Historical note: Stuxnet</h2>
-        <p>Symantec’s <cite>W32.Stuxnet Dossier</cite> describes malware designed to alter industrial control behavior while concealing changes. Its analysis connects knowledge of the target process and equipment with changes to control logic, intended sabotage, and mechanisms that obscured those changes from operators. <a className="source-link" href="https://nsarchive2.gwu.edu/NSAEBB/NSAEBB424/docs/Cyber-044.pdf">Read the Symantec analysis (PDF)</a>.</p>
-        <p>Our retrospective systems-engineering interpretation is that the operational objective, process dependencies, control behavior, and operator visibility must be examined together. An implementation weakness gains meaning through the effect it can produce in that wider system.</p>
-        <p>This is historical analysis, not an IKELOS engagement or a claim of comparable achievement. It does not establish which development method the creators used, including STPA-Sec. It is separate from the maritime scenario and does not illustrate an absence of privileged access.</p>
-      </div>
-    </section>
+    <section id="walkthrough" className="section wrap" aria-labelledby="walkthrough-title"><div className="document-panel sample-referral"><div><p className="label">Representative deliverable / NAV-01</p><h2 id="walkthrough-title">Inspect a decision brief.</h2></div><div><p>The navigation input integrity sample shows the assumption register, hypothesis status, proposed test conditions, evidence requirements, limitations, modeled consequence, decision, and retest criteria in one inspectable package.</p><Link className="text-link" to="/#sample-deliverable">Open the illustrative evidence package <span aria-hidden="true">↗</span></Link></div></div></section>
+    <section className="section wrap content-section" aria-labelledby="scoping-title"><h2 id="scoping-title">Bring the constraints<br/>into the first conversation.</h2><div className="prose"><p>Start with the decision, deadline, and high-level system context. For direct and partner engagements, scoping covers authorization, procurement requirements, handling constraints, reporting, team interfaces, and deliverable acceptance.</p><Link className="button" to="/contact">Scope a technical investigation <span aria-hidden="true">↗</span></Link></div></section>
+    <aside id="stuxnet" className="wrap historical-note"><details><summary>Historical reading / Stuxnet</summary><div className="prose"><p>For historical context, Symantec’s <cite>W32.Stuxnet Dossier</cite> examines industrial control behavior and operator visibility. This is a retrospective reference, not IKELOS work or evidence that STPA-Sec was used by the creators. <a className="source-link" href="https://nsarchive2.gwu.edu/NSAEBB/NSAEBB424/docs/Cyber-044.pdf">Read the Symantec analysis (PDF)</a>.</p></div></details></aside>
   </>;
 }

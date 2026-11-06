@@ -1,0 +1,26 @@
+{
+  "key_bytes_preserved": true,
+  "redirects_preserved": true,
+  "production_files": {
+    "build/static/css/main.ae41d7d6.css": {
+      "bytes": 41325,
+      "sha256": "1f6475492ed863632c714b2d21d6a3a14b80f48f5d9b9472606e3bd1e8bddbf9"
+    },
+    "build/static/media/systems-sigil.a83ea3705a38eb504fd8398b3097296b.svg": {
+      "bytes": 716,
+      "sha256": "77579091f840c1c5cc64a9d5bdae175ae3e6bf823ad9b9814118797e0455d4b1"
+    },
+    "build/static/js/453.66be4ab2.chunk.js": {
+      "bytes": 4459,
+      "sha256": "d16606c06c2b15467d4e2c5862fbc82f491fe7a3da925f3ef2f20d589c76ab6c"
+    },
+    "build/static/js/main.886568dd.js": {
+      "bytes": 234257,
+      "sha256": "cdbe9b3bab277a0a04a6c52338c772ff8edb6622ac93f12f71331bfe1018ca02"
+    },
+    "build/static/js/main.886568dd.js.LICENSE.txt": {
+      "bytes": 1652,
+      "sha256": "fc4f8b8f682fc1422111dfa8009a4c5df1649bd58efb94321ee1a304540c954c"
+    }
+  }
+}

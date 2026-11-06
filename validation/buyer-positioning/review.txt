@@ -1,0 +1,134 @@
+IKELOS — Buyer positioning and inspectable evidence package
+Date: 2026-11-05
+Branch: brand/systems-sigil-redesign
+Local implementation and production-build review, completed before the
+subsequently authorized commit and branch push. No merge or deployment.
+Existing unrelated/untracked source materials kept.
+
+Implemented
+- Preserved the brand line and Systems Sigil composition; replaced hero support
+  with the requested system-level value proposition and technical-scoping CTA.
+- Put four buying triggers and the architecture/implementation differentiator
+  ahead of the signature six-stage methodology. Clarified how IKELOS fits with
+  engineering, product-security, and test teams.
+- Replaced the redundant scroll narrative with a concise buying case and a
+  static assumption-to-decision chain. Manual workbench selections remain
+  independent of scrolling; original geometry and interactions are preserved.
+- Reframed homepage engagement pathways around decisions and received outputs.
+  Added Engage when / Decision supported to all four service groups and all
+  five implementation-research disciplines.
+- Converted the maritime walkthrough into the inspectable NAV-01 sample at
+  /#sample-deliverable. Eight native details/summary records contain assumption
+  register, hypothesis status, test conditions, evidence, limitations,
+  consequence analysis, decision, and retest criteria. Explicitly illustrative;
+  no collected evidence, observed result, customer, or successful exploit is
+  claimed. The sample demonstrates deliverable structure, not prior execution.
+- Recast Approach around scope, written authority, access/handling, test safety,
+  reporting/scope changes, stakeholder decisions, retesting, and handover.
+  Centralized the requested evidence policy at /about#evidence-policy.
+- Retained /about#walkthrough as a direct route to the sample. Demoted the
+  Stuxnet reference into a secondary collapsed disclosure with its source and
+  qualification. All eight legacy hash destinations remain present.
+- Used the established company name and business contact channel. No public
+  research, customer history, personnel information, contracting identifiers,
+  facilities, certifications, or clearance/handling claims were invented.
+  Future publications can supply a proof layer once available and approved.
+- Removed unsupported public specificity about foreign materiel exploitation
+  and trusted execution environment analysis. Renamed capability development
+  to Research tooling and test platforms; removed D4M and target-agnostic copy.
+- Streamlined repetitive disclaimers while keeping hypotheses, modeled
+  consequences, required evidence, and conditional decisions distinct.
+- Added the requested controlled-information notice beside encrypted-contact
+  instructions, plus a brief non-sensitive-introduction reminder near email.
+  Preserved email addresses, PGP instructions, key bytes and download filename.
+- Updated route/static metadata and README content/validation contracts.
+
+Files changed in this pass
+src/App.js, src/App.test.js
+src/components/Hero.js, Home.js, ResearchNarrative.js, Shared.js,
+  Services.js, About.js, Contact.js, SystemsModel.js, researchMethodology.js
+src/components/BuyerPositioning.css (new)
+public/index.html
+scripts/browser-review.cjs, scripts/methodology-review.cjs
+README.md, validation/design-review.txt,
+  validation/research-methodology/review.txt, validation/buyer-positioning/*
+The branch also includes the earlier Systems Sigil and methodology work.
+
+Verification
+- Node 22.22.2. Dependency manifests/lockfile unchanged; reused the installation
+  from the earlier clean-install validation. No new dependency or backend.
+- CI=true npm test -- --watchAll=false --runInBand: 32/32 passed.
+  Coverage includes routing, route focus, metadata, all eight legacy hashes,
+  service decisions, sample disclosure/status content, governance/evidence
+  policy, email/security instructions, key download, mobile focus containment,
+  six-stage selection/keyboard controls, component/evidence inspection,
+  intro skipping, reduced motion, and 404 recovery.
+  Existing React test-utils act and Node punycode deprecation warnings remain.
+- npm run build: passed. Gzip main JS 73.58 kB; main CSS 9.98 kB.
+- Chromium 153.0.8010.12 production preview: all four pages at widths 320, 375,
+  768, 1440; viewport heights 812 for mobile and 1000 for tablet/desktop.
+  16 page checks: zero horizontal overflow, zero axe WCAG A/AA violations,
+  zero runtime/HTTP errors; local Inter/Orbitron loaded at every viewport.
+- 21 internal link destinations and brand/font/favicon/key assets checked.
+  No external resource requests. No new analytics, external fonts, or crypto.
+- 44 direct hash checks (eight legacy and three new destinations at four
+  widths): targets clear the fixed header. Company email visible immediately.
+- All eight sample records open with Enter; Space closes a focused disclosure.
+  Expanded records pass axe, preserve reflow, and expose explicit statuses.
+  The old maritime destination reaches the package with route focus restored.
+- Mobile menu: focus containment, Escape, focus/scroll restoration, navigation
+  and route focus; zero axe violations. Skip link and visible CTA focus checked.
+- Workbench: 24 stage/width combinations, six component inspectors, four
+  evidence requirements, arrow/Home/End controls, iteration, unchanged geometry,
+  annotation clearance, scroll independence, and reduced motion pass.
+  Zero methodology axe violations or runtime errors.
+- Browser download: exact filename ikelos-secure-email.asc and matching bytes.
+- Supplied, public, and built keys have SHA-256:
+  2d6b272c861bca73413947d60d5567382a883a1d8389c4013bd48255094bab5e
+  GnuPG --show-keys verifies primary fingerprint:
+  5AD6 A645 E697 72E5 AA7C 0277 DB44 9499 7C6F 00D3
+- Root/public/built _redirects match; Matrix server/client/support destinations
+  precede the SPA fallback. No-JavaScript company-contact fallback retained.
+- Reviewed rendered content/source for unsupported proof, personnel information,
+  private-key material, and private work-history claims. None added.
+- Application-source whitespace check: passed. The staged commit preserves
+  original upstream license whitespace and captured production-build log endings.
+
+Visual review and refinements
+- Reviewed initial views, page composition, buying triggers, sample records,
+  governance, contact handling, focus and workbench at the target breakpoints.
+- Adjusted hero spacing and CTA sizing so the longer value proposition and
+  scoping action remain readable in the mobile initial view.
+- Sample uses cold-white document presentation, clear record identifiers,
+  status text, and at least 64px disclosure rows, collapsing to one column.
+- Added visible summary focus and corrected the record group's accessibility
+  role after axe flagged its originally unsupported label.
+- Changed the boundary-panel label to Mist Gray for stronger contrast against
+  the gradient. Mist Gray on Steel Blue Gray is 6.34:1; Hardened Steel on Cold
+  White is 6.67:1; Deep Slate on the Signal Cyan CTA is 6.11:1.
+- Section screenshots hide the fixed header/skip link to avoid capture overlays;
+  viewport, menu, and focus screenshots retain normal page rendering.
+- The browser interaction script now waits for the route-focus effect after
+  navigation; an early assertion raced that effect. Final run passes.
+
+Review artifacts (103 PNG screenshots)
+validation/buyer-positioning/results.json: route/width checks, axe, fonts, links.
+validation/buyer-positioning/interactions.json: keyboard/menu/hash/download checks.
+validation/buyer-positioning/methodology/results.json: all 24 stage/width checks.
+home|services|about|contact-{320,375,768,1440}-viewport.png: initial views.
+home|services|about|contact-{320,375,768,1440}.png: full pages.
+buying-case-*.png: buying triggers and differentiator.
+sample-*.png, sample-expanded-*.png, sample-keyboard-*.png: record states/focus.
+governance-*.png, evidence-policy-*.png, historical-note-*.png: Approach detail.
+menu-375.png, focus-mobile.png, focus-desktop.png, reduced-motion-1440.png.
+methodology/: six-stage diagrams, analyses, mobile topology and keyboard focus.
+
+Limitations
+Checks are local Chromium checks, not live-host verification or an accessibility
+certification. Firefox, Safari, assistive-technology user testing, deployed
+Cloudflare behavior, and live Matrix responses were not verified. Axe leaves
+color-contrast checks incomplete for gradients, SVG/image layers, and pseudo
+elements; these are recorded in results.json and reviewed visually. The final
+page checks have no remaining incomplete ARIA-label category. No organizational
+track record is established by the representative sample. Publishing and any
+future research/credential claims remain separate work.
