@@ -1,0 +1,105 @@
+IKELOS design simplification — validation record
+Date: 2026-11-05
+Scope: Local implementation in the existing working tree. No deployment, merge, or push.
+
+Implementation
+- Text-led homepage with one engagement button, three services, compact reasons to
+  engage, a 52-word hypothetical maritime preview, and contextual partnership link.
+- Capabilities organized into system security analysis, vulnerability research,
+  and engineering advisory; deliverables remain with the relevant service.
+- Approach retains six iterative stages, evidence distinctions, the complete
+  maritime walkthrough and brief, and a compact, always-visible Stuxnet note.
+- Contact leads with the business email and retains the four-step workflow,
+  partnership prompts, encryption instructions, fingerprint, and download.
+- Plain navigation, descriptive headings, sentence-case labels, and reduced
+  decoration. Logo, palette, four routes, and all seven prior hashes retained;
+  /services#analysis added. README and metadata updated. No dependencies added.
+
+Component tests
+Command (Node.js 22.22.2): CI=true npm test -- --watchAll=false --runInBand
+Result: 1 suite passed; 27 tests passed.
+Coverage includes revised reading order, service groups and methods, navigation,
+route focus and scroll behavior, eight direct hashes, four same-page service
+links, mobile menu dismissal, hypothetical/historical qualifications, all six
+workflow stages, evidence distinctions, partnership path, email and key links.
+Existing dependency warnings: ReactDOMTestUtils.act deprecation and Node punycode
+deprecation. They did not fail the tests; dependencies were not changed.
+
+Production build
+Command: npm run build
+Result: Compiled successfully.
+Main bundle: build/static/js/main.7be6258c.js (61.65 kB gzip)
+Stylesheet: build/static/css/main.ac9b70f0.css (2.79 kB gzip)
+Whitespace check: git diff --check passed.
+
+Browser verification
+Used preinstalled Playwright/Chromium and axe-core against the production build
+on a local SPA preview server; no project dependencies were installed.
+All four routes checked at widths 320, 375, 768, and 1440px. Narrow viewports were
+812px tall; tablet and desktop viewports were 1000px tall.
+- 16 route/viewport combinations: no overflow, one h1, no axe WCAG 2 A/AA or 2.1 AA violations; minimum sampled type 14px; no uppercase transforms.
+- Homepage headline 48px maximum, 34px on narrow screens, column <=820px; single CTA; no diagram or decision brief.
+- Hypothetical labels remain visible; Approach has all six workflow stages, five walkthrough steps, full brief, and historical note.
+- Business email fully visible in initial 375×812 Contact viewport.
+- Skip link; Escape dismissal and focus return; outside click; mobile navigation closes menu and focuses main.
+- All eight direct hash destinations show their heading below sticky header at all four widths.
+- Same-page jumps for all four service links and both Contact links.
+- Contextual partnership and maritime paths, cross-route hash focus.
+- PGP browser download filename and byte equality with public key.
+- Reduced-motion preference disables transitions.
+- Visible keyboard focus on desktop engagement button.
+- Internal links, allowed email addresses, 404 recovery, no runtime or HTTP errors.
+No axe WCAG 2 A/AA or 2.1 AA violations or incomplete checks in any of the 16
+route/viewport combinations. This is an automated check, not an accessibility
+certification. Direct hash positioning was checked at all four widths (32 cases).
+
+Visual review
+Reviewed full-page and initial-viewport captures of all routes, plus focused
+maritime, brief, historical-note, and keyboard-focus captures. Reading order,
+text wrapping, persistent labels, navigation, and fingerprint reflow checked.
+Body copy is 16px; navigation and utility links are at least 14px. The homepage
+headline is 48px on desktop and 34px at narrow widths, in a <=820px column.
+The full example has the only contrasting document panel. No text clipping or
+horizontal scrolling was found. The Contact email is fully visible at 375×812:
+top 178.44px; bottom 215.83px.
+
+Measured text contrast ratios:
+- body: 15.61:1
+- muted: 8.71:1
+- accent_button: 11.13:1
+- document_body: 12.35:1
+- document_muted: 6.6:1
+- focus_on_dark: 11.13:1
+
+Public interfaces and assets
+- Business mailto: info@ikelosgroup.com.
+- Encrypted mailto: secure_email@ikelosgroup.com.
+- Download URL: /keys/ikelos-secure-email.asc.
+- Browser download filename: ikelos-secure-email.asc.
+- Source, public, and built public-key files are byte-identical (860 bytes).
+- Public-key SHA-256:
+  2d6b272c861bca73413947d60d5567382a883a1d8389c4013bd48255094bab5e
+- Primary fingerprint verified with GnuPG --show-keys --with-colons --fingerprint:
+  5AD6 A645 E697 72E5 AA7C 0277 DB44 9499 7C6F 00D3
+- Supplied and bundled logo bytes match; source artwork was not edited.
+- Root, public, and built redirect files match.
+
+Review artifacts
+Directory: /tmp/ikelos-simplification-review/
+- results.json: browser checks, all viewport results, and inspected links.
+- artifact-audit.json: key/asset checks, contrast ratios, final bundle hashes.
+- browser-check.cjs: exact local browser verification script.
+- {home,services,about,contact}-{320,375,768,1440}.png: full-page captures.
+- Same names with -viewport.png: initial viewport captures.
+- walkthrough-intro, walkthrough-step, decision-brief, and stuxnet captures at
+  each width. Sticky header hidden only for these detail captures to avoid
+  covering the cropped content; full-page/viewport captures use normal styling.
+- focus-mobile.png and focus-desktop.png: visible keyboard focus.
+Total screenshots: 50.
+
+Limits
+Visual and browser verification used Chromium, not Safari or Firefox. Direct
+route loading was checked through the local SPA fallback; production hosting,
+Matrix redirects on the live host, and external source availability were not
+retested. The Symantec source URL and historical claims were preserved. The
+local preview server is temporary; screenshots and records remain on disk.

@@ -30,7 +30,7 @@ export default function Navbar() {
       <nav id="primary-nav" className={`primary-nav${open ? ' is-open' : ''}`} aria-label="Main navigation">
         <NavLink to="/services" onClick={() => setOpen(false)}>Capabilities</NavLink>
         <NavLink to="/about" onClick={() => setOpen(false)}>Approach</NavLink>
-        <NavLink to="/contact" className="nav-contact" onClick={() => setOpen(false)}>Discuss an engagement <span aria-hidden="true">↗</span></NavLink>
+        <NavLink to="/contact" onClick={() => setOpen(false)}>Contact</NavLink>
       </nav>
     </div>
   </header>;

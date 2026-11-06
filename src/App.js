@@ -10,10 +10,10 @@ import { Link } from 'react-router-dom';
 import './index.css';
 
 const pageMeta = {
-  '/': ['Bespoke vulnerability research & cybersecurity consulting', 'IKELOS Group provides bespoke vulnerability research and cybersecurity consulting. Start a conversation about your security questions.'],
-  '/services': ['Capabilities', 'Explore bespoke vulnerability research and cybersecurity consulting from IKELOS Group.'],
-  '/about': ['Approach', 'A focused approach to bespoke security work: understand the question, agree the scope, and investigate.'],
-  '/contact': ['Contact', 'Contact IKELOS Group for general inquiries or encrypted PGP correspondence. Download our public key and view its fingerprint.'],
+  '/': ['System exploitability & operational consequences', 'Understand system exploitability and operational consequences with IKELOS Group. System security analysis, vulnerability research, and engineering advisory.'],
+  '/services': ['Capabilities', 'System security analysis, vulnerability research, and engineering advisory. Engage IKELOS as a specialist delivery partner for a defined research workstream.'],
+  '/about': ['Approach', 'A top-down, target-agnostic practice connecting system models, implementation research, and validated evidence to operational consequences and engineering decisions.'],
+  '/contact': ['Contact', 'Discuss an engagement or specialist delivery partnership with IKELOS Group. Review our initial workflow and access encrypted PGP correspondence.'],
 };
 
 function PageShell() {
@@ -42,7 +42,7 @@ function PageShell() {
         <Route path="/services" element={<Services />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<section className="page-hero wrap"><p className="eyebrow">404 / Page not found</p><h1>Back to the<br />known terrain.</h1><Link className="button" to="/">Return home <span aria-hidden="true">↗</span></Link></section>} />
+        <Route path="*" element={<section className="page-hero wrap"><h1>Page not found</h1><Link className="text-link" to="/">Return home</Link></section>} />
       </Routes>
     </main>
     <Footer />
