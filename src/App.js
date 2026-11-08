@@ -6,6 +6,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Services from './components/Services';
 import Contact from './components/Contact';
+import FirmwareEmulation from './components/FirmwareEmulation';
 import { Link } from 'react-router-dom';
 import './index.css';
 import './components/BuyerPositioning.css';
@@ -15,6 +16,7 @@ const pageMeta = {
   '/services': ['Capabilities', 'System security analysis, vulnerability research, and engineering advisory. Engage IKELOS as a specialist delivery partner for a defined research workstream.'],
   '/about': ['Approach', 'How an IKELOS engagement works: scope, authorization, access, test boundaries, evidence, stakeholder decisions, and retesting. Review our evidence policy.'],
   '/contact': ['Contact', 'Scope a technical investigation or specialist partnership with IKELOS Group. Review engagement preparation and encrypted correspondence instructions.'],
+  '/capabilities/firmware-emulation': ['Firmware Vulnerability Research & System Emulation', 'Connect firmware vulnerability discovery, controlled execution, and system-theoretic security research with IKELOS. Inspect evidence, defined fidelity, and engineering implications.'],
 };
 
 function PageShell() {
@@ -45,6 +47,7 @@ function PageShell() {
         <Route path="/services" element={<Services />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/capabilities/firmware-emulation" element={<FirmwareEmulation />} />
         <Route path="*" element={<section className="page-hero wrap"><h1>Page not found</h1><Link className="text-link" to="/">Return home</Link></section>} />
       </Routes>
     </main>

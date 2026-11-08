@@ -1,0 +1,26 @@
+{
+  "new_source_files": [
+    "scripts/firmware-review.cjs",
+    "src/components/FirmwareArchitecture.js",
+    "src/components/FirmwareEmulation.css",
+    "src/components/FirmwareEmulation.js",
+    "src/components/FirmwareEmulation.test.js",
+    "src/components/FirmwareEvidenceFlow.js",
+    "src/components/FirmwareSpotlight.js",
+    "src/components/FirmwareSystemModel.js",
+    "src/components/firmwareResearch.js"
+  ],
+  "modified_files": [
+    "README.md",
+    "src/App.js",
+    "src/components/Footer.js",
+    "src/components/Home.js",
+    "src/components/Services.js"
+  ],
+  "proprietary_tool_names_in_production_js": false,
+  "pdf_assets_in_build": [],
+  "redirects_unchanged_between_source_and_build": true,
+  "source_verification": "Cross-checked against the supplied six-page technical whitepaper; this is source consistency review, not independent tooling execution.",
+  "reference_sha256": "f0ac9706e2bf077f6e5282773c7acc54beb09035366368b6f69f42f25cf9d96c",
+  "external_model_handling": "Model calls are stated in the paper; hosting, external API use, and permitted transfers are not specified and require engagement confirmation."
+}

@@ -1,0 +1,18 @@
+{
+  "axe_manual_review_reasons": [
+    "Element content contains only non-text characters",
+    "Element's background color could not be determined due to a pseudo element"
+  ],
+  "method": "WCAG relative luminance with the maximum gradient alpha and grid opacity; visual review of 375px and 1440px screenshots.",
+  "hero_lightest_background_rgb": [
+    26,
+    37,
+    48
+  ],
+  "hero_body_mist_minimum_ratio": 7.41,
+  "hero_heading_and_links_white_minimum_ratio": 13.15,
+  "hero_hover_cyan_minimum_ratio": 5.22,
+  "hero_svg_mist_on_grid_minimum_ratio": 6.52,
+  "decorative_loop_arrow_ratio": 6.11,
+  "resolution": "Pseudo-element/gradient contrast cases exceed applicable text thresholds. Decorative arrows repeat adjacent textual meaning. Initial selected-tab cyan/surface contrast was corrected to Cold White."
+}

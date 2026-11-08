@@ -1,0 +1,130 @@
+IKELOS firmware vulnerability research and system emulation — local review
+Branch: feature/firmware-emulation
+
+IMPLEMENTATION
+New route: /capabilities/firmware-emulation
+Eight sections cover positioning, conventional analysis limits, three research pillars,
+an interactive evidence workflow, system-theoretic integration, engagement applications,
+deliverables, and the contact CTA. Existing React 18, React Router, and CRA are preserved.
+No dependencies were added or changed.
+
+The original SVG architecture and React/HTML workflow use the Systems Sigil palette,
+Inter/Orbitron typography, and existing layout conventions. The workflow exposes all
+eight requested stages with evidence requirements and limits. Its diagrams contain no
+live scans, fabricated results, vulnerability counts, or performance measurements.
+
+Homepage spotlight sits between engagement pathways and the evidence package.
+Hardware/firmware and research-tooling disciplines link to the new capability.
+Footer includes a discoverability link; the clean primary navigation is preserved.
+The six research-stage titles are imported from the existing methodology data unchanged.
+
+VALIDATION
+Production build: PASS (see production-build.txt).
+Component/route tests: 45 passed across 2 suites (see component-tests.txt).
+Chromium production preview: 24 layout/axe audits passed across the capability page,
+its observed-evidence state, and all four existing routes at 320, 375, 768, and 1440px.
+No horizontal overflow, browser console/runtime errors, failed HTTP responses, or
+external browser requests were observed. Inter and Orbitron loaded locally.
+
+Interactive checks passed: all eight workflow selections; arrow keys and wraparound;
+Home/End; one tab stop in the tab list; Tab to the evidence panel and Shift+Tab back;
+visible keyboard focus; 20 direct hash entries clear the fixed header; route focus;
+contact CTA; homepage, services, and footer navigation; browser back; methodology
+link; mobile menu focus containment and Escape; skip link; and reduced motion.
+Under reduced motion, the new controls have no animation and zero transition duration.
+
+Axe reported no violations after correcting the selected node's small cyan marker
+on the Steel Blue Gray background to Cold White. Manual contrast review resolved
+pseudo-element/gradient background and decorative-arrow flags on the new page:
+minimum hero body contrast 7.41:1, heading/link contrast 13.15:1, cyan hover contrast
+5.22:1, SVG secondary text contrast 6.52:1. See contrast-review.json and
+manual-contrast.json. Automated checks and visual review are not accessibility certification.
+
+Desktop and mobile hero, workflow, system-model, and spotlight captures were inspected.
+Build artifact review found no proprietary tool names in production JavaScript and no
+PDF assets. SPA/Matrix redirects remain byte-identical across source and build.
+Existing toolchain React act and Node punycode deprecation warnings remain in the
+component test log. They do not occur as browser console errors in the production build.
+
+SOURCE ACCURACY AND PUBLICATION REVIEW
+The supplied six-page technical whitepaper in assets/monkey_vr_whitepaper.pdf and its
+embedded architecture figure were inspected. Claims were cross-checked against it;
+see whitepaper-claims.txt for the page-level source map. Current Linux scope, Ghidra
+models, cross-binary analysis, evidence review, original binary execution, observation,
+validation contracts, interface fidelity, regression reuse, and fuzzing are supported
+by the reference. This is source consistency review, not independent tooling validation.
+
+The review tightened two points: RTOS and bare-metal images are outside current tooling
+support, and execution mechanisms, reachability, and authentication require separate
+evidence. RTOS and expanded bespoke cyber-physical emulation remain explicitly labeled
+development directions requiring platform-specific engineering and feasibility scoping.
+No completed RTOS demonstration or arbitrary-device full-system fidelity is claimed.
+
+Technical detail requiring confirmation: model hosting, external API use, permitted
+data transfers, and handling requirements. The paper mentions model calls and analyst-
+controlled infrastructure but does not define these details. Current copy makes that
+scoping requirement explicit and does not offer an all-local or provider-specific
+handling assurance. Confirm actual behavior before adding any stronger public claim.
+
+Demonstrated implementation behavior, modeled effects, and unverified consequences
+remain separate. STPA-Sec informs IKELOS's broader workflow; no official-step or
+scanner claim is made. No IKELOS ownership of underlying third-party tooling,
+third-party developer identity, commercial details, customer outcomes, certifications,
+guaranteed findings, or unattended autonomous verification are asserted. The source
+PDF remains untracked; neither it nor its diagram is in the production build.
+
+LIMITATIONS AND FOLLOW-UP
+- Confirm the exact model/API architecture and data-handling details during engagement scoping; the public copy does not invent those details.
+- Browser QA was Chromium only; Safari/Firefox and deployed-host behavior are unverified.
+- The local preview validates SPA fallback; it does not validate live hosting or Matrix services.
+- Changes are prepared on feature/firmware-emulation; deployment and merge are outside this change.
+- Existing unrelated untracked files were left untouched.
+
+MODIFIED FILES
+README.md
+src/App.js
+src/components/Footer.js
+src/components/Home.js
+src/components/Services.js
+
+CREATED SOURCE/TEST FILES
+scripts/firmware-review.cjs
+src/components/FirmwareArchitecture.js
+src/components/FirmwareEmulation.css
+src/components/FirmwareEmulation.js
+src/components/FirmwareEmulation.test.js
+src/components/FirmwareEvidenceFlow.js
+src/components/FirmwareSpotlight.js
+src/components/FirmwareSystemModel.js
+src/components/firmwareResearch.js
+
+CREATED REVIEW ARTIFACTS
+validation/firmware-emulation/artifact-audit.json
+validation/firmware-emulation/component-tests.txt
+validation/firmware-emulation/contrast-review.json
+validation/firmware-emulation/firmware-1440-viewport.png
+validation/firmware-emulation/firmware-1440.png
+validation/firmware-emulation/firmware-320-viewport.png
+validation/firmware-emulation/firmware-320.png
+validation/firmware-emulation/firmware-375-viewport.png
+validation/firmware-emulation/firmware-375.png
+validation/firmware-emulation/firmware-768-viewport.png
+validation/firmware-emulation/firmware-768.png
+validation/firmware-emulation/manual-contrast.json
+validation/firmware-emulation/observed-evidence-1440.png
+validation/firmware-emulation/observed-evidence-375.png
+validation/firmware-emulation/production-build.txt
+validation/firmware-emulation/reduced-motion-375.png
+validation/firmware-emulation/results.json
+validation/firmware-emulation/review.txt
+validation/firmware-emulation/spotlight-1440.png
+validation/firmware-emulation/spotlight-320.png
+validation/firmware-emulation/spotlight-375.png
+validation/firmware-emulation/spotlight-768.png
+validation/firmware-emulation/system-integration-1440.png
+validation/firmware-emulation/system-integration-375.png
+validation/firmware-emulation/whitepaper-claims.txt
+validation/firmware-emulation/workflow-1440.png
+validation/firmware-emulation/workflow-320.png
+validation/firmware-emulation/workflow-375.png
+validation/firmware-emulation/workflow-768.png

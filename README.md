@@ -49,7 +49,7 @@ Terminology was checked against the MIT-hosted [STPA-Sec systems analysis paper]
 
 ## Pages and content contracts
 
-Routes remain `/`, `/services`, `/about`, and `/contact`, with a meaningful in-app 404. All eight destinations remain available:
+Routes are `/`, `/services`, `/about`, `/contact`, and `/capabilities/firmware-emulation`, with a meaningful in-app 404. All eight destinations remain available:
 
 - `/services#analysis`, `#research`, `#consulting`, `#partner`
 - `/about#walkthrough`, `#stuxnet`
@@ -87,3 +87,24 @@ Browser checks cover Chromium only. Live hosting, Matrix responses on the deploy
 
 
 For the methodology feature, run `scripts/methodology-review.cjs` with the same browser environment variables and local production preview described above. It checks all six stages at 320, 375, 768, and 1440 pixels, component/evidence inspection, keyboard navigation, iteration, stable geometry, annotations, reduced motion, runtime errors, and axe accessibility results. Dependency inputs did not change; the existing installation was reused.
+
+
+## Firmware vulnerability research and system emulation
+
+The capability page at `/capabilities/firmware-emulation` extends the existing identity and service hierarchy. `FirmwareEmulation.js` composes eight editorial sections with original conceptual artwork (`FirmwareArchitecture.js`), an interactive eight-stage evidence workflow (`FirmwareEvidenceFlow.js` and `firmwareResearch.js`), and an explicitly illustrative system model (`FirmwareSystemModel.js`). `FirmwareEmulation.css` uses the existing palette and typography without additional dependencies. The six methodology titles are reused from `researchMethodology.js` without altering that workflow.
+
+`FirmwareSpotlight.js` appears between the homepage engagement pathways and evidence package. Hardware/firmware and research-tooling disciplines link to the new page, as does the footer. Primary navigation remains unchanged. The page has document and Open Graph metadata and these deep-link destinations:
+
+- `#research-capability`
+- `#evidence-workflow`
+- `#system-integration`
+- `#engagement-applications`
+- `#research-deliverables`
+
+The workflow is a conceptual explanation, not a live scan. Its native tab buttons support arrow keys, Home/End, and a focusable evidence panel. The selected stage exposes the evidence sought and the boundary of its claim. Reduced motion uses the site's existing global preference rule. At narrow widths, the diagram becomes a vertical sequence with readable HTML labels.
+
+Content distinguishes the supplied demonstrated tooling scope (ELF-based embedded Linux, x86-64/AArch64, cross-binary analysis, component rehosting, isolated execution/evidence) from RTOS and expanded bespoke emulation development. It separates implementation observations, modeled control effects, and unverified operational consequences. AI-assisted research may involve external models or APIs; no all-local processing claim is made. Tool ownership, proprietary names, third-party identities, business arrangements, and whitepaper assets are not published by this change.
+
+**Technical source review:** the six-page reference supplied in `assets/monkey_vr_whitepaper.pdf` was read and cross-checked against the capability copy. `validation/firmware-emulation/whitepaper-claims.txt` maps the claims to source pages and records the scope limits. This checks consistency with the supplied reference, not independent execution or detection accuracy. The reference does not specify model hosting or external API handling, so those details require confirmation; the site explicitly avoids an all-local processing assurance. The PDF remains untracked and is excluded from the build. See `validation/firmware-emulation/review.txt` for the review items and validation results. No deployment or merge is part of this enhancement.
+
+Run `scripts/firmware-review.cjs` against a production SPA preview using the same `PLAYWRIGHT_MODULE`, `CHROMIUM_EXECUTABLE`, `PREVIEW_URL`, and `REVIEW_OUTPUT` conventions as the existing browser scripts. It checks the new route at 320, 375, 768, and 1440 pixels; all workflow stages; keyboard/focus behavior; deep links; integration links; existing route layouts; axe results; reduced motion; runtime errors; and external requests. Screenshots and machine-readable results are under `validation/firmware-emulation/`. Component and route tests are in `src/components/FirmwareEmulation.test.js` and run with the existing test suite.
