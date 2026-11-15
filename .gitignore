@@ -21,3 +21,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Private supplied research reference: never package for publication
+/assets/*.pdf

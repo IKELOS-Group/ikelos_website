@@ -1,0 +1,35 @@
+{
+  "text_pairs": [
+    {
+      "foreground": "#E6EDF3",
+      "background": "#10161D",
+      "ratio": 15.39
+    },
+    {
+      "foreground": "#A6B5C3",
+      "background": "#10161D",
+      "ratio": 8.68
+    },
+    {
+      "foreground": "#A6B5C3",
+      "background": "#22313F",
+      "ratio": 6.34
+    },
+    {
+      "foreground": "#5D9FB0",
+      "background": "#10161D",
+      "ratio": 6.11
+    },
+    {
+      "foreground": "#405463",
+      "background": "#E6EDF3",
+      "ratio": 6.67
+    },
+    {
+      "foreground": "#22313F",
+      "background": "#E6EDF3",
+      "ratio": 11.25
+    }
+  ],
+  "note": "Manual token contrast review supplements axe incomplete results on layered backgrounds. Decorative diagrams use lower-contrast strokes; HTML labels carry the meaning. Not a screen-reader audit."
+}

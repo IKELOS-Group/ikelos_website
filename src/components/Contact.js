@@ -1,19 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import EngagementDraft from './EngagementDraft';
 
 export default function Contact() {
   return <>
     <section className="page-hero contact-hero wrap">
-      <p className="eyebrow">Engage / IKELOS Group</p><h1>Contact</h1>
+      <p className="eyebrow">Engage / IKELOS Group</p><h1>Discuss a research engagement</h1>
       <a className="email-link" href="mailto:info@ikelosgroup.com">info@ikelosgroup.com</a>
-      <p className="page-lede">Scope a technical investigation. Start with a high-level introduction: the decision you need to make, the system involved, the uncertainty to resolve, and the desired timeline.</p>
-      <p className="contact-intro-note">Keep the introduction non-sensitive. We will establish handling requirements and an approved channel before exchanging technical material.</p>
+      <p className="page-lede">Start with a non-sensitive introduction: the decision you need to make, the system involved, the uncertainty to resolve, and the desired timeline.</p>
+      <p id="handling" className="contact-intro-note">Keep the introduction non-sensitive. We will establish handling requirements and an approved channel before exchanging technical material.</p>
       <div className="page-jump-links">
+        <Link to="#engagement-brief">Prepare an introduction</Link>
         <Link to="#partnerships">Partnership inquiries</Link>
         <Link to="#encrypted-email">Encrypted correspondence</Link>
       </div>
     </section>
 
+    <EngagementDraft/>
     <section className="section wrap content-section initial-workflow" aria-labelledby="initial-workflow-title">
       <h2 id="initial-workflow-title">Initial workflow</h2>
       <ol>
@@ -25,6 +28,7 @@ export default function Contact() {
       <p className="workflow-followup">Scoping aligns authorization, access, test boundaries, procurement requirements, reporting, and deliverable acceptance with the decision you need to make.</p>
     </section>
 
+    <section className="section wrap content-section" aria-labelledby="processing-title"><h2 id="processing-title">Technical material and model processing</h2><div className="prose"><p>Establish the approved channel, permitted data transfers, and handling requirements before sharing technical material. AI-assisted research may involve external models or APIs. Agree model hosting, permitted inputs, and retention during scoping; do not assume all processing occurs locally.</p></div></section>
     <section id="partnerships" className="section wrap content-section" aria-labelledby="partnerships-title">
       <h2 id="partnerships-title">Partnership inquiries</h2>
       <div className="prose">

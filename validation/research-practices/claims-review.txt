@@ -1,0 +1,48 @@
+Source consistency review — 2026-11-15
+Source read directly: /home/sadmin/ikelos_website/assets/monkey_vr_whitepaper.pdf
+Title: monkeysploit and monkeyforge: Evidence-Backed Firmware Vulnerability Research
+Date: 8 November 2026. Six pages.
+SHA-256: f0ac9706e2bf077f6e5282773c7acc54beb09035366368b6f69f42f25cf9d96c
+Extracted locally with pdf-parse; no source PDF or extraction in this worktree or public output.
+
+PUBLIC CLAIM -> SUPPORT -> BOUNDARY
+1. PHOBETOR: full-system emulation and vulnerability discovery building on
+   Monkeysploit -> User's product brief. The paper does NOT name PHOBETOR.
+   Explicit distinction on product page between product scope and reference workflow.
+2. Unpack image, inventory ELF, Ghidra models, cross-binary flow -> p. 2,
+   Program model / Deterministic flow engine. Summarized without promising
+   exhaustive recovery or detection accuracy.
+3. Evidence-constrained review and validation questions -> p. 2 Agentic review,
+   Report; p. 4 integration. Mechanism, reachability, authentication, and impact
+   are separate questions. No reviewer-consensus-as-proof claim.
+4. Original component binaries, isolation, observation -> pp. 2–3 monkeyforge.
+   No reproduction claim by IKELOS and no detailed isolation guarantee republished.
+5. Fidelity / real vs simulated interfaces -> p. 3 interface models, p. 5 proof by
+   execution. Product page describes bounded conclusions, not universal fidelity.
+6. ELF Linux, x86-64, AArch64 -> p. 5 Scope. RTOS/bare-metal explicitly excluded.
+   Whole-system emulation is added per engagement. Broader PHOBETOR scope is not
+   represented as established by this source. RTOS is development/feasibility work.
+7. External models/APIs -> p. 1 model calls; p. 6 analyst-controlled infrastructure
+   does not specify model hosting, provider transfers, or retention. Site retains
+   external-processing possibility and requires agreement during scoping.
+8. VEILTRACE -> User's exact product description only. No paper exists. The
+   product page's dependency/condition/evidence prompts are scoping questions,
+   not measurements, validated integrations, or deployment history.
+9. Exquisite Access Development, including FME -> Explicit user authorization
+   for public capability framing. No supplied customer examples or success rates.
+10. OT survivability -> Defined-condition testing from user's brief. No universal
+    guarantee, certification, benchmark, or operational deployment claim.
+
+OWNER REVIEW BEFORE PUBLICATION
+- Confirm the exact PHOBETOR product boundary, currently available target support,
+  roadmap commitments, and how the named product builds on the described research.
+- Confirm VEILTRACE maturity and deliverable scope; do not infer readiness,
+  automated integration, or validation from the modeling description.
+- Confirm engagement-specific access-capability handover and acceptable public
+  detail. Example deliverables are conditional on the agreed scope.
+- Confirm actual model/API hosting, permitted transfers, providers, and retention
+  before giving a customer any more-specific processing assurance.
+- Ownership/licensing terms and PDF redistribution remain unasserted and unapproved.
+  Future publication of either requires a separate owner decision.
+
+This is a source-consistency review, not an independent execution or efficacy test.

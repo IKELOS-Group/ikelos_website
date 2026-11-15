@@ -1,144 +1,94 @@
 import React from 'react';
 import { render, screen, within, fireEvent } from '@testing-library/react';
 import App from './App';
-
+import { accessPath, otPath } from './components/ResearchFoundation';
 beforeEach(() => {
   window.history.replaceState({}, '', '/');
   window.scrollTo = jest.fn();
   Element.prototype.scrollIntoView = jest.fn();
-  document.head.innerHTML = '<meta name="description" content="">';
+  document.head.innerHTML = '<meta name="description" content=""><meta property="og:title" content=""><meta property="og:description" content="">';
 });
 
-const services = [
-  ['System security analysis', 'analysis'],
-  ['Vulnerability research', 'research'],
-  ['Engineering advisory', 'consulting'],
-];
-
-test('home exposes positioning, research model, capabilities, and scoped evidence', () => {
-  render(<App />);
-  const main = within(screen.getByRole('main'));
-  expect(main.getByRole('heading', { level: 1 })).toHaveTextContent('First Principles.Decisive Effects.');
-  expect(main.getAllByRole('link', { name: /Scope a technical investigation/ })[0]).toHaveAttribute('href', '/contact');
-  expect(main.getByRole('link', { name: /Explore capabilities/ })).toHaveAttribute('href', '/services');
-  expect(main.getByRole('navigation', { name: 'Research workflow' })).toBeVisible();
-  expect(main.getByText('Research plan · No test results')).toBeVisible();
-  const buyingCase = document.getElementById('research-narrative');
-  expect(buyingCase).toHaveTextContent('the security assumptions behind that decision remain untested');
-  expect(buyingCase).toHaveTextContent('boundary between system architecture and implementation research');
-  expect(buyingCase.compareDocumentPosition(document.getElementById('research-methodology')) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+test('first screen states the shared premise and distinguishes the two research questions', () => {
+  render(<App/>);
+  const hero = screen.getByRole('region', {name:/Understand.*the system/});
+  expect(hero).toHaveTextContent('Applied research for embedded and operational systems');
+  expect(hero).toHaveTextContent('what access is possible and which critical functions hold up under stress');
+  fireEvent.click(screen.getByRole('button',{name:'02 / Survivability'}));
+  expect(screen.getByRole('button',{name:'02 / Survivability'})).toHaveAttribute('aria-pressed','true');
+  expect(document.querySelector('.lens-result')).toHaveTextContent('which functions continue, which fail, and what recovery requires');
+  expect(screen.getByRole('region',{name:/Two questions/})).toHaveTextContent('Exquisite Access Development');
+  expect(screen.getByRole('region',{name:/Two questions/})).toHaveTextContent('OT Behavior Validation and Survivability');
+  expect(screen.getByRole('region',{name:/The foundations/})).toHaveTextContent('PHOBETOR');
+  expect(screen.getByRole('region',{name:/The foundations/})).toHaveTextContent('VEILTRACE');
 });
 
-test.each(services)('home links %s to its capability section', (name, id) => {
-  render(<App />);
-  fireEvent.click(screen.getByRole('link', { name: new RegExp(`Explore ${name.toLowerCase()}`) }));
-  expect(window.location.pathname + window.location.hash).toBe(`/services#${id}`);
-  expect(within(document.getElementById(id)).getByRole('heading', { level: 2, name })).toBeVisible();
-  expect(Element.prototype.scrollIntoView.mock.instances[0]).toBe(document.getElementById(id));
-  expect(window.scrollTo).not.toHaveBeenCalled();
-  expect(screen.getByRole('main')).toHaveFocus();
-});
-
-test('engagement navigation updates route, focus, metadata, and scroll', () => {
-  render(<App />);
-  fireEvent.click(screen.getAllByRole('link', { name: /Scope a technical investigation/ })[0]);
-  expect(window.location.pathname).toBe('/contact');
-  expect(screen.getByRole('heading', { level: 1, name: 'Contact' })).toBeVisible();
-  expect(screen.getByRole('main')).toHaveFocus();
-  expect(document.title).toBe('Contact — IKELOS Group');
-  expect(window.scrollTo).toHaveBeenCalledWith(0, 0);
+test('practice paths lead to distinct scoped engagements and related product work',()=>{
+  render(<App/>);
+  fireEvent.click(screen.getByRole('link',{name:/Explore access development/}));
+  expect(window.location.pathname).toBe(accessPath);
+  expect(screen.getByRole('heading',{level:1})).toHaveTextContent('Exquisite Access Development');
+  expect(screen.getByRole('main')).toHaveTextContent('Foreign materiel exploitation (FME)');
+  expect(screen.getByRole('main')).toHaveTextContent('does not guarantee access');
+  expect(screen.getByRole('link',{name:'Explore PHOBETOR'})).toHaveAttribute('href','/products/phobetor');
+  fireEvent.click(screen.getByRole('link',{name:/Explore behavior validation/}));
+  expect(window.location.pathname).toBe(otPath);
+  expect(screen.getByRole('main')).toHaveTextContent('Survivability is tested under defined conditions');
+  expect(screen.getByRole('link',{name:'Explore VEILTRACE'})).toHaveAttribute('href','/products/veiltrace');
 });
 
 test.each([
-  ['/services', 'Capabilities'],
-  ['/about', 'Approach'],
-  ['/contact', 'Contact'],
-])('direct entry to %s has a plain heading, navigation, and metadata', (path, title) => {
-  window.history.replaceState({}, '', path);
-  render(<App />);
-  expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(title);
-  expect(document.title).toBe(`${title} — IKELOS Group`);
-  const description = document.querySelector('meta[name="description"]').content;
-  expect(description.length).toBeGreaterThan(40);
-  expect(description).not.toMatch(/stuxnet/i);
-  const nav = within(screen.getByRole('navigation', { name: 'Main navigation' }));
-  expect(nav.getAllByRole('link').map(el => el.textContent)).toEqual(['Capabilities', 'Approach', 'Contact']);
-  expect(nav.getByRole('link', { name: title })).toHaveAttribute('aria-current', 'page');
+  ['/practices','Research practices'], ['/products','Research products'],
+  [accessPath,'Exquisite Access Development'], [otPath,'OT Behavior Validation and Survivability'],
+  ['/products/phobetor','PHOBETOR'], ['/products/veiltrace','VEILTRACE'],
+  ['/about','How we work'], ['/contact','Discuss a research engagement'], ['/services','Research practices'],
+])('route %s has unique metadata and one main heading',(route,title)=>{
+  window.history.replaceState({},'',route);render(<App/>);
+  expect(screen.getAllByRole('heading',{level:1})).toHaveLength(1);
+  expect(document.title).toBe(title+' — IKELOS Group');
+  expect(document.querySelector('meta[property="og:title"]').content).toBe(document.title);
+  expect(document.querySelector('meta[name="description"]').content).toBe(document.querySelector('meta[property="og:description"]').content);
 });
 
-test('mobile modal traps focus, restores scroll and focus on Escape, and closes after navigation', () => {
-  render(<App />);
-  const toggle = screen.getByRole('button', { name: /menu/i });
-  fireEvent.click(toggle);
-  const dialog = screen.getByRole('dialog', { name: 'Navigation menu' });
-  const close = within(dialog).getByRole('button', { name: /Close/ });
-  expect(close).toHaveFocus();
-  expect(document.body.style.overflow).toBe('hidden');
-  expect(screen.getByRole('main')).toHaveAttribute('inert');
-  fireEvent.keyDown(document, { key: 'Tab', shiftKey: true });
-  expect(within(dialog).getByRole('link', { name: 'info@ikelosgroup.com' })).toHaveFocus();
-  fireEvent.keyDown(document, { key: 'Tab' });
-  expect(close).toHaveFocus();
-  fireEvent.keyDown(document, { key: 'Escape' });
-  expect(toggle).toHaveFocus();
-  expect(screen.queryByRole('dialog')).not.toBeInTheDocument();
-  expect(document.body.style.overflow).toBe('');
-  expect(screen.getByRole('main')).not.toHaveAttribute('inert');
-  fireEvent.click(toggle);
-  fireEvent.click(within(screen.getByRole('navigation', { name: 'Mobile navigation' })).getByRole('link', { name: 'Capabilities' }));
-  expect(toggle).toHaveAttribute('aria-expanded', 'false');
+test('PHOBETOR separates product scope, source identity, and demonstrated platform limits',()=>{
+  window.history.replaceState({},'','/products/phobetor');render(<App/>);
+  const main=screen.getByRole('main');
+  for(const claim of ['does not use the PHOBETOR name','ELF-based embedded Linux','x86-64 and AArch64','excludes RTOS and bare-metal','whole-system emulation','not an independent validation','may involve external models or APIs']) expect(main).toHaveTextContent(claim);
+  expect(screen.getByRole('link',{name:/Inspect the technical workflow/})).toHaveAttribute('href','/capabilities/firmware-emulation');
+  expect(main.querySelector('a[href$=".pdf"]')).toBeNull();
+});
+
+test('VEILTRACE presents bounded modeling scope without fabricated evidence',()=>{
+  window.history.replaceState({},'','/products/veiltrace');render(<App/>);
+  const main=screen.getByRole('main');
+  expect(main).toHaveTextContent('Dynamic, threat-representative network generation');
+  expect(main).toHaveTextContent('A VEILTRACE white paper is not yet available');
+  expect(main).toHaveTextContent('A generated environment is a model');
+  expect(main).not.toHaveTextContent(/validated deployment|uptime|subscription|benchmark results/i);
+});
+
+test.each(['/services#analysis','/services#research','/services#consulting','/services#partner','/about#walkthrough','/about#stuxnet','/contact#partnerships','/contact#encrypted-email','/#research-narrative','/#sample-deliverable'])('preserves legacy deep link %s',route=>{
+  window.history.replaceState({},'',route);render(<App/>);
+  const id=route.split('#')[1];expect(document.getElementById(id)).not.toBeNull();
+  expect(Element.prototype.scrollIntoView.mock.instances).toContain(document.getElementById(id));
+});
+
+test('legacy homepage methodology migrates deliberately',()=>{
+  window.history.replaceState({},'','/#research-methodology');render(<App/>);
+  expect(window.location.pathname+window.location.hash).toBe('/about#research-methodology');
+  expect(screen.getByRole('navigation',{name:'Research workflow'})).toBeVisible();
   expect(screen.getByRole('main')).toHaveFocus();
-  expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Capabilities');
 });
 
-test.each([
-  ['/services#analysis', 'analysis'],
-  ['/services#research', 'research'],
-  ['/services#consulting', 'consulting'],
-  ['/services#partner', 'partner'],
-  ['/contact#encrypted-email', 'encrypted-email'],
-  ['/contact#partnerships', 'partnerships'],
-  ['/about#walkthrough', 'walkthrough'],
-  ['/about#stuxnet', 'stuxnet'],
-])('direct entry to %s preserves its destination without resetting scroll', (path, id) => {
-  window.history.replaceState({}, '', path);
-  render(<App />);
-  expect(document.getElementById(id)).toBeInTheDocument();
-  expect(Element.prototype.scrollIntoView).toHaveBeenCalledTimes(1);
-  expect(Element.prototype.scrollIntoView.mock.instances[0]).toBe(document.getElementById(id));
-  expect(window.scrollTo).not.toHaveBeenCalled();
-});
-
-test.each([...services, ['Specialist partnership', 'partner']])('same-page %s link scrolls without a route reset', (name, id) => {
-  window.history.replaceState({}, '', '/services');
-  render(<App />);
-  fireEvent.click(within(screen.getByRole('navigation', { name: 'Service sections' })).getByRole('link', { name }));
-  expect(window.location.hash).toBe(`#${id}`);
-  expect(Element.prototype.scrollIntoView.mock.instances[0]).toBe(document.getElementById(id));
-  expect(window.scrollTo).not.toHaveBeenCalled();
-});
-
-test('capabilities groups technical methods and deliverables under three services', () => {
-  window.history.replaceState({}, '', '/services');
-  render(<App />);
-  expect(within(screen.getByRole('main')).getAllByRole('heading', { level: 2 }).map(el => el.textContent)).toEqual([
-    ...services.map(([name]) => name), 'Specialist delivery partnership',
-  ]);
-  const research = document.getElementById('research');
-  expect(within(research).getAllByRole('heading', { level: 3 })).toHaveLength(5);
-  for (const method of ['emulation', 'fuzzing', 'test fixtures', 'proof-of-concept', 'Research tooling and test platforms']) {
-    expect(research).toHaveTextContent(method);
-  }
-  expect(document.getElementById('analysis')).toHaveTextContent('STPA-Sec');
-  expect(document.getElementById('consulting')).toHaveTextContent('retest criteria');
-  for (const id of ['analysis', 'research', 'consulting', 'partner']) {
-    expect(document.getElementById(id)).toHaveTextContent('Engage when');
-    expect(document.getElementById(id)).toHaveTextContent('Decision supported');
-  }
-  for (const topic of within(research).getAllByRole('article')) {
-    expect(topic).toHaveTextContent('Engage when');
-    expect(topic).toHaveTextContent('Decision supported');
-  }
+test('engagement CTA preserves context and moves focus',()=>{
+  window.history.replaceState({},'',otPath);render(<App/>);
+  fireEvent.click(within(screen.getByRole('main')).getAllByRole('link',{name:/Discuss a research engagement/})[0]);
+  expect(window.location.pathname+window.location.search).toBe('/contact?practice=ot');
+  expect(screen.getByLabelText('Research interest')).toHaveValue('ot');
+  expect(screen.getByRole('main')).toHaveFocus();
+  expect(screen.getByLabelText(/Non-sensitive description/)).toBeRequired();
+  expect(screen.getByText(/Nothing is submitted or stored/)).toBeVisible();
+  expect(screen.getByRole('main')).toHaveTextContent('external models or APIs');
 });
 
 test('legacy maritime destination leads to an inspectable sample with honest evidence status', () => {
@@ -166,27 +116,13 @@ test('approach governs an engagement, centralizes the evidence policy, and demot
   render(<App />);
   const workflow = screen.getByRole('list', { name: 'Engagement governance' });
   for (const term of ['written testing authority', 'approved communications', 'stop conditions', 'scope review', 'retest criteria']) expect(workflow).toHaveTextContent(term);
-  expect(screen.getByRole('link', { name: /Explore the six-stage research methodology/ })).toHaveAttribute('href', '/#research-methodology');
+  expect(screen.getByRole('link', { name: /Explore the six-stage research methodology/ })).toHaveAttribute('href', '/about#research-methodology');
   expect(document.getElementById('evidence-policy')).toHaveTextContent('demonstrated findings, bounded negative results, unresolved hypotheses, and coverage limitations separately');
   const history = document.getElementById('stuxnet');
   expect(history.querySelector('details')).not.toHaveAttribute('open');
   fireEvent.click(history.querySelector('summary'));
   expect(within(history).getByRole('link', { name: /read the Symantec analysis/i })).toHaveAttribute('href', 'https://nsarchive2.gwu.edu/NSAEBB/NSAEBB424/docs/Cyber-044.pdf');
   expect(history).toHaveTextContent('not IKELOS work or evidence that STPA-Sec was used');
-});
-
-test('contextual partnership path connects scope and contact prompts', () => {
-  render(<App />);
-  fireEvent.click(screen.getByRole('link', { name: /Explore specialist partnership/ }));
-  expect(window.location.pathname + window.location.hash).toBe('/services#partner');
-  const partner = within(document.getElementById('partner'));
-  expect(partner.getByText(/defined research workstream/)).toBeVisible();
-  expect(partner.getByText(/During scoping/)).toHaveTextContent('responsibilities, technical interfaces, reporting, confidentiality, and intellectual property');
-  fireEvent.click(partner.getByRole('link', { name: 'Discuss a specialist partnership' }));
-  expect(window.location.pathname + window.location.hash).toBe('/contact#partnerships');
-  const prompts = within(document.getElementById('partnerships'));
-  expect(prompts.getAllByRole('listitem')).toHaveLength(4);
-  expect(prompts.getByRole('link', { name: 'Discuss a partnership by email' })).toHaveAttribute('href', 'mailto:info@ikelosgroup.com');
 });
 
 test('contact leads with the business email, then the compact workflow, partnership prompts, and PGP', () => {
@@ -224,6 +160,7 @@ test('unknown routes provide a route home', () => {
 });
 
 test('research workflow selects six analytical stages without a tab interface', () => {
+  window.history.replaceState({}, '', '/about');
   render(<App />);
   const workflow = within(screen.getByRole('navigation', { name: 'Research workflow' }));
   const controls = workflow.getAllByRole('button');
@@ -251,6 +188,7 @@ test('research workflow selects six analytical stages without a tab interface', 
 });
 
 test('causal scenario and validation distinguish assumptions, technical effects, and consequences', () => {
+  window.history.replaceState({}, '', '/about');
   render(<App />);
   const workflow = within(screen.getByRole('navigation', { name: 'Research workflow' }));
   fireEvent.click(workflow.getByRole('button', { name: 'Causal & Attack Analysis' }));
@@ -267,26 +205,10 @@ test('causal scenario and validation distinguish assumptions, technical effects,
 });
 
 test('component inspection exposes assumptions and evidence without changing the research stage', () => {
+  window.history.replaceState({}, '', '/about');
   render(<App />);
   fireEvent.click(screen.getByRole('button', { name: 'Inspect process sensors' }));
   expect(screen.getByRole('region', { name: 'Process sensors' })).toHaveTextContent('stale, conflicting, or biased');
   expect(screen.getByRole('button', { name: 'Mission & Consequence' })).toHaveAttribute('aria-current', 'step');
   expect(screen.getByRole('status')).toHaveTextContent('Consequence modeled');
-});
-
-test('intro can be skipped without blocking contact actions', () => {
-  render(<App />);
-  expect(screen.getAllByRole('link', { name: /Scope a technical investigation/ })[0]).toBeVisible();
-  fireEvent.click(screen.getByRole('button', { name: /Skip animation/ }));
-  expect(screen.queryByRole('button', { name: /Skip animation/ })).not.toBeInTheDocument();
-  expect(document.querySelector('.home-hero')).toHaveClass('is-settled');
-});
-
-test('reduced motion starts with settled hero and static narrative', () => {
-  const original = window.matchMedia;
-  window.matchMedia = jest.fn(() => ({matches:true, addEventListener:jest.fn(), removeEventListener:jest.fn()}));
-  render(<App />);
-  expect(document.querySelector('.home-hero')).toHaveClass('is-settled');
-  expect(screen.queryByRole('button', { name: /Skip animation/ })).not.toBeInTheDocument();
-  window.matchMedia = original;
 });

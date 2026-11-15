@@ -22,8 +22,8 @@ test('direct entry renders the capability and updates document and Open Graph me
   expect(document.querySelector('meta[property="og:title"]').content).toBe(document.title);
   expect(document.querySelector('meta[name="description"]').content).toMatch(/controlled execution/);
   expect(document.querySelector('meta[property="og:description"]').content).toBe(document.querySelector('meta[name="description"]').content);
-  expect(screen.getByRole('link', { name: /Discuss a Research Engagement/ })).toHaveAttribute('href', '/contact');
-  expect(within(screen.getByRole('navigation', { name: 'Main navigation' })).getAllByRole('link').map(link => link.textContent)).toEqual(['Capabilities', 'Approach', 'Contact']);
+  expect(within(screen.getByRole('main')).getByRole('link', { name: /Discuss a research engagement/ })).toHaveAttribute('href', '/contact');
+  expect(within(screen.getByRole('navigation', { name: 'Main navigation' })).getAllByRole('link').map(link => link.textContent)).toEqual(['Practices', 'Research products', 'How we work', 'Discuss a research engagement ↗']);
 });
 
 test('scope, fidelity, and evidence limits remain visible beside the capability claims', () => {
@@ -95,29 +95,15 @@ test('same-page links preserve navigation and the contact CTA moves focus to the
   fireEvent.click(nav.getByRole('link', { name: 'From hypothesis to evidence' }));
   expect(window.location.hash).toBe('#evidence-workflow');
   expect(Element.prototype.scrollIntoView.mock.instances[0]).toBe(document.getElementById('evidence-workflow'));
-  fireEvent.click(screen.getByRole('link', { name: /Discuss a Research Engagement/ }));
+  fireEvent.click(within(screen.getByRole('main')).getByRole('link', { name: /Discuss a research engagement/ }));
   expect(window.location.pathname).toBe('/contact');
   expect(screen.getByRole('main')).toHaveFocus();
-  expect(document.title).toBe('Contact — IKELOS Group');
+  expect(document.title).toBe('Discuss a research engagement — IKELOS Group');
 });
 
-test('homepage spotlight sits between pathways and the sample and navigates to the capability', () => {
-  window.history.replaceState({}, '', '/');
+test('technical route is supporting PHOBETOR material with the preserved footer link', () => {
   render(<App/>);
-  const spotlight = screen.getByRole('region', { name: /Find the path.\s*Prove the behavior./ });
-  const pathways = screen.getByRole('region', { name: /Start with the decision.\s*Scope the research./ });
-  expect(pathways.compareDocumentPosition(spotlight) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
-  expect(spotlight.compareDocumentPosition(document.getElementById('sample-deliverable')) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
-  fireEvent.click(within(spotlight).getByRole('link'));
-  expect(window.location.pathname).toBe(route);
-  expect(screen.getByRole('main')).toHaveFocus();
-});
-
-test('hardware and research tooling disciplines and footer expose the capability', () => {
-  window.history.replaceState({}, '', '/services');
-  render(<App/>);
-  const hardware = screen.getByRole('heading', { name: 'Hardware and firmware' }).closest('article');
-  const tooling = screen.getByRole('heading', { name: 'Research tooling and test platforms' }).closest('article');
-  for (const article of [hardware, tooling]) expect(within(article).getByRole('link')).toHaveAttribute('href', route);
-  expect(within(screen.getByRole('navigation', { name: 'Footer navigation' })).getByRole('link', { name: 'Firmware & emulation' })).toHaveAttribute('href', route);
+  expect(document.querySelector('.technical-context')).toHaveTextContent('Supporting technical material for PHOBETOR');
+  expect(within(document.querySelector('.technical-context')).getByRole('link',{name:'PHOBETOR'})).toHaveAttribute('href','/products/phobetor');
+  expect(within(screen.getByRole('navigation',{name:'Footer navigation'})).getByRole('link',{name:'Firmware & emulation'})).toHaveAttribute('href',route);
 });
