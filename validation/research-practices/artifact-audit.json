@@ -1,0 +1,15 @@
+{
+  "sha256": {
+    "_redirects": "87a0b80a8c96f6f0438c9a46444ab02f7055cef0bc554964dc55a640551697c7",
+    "public/_redirects": "87a0b80a8c96f6f0438c9a46444ab02f7055cef0bc554964dc55a640551697c7",
+    "build/_redirects": "87a0b80a8c96f6f0438c9a46444ab02f7055cef0bc554964dc55a640551697c7",
+    "public/keys/ikelos-secure-email.asc": "2d6b272c861bca73413947d60d5567382a883a1d8389c4013bd48255094bab5e",
+    "build/keys/ikelos-secure-email.asc": "2d6b272c861bca73413947d60d5567382a883a1d8389c4013bd48255094bab5e",
+    "public/fonts/inter-latin-variable.woff2": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+    "public/fonts/orbitron-latin-variable.woff2": "c25a9f9da5d9f3db1bf2a01474722dc9b377675b7bbab6d0dfda6902794fd1ed",
+    "build/static/js/main.a9245bc1.js": "f7226ff9fc680514563a7b82d4703683fc98dd8442e9da06df5a8055613a4b6e",
+    "build/static/css/main.e4cda3e4.css": "c0b6484f35d2cbbde12c4a834e3ea29dfcf511e6e987a1aad877ddbda5b7ce72"
+  },
+  "pdf_in_public_or_build": [],
+  "dependency_inputs_unchanged": true
+}

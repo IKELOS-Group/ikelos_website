@@ -1,32 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Hero from './Hero';
-import ResearchNarrative from './ResearchNarrative';
-import SystemsModel from './SystemsModel';
-import CapabilityArt from './CapabilityArt';
 import { EvidencePackage } from './Shared';
-import FirmwareSpotlight from './FirmwareSpotlight';
-
-const services = [
-  ['System security analysis', 'Decide what needs to be tested.', 'For an architecture, integration, or acceptance decision with unresolved security assumptions.', 'System model, assumption register, and prioritized research plan.', 'analysis'],
-  ['Vulnerability research', 'Establish what the implementation permits.', 'For a suspected attack path or a component weakness whose system-level effect is unclear.', 'Documented test conditions, evidence, hypothesis status, and consequence analysis.', 'research'],
-  ['Engineering advisory', 'Choose the response. Verify the change.', 'For deployment, remediation, or risk decisions that need technical interpretation and retest criteria.', 'Decision brief, engineering options, residual uncertainty, and verification priorities.', 'consulting'],
-];
+import { EngagementCTA, PracticePaths, ProductFoundations, ResearchLens } from './ResearchFoundation';
 
 export default function Home() {
   return <>
-    <Hero/><ResearchNarrative/><SystemsModel/>
-    <section className="capability-preview section wrap" aria-labelledby="services-title">
-      <div className="section-heading"><p className="eyebrow">03 / Engagement pathways</p><h2 id="services-title">Start with the decision.<br/>Scope the research.</h2></div>
-      <div className="service-grid">{services.map(([title, heading, when, output, id],i) => <article key={id}><CapabilityArt kind={i}/><p className="label">0{i+1} / {title}</p><h3>{heading}</h3><p>{when}</p><p className="pathway-output"><strong>What you receive</strong>{output}</p><Link className="text-link" to={`/services#${id}`}>Explore {title.toLowerCase()} <span aria-hidden="true">↗</span></Link></article>)}</div>
-    </section>
-    <FirmwareSpotlight/>
-    <section id="sample-deliverable" className="evidence-section" aria-labelledby="outputs-title"><div className="wrap">
-      <div className="sample-intro"><div><p className="eyebrow">05 / Inspect the deliverable</p><h2 id="outputs-title">Evidence you can<br/>make a decision with.</h2></div><p>Trace an engineering question from an assumption register to a decision and retest criteria. This sample shows the structure of an evidence package; engagement scope determines the records and supporting artifacts delivered.</p></div>
-      <EvidencePackage/>
-      <Link className="text-link sample-policy-link" to="/about#evidence-policy">Read our evidence policy <span aria-hidden="true">↗</span></Link>
-    </div></section>
-    <section className="organization-section section wrap" aria-labelledby="organization-title"><div><p className="eyebrow">06 / Working with the firm</p><h2 id="organization-title">IKELOS Group, LLC</h2><p>Scope a direct investigation or a defined research workstream within a broader program.</p></div><div><dl className="organization-facts"><div><dt>Company contact</dt><dd><a href="mailto:info@ikelosgroup.com">info@ikelosgroup.com</a></dd></div><div><dt>Engagement preparation</dt><dd>Align objectives, authorization, access, handling requirements, and deliverables before technical work begins.</dd></div></dl><Link className="text-link" to="/about">Review engagement governance <span aria-hidden="true">↗</span></Link></div></section>
-    <section className="engage-section wrap" aria-labelledby="partner-title"><p className="eyebrow">07 / Scope the investigation</p><h2 id="partner-title">An unresolved assumption.<br/>A defensible decision.</h2><div className="engage-bottom"><p>IKELOS turns unresolved system-security assumptions into bounded research questions, experimental evidence, and defensible engineering decisions. Start with the decision ahead, the system involved, and the uncertainty that matters.</p><div><Link className="button" to="/contact">Scope a technical investigation <span aria-hidden="true">↗</span></Link><Link className="text-link" to="/services#partner">Explore specialist partnership <span aria-hidden="true">↗</span></Link></div></div></section>
+    <section className="research-hero wrap" aria-labelledby="home-title"><div className="research-hero-copy"><p className="eyebrow">IKELOS Group / Applied research</p><h1 id="home-title">Understand<br/>the system.<br/><span>Establish what’s<br className="wide-break"/> possible.</span></h1><p className="hero-premise">Applied research for embedded and operational systems.</p><p className="hero-explanation">We investigate how complex systems actually behave to determine what access is possible and which critical functions hold up under stress.</p><Link className="button" to="/contact">Discuss a research engagement <span aria-hidden="true">↗</span></Link></div><ResearchLens/></section>
+    <div className="research-strip wrap"><span>First Principles. Decisive Effects.</span><a href="#practices">Two research practices <span aria-hidden="true">↓</span></a><a href="#products">A shared product foundation <span aria-hidden="true">↓</span></a></div>
+    <section id="practices" className="section wrap" aria-labelledby="practices-title"><div id="research-narrative" className="research-section-heading"><p className="eyebrow">01 / The practices</p><h2 id="practices-title">Two questions.<br/>Distinct outcomes.</h2><p>The same investigation of system behavior serves different decisions. Choose the outcome your program needs to establish.</p></div><PracticePaths/></section>
+    <section id="products" className="foundation-section" aria-labelledby="foundation-title"><div className="wrap"><div className="research-section-heading"><p className="eyebrow">02 / Research products</p><h2 id="foundation-title">The foundations<br/>behind the research.</h2><p>PHOBETOR examines the implementation. VEILTRACE models the surrounding network environment. Their role and technical fit are defined within a scoped engagement.</p></div><ProductFoundations/><p className="foundation-note">Conceptual diagrams illustrate research roles. Product use, environment fidelity, and deliverables are agreed during scoping.</p></div></section>
+    <section className="section wrap research-process" aria-labelledby="process-title"><div><p className="eyebrow">03 / From question to evidence</p><h2 id="process-title">A bounded investigation.<br/>An informed decision.</h2><Link className="text-link" to="/about">How we work <span aria-hidden="true">↗</span></Link></div><ol><li><span>01</span><div><h3>Define the unknown</h3><p>Agree the access objective or critical function, the system boundary, and the evidence needed.</p></div></li><li><span>02</span><div><h3>Investigate behavior</h3><p>Build the model, examine the implementation, and run experiments under agreed conditions.</p></div></li><li><span>03</span><div><h3>Make the limits visible</h3><p>Deliver findings, conditions, unresolved questions, and next steps. Separate observations from modeled consequences.</p></div></li></ol></section>
+    <section id="sample-deliverable" className="evidence-section" aria-labelledby="outputs-title"><div className="wrap"><div className="sample-intro"><div><p className="eyebrow">04 / Inspect the output</p><h2 id="outputs-title">Evidence with<br/>a visible boundary.</h2></div><p>Inspect a fictional navigation-system evidence package. The format connects an assumption to a test, a decision, and retest criteria. Actual deliverables follow the agreed research scope.</p></div><EvidencePackage/><Link className="text-link sample-policy-link" to="/about#evidence-policy">Read our evidence policy <span aria-hidden="true">↗</span></Link></div></section>
+    <EngagementCTA/>
   </>;
 }

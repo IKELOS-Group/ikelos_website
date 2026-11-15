@@ -1,0 +1,43 @@
+{
+  "browser": "141.0.7390.37",
+  "views": 44,
+  "checks": [
+    "All 18 legacy deep links work and clear fixed header on mobile and desktop; methodology migrates to /about.",
+    "Every internal link resolves to a page or section.",
+    "Skip link, keyboard research lens, modal focus trap, Escape, focus/scroll restoration, and route focus pass.",
+    "Retained methodology, firmware evidence tabs, and all eight evidence disclosures work with keyboard.",
+    "Contextual engagement topic, required non-sensitive introduction, email handoff status, no web storage, and exact public-key download pass.",
+    "Reduced motion removes hero animation."
+  ],
+  "checkedLinks": [
+    "/",
+    "/practices",
+    "/products",
+    "/about",
+    "/contact",
+    "/practices/exquisite-access-development",
+    "/practices/ot-behavior-validation-survivability",
+    "/products/phobetor",
+    "/products/veiltrace",
+    "/about#evidence-policy",
+    "/capabilities/firmware-emulation",
+    "/contact#partnerships",
+    "/contact#encrypted-email",
+    "/contact?practice=access",
+    "/contact?practice=ot",
+    "/contact?practice=phobetor",
+    "/contact#handling",
+    "/contact?practice=veiltrace",
+    "/about#governance",
+    "/about#walkthrough",
+    "/about#research-methodology",
+    "/#sample-deliverable",
+    "/contact#engagement-brief",
+    "/capabilities/firmware-emulation#evidence-workflow",
+    "/capabilities/firmware-emulation#research-capability",
+    "/capabilities/firmware-emulation#system-integration",
+    "/capabilities/firmware-emulation#research-deliverables"
+  ],
+  "errors": [],
+  "external": []
+}

@@ -6,7 +6,8 @@ import FirmwareEvidenceFlow from './FirmwareEvidenceFlow';
 import { firmwareStages } from './firmwareResearch';
 import { researchStages } from './researchMethodology';
 
-const route = '/capabilities/firmware-emulation';
+const route = '/products/phobetor';
+const legacyRoute = '/capabilities/firmware-emulation';
 
 beforeEach(() => {
   window.history.replaceState({}, '', route);
@@ -15,26 +16,28 @@ beforeEach(() => {
   document.head.innerHTML = '<meta name="description" content=""><meta property="og:title" content=""><meta property="og:description" content="">';
 });
 
-test('direct entry renders the capability and updates document and Open Graph metadata', () => {
+test('direct entry renders PHOBETOR and updates document and Open Graph metadata', () => {
   render(<App/>);
-  expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Find the path.Prove the behavior.');
-  expect(document.title).toBe('Firmware Vulnerability Research & System Emulation — IKELOS Group');
+  expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('PHOBETOR');
+  expect(document.title).toBe('PHOBETOR — IKELOS Group');
   expect(document.querySelector('meta[property="og:title"]').content).toBe(document.title);
   expect(document.querySelector('meta[name="description"]').content).toMatch(/controlled execution/);
   expect(document.querySelector('meta[property="og:description"]').content).toBe(document.querySelector('meta[name="description"]').content);
-  expect(screen.getByRole('link', { name: /Discuss a Research Engagement/ })).toHaveAttribute('href', '/contact');
-  expect(within(screen.getByRole('navigation', { name: 'Main navigation' })).getAllByRole('link').map(link => link.textContent)).toEqual(['Capabilities', 'Approach', 'Contact']);
+  for (const link of within(screen.getByRole('main')).getAllByRole('link', { name: /Discuss a research engagement/ })) expect(link).toHaveAttribute('href', '/contact?practice=phobetor');
+  expect(within(screen.getByRole('navigation', { name: 'Main navigation' })).getAllByRole('link').map(link => link.textContent)).toEqual(['Practices', 'Research products', 'How we work', 'Discuss a research engagement ↗']);
 });
 
 test('scope, fidelity, and evidence limits remain visible beside the capability claims', () => {
   render(<App/>);
   const capability = document.getElementById('research-capability');
   expect(capability).toHaveTextContent('ELF-based embedded Linux firmware · x86-64 and AArch64');
-  expect(capability).toHaveTextContent('RTOS support is a development area');
-  expect(capability).toHaveTextContent('RTOS and bare-metal images are outside the current tooling’s supported scope');
+  const research = document.getElementById('funded-research');
+  expect(research).toHaveTextContent('RTOS and bare-metal images remain outside the current embedded Linux workflow');
+  expect(research).toHaveTextContent('Protocol-based vulnerability discovery');
+  expect(research).toHaveTextContent('Protocol coverage and test harnesses are established per investigation');
   expect(capability).toHaveTextContent('Mechanism, reachability, and authentication are evaluated as separate claims');
   expect(capability).toHaveTextContent('may involve external models or APIs');
-  expect(capability).toHaveTextContent('Development direction');
+  expect(capability).toHaveTextContent('Target-specific engineering');
   expect(capability).toHaveTextContent('Emulation alone cannot establish real-world exploitability');
   expect(document.getElementById('research-deliverables')).toHaveTextContent('are not guaranteed');
   expect(screen.getByRole('main')).not.toHaveTextContent(/certified|guaranteed exploitability/i);
@@ -82,7 +85,7 @@ test('keyboard workflow supports sequential navigation, wraparound, Home/End, an
   expect(tabs[0]).toHaveFocus();
 });
 
-test.each(['research-capability', 'evidence-workflow', 'system-integration', 'engagement-applications', 'research-deliverables'])('deep link #%s preserves hash scrolling', id => {
+test.each(['research-capability', 'research-basis', 'funded-research', 'rtos-research', 'protocol-research', 'evidence-workflow', 'system-integration', 'engagement-applications', 'research-deliverables'])('deep link #%s preserves hash scrolling', id => {
   window.history.replaceState({}, '', `${route}#${id}`);
   render(<App/>);
   expect(Element.prototype.scrollIntoView.mock.instances[0]).toBe(document.getElementById(id));
@@ -91,33 +94,34 @@ test.each(['research-capability', 'evidence-workflow', 'system-integration', 'en
 
 test('same-page links preserve navigation and the contact CTA moves focus to the new route', () => {
   render(<App/>);
-  const nav = within(screen.getByRole('navigation', { name: 'Firmware capability sections' }));
+  const nav = within(screen.getByRole('navigation', { name: 'PHOBETOR sections' }));
   fireEvent.click(nav.getByRole('link', { name: 'From hypothesis to evidence' }));
   expect(window.location.hash).toBe('#evidence-workflow');
   expect(Element.prototype.scrollIntoView.mock.instances[0]).toBe(document.getElementById('evidence-workflow'));
-  fireEvent.click(screen.getByRole('link', { name: /Discuss a Research Engagement/ }));
+  fireEvent.click(within(screen.getByRole('main')).getAllByRole('link', { name: /Discuss a research engagement/ })[0]);
   expect(window.location.pathname).toBe('/contact');
+  expect(window.location.search).toBe('?practice=phobetor');
+  expect(screen.getByLabelText('Research interest')).toHaveValue('phobetor');
   expect(screen.getByRole('main')).toHaveFocus();
-  expect(document.title).toBe('Contact — IKELOS Group');
+  expect(document.title).toBe('Discuss a research engagement — IKELOS Group');
 });
 
-test('homepage spotlight sits between pathways and the sample and navigates to the capability', () => {
-  window.history.replaceState({}, '', '/');
+test.each(['', '#research-capability', '#evidence-workflow', '#system-integration', '#engagement-applications', '#research-deliverables'].flatMap(hash => [[legacyRoute, hash], [`${legacyRoute}/`, hash]]))('legacy firmware route %s migrates to PHOBETOR and retains %s and query parameters', (from, hash) => {
+  window.history.replaceState({}, '', `${from}?ref=firmware${hash}`);
+  const historyLength = window.history.length;
   render(<App/>);
-  const spotlight = screen.getByRole('region', { name: /Find the path.\s*Prove the behavior./ });
-  const pathways = screen.getByRole('region', { name: /Start with the decision.\s*Scope the research./ });
-  expect(pathways.compareDocumentPosition(spotlight) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
-  expect(spotlight.compareDocumentPosition(document.getElementById('sample-deliverable')) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
-  fireEvent.click(within(spotlight).getByRole('link'));
-  expect(window.location.pathname).toBe(route);
+  expect(window.location.pathname + window.location.search + window.location.hash).toBe(`${route}?ref=firmware${hash}`);
+  expect(window.history.length).toBe(historyLength);
+  expect(document.title).toBe('PHOBETOR — IKELOS Group');
   expect(screen.getByRole('main')).toHaveFocus();
+  if (hash) expect(Element.prototype.scrollIntoView.mock.instances).toContain(document.getElementById(hash.slice(1)));
 });
 
-test('hardware and research tooling disciplines and footer expose the capability', () => {
-  window.history.replaceState({}, '', '/services');
+test('footer products list contains only PHOBETOR and VEILTRACE', () => {
   render(<App/>);
-  const hardware = screen.getByRole('heading', { name: 'Hardware and firmware' }).closest('article');
-  const tooling = screen.getByRole('heading', { name: 'Research tooling and test platforms' }).closest('article');
-  for (const article of [hardware, tooling]) expect(within(article).getByRole('link')).toHaveAttribute('href', route);
-  expect(within(screen.getByRole('navigation', { name: 'Footer navigation' })).getByRole('link', { name: 'Firmware & emulation' })).toHaveAttribute('href', route);
+  const footer = within(screen.getByRole('navigation', { name: 'Footer navigation' }));
+  const products = within(footer.getByText('Research products').parentElement);
+  expect(products.getAllByRole('link').map(link => [link.textContent, link.getAttribute('href')])).toEqual([
+    ['PHOBETOR', route], ['VEILTRACE', '/products/veiltrace'],
+  ]);
 });

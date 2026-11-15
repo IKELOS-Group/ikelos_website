@@ -2,14 +2,19 @@ import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import Brand from './Brand';
 
-const links = [['/services','Capabilities'],['/about','Approach'],['/contact','Contact']];
+const links = [['/practices','Practices'],['/products','Research products'],['/about','How we work']];
+const mobileGroups = [
+  ['Research practices', [['/practices/exquisite-access-development','Exquisite Access Development'],['/practices/ot-behavior-validation-survivability','OT Behavior Validation and Survivability']]],
+  ['Research products', [['/products/phobetor','PHOBETOR'],['/products/veiltrace','VEILTRACE']]],
+  ['Engage', [['/about','How we work'],['/contact','Discuss a research engagement']]],
+];
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const toggle = useRef(null);
   const dialog = useRef(null);
   const navigating = useRef(false);
-  const { pathname } = useLocation();
+  const { pathname, hash } = useLocation();
   useEffect(() => {
     const sentinel = document.getElementById('header-sentinel');
     if (!window.IntersectionObserver || !sentinel) { setScrolled(true); return undefined; }
@@ -17,7 +22,7 @@ export default function Navbar() {
     observer.observe(sentinel);
     return () => observer.disconnect();
   }, []);
-  useEffect(() => { setOpen(false); }, [pathname]);
+  useEffect(() => { setOpen(false); }, [pathname, hash]);
   useLayoutEffect(() => {
     if (!open) return undefined;
     navigating.current = false;
@@ -54,13 +59,13 @@ export default function Navbar() {
     <header className={`site-header${scrolled || pathname !== '/' ? ' header-solid' : ''}`}>
       <div className="header-inner wrap">
         <Link className="wordmark" to="/" aria-label="IKELOS Group home"><Brand /></Link>
-        <nav className="primary-nav" aria-label="Main navigation">{links.map(([to,label]) => <NavLink key={to} to={to}>{label}</NavLink>)}</nav>
+        <nav className="primary-nav" aria-label="Main navigation">{links.map(([to,label]) => <NavLink key={to} to={to}>{label}</NavLink>)}<NavLink className="nav-engage" to="/contact">Discuss a research engagement ↗</NavLink></nav>
         <button className="menu-toggle" ref={toggle} aria-expanded={open} aria-controls={open ? 'mobile-menu' : undefined} aria-haspopup="dialog" onClick={() => setOpen(true)}>Menu <span aria-hidden="true">+</span></button>
       </div>
     </header>
     {open && <div className="menu-overlay" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigation menu" ref={dialog}>
       <div className="menu-top"><span className="label">IKELOS / Navigation</span><button className="menu-close" onClick={() => setOpen(false)}>Close <span aria-hidden="true">×</span></button></div>
-      <nav aria-label="Mobile navigation">{links.map(([to,label],i) => <NavLink key={to} to={to} onClick={navigate}><span aria-hidden="true">0{i+1}</span>{label}<span aria-hidden="true">↗</span></NavLink>)}</nav>
+      <nav className="mobile-directory" aria-label="Mobile navigation">{mobileGroups.map(([heading,items])=><div key={heading}><p className="label">{heading}</p>{items.map(([to,label])=><NavLink key={to} to={to} onClick={navigate}>{label}<span aria-hidden="true">↗</span></NavLink>)}</div>)}</nav>
       <div className="menu-bottom"><p>First Principles.<br/>Decisive Effects.</p><a href="mailto:info@ikelosgroup.com">info@ikelosgroup.com</a></div>
     </div>}
   </>;

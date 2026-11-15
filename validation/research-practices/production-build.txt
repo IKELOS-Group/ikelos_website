@@ -1,0 +1,7 @@
+Production build performed with Node 22.22.2 and unchanged package-lock.json.
+Command: npm run build
+Result: Compiled successfully. No build warnings.
+Main JavaScript: build/static/js/main.a9245bc1.js — 83.12 kB gzip
+Main CSS: build/static/css/main.e4cda3e4.css — 14.51 kB gzip
+Existing lazy chunk: 1.77 kB gzip
+Browser verification uses this build. No application-source changes after build.

@@ -1,0 +1,2688 @@
+{
+  "views": [
+    {
+      "route": "/",
+      "width": 320,
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                "figcaption > .label"
+              ],
+              [
+                "figcaption > span:nth-child(2)"
+              ],
+              [
+                "button:nth-child(2)"
+              ],
+              [
+                ".lens-result > .label"
+              ],
+              [
+                ".lens-result > p"
+              ],
+              [
+                "a[href$=\"#practices\"] > span[aria-hidden=\"true\"]"
+              ],
+              [
+                "a[href$=\"#products\"] > span[aria-hidden=\"true\"]"
+              ],
+              [
+                "#products > .wrap > .research-section-heading > .eyebrow"
+              ],
+              [
+                "#foundation-title"
+              ],
+              [
+                "#products > .wrap > .research-section-heading > p:nth-child(3)"
+              ],
+              [
+                "article:nth-child(1) > .product-copy > .label"
+              ],
+              [
+                "h3 > a[href$=\"phobetor\"]"
+              ],
+              [
+                "article:nth-child(1) > .product-copy > p:nth-child(3)"
+              ],
+              [
+                "article:nth-child(1) > .product-copy > .product-role"
+              ],
+              [
+                ".text-link[href$=\"phobetor\"]"
+              ],
+              [
+                "article:nth-child(2) > .product-copy > .label"
+              ],
+              [
+                "h3 > a[href$=\"veiltrace\"]"
+              ],
+              [
+                "article:nth-child(2) > .product-copy > p:nth-child(3)"
+              ],
+              [
+                "article:nth-child(2) > .product-copy > .product-role"
+              ],
+              [
+                ".text-link[href$=\"veiltrace\"]"
+              ],
+              [
+                ".foundation-note"
+              ]
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "title": "Applied research for embedded and operational systems — IKELOS Group",
+        "description": "IKELOS investigates how complex systems behave to determine what access is possible and which critical functions hold up under stress.",
+        "ogTitle": "Applied research for embedded and operational systems — IKELOS Group",
+        "ogDescription": "IKELOS investigates how complex systems behave to determine what access is possible and which critical functions hold up under stress."
+      }
+    },
+    {
+      "route": "/practices",
+      "width": 320,
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                ".page-hero > .eyebrow"
+              ],
+              [
+                "h1"
+              ],
+              [
+                ".page-lede"
+              ]
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "title": "Research practices — IKELOS Group",
+        "description": "Exquisite Access Development and OT Behavior Validation and Survivability: two distinct research outcomes for embedded and operational systems.",
+        "ogTitle": "Research practices — IKELOS Group",
+        "ogDescription": "Exquisite Access Development and OT Behavior Validation and Survivability: two distinct research outcomes for embedded and operational systems."
+      }
+    },
+    {
+      "route": "/practices/exquisite-access-development",
+      "width": 320,
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                ".breadcrumb"
+              ],
+              [
+                "h1"
+              ],
+              [
+                ".practice-promise"
+              ],
+              [
+                ".page-lede"
+              ],
+              [
+                "a[href=\"/contact?practice=access\"]"
+              ],
+              [
+                ".practice-visual > .label"
+              ],
+              [
+                ".illustrative-label"
+              ]
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "title": "Exquisite Access Development — IKELOS Group",
+        "description": "Tailored access capabilities for unfamiliar or poorly documented systems through foreign materiel exploitation and specialized research.",
+        "ogTitle": "Exquisite Access Development — IKELOS Group",
+        "ogDescription": "Tailored access capabilities for unfamiliar or poorly documented systems through foreign materiel exploitation and specialized research."
+      }
+    },
+    {
+      "route": "/practices/ot-behavior-validation-survivability",
+      "width": 320,
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                ".breadcrumb"
+              ],
+              [
+                "h1"
+              ],
+              [
+                ".practice-promise"
+              ],
+              [
+                ".page-lede"
+              ],
+              [
+                "a[href=\"/contact?practice=ot\"]"
+              ],
+              [
+                ".practice-visual > .label"
+              ],
+              [
+                ".illustrative-label"
+              ]
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "title": "OT Behavior Validation and Survivability — IKELOS Group",
+        "description": "Test critical functions, failure, degraded operation, and recovery under defined conditions with IKELOS.",
+        "ogTitle": "OT Behavior Validation and Survivability — IKELOS Group",
+        "ogDescription": "Test critical functions, failure, degraded operation, and recovery under defined conditions with IKELOS."
+      }
+    },
+    {
+      "route": "/products",
+      "width": 320,
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                ".page-hero > .eyebrow"
+              ],
+              [
+                "h1"
+              ],
+              [
+                ".page-lede"
+              ]
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "title": "Research products — IKELOS Group",
+        "description": "PHOBETOR and VEILTRACE: research foundations for embedded implementations and complex IT and OT environments.",
+        "ogTitle": "Research products — IKELOS Group",
+        "ogDescription": "PHOBETOR and VEILTRACE: research foundations for embedded implementations and complex IT and OT environments."
+      }
+    },
+    {
+      "route": "/products/phobetor",
+      "width": 320,
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                ".breadcrumb"
+              ],
+              [
+                "h1"
+              ],
+              [
+                ".product-statement"
+              ],
+              [
+                ".page-lede"
+              ],
+              [
+                ".illustrative-label"
+              ],
+              [
+                "a[href=\"/contact?practice=phobetor\"]"
+              ]
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "title": "PHOBETOR — IKELOS Group",
+        "description": "Full-system emulation and vulnerability discovery building on Monkeysploit research. Explore the demonstrated embedded-Linux workflow and its scope limits.",
+        "ogTitle": "PHOBETOR — IKELOS Group",
+        "ogDescription": "Full-system emulation and vulnerability discovery building on Monkeysploit research. Explore the demonstrated embedded-Linux workflow and its scope limits."
+      }
+    },
+    {
+      "route": "/products/veiltrace",
+      "width": 320,
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                ".breadcrumb"
+              ],
+              [
+                "h1"
+              ],
+              [
+                ".product-statement"
+              ],
+              [
+                ".page-lede"
+              ],
+              [
+                ".illustrative-label"
+              ],
+              [
+                "a[href=\"/contact?practice=veiltrace\"]"
+              ]
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "title": "VEILTRACE — IKELOS Group",
+        "description": "Dynamic, threat-representative network generation for modeling complex IT and OT environments and analyzing failure states.",
+        "ogTitle": "VEILTRACE — IKELOS Group",
+        "ogDescription": "Dynamic, threat-representative network generation for modeling complex IT and OT environments and analyzing failure states."
+      }
+    },
+    {
+      "route": "/about",
+      "width": 320,
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                ".page-hero > .eyebrow"
+              ],
+              [
+                "h1"
+              ],
+              [
+                ".page-statement"
+              ],
+              [
+                ".page-lede"
+              ],
+              [
+                "a[href$=\"about#governance\"]"
+              ],
+              [
+                "a[href$=\"about#evidence-policy\"]"
+              ],
+              [
+                "a[href$=\"about#walkthrough\"]"
+              ],
+              [
+                ".rm-intro > .eyebrow"
+              ],
+              [
+                "#systems-title"
+              ],
+              [
+                ".rm-lede"
+              ],
+              [
+                ".rm-case-header > div > .rm-kicker"
+              ],
+              [
+                ".rm-case-header > div > h3"
+              ],
+              [
+                ".rm-case-header > p"
+              ],
+              [
+                "p > strong"
+              ],
+              [
+                "button[aria-label=\"Mission & Consequence\"] > span:nth-child(2) > strong"
+              ],
+              [
+                "button[aria-label=\"Mission & Consequence\"] > span:nth-child(2) > .rm-stage-short"
+              ],
+              [
+                ".rm-loop-note > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-view-header > span:nth-child(1)"
+              ],
+              [
+                ".rm-view-index"
+              ],
+              [
+                "text[y=\"115\"]"
+              ],
+              [
+                "text[y=\"146\"]"
+              ],
+              [
+                "text[x=\"205\"]"
+              ],
+              [
+                "text[y=\"293\"]"
+              ],
+              [
+                "text[y=\"475\"]"
+              ],
+              [
+                "text[y=\"337\"]"
+              ],
+              [
+                "text[y=\"355\"]"
+              ],
+              [
+                "text[x=\"20\"]"
+              ],
+              [
+                ".rm-model-caption"
+              ],
+              [
+                ".rm-envelope-label"
+              ],
+              [
+                ".rm-layer-note > span"
+              ],
+              [
+                ".rm-layer-note > strong"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(1)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(2)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(3)"
+              ],
+              [
+                ".rm-inspect-hint"
+              ],
+              [
+                ".rm-analysis-heading > div > .rm-kicker"
+              ],
+              [
+                "#rm-stage-title"
+              ],
+              [
+                ".rm-analysis-heading > p"
+              ],
+              [
+                ".rm-trace > span:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(2)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(3)"
+              ],
+              [
+                "article:nth-child(1) > h4"
+              ],
+              [
+                "article:nth-child(1) > p"
+              ],
+              [
+                "article:nth-child(2) > h4"
+              ],
+              [
+                "article:nth-child(2) > p"
+              ],
+              [
+                "article:nth-child(3) > h4"
+              ],
+              [
+                "article:nth-child(3) > p"
+              ],
+              [
+                "p[role=\"status\"]"
+              ],
+              [
+                ".rm-analysis-footer > button"
+              ],
+              [
+                ".rm-analysis-footer > button > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-method-note > .rm-kicker"
+              ],
+              [
+                ".rm-method-note > p"
+              ]
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "title": "How we work — IKELOS Group",
+        "description": "Scope, authorization, test boundaries, research methodology, evidence, and retesting for an IKELOS research engagement.",
+        "ogTitle": "How we work — IKELOS Group",
+        "ogDescription": "Scope, authorization, test boundaries, research methodology, evidence, and retesting for an IKELOS research engagement."
+      }
+    },
+    {
+      "route": "/contact",
+      "width": 320,
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                ".page-hero > .eyebrow"
+              ],
+              [
+                "h1"
+              ],
+              [
+                ".email-link[href=\"mailto:info@ikelosgroup.com\"]"
+              ],
+              [
+                ".page-lede"
+              ],
+              [
+                "#handling"
+              ],
+              [
+                "a[href$=\"contact#engagement-brief\"]"
+              ],
+              [
+                ".page-jump-links > a[href$=\"contact#partnerships\"]"
+              ],
+              [
+                ".page-jump-links > a[href$=\"contact#encrypted-email\"]"
+              ]
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "title": "Discuss a research engagement — IKELOS Group",
+        "description": "Start with a non-sensitive description of your research question. Agree scope, handling requirements, and approved channels before sharing technical material.",
+        "ogTitle": "Discuss a research engagement — IKELOS Group",
+        "ogDescription": "Start with a non-sensitive description of your research question. Agree scope, handling requirements, and approved channels before sharing technical material."
+      }
+    },
+    {
+      "route": "/services",
+      "width": 320,
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                ".page-hero > .eyebrow"
+              ],
+              [
+                "h1"
+              ],
+              [
+                ".page-lede"
+              ]
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "title": "Research practices — IKELOS Group",
+        "description": "Explore IKELOS research practices, technical methods, and specialist delivery partnerships.",
+        "ogTitle": "Research practices — IKELOS Group",
+        "ogDescription": "Explore IKELOS research practices, technical methods, and specialist delivery partnerships."
+      }
+    },
+    {
+      "route": "/capabilities/firmware-emulation",
+      "width": 320,
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                ".technical-context"
+              ],
+              [
+                ".technical-context > a[href$=\"phobetor\"]"
+              ],
+              [
+                ".page-hero > .eyebrow"
+              ],
+              [
+                ".fe-capability-name"
+              ],
+              [
+                "#firmware-title"
+              ],
+              [
+                ".page-lede"
+              ],
+              [
+                ".fe-hero-grid > div:nth-child(1) > .text-link"
+              ],
+              [
+                ".fe-hero-grid > div:nth-child(1) > .text-link > span[aria-hidden=\"true\"]"
+              ],
+              [
+                "text[y=\"102\"][x=\"108\"]"
+              ],
+              [
+                ".fe-svg-small[y=\"120\"][x=\"108\"]"
+              ],
+              [
+                "text[y=\"102\"][x=\"352\"]"
+              ],
+              [
+                ".fe-svg-small[y=\"120\"][x=\"352\"]"
+              ],
+              [
+                "text[y=\"204\"]"
+              ],
+              [
+                "text[y=\"222\"]"
+              ],
+              [
+                "text[y=\"301\"][x=\"108\"]"
+              ],
+              [
+                ".fe-svg-small[y=\"319\"][x=\"108\"]"
+              ],
+              [
+                "text[y=\"301\"][x=\"352\"]"
+              ],
+              [
+                ".fe-svg-small[y=\"319\"][x=\"352\"]"
+              ],
+              [
+                "text[y=\"40\"]"
+              ],
+              [
+                "text[y=\"394\"]"
+              ],
+              [
+                ".fe-hero-art > p"
+              ],
+              [
+                ".page-jump-links > a:nth-child(1)"
+              ],
+              [
+                ".page-jump-links > a:nth-child(2)"
+              ],
+              [
+                ".page-jump-links > a:nth-child(3)"
+              ],
+              [
+                ".page-jump-links > a:nth-child(4)"
+              ],
+              [
+                ".fe-loop-note > span[aria-hidden=\"true\"]"
+              ]
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "title": "Firmware Vulnerability Research & System Emulation — IKELOS Group",
+        "description": "Technical background for PHOBETOR: firmware vulnerability discovery, controlled execution, evidence, and defined emulation fidelity.",
+        "ogTitle": "Firmware Vulnerability Research & System Emulation — IKELOS Group",
+        "ogDescription": "Technical background for PHOBETOR: firmware vulnerability discovery, controlled execution, evidence, and defined emulation fidelity."
+      }
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                "figcaption > .label"
+              ],
+              [
+                "figcaption > span:nth-child(2)"
+              ],
+              [
+                "button:nth-child(2)"
+              ],
+              [
+                ".lens-result > .label"
+              ],
+              [
+                ".lens-result > p"
+              ],
+              [
+                "a[href$=\"#practices\"] > span[aria-hidden=\"true\"]"
+              ],
+              [
+                "a[href$=\"#products\"] > span[aria-hidden=\"true\"]"
+              ],
+              [
+                "#products > .wrap > .research-section-heading > .eyebrow"
+              ],
+              [
+                "#foundation-title"
+              ],
+              [
+                "#products > .wrap > .research-section-heading > p:nth-child(3)"
+              ],
+              [
+                "article:nth-child(1) > .product-copy > .label"
+              ],
+              [
+                "h3 > a[href$=\"phobetor\"]"
+              ],
+              [
+                "article:nth-child(1) > .product-copy > p:nth-child(3)"
+              ],
+              [
+                "article:nth-child(1) > .product-copy > .product-role"
+              ],
+              [
+                ".text-link[href$=\"phobetor\"]"
+              ],
+              [
+                "article:nth-child(2) > .product-copy > .label"
+              ],
+              [
+                "h3 > a[href$=\"veiltrace\"]"
+              ],
+              [
+                "article:nth-child(2) > .product-copy > p:nth-child(3)"
+              ],
+              [
+                "article:nth-child(2) > .product-copy > .product-role"
+              ],
+              [
+                ".text-link[href$=\"veiltrace\"]"
+              ],
+              [
+                ".foundation-note"
+              ]
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "title": "Applied research for embedded and operational systems — IKELOS Group",
+        "description": "IKELOS investigates how complex systems behave to determine what access is possible and which critical functions hold up under stress.",
+        "ogTitle": "Applied research for embedded and operational systems — IKELOS Group",
+        "ogDescription": "IKELOS investigates how complex systems behave to determine what access is possible and which critical functions hold up under stress."
+      }
+    },
+    {
+      "route": "/practices",
+      "width": 390,
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                ".page-hero > .eyebrow"
+              ],
+              [
+                "h1"
+              ],
+              [
+                ".page-lede"
+              ]
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "title": "Research practices — IKELOS Group",
+        "description": "Exquisite Access Development and OT Behavior Validation and Survivability: two distinct research outcomes for embedded and operational systems.",
+        "ogTitle": "Research practices — IKELOS Group",
+        "ogDescription": "Exquisite Access Development and OT Behavior Validation and Survivability: two distinct research outcomes for embedded and operational systems."
+      }
+    },
+    {
+      "route": "/practices/exquisite-access-development",
+      "width": 390,
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                ".breadcrumb"
+              ],
+              [
+                "h1"
+              ],
+              [
+                ".practice-promise"
+              ],
+              [
+                ".page-lede"
+              ],
+              [
+                "a[href=\"/contact?practice=access\"]"
+              ],
+              [
+                ".practice-visual > .label"
+              ],
+              [
+                ".illustrative-label"
+              ]
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "title": "Exquisite Access Development — IKELOS Group",
+        "description": "Tailored access capabilities for unfamiliar or poorly documented systems through foreign materiel exploitation and specialized research.",
+        "ogTitle": "Exquisite Access Development — IKELOS Group",
+        "ogDescription": "Tailored access capabilities for unfamiliar or poorly documented systems through foreign materiel exploitation and specialized research."
+      }
+    },
+    {
+      "route": "/practices/ot-behavior-validation-survivability",
+      "width": 390,
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                ".breadcrumb"
+              ],
+              [
+                "h1"
+              ],
+              [
+                ".practice-promise"
+              ],
+              [
+                ".page-lede"
+              ],
+              [
+                "a[href=\"/contact?practice=ot\"]"
+              ],
+              [
+                ".practice-visual > .label"
+              ],
+              [
+                ".illustrative-label"
+              ]
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "title": "OT Behavior Validation and Survivability — IKELOS Group",
+        "description": "Test critical functions, failure, degraded operation, and recovery under defined conditions with IKELOS.",
+        "ogTitle": "OT Behavior Validation and Survivability — IKELOS Group",
+        "ogDescription": "Test critical functions, failure, degraded operation, and recovery under defined conditions with IKELOS."
+      }
+    },
+    {
+      "route": "/products",
+      "width": 390,
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                ".page-hero > .eyebrow"
+              ],
+              [
+                "h1"
+              ],
+              [
+                ".page-lede"
+              ]
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "title": "Research products — IKELOS Group",
+        "description": "PHOBETOR and VEILTRACE: research foundations for embedded implementations and complex IT and OT environments.",
+        "ogTitle": "Research products — IKELOS Group",
+        "ogDescription": "PHOBETOR and VEILTRACE: research foundations for embedded implementations and complex IT and OT environments."
+      }
+    },
+    {
+      "route": "/products/phobetor",
+      "width": 390,
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                ".breadcrumb"
+              ],
+              [
+                "h1"
+              ],
+              [
+                ".product-statement"
+              ],
+              [
+                ".page-lede"
+              ],
+              [
+                ".illustrative-label"
+              ],
+              [
+                "a[href=\"/contact?practice=phobetor\"]"
+              ]
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "title": "PHOBETOR — IKELOS Group",
+        "description": "Full-system emulation and vulnerability discovery building on Monkeysploit research. Explore the demonstrated embedded-Linux workflow and its scope limits.",
+        "ogTitle": "PHOBETOR — IKELOS Group",
+        "ogDescription": "Full-system emulation and vulnerability discovery building on Monkeysploit research. Explore the demonstrated embedded-Linux workflow and its scope limits."
+      }
+    },
+    {
+      "route": "/products/veiltrace",
+      "width": 390,
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                ".breadcrumb"
+              ],
+              [
+                "h1"
+              ],
+              [
+                ".product-statement"
+              ],
+              [
+                ".page-lede"
+              ],
+              [
+                ".illustrative-label"
+              ],
+              [
+                "a[href=\"/contact?practice=veiltrace\"]"
+              ]
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "title": "VEILTRACE — IKELOS Group",
+        "description": "Dynamic, threat-representative network generation for modeling complex IT and OT environments and analyzing failure states.",
+        "ogTitle": "VEILTRACE — IKELOS Group",
+        "ogDescription": "Dynamic, threat-representative network generation for modeling complex IT and OT environments and analyzing failure states."
+      }
+    },
+    {
+      "route": "/about",
+      "width": 390,
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                ".page-hero > .eyebrow"
+              ],
+              [
+                "h1"
+              ],
+              [
+                ".page-statement"
+              ],
+              [
+                ".page-lede"
+              ],
+              [
+                "a[href$=\"about#governance\"]"
+              ],
+              [
+                "a[href$=\"about#evidence-policy\"]"
+              ],
+              [
+                "a[href$=\"about#walkthrough\"]"
+              ],
+              [
+                ".rm-intro > .eyebrow"
+              ],
+              [
+                "#systems-title"
+              ],
+              [
+                ".rm-lede"
+              ],
+              [
+                ".rm-case-header > div > .rm-kicker"
+              ],
+              [
+                ".rm-case-header > div > h3"
+              ],
+              [
+                ".rm-case-header > p"
+              ],
+              [
+                "p > strong"
+              ],
+              [
+                "button[aria-label=\"Mission & Consequence\"] > span:nth-child(2) > strong"
+              ],
+              [
+                "button[aria-label=\"Mission & Consequence\"] > span:nth-child(2) > .rm-stage-short"
+              ],
+              [
+                ".rm-loop-note > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-view-header > span:nth-child(1)"
+              ],
+              [
+                ".rm-view-index"
+              ],
+              [
+                "text[y=\"115\"]"
+              ],
+              [
+                "text[y=\"146\"]"
+              ],
+              [
+                "text[x=\"205\"]"
+              ],
+              [
+                "text[y=\"293\"]"
+              ],
+              [
+                "text[y=\"475\"]"
+              ],
+              [
+                "text[y=\"337\"]"
+              ],
+              [
+                "text[y=\"355\"]"
+              ],
+              [
+                "text[x=\"20\"]"
+              ],
+              [
+                ".rm-model-caption"
+              ],
+              [
+                ".rm-envelope-label"
+              ],
+              [
+                ".rm-layer-note > span"
+              ],
+              [
+                ".rm-layer-note > strong"
+              ],
+              [
+                ".rm-layer-note > p"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(1)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(2)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(3)"
+              ],
+              [
+                ".rm-inspect-hint"
+              ],
+              [
+                ".rm-analysis-heading > div > .rm-kicker"
+              ],
+              [
+                "#rm-stage-title"
+              ],
+              [
+                ".rm-analysis-heading > p"
+              ],
+              [
+                ".rm-trace > span:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(2)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(3)"
+              ],
+              [
+                "article:nth-child(1) > h4"
+              ],
+              [
+                "article:nth-child(1) > p"
+              ],
+              [
+                "article:nth-child(2) > h4"
+              ],
+              [
+                "article:nth-child(2) > p"
+              ],
+              [
+                "article:nth-child(3) > h4"
+              ],
+              [
+                "article:nth-child(3) > p"
+              ],
+              [
+                "p[role=\"status\"]"
+              ],
+              [
+                ".rm-analysis-footer > button"
+              ],
+              [
+                ".rm-analysis-footer > button > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-method-note > .rm-kicker"
+              ],
+              [
+                ".rm-method-note > p"
+              ]
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "title": "How we work — IKELOS Group",
+        "description": "Scope, authorization, test boundaries, research methodology, evidence, and retesting for an IKELOS research engagement.",
+        "ogTitle": "How we work — IKELOS Group",
+        "ogDescription": "Scope, authorization, test boundaries, research methodology, evidence, and retesting for an IKELOS research engagement."
+      }
+    },
+    {
+      "route": "/contact",
+      "width": 390,
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                ".page-hero > .eyebrow"
+              ],
+              [
+                "h1"
+              ],
+              [
+                ".email-link[href=\"mailto:info@ikelosgroup.com\"]"
+              ],
+              [
+                ".page-lede"
+              ],
+              [
+                "#handling"
+              ],
+              [
+                "a[href$=\"contact#engagement-brief\"]"
+              ],
+              [
+                ".page-jump-links > a[href$=\"contact#partnerships\"]"
+              ],
+              [
+                ".page-jump-links > a[href$=\"contact#encrypted-email\"]"
+              ]
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "title": "Discuss a research engagement — IKELOS Group",
+        "description": "Start with a non-sensitive description of your research question. Agree scope, handling requirements, and approved channels before sharing technical material.",
+        "ogTitle": "Discuss a research engagement — IKELOS Group",
+        "ogDescription": "Start with a non-sensitive description of your research question. Agree scope, handling requirements, and approved channels before sharing technical material."
+      }
+    },
+    {
+      "route": "/services",
+      "width": 390,
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                ".page-hero > .eyebrow"
+              ],
+              [
+                "h1"
+              ],
+              [
+                ".page-lede"
+              ]
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "title": "Research practices — IKELOS Group",
+        "description": "Explore IKELOS research practices, technical methods, and specialist delivery partnerships.",
+        "ogTitle": "Research practices — IKELOS Group",
+        "ogDescription": "Explore IKELOS research practices, technical methods, and specialist delivery partnerships."
+      }
+    },
+    {
+      "route": "/capabilities/firmware-emulation",
+      "width": 390,
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                ".technical-context"
+              ],
+              [
+                ".technical-context > a[href$=\"phobetor\"]"
+              ],
+              [
+                ".page-hero > .eyebrow"
+              ],
+              [
+                ".fe-capability-name"
+              ],
+              [
+                "#firmware-title"
+              ],
+              [
+                ".page-lede"
+              ],
+              [
+                ".fe-hero-grid > div:nth-child(1) > .text-link"
+              ],
+              [
+                ".fe-hero-grid > div:nth-child(1) > .text-link > span[aria-hidden=\"true\"]"
+              ],
+              [
+                "text[y=\"102\"][x=\"108\"]"
+              ],
+              [
+                ".fe-svg-small[y=\"120\"][x=\"108\"]"
+              ],
+              [
+                "text[y=\"102\"][x=\"352\"]"
+              ],
+              [
+                ".fe-svg-small[y=\"120\"][x=\"352\"]"
+              ],
+              [
+                "text[y=\"204\"]"
+              ],
+              [
+                "text[y=\"222\"]"
+              ],
+              [
+                "text[y=\"301\"][x=\"108\"]"
+              ],
+              [
+                ".fe-svg-small[y=\"319\"][x=\"108\"]"
+              ],
+              [
+                "text[y=\"301\"][x=\"352\"]"
+              ],
+              [
+                ".fe-svg-small[y=\"319\"][x=\"352\"]"
+              ],
+              [
+                "text[y=\"40\"]"
+              ],
+              [
+                "text[y=\"394\"]"
+              ],
+              [
+                ".fe-hero-art > p"
+              ],
+              [
+                ".page-jump-links > a:nth-child(1)"
+              ],
+              [
+                ".page-jump-links > a:nth-child(2)"
+              ],
+              [
+                ".page-jump-links > a:nth-child(3)"
+              ],
+              [
+                ".page-jump-links > a:nth-child(4)"
+              ],
+              [
+                ".fe-loop-note > span[aria-hidden=\"true\"]"
+              ]
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "title": "Firmware Vulnerability Research & System Emulation — IKELOS Group",
+        "description": "Technical background for PHOBETOR: firmware vulnerability discovery, controlled execution, evidence, and defined emulation fidelity.",
+        "ogTitle": "Firmware Vulnerability Research & System Emulation — IKELOS Group",
+        "ogDescription": "Technical background for PHOBETOR: firmware vulnerability discovery, controlled execution, evidence, and defined emulation fidelity."
+      }
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                "figcaption > .label"
+              ],
+              [
+                "figcaption > span:nth-child(2)"
+              ],
+              [
+                "button:nth-child(2)"
+              ],
+              [
+                ".lens-result > .label"
+              ],
+              [
+                ".lens-result > p"
+              ],
+              [
+                "a[href$=\"#practices\"] > span[aria-hidden=\"true\"]"
+              ],
+              [
+                "a[href$=\"#products\"] > span[aria-hidden=\"true\"]"
+              ],
+              [
+                "#products > .wrap > .research-section-heading > .eyebrow"
+              ],
+              [
+                "#foundation-title"
+              ],
+              [
+                "#products > .wrap > .research-section-heading > p:nth-child(3)"
+              ],
+              [
+                "article:nth-child(1) > .product-copy > .label"
+              ],
+              [
+                "h3 > a[href$=\"phobetor\"]"
+              ],
+              [
+                "article:nth-child(1) > .product-copy > p:nth-child(3)"
+              ],
+              [
+                "article:nth-child(1) > .product-copy > .product-role"
+              ],
+              [
+                ".text-link[href$=\"phobetor\"]"
+              ],
+              [
+                "article:nth-child(2) > .product-copy > .label"
+              ],
+              [
+                "h3 > a[href$=\"veiltrace\"]"
+              ],
+              [
+                "article:nth-child(2) > .product-copy > p:nth-child(3)"
+              ],
+              [
+                "article:nth-child(2) > .product-copy > .product-role"
+              ],
+              [
+                ".text-link[href$=\"veiltrace\"]"
+              ],
+              [
+                ".foundation-note"
+              ]
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "title": "Applied research for embedded and operational systems — IKELOS Group",
+        "description": "IKELOS investigates how complex systems behave to determine what access is possible and which critical functions hold up under stress.",
+        "ogTitle": "Applied research for embedded and operational systems — IKELOS Group",
+        "ogDescription": "IKELOS investigates how complex systems behave to determine what access is possible and which critical functions hold up under stress."
+      }
+    },
+    {
+      "route": "/practices",
+      "width": 768,
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                ".page-hero > .eyebrow"
+              ],
+              [
+                "h1"
+              ],
+              [
+                ".page-lede"
+              ]
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "title": "Research practices — IKELOS Group",
+        "description": "Exquisite Access Development and OT Behavior Validation and Survivability: two distinct research outcomes for embedded and operational systems.",
+        "ogTitle": "Research practices — IKELOS Group",
+        "ogDescription": "Exquisite Access Development and OT Behavior Validation and Survivability: two distinct research outcomes for embedded and operational systems."
+      }
+    },
+    {
+      "route": "/practices/exquisite-access-development",
+      "width": 768,
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                ".breadcrumb"
+              ],
+              [
+                "h1"
+              ],
+              [
+                ".practice-promise"
+              ],
+              [
+                ".page-lede"
+              ],
+              [
+                "a[href=\"/contact?practice=access\"]"
+              ],
+              [
+                ".practice-visual > .label"
+              ],
+              [
+                ".illustrative-label"
+              ]
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "title": "Exquisite Access Development — IKELOS Group",
+        "description": "Tailored access capabilities for unfamiliar or poorly documented systems through foreign materiel exploitation and specialized research.",
+        "ogTitle": "Exquisite Access Development — IKELOS Group",
+        "ogDescription": "Tailored access capabilities for unfamiliar or poorly documented systems through foreign materiel exploitation and specialized research."
+      }
+    },
+    {
+      "route": "/practices/ot-behavior-validation-survivability",
+      "width": 768,
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                ".breadcrumb"
+              ],
+              [
+                "h1"
+              ],
+              [
+                ".practice-promise"
+              ],
+              [
+                ".page-lede"
+              ],
+              [
+                "a[href=\"/contact?practice=ot\"]"
+              ],
+              [
+                ".practice-visual > .label"
+              ],
+              [
+                ".illustrative-label"
+              ]
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "title": "OT Behavior Validation and Survivability — IKELOS Group",
+        "description": "Test critical functions, failure, degraded operation, and recovery under defined conditions with IKELOS.",
+        "ogTitle": "OT Behavior Validation and Survivability — IKELOS Group",
+        "ogDescription": "Test critical functions, failure, degraded operation, and recovery under defined conditions with IKELOS."
+      }
+    },
+    {
+      "route": "/products",
+      "width": 768,
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                ".page-hero > .eyebrow"
+              ],
+              [
+                "h1"
+              ],
+              [
+                ".page-lede"
+              ]
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "title": "Research products — IKELOS Group",
+        "description": "PHOBETOR and VEILTRACE: research foundations for embedded implementations and complex IT and OT environments.",
+        "ogTitle": "Research products — IKELOS Group",
+        "ogDescription": "PHOBETOR and VEILTRACE: research foundations for embedded implementations and complex IT and OT environments."
+      }
+    },
+    {
+      "route": "/products/phobetor",
+      "width": 768,
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                ".breadcrumb"
+              ],
+              [
+                "h1"
+              ],
+              [
+                ".product-statement"
+              ],
+              [
+                ".page-lede"
+              ],
+              [
+                ".illustrative-label"
+              ],
+              [
+                "a[href=\"/contact?practice=phobetor\"]"
+              ]
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "title": "PHOBETOR — IKELOS Group",
+        "description": "Full-system emulation and vulnerability discovery building on Monkeysploit research. Explore the demonstrated embedded-Linux workflow and its scope limits.",
+        "ogTitle": "PHOBETOR — IKELOS Group",
+        "ogDescription": "Full-system emulation and vulnerability discovery building on Monkeysploit research. Explore the demonstrated embedded-Linux workflow and its scope limits."
+      }
+    },
+    {
+      "route": "/products/veiltrace",
+      "width": 768,
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                ".breadcrumb"
+              ],
+              [
+                "h1"
+              ],
+              [
+                ".product-statement"
+              ],
+              [
+                ".page-lede"
+              ],
+              [
+                ".illustrative-label"
+              ],
+              [
+                "a[href=\"/contact?practice=veiltrace\"]"
+              ]
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "title": "VEILTRACE — IKELOS Group",
+        "description": "Dynamic, threat-representative network generation for modeling complex IT and OT environments and analyzing failure states.",
+        "ogTitle": "VEILTRACE — IKELOS Group",
+        "ogDescription": "Dynamic, threat-representative network generation for modeling complex IT and OT environments and analyzing failure states."
+      }
+    },
+    {
+      "route": "/about",
+      "width": 768,
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                ".page-hero > .eyebrow"
+              ],
+              [
+                "h1"
+              ],
+              [
+                ".page-statement"
+              ],
+              [
+                ".page-lede"
+              ],
+              [
+                "a[href$=\"about#governance\"]"
+              ],
+              [
+                "a[href$=\"about#evidence-policy\"]"
+              ],
+              [
+                "a[href$=\"about#walkthrough\"]"
+              ],
+              [
+                ".rm-intro > .eyebrow"
+              ],
+              [
+                "#systems-title"
+              ],
+              [
+                ".rm-lede"
+              ],
+              [
+                ".rm-case-header > div > .rm-kicker"
+              ],
+              [
+                ".rm-case-header > div > h3"
+              ],
+              [
+                ".rm-case-header > p"
+              ],
+              [
+                "p > strong"
+              ],
+              [
+                "button[aria-label=\"Mission & Consequence\"] > span:nth-child(2) > strong"
+              ],
+              [
+                "button[aria-label=\"Mission & Consequence\"] > span:nth-child(2) > .rm-stage-short"
+              ],
+              [
+                ".rm-loop-note > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-view-header > span:nth-child(1)"
+              ],
+              [
+                ".rm-view-index"
+              ],
+              [
+                "text[x=\"470\"]"
+              ],
+              [
+                "text[x=\"40\"]"
+              ],
+              [
+                "text[x=\"318\"]"
+              ],
+              [
+                "text[x=\"298\"]"
+              ],
+              [
+                "text[x=\"600\"][y=\"235\"][text-anchor=\"middle\"]"
+              ],
+              [
+                "text[x=\"468\"]"
+              ],
+              [
+                "text[y=\"451\"]"
+              ],
+              [
+                "text[y=\"342\"]"
+              ],
+              [
+                "text[y=\"358\"]"
+              ],
+              [
+                "text[x=\"340\"]"
+              ],
+              [
+                "text[x=\"710\"]"
+              ],
+              [
+                ".rm-model-caption"
+              ],
+              [
+                ".rm-model-caption > span"
+              ],
+              [
+                ".rm-envelope-label"
+              ],
+              [
+                ".rm-layer-note > span"
+              ],
+              [
+                ".rm-layer-note > strong"
+              ],
+              [
+                ".rm-layer-note > p"
+              ],
+              [
+                ".rm-component-sensor > .rm-component-sub"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(1)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(2)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(3)"
+              ],
+              [
+                ".rm-inspect-hint"
+              ],
+              [
+                ".rm-analysis-heading > div > .rm-kicker"
+              ],
+              [
+                "#rm-stage-title"
+              ],
+              [
+                ".rm-analysis-heading > p"
+              ],
+              [
+                ".rm-trace > span:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(2)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(3)"
+              ],
+              [
+                ".rm-trace > span:nth-child(3)"
+              ],
+              [
+                "article:nth-child(1) > h4"
+              ],
+              [
+                "article:nth-child(1) > p"
+              ],
+              [
+                "article:nth-child(2) > h4"
+              ],
+              [
+                "article:nth-child(2) > p"
+              ],
+              [
+                "article:nth-child(3) > h4"
+              ],
+              [
+                "article:nth-child(3) > p"
+              ],
+              [
+                "p[role=\"status\"]"
+              ],
+              [
+                ".rm-analysis-footer > button"
+              ],
+              [
+                ".rm-analysis-footer > button > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-method-note > .rm-kicker"
+              ],
+              [
+                ".rm-method-note > p"
+              ]
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "title": "How we work — IKELOS Group",
+        "description": "Scope, authorization, test boundaries, research methodology, evidence, and retesting for an IKELOS research engagement.",
+        "ogTitle": "How we work — IKELOS Group",
+        "ogDescription": "Scope, authorization, test boundaries, research methodology, evidence, and retesting for an IKELOS research engagement."
+      }
+    },
+    {
+      "route": "/contact",
+      "width": 768,
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                ".page-hero > .eyebrow"
+              ],
+              [
+                "h1"
+              ],
+              [
+                ".email-link[href=\"mailto:info@ikelosgroup.com\"]"
+              ],
+              [
+                ".page-lede"
+              ],
+              [
+                "#handling"
+              ],
+              [
+                "a[href$=\"contact#engagement-brief\"]"
+              ],
+              [
+                ".page-jump-links > a[href$=\"contact#partnerships\"]"
+              ],
+              [
+                ".page-jump-links > a[href$=\"contact#encrypted-email\"]"
+              ]
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "title": "Discuss a research engagement — IKELOS Group",
+        "description": "Start with a non-sensitive description of your research question. Agree scope, handling requirements, and approved channels before sharing technical material.",
+        "ogTitle": "Discuss a research engagement — IKELOS Group",
+        "ogDescription": "Start with a non-sensitive description of your research question. Agree scope, handling requirements, and approved channels before sharing technical material."
+      }
+    },
+    {
+      "route": "/services",
+      "width": 768,
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                ".page-hero > .eyebrow"
+              ],
+              [
+                "h1"
+              ],
+              [
+                ".page-lede"
+              ]
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "title": "Research practices — IKELOS Group",
+        "description": "Explore IKELOS research practices, technical methods, and specialist delivery partnerships.",
+        "ogTitle": "Research practices — IKELOS Group",
+        "ogDescription": "Explore IKELOS research practices, technical methods, and specialist delivery partnerships."
+      }
+    },
+    {
+      "route": "/capabilities/firmware-emulation",
+      "width": 768,
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                ".technical-context"
+              ],
+              [
+                ".technical-context > a[href$=\"phobetor\"]"
+              ],
+              [
+                ".page-hero > .eyebrow"
+              ],
+              [
+                ".fe-capability-name"
+              ],
+              [
+                "#firmware-title"
+              ],
+              [
+                ".page-lede"
+              ],
+              [
+                ".fe-hero-grid > div:nth-child(1) > .text-link"
+              ],
+              [
+                ".fe-hero-grid > div:nth-child(1) > .text-link > span[aria-hidden=\"true\"]"
+              ],
+              [
+                "text[y=\"102\"][x=\"108\"]"
+              ],
+              [
+                ".fe-svg-small[y=\"120\"][x=\"108\"]"
+              ],
+              [
+                "text[y=\"102\"][x=\"352\"]"
+              ],
+              [
+                ".fe-svg-small[y=\"120\"][x=\"352\"]"
+              ],
+              [
+                "text[y=\"204\"]"
+              ],
+              [
+                "text[y=\"222\"]"
+              ],
+              [
+                "text[y=\"301\"][x=\"108\"]"
+              ],
+              [
+                ".fe-svg-small[y=\"319\"][x=\"108\"]"
+              ],
+              [
+                "text[y=\"301\"][x=\"352\"]"
+              ],
+              [
+                ".fe-svg-small[y=\"319\"][x=\"352\"]"
+              ],
+              [
+                "text[y=\"40\"]"
+              ],
+              [
+                "text[y=\"394\"]"
+              ],
+              [
+                ".fe-hero-art > p"
+              ],
+              [
+                ".page-jump-links > a:nth-child(1)"
+              ],
+              [
+                ".page-jump-links > a:nth-child(2)"
+              ],
+              [
+                ".page-jump-links > a:nth-child(3)"
+              ],
+              [
+                ".page-jump-links > a:nth-child(4)"
+              ],
+              [
+                ".fe-loop-note > span[aria-hidden=\"true\"]"
+              ]
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "title": "Firmware Vulnerability Research & System Emulation — IKELOS Group",
+        "description": "Technical background for PHOBETOR: firmware vulnerability discovery, controlled execution, evidence, and defined emulation fidelity.",
+        "ogTitle": "Firmware Vulnerability Research & System Emulation — IKELOS Group",
+        "ogDescription": "Technical background for PHOBETOR: firmware vulnerability discovery, controlled execution, evidence, and defined emulation fidelity."
+      }
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                "figcaption > .label"
+              ],
+              [
+                "figcaption > span:nth-child(2)"
+              ],
+              [
+                "button:nth-child(2)"
+              ],
+              [
+                ".lens-result > .label"
+              ],
+              [
+                ".lens-result > p"
+              ],
+              [
+                "a[href$=\"#practices\"] > span[aria-hidden=\"true\"]"
+              ],
+              [
+                "a[href$=\"#products\"] > span[aria-hidden=\"true\"]"
+              ],
+              [
+                "#products > .wrap > .research-section-heading > .eyebrow"
+              ],
+              [
+                "#foundation-title"
+              ],
+              [
+                "#products > .wrap > .research-section-heading > p:nth-child(3)"
+              ],
+              [
+                "article:nth-child(1) > .product-copy > .label"
+              ],
+              [
+                "h3 > a[href$=\"phobetor\"]"
+              ],
+              [
+                "article:nth-child(1) > .product-copy > p:nth-child(3)"
+              ],
+              [
+                "article:nth-child(1) > .product-copy > .product-role"
+              ],
+              [
+                ".text-link[href$=\"phobetor\"]"
+              ],
+              [
+                "article:nth-child(2) > .product-copy > .label"
+              ],
+              [
+                "h3 > a[href$=\"veiltrace\"]"
+              ],
+              [
+                "article:nth-child(2) > .product-copy > p:nth-child(3)"
+              ],
+              [
+                "article:nth-child(2) > .product-copy > .product-role"
+              ],
+              [
+                ".text-link[href$=\"veiltrace\"]"
+              ],
+              [
+                ".foundation-note"
+              ]
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "title": "Applied research for embedded and operational systems — IKELOS Group",
+        "description": "IKELOS investigates how complex systems behave to determine what access is possible and which critical functions hold up under stress.",
+        "ogTitle": "Applied research for embedded and operational systems — IKELOS Group",
+        "ogDescription": "IKELOS investigates how complex systems behave to determine what access is possible and which critical functions hold up under stress."
+      }
+    },
+    {
+      "route": "/practices",
+      "width": 1440,
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                ".page-hero > .eyebrow"
+              ],
+              [
+                "h1"
+              ],
+              [
+                ".page-lede"
+              ]
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "title": "Research practices — IKELOS Group",
+        "description": "Exquisite Access Development and OT Behavior Validation and Survivability: two distinct research outcomes for embedded and operational systems.",
+        "ogTitle": "Research practices — IKELOS Group",
+        "ogDescription": "Exquisite Access Development and OT Behavior Validation and Survivability: two distinct research outcomes for embedded and operational systems."
+      }
+    },
+    {
+      "route": "/practices/exquisite-access-development",
+      "width": 1440,
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                ".breadcrumb"
+              ],
+              [
+                "h1"
+              ],
+              [
+                ".practice-promise"
+              ],
+              [
+                ".page-lede"
+              ],
+              [
+                "a[href=\"/contact?practice=access\"]"
+              ],
+              [
+                ".practice-visual > .label"
+              ],
+              [
+                ".illustrative-label"
+              ]
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "title": "Exquisite Access Development — IKELOS Group",
+        "description": "Tailored access capabilities for unfamiliar or poorly documented systems through foreign materiel exploitation and specialized research.",
+        "ogTitle": "Exquisite Access Development — IKELOS Group",
+        "ogDescription": "Tailored access capabilities for unfamiliar or poorly documented systems through foreign materiel exploitation and specialized research."
+      }
+    },
+    {
+      "route": "/practices/ot-behavior-validation-survivability",
+      "width": 1440,
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                ".breadcrumb"
+              ],
+              [
+                "h1"
+              ],
+              [
+                ".practice-promise"
+              ],
+              [
+                ".page-lede"
+              ],
+              [
+                "a[href=\"/contact?practice=ot\"]"
+              ],
+              [
+                ".practice-visual > .label"
+              ],
+              [
+                ".illustrative-label"
+              ]
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "title": "OT Behavior Validation and Survivability — IKELOS Group",
+        "description": "Test critical functions, failure, degraded operation, and recovery under defined conditions with IKELOS.",
+        "ogTitle": "OT Behavior Validation and Survivability — IKELOS Group",
+        "ogDescription": "Test critical functions, failure, degraded operation, and recovery under defined conditions with IKELOS."
+      }
+    },
+    {
+      "route": "/products",
+      "width": 1440,
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                ".page-hero > .eyebrow"
+              ],
+              [
+                "h1"
+              ],
+              [
+                ".page-lede"
+              ]
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "title": "Research products — IKELOS Group",
+        "description": "PHOBETOR and VEILTRACE: research foundations for embedded implementations and complex IT and OT environments.",
+        "ogTitle": "Research products — IKELOS Group",
+        "ogDescription": "PHOBETOR and VEILTRACE: research foundations for embedded implementations and complex IT and OT environments."
+      }
+    },
+    {
+      "route": "/products/phobetor",
+      "width": 1440,
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                ".breadcrumb"
+              ],
+              [
+                "h1"
+              ],
+              [
+                ".product-statement"
+              ],
+              [
+                ".page-lede"
+              ],
+              [
+                ".illustrative-label"
+              ],
+              [
+                "a[href=\"/contact?practice=phobetor\"]"
+              ]
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "title": "PHOBETOR — IKELOS Group",
+        "description": "Full-system emulation and vulnerability discovery building on Monkeysploit research. Explore the demonstrated embedded-Linux workflow and its scope limits.",
+        "ogTitle": "PHOBETOR — IKELOS Group",
+        "ogDescription": "Full-system emulation and vulnerability discovery building on Monkeysploit research. Explore the demonstrated embedded-Linux workflow and its scope limits."
+      }
+    },
+    {
+      "route": "/products/veiltrace",
+      "width": 1440,
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                ".breadcrumb"
+              ],
+              [
+                "h1"
+              ],
+              [
+                ".product-statement"
+              ],
+              [
+                ".page-lede"
+              ],
+              [
+                ".illustrative-label"
+              ],
+              [
+                "a[href=\"/contact?practice=veiltrace\"]"
+              ]
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "title": "VEILTRACE — IKELOS Group",
+        "description": "Dynamic, threat-representative network generation for modeling complex IT and OT environments and analyzing failure states.",
+        "ogTitle": "VEILTRACE — IKELOS Group",
+        "ogDescription": "Dynamic, threat-representative network generation for modeling complex IT and OT environments and analyzing failure states."
+      }
+    },
+    {
+      "route": "/about",
+      "width": 1440,
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                ".page-hero > .eyebrow"
+              ],
+              [
+                "h1"
+              ],
+              [
+                ".page-statement"
+              ],
+              [
+                ".page-lede"
+              ],
+              [
+                "a[href$=\"about#governance\"]"
+              ],
+              [
+                "a[href$=\"about#evidence-policy\"]"
+              ],
+              [
+                "a[href$=\"about#walkthrough\"]"
+              ],
+              [
+                ".rm-intro > .eyebrow"
+              ],
+              [
+                "#systems-title"
+              ],
+              [
+                ".rm-lede"
+              ],
+              [
+                ".rm-case-header > div > .rm-kicker"
+              ],
+              [
+                ".rm-case-header > div > h3"
+              ],
+              [
+                ".rm-case-header > p"
+              ],
+              [
+                "p > strong"
+              ],
+              [
+                "button[aria-label=\"Mission & Consequence\"] > span:nth-child(2) > strong"
+              ],
+              [
+                "button[aria-label=\"Mission & Consequence\"] > span:nth-child(2) > .rm-stage-short"
+              ],
+              [
+                ".rm-loop-note > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-view-header > span:nth-child(1)"
+              ],
+              [
+                ".rm-view-index"
+              ],
+              [
+                "text[x=\"470\"]"
+              ],
+              [
+                "text[x=\"40\"]"
+              ],
+              [
+                "text[x=\"318\"]"
+              ],
+              [
+                "text[x=\"298\"]"
+              ],
+              [
+                "text[x=\"600\"][y=\"235\"][text-anchor=\"middle\"]"
+              ],
+              [
+                "text[x=\"468\"]"
+              ],
+              [
+                "text[y=\"451\"]"
+              ],
+              [
+                "text[y=\"342\"]"
+              ],
+              [
+                "text[y=\"358\"]"
+              ],
+              [
+                "text[x=\"340\"]"
+              ],
+              [
+                "text[x=\"710\"]"
+              ],
+              [
+                ".rm-model-caption"
+              ],
+              [
+                ".rm-model-caption > span"
+              ],
+              [
+                ".rm-envelope-label"
+              ],
+              [
+                ".rm-layer-note > span"
+              ],
+              [
+                ".rm-layer-note > strong"
+              ],
+              [
+                ".rm-layer-note > p"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(1)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(2)"
+              ],
+              [
+                ".rm-diagram-key > span:nth-child(3)"
+              ],
+              [
+                ".rm-inspect-hint"
+              ],
+              [
+                ".rm-analysis-heading > div > .rm-kicker"
+              ],
+              [
+                "#rm-stage-title"
+              ],
+              [
+                ".rm-analysis-heading > p"
+              ],
+              [
+                ".rm-trace > span:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(1)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(2)"
+              ],
+              [
+                ".rm-trace > ol > li:nth-child(3)"
+              ],
+              [
+                ".rm-trace > span:nth-child(3)"
+              ],
+              [
+                "article:nth-child(1) > h4"
+              ],
+              [
+                "article:nth-child(1) > p"
+              ],
+              [
+                "article:nth-child(2) > h4"
+              ],
+              [
+                "article:nth-child(2) > p"
+              ],
+              [
+                "article:nth-child(3) > h4"
+              ],
+              [
+                "article:nth-child(3) > p"
+              ],
+              [
+                "p[role=\"status\"]"
+              ],
+              [
+                ".rm-analysis-footer > button"
+              ],
+              [
+                ".rm-analysis-footer > button > span[aria-hidden=\"true\"]"
+              ],
+              [
+                ".rm-method-note > .rm-kicker"
+              ],
+              [
+                ".rm-method-note > p"
+              ]
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "title": "How we work — IKELOS Group",
+        "description": "Scope, authorization, test boundaries, research methodology, evidence, and retesting for an IKELOS research engagement.",
+        "ogTitle": "How we work — IKELOS Group",
+        "ogDescription": "Scope, authorization, test boundaries, research methodology, evidence, and retesting for an IKELOS research engagement."
+      }
+    },
+    {
+      "route": "/contact",
+      "width": 1440,
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                ".page-hero > .eyebrow"
+              ],
+              [
+                "h1"
+              ],
+              [
+                ".email-link[href=\"mailto:info@ikelosgroup.com\"]"
+              ],
+              [
+                ".page-lede"
+              ],
+              [
+                "#handling"
+              ],
+              [
+                "a[href$=\"contact#engagement-brief\"]"
+              ],
+              [
+                ".page-jump-links > a[href$=\"contact#partnerships\"]"
+              ],
+              [
+                ".page-jump-links > a[href$=\"contact#encrypted-email\"]"
+              ]
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "title": "Discuss a research engagement — IKELOS Group",
+        "description": "Start with a non-sensitive description of your research question. Agree scope, handling requirements, and approved channels before sharing technical material.",
+        "ogTitle": "Discuss a research engagement — IKELOS Group",
+        "ogDescription": "Start with a non-sensitive description of your research question. Agree scope, handling requirements, and approved channels before sharing technical material."
+      }
+    },
+    {
+      "route": "/services",
+      "width": 1440,
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                ".page-hero > .eyebrow"
+              ],
+              [
+                "h1"
+              ],
+              [
+                ".page-lede"
+              ]
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "title": "Research practices — IKELOS Group",
+        "description": "Explore IKELOS research practices, technical methods, and specialist delivery partnerships.",
+        "ogTitle": "Research practices — IKELOS Group",
+        "ogDescription": "Explore IKELOS research practices, technical methods, and specialist delivery partnerships."
+      }
+    },
+    {
+      "route": "/capabilities/firmware-emulation",
+      "width": 1440,
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                ".technical-context"
+              ],
+              [
+                ".technical-context > a[href$=\"phobetor\"]"
+              ],
+              [
+                ".page-hero > .eyebrow"
+              ],
+              [
+                ".fe-capability-name"
+              ],
+              [
+                "#firmware-title"
+              ],
+              [
+                ".page-lede"
+              ],
+              [
+                ".fe-hero-grid > div:nth-child(1) > .text-link"
+              ],
+              [
+                ".fe-hero-grid > div:nth-child(1) > .text-link > span[aria-hidden=\"true\"]"
+              ],
+              [
+                "text[y=\"102\"][x=\"108\"]"
+              ],
+              [
+                ".fe-svg-small[y=\"120\"][x=\"108\"]"
+              ],
+              [
+                "text[y=\"102\"][x=\"352\"]"
+              ],
+              [
+                ".fe-svg-small[y=\"120\"][x=\"352\"]"
+              ],
+              [
+                "text[y=\"204\"]"
+              ],
+              [
+                "text[y=\"222\"]"
+              ],
+              [
+                "text[y=\"301\"][x=\"108\"]"
+              ],
+              [
+                ".fe-svg-small[y=\"319\"][x=\"108\"]"
+              ],
+              [
+                "text[y=\"301\"][x=\"352\"]"
+              ],
+              [
+                ".fe-svg-small[y=\"319\"][x=\"352\"]"
+              ],
+              [
+                "text[y=\"40\"]"
+              ],
+              [
+                "text[y=\"394\"]"
+              ],
+              [
+                ".fe-hero-art > p"
+              ],
+              [
+                ".page-jump-links > a:nth-child(1)"
+              ],
+              [
+                ".page-jump-links > a:nth-child(2)"
+              ],
+              [
+                ".page-jump-links > a:nth-child(3)"
+              ],
+              [
+                ".page-jump-links > a:nth-child(4)"
+              ],
+              [
+                ".fe-loop-note > span[aria-hidden=\"true\"]"
+              ]
+            ]
+          }
+        ]
+      },
+      "meta": {
+        "title": "Firmware Vulnerability Research & System Emulation — IKELOS Group",
+        "description": "Technical background for PHOBETOR: firmware vulnerability discovery, controlled execution, evidence, and defined emulation fidelity.",
+        "ogTitle": "Firmware Vulnerability Research & System Emulation — IKELOS Group",
+        "ogDescription": "Technical background for PHOBETOR: firmware vulnerability discovery, controlled execution, evidence, and defined emulation fidelity."
+      }
+    }
+  ],
+  "errors": [],
+  "external": []
+}
