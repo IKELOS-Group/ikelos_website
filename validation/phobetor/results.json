@@ -1,0 +1,598 @@
+{
+  "browser": "153.0.8010.12",
+  "views": [
+    {
+      "route": "/products/phobetor",
+      "width": 320,
+      "overflow": false,
+      "metadata": {
+        "title": "PHOBETOR — IKELOS Group",
+        "description": "IKELOS Group’s platform for firmware vulnerability research, controlled execution, and system emulation, with funded RTOS and protocol-based discovery research.",
+        "ogTitle": "PHOBETOR — IKELOS Group",
+        "ogDescription": "IKELOS Group’s platform for firmware vulnerability research, controlled execution, and system emulation, with funded RTOS and protocol-based discovery research."
+      },
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      }
+    },
+    {
+      "route": "/",
+      "width": 320,
+      "overflow": false,
+      "metadata": {
+        "title": "Applied research for embedded and operational systems — IKELOS Group",
+        "description": "IKELOS investigates how complex systems behave to determine what access is possible and which critical functions hold up under stress.",
+        "ogTitle": "Applied research for embedded and operational systems — IKELOS Group",
+        "ogDescription": "IKELOS investigates how complex systems behave to determine what access is possible and which critical functions hold up under stress."
+      },
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      }
+    },
+    {
+      "route": "/products",
+      "width": 320,
+      "overflow": false,
+      "metadata": {
+        "title": "Research products — IKELOS Group",
+        "description": "PHOBETOR and VEILTRACE: research foundations for embedded implementations and complex IT and OT environments.",
+        "ogTitle": "Research products — IKELOS Group",
+        "ogDescription": "PHOBETOR and VEILTRACE: research foundations for embedded implementations and complex IT and OT environments."
+      },
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      }
+    },
+    {
+      "route": "/practices/exquisite-access-development",
+      "width": 320,
+      "overflow": false,
+      "metadata": {
+        "title": "Exquisite Access Development — IKELOS Group",
+        "description": "Tailored access capabilities for unfamiliar or poorly documented systems through foreign materiel exploitation and specialized research.",
+        "ogTitle": "Exquisite Access Development — IKELOS Group",
+        "ogDescription": "Tailored access capabilities for unfamiliar or poorly documented systems through foreign materiel exploitation and specialized research."
+      },
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      }
+    },
+    {
+      "route": "/products/veiltrace",
+      "width": 320,
+      "overflow": false,
+      "metadata": {
+        "title": "VEILTRACE — IKELOS Group",
+        "description": "Dynamic, threat-representative network generation for modeling complex IT and OT environments and analyzing failure states.",
+        "ogTitle": "VEILTRACE — IKELOS Group",
+        "ogDescription": "Dynamic, threat-representative network generation for modeling complex IT and OT environments and analyzing failure states."
+      },
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      }
+    },
+    {
+      "route": "/products/phobetor",
+      "width": 390,
+      "overflow": false,
+      "metadata": {
+        "title": "PHOBETOR — IKELOS Group",
+        "description": "IKELOS Group’s platform for firmware vulnerability research, controlled execution, and system emulation, with funded RTOS and protocol-based discovery research.",
+        "ogTitle": "PHOBETOR — IKELOS Group",
+        "ogDescription": "IKELOS Group’s platform for firmware vulnerability research, controlled execution, and system emulation, with funded RTOS and protocol-based discovery research."
+      },
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      }
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "overflow": false,
+      "metadata": {
+        "title": "Applied research for embedded and operational systems — IKELOS Group",
+        "description": "IKELOS investigates how complex systems behave to determine what access is possible and which critical functions hold up under stress.",
+        "ogTitle": "Applied research for embedded and operational systems — IKELOS Group",
+        "ogDescription": "IKELOS investigates how complex systems behave to determine what access is possible and which critical functions hold up under stress."
+      },
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      }
+    },
+    {
+      "route": "/products",
+      "width": 390,
+      "overflow": false,
+      "metadata": {
+        "title": "Research products — IKELOS Group",
+        "description": "PHOBETOR and VEILTRACE: research foundations for embedded implementations and complex IT and OT environments.",
+        "ogTitle": "Research products — IKELOS Group",
+        "ogDescription": "PHOBETOR and VEILTRACE: research foundations for embedded implementations and complex IT and OT environments."
+      },
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      }
+    },
+    {
+      "route": "/practices/exquisite-access-development",
+      "width": 390,
+      "overflow": false,
+      "metadata": {
+        "title": "Exquisite Access Development — IKELOS Group",
+        "description": "Tailored access capabilities for unfamiliar or poorly documented systems through foreign materiel exploitation and specialized research.",
+        "ogTitle": "Exquisite Access Development — IKELOS Group",
+        "ogDescription": "Tailored access capabilities for unfamiliar or poorly documented systems through foreign materiel exploitation and specialized research."
+      },
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      }
+    },
+    {
+      "route": "/products/veiltrace",
+      "width": 390,
+      "overflow": false,
+      "metadata": {
+        "title": "VEILTRACE — IKELOS Group",
+        "description": "Dynamic, threat-representative network generation for modeling complex IT and OT environments and analyzing failure states.",
+        "ogTitle": "VEILTRACE — IKELOS Group",
+        "ogDescription": "Dynamic, threat-representative network generation for modeling complex IT and OT environments and analyzing failure states."
+      },
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      }
+    },
+    {
+      "route": "/products/phobetor",
+      "width": 768,
+      "overflow": false,
+      "metadata": {
+        "title": "PHOBETOR — IKELOS Group",
+        "description": "IKELOS Group’s platform for firmware vulnerability research, controlled execution, and system emulation, with funded RTOS and protocol-based discovery research.",
+        "ogTitle": "PHOBETOR — IKELOS Group",
+        "ogDescription": "IKELOS Group’s platform for firmware vulnerability research, controlled execution, and system emulation, with funded RTOS and protocol-based discovery research."
+      },
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      }
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "overflow": false,
+      "metadata": {
+        "title": "Applied research for embedded and operational systems — IKELOS Group",
+        "description": "IKELOS investigates how complex systems behave to determine what access is possible and which critical functions hold up under stress.",
+        "ogTitle": "Applied research for embedded and operational systems — IKELOS Group",
+        "ogDescription": "IKELOS investigates how complex systems behave to determine what access is possible and which critical functions hold up under stress."
+      },
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      }
+    },
+    {
+      "route": "/products",
+      "width": 768,
+      "overflow": false,
+      "metadata": {
+        "title": "Research products — IKELOS Group",
+        "description": "PHOBETOR and VEILTRACE: research foundations for embedded implementations and complex IT and OT environments.",
+        "ogTitle": "Research products — IKELOS Group",
+        "ogDescription": "PHOBETOR and VEILTRACE: research foundations for embedded implementations and complex IT and OT environments."
+      },
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      }
+    },
+    {
+      "route": "/practices/exquisite-access-development",
+      "width": 768,
+      "overflow": false,
+      "metadata": {
+        "title": "Exquisite Access Development — IKELOS Group",
+        "description": "Tailored access capabilities for unfamiliar or poorly documented systems through foreign materiel exploitation and specialized research.",
+        "ogTitle": "Exquisite Access Development — IKELOS Group",
+        "ogDescription": "Tailored access capabilities for unfamiliar or poorly documented systems through foreign materiel exploitation and specialized research."
+      },
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      }
+    },
+    {
+      "route": "/products/veiltrace",
+      "width": 768,
+      "overflow": false,
+      "metadata": {
+        "title": "VEILTRACE — IKELOS Group",
+        "description": "Dynamic, threat-representative network generation for modeling complex IT and OT environments and analyzing failure states.",
+        "ogTitle": "VEILTRACE — IKELOS Group",
+        "ogDescription": "Dynamic, threat-representative network generation for modeling complex IT and OT environments and analyzing failure states."
+      },
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      }
+    },
+    {
+      "route": "/products/phobetor",
+      "width": 1440,
+      "overflow": false,
+      "metadata": {
+        "title": "PHOBETOR — IKELOS Group",
+        "description": "IKELOS Group’s platform for firmware vulnerability research, controlled execution, and system emulation, with funded RTOS and protocol-based discovery research.",
+        "ogTitle": "PHOBETOR — IKELOS Group",
+        "ogDescription": "IKELOS Group’s platform for firmware vulnerability research, controlled execution, and system emulation, with funded RTOS and protocol-based discovery research."
+      },
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      }
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "overflow": false,
+      "metadata": {
+        "title": "Applied research for embedded and operational systems — IKELOS Group",
+        "description": "IKELOS investigates how complex systems behave to determine what access is possible and which critical functions hold up under stress.",
+        "ogTitle": "Applied research for embedded and operational systems — IKELOS Group",
+        "ogDescription": "IKELOS investigates how complex systems behave to determine what access is possible and which critical functions hold up under stress."
+      },
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      }
+    },
+    {
+      "route": "/products",
+      "width": 1440,
+      "overflow": false,
+      "metadata": {
+        "title": "Research products — IKELOS Group",
+        "description": "PHOBETOR and VEILTRACE: research foundations for embedded implementations and complex IT and OT environments.",
+        "ogTitle": "Research products — IKELOS Group",
+        "ogDescription": "PHOBETOR and VEILTRACE: research foundations for embedded implementations and complex IT and OT environments."
+      },
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      }
+    },
+    {
+      "route": "/practices/exquisite-access-development",
+      "width": 1440,
+      "overflow": false,
+      "metadata": {
+        "title": "Exquisite Access Development — IKELOS Group",
+        "description": "Tailored access capabilities for unfamiliar or poorly documented systems through foreign materiel exploitation and specialized research.",
+        "ogTitle": "Exquisite Access Development — IKELOS Group",
+        "ogDescription": "Tailored access capabilities for unfamiliar or poorly documented systems through foreign materiel exploitation and specialized research."
+      },
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      }
+    },
+    {
+      "route": "/products/veiltrace",
+      "width": 1440,
+      "overflow": false,
+      "metadata": {
+        "title": "VEILTRACE — IKELOS Group",
+        "description": "Dynamic, threat-representative network generation for modeling complex IT and OT environments and analyzing failure states.",
+        "ogTitle": "VEILTRACE — IKELOS Group",
+        "ogDescription": "Dynamic, threat-representative network generation for modeling complex IT and OT environments and analyzing failure states."
+      },
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      }
+    }
+  ],
+  "redirects": [
+    {
+      "from": "/capabilities/firmware-emulation",
+      "hash": "research-capability",
+      "width": 320,
+      "destination": "http://127.0.0.1:4175/products/phobetor?ref=firmware#research-capability"
+    },
+    {
+      "from": "/capabilities/firmware-emulation",
+      "hash": "evidence-workflow",
+      "width": 320,
+      "destination": "http://127.0.0.1:4175/products/phobetor?ref=firmware#evidence-workflow"
+    },
+    {
+      "from": "/capabilities/firmware-emulation",
+      "hash": "system-integration",
+      "width": 320,
+      "destination": "http://127.0.0.1:4175/products/phobetor?ref=firmware#system-integration"
+    },
+    {
+      "from": "/capabilities/firmware-emulation",
+      "hash": "engagement-applications",
+      "width": 320,
+      "destination": "http://127.0.0.1:4175/products/phobetor?ref=firmware#engagement-applications"
+    },
+    {
+      "from": "/capabilities/firmware-emulation",
+      "hash": "research-deliverables",
+      "width": 320,
+      "destination": "http://127.0.0.1:4175/products/phobetor?ref=firmware#research-deliverables"
+    },
+    {
+      "from": "/products/phobetor",
+      "hash": "research-basis",
+      "width": 320,
+      "destination": "http://127.0.0.1:4175/products/phobetor?ref=firmware#research-basis"
+    },
+    {
+      "from": "/products/phobetor",
+      "hash": "funded-research",
+      "width": 320,
+      "destination": "http://127.0.0.1:4175/products/phobetor?ref=firmware#funded-research"
+    },
+    {
+      "from": "/products/phobetor",
+      "hash": "rtos-research",
+      "width": 320,
+      "destination": "http://127.0.0.1:4175/products/phobetor?ref=firmware#rtos-research"
+    },
+    {
+      "from": "/products/phobetor",
+      "hash": "protocol-research",
+      "width": 320,
+      "destination": "http://127.0.0.1:4175/products/phobetor?ref=firmware#protocol-research"
+    },
+    {
+      "from": "/capabilities/firmware-emulation",
+      "hash": "research-capability",
+      "width": 390,
+      "destination": "http://127.0.0.1:4175/products/phobetor?ref=firmware#research-capability"
+    },
+    {
+      "from": "/capabilities/firmware-emulation",
+      "hash": "evidence-workflow",
+      "width": 390,
+      "destination": "http://127.0.0.1:4175/products/phobetor?ref=firmware#evidence-workflow"
+    },
+    {
+      "from": "/capabilities/firmware-emulation",
+      "hash": "system-integration",
+      "width": 390,
+      "destination": "http://127.0.0.1:4175/products/phobetor?ref=firmware#system-integration"
+    },
+    {
+      "from": "/capabilities/firmware-emulation",
+      "hash": "engagement-applications",
+      "width": 390,
+      "destination": "http://127.0.0.1:4175/products/phobetor?ref=firmware#engagement-applications"
+    },
+    {
+      "from": "/capabilities/firmware-emulation",
+      "hash": "research-deliverables",
+      "width": 390,
+      "destination": "http://127.0.0.1:4175/products/phobetor?ref=firmware#research-deliverables"
+    },
+    {
+      "from": "/products/phobetor",
+      "hash": "research-basis",
+      "width": 390,
+      "destination": "http://127.0.0.1:4175/products/phobetor?ref=firmware#research-basis"
+    },
+    {
+      "from": "/products/phobetor",
+      "hash": "funded-research",
+      "width": 390,
+      "destination": "http://127.0.0.1:4175/products/phobetor?ref=firmware#funded-research"
+    },
+    {
+      "from": "/products/phobetor",
+      "hash": "rtos-research",
+      "width": 390,
+      "destination": "http://127.0.0.1:4175/products/phobetor?ref=firmware#rtos-research"
+    },
+    {
+      "from": "/products/phobetor",
+      "hash": "protocol-research",
+      "width": 390,
+      "destination": "http://127.0.0.1:4175/products/phobetor?ref=firmware#protocol-research"
+    },
+    {
+      "from": "/capabilities/firmware-emulation",
+      "hash": "research-capability",
+      "width": 768,
+      "destination": "http://127.0.0.1:4175/products/phobetor?ref=firmware#research-capability"
+    },
+    {
+      "from": "/capabilities/firmware-emulation",
+      "hash": "evidence-workflow",
+      "width": 768,
+      "destination": "http://127.0.0.1:4175/products/phobetor?ref=firmware#evidence-workflow"
+    },
+    {
+      "from": "/capabilities/firmware-emulation",
+      "hash": "system-integration",
+      "width": 768,
+      "destination": "http://127.0.0.1:4175/products/phobetor?ref=firmware#system-integration"
+    },
+    {
+      "from": "/capabilities/firmware-emulation",
+      "hash": "engagement-applications",
+      "width": 768,
+      "destination": "http://127.0.0.1:4175/products/phobetor?ref=firmware#engagement-applications"
+    },
+    {
+      "from": "/capabilities/firmware-emulation",
+      "hash": "research-deliverables",
+      "width": 768,
+      "destination": "http://127.0.0.1:4175/products/phobetor?ref=firmware#research-deliverables"
+    },
+    {
+      "from": "/products/phobetor",
+      "hash": "research-basis",
+      "width": 768,
+      "destination": "http://127.0.0.1:4175/products/phobetor?ref=firmware#research-basis"
+    },
+    {
+      "from": "/products/phobetor",
+      "hash": "funded-research",
+      "width": 768,
+      "destination": "http://127.0.0.1:4175/products/phobetor?ref=firmware#funded-research"
+    },
+    {
+      "from": "/products/phobetor",
+      "hash": "rtos-research",
+      "width": 768,
+      "destination": "http://127.0.0.1:4175/products/phobetor?ref=firmware#rtos-research"
+    },
+    {
+      "from": "/products/phobetor",
+      "hash": "protocol-research",
+      "width": 768,
+      "destination": "http://127.0.0.1:4175/products/phobetor?ref=firmware#protocol-research"
+    },
+    {
+      "from": "/capabilities/firmware-emulation",
+      "hash": "research-capability",
+      "width": 1440,
+      "destination": "http://127.0.0.1:4175/products/phobetor?ref=firmware#research-capability"
+    },
+    {
+      "from": "/capabilities/firmware-emulation",
+      "hash": "evidence-workflow",
+      "width": 1440,
+      "destination": "http://127.0.0.1:4175/products/phobetor?ref=firmware#evidence-workflow"
+    },
+    {
+      "from": "/capabilities/firmware-emulation",
+      "hash": "system-integration",
+      "width": 1440,
+      "destination": "http://127.0.0.1:4175/products/phobetor?ref=firmware#system-integration"
+    },
+    {
+      "from": "/capabilities/firmware-emulation",
+      "hash": "engagement-applications",
+      "width": 1440,
+      "destination": "http://127.0.0.1:4175/products/phobetor?ref=firmware#engagement-applications"
+    },
+    {
+      "from": "/capabilities/firmware-emulation",
+      "hash": "research-deliverables",
+      "width": 1440,
+      "destination": "http://127.0.0.1:4175/products/phobetor?ref=firmware#research-deliverables"
+    },
+    {
+      "from": "/products/phobetor",
+      "hash": "research-basis",
+      "width": 1440,
+      "destination": "http://127.0.0.1:4175/products/phobetor?ref=firmware#research-basis"
+    },
+    {
+      "from": "/products/phobetor",
+      "hash": "funded-research",
+      "width": 1440,
+      "destination": "http://127.0.0.1:4175/products/phobetor?ref=firmware#funded-research"
+    },
+    {
+      "from": "/products/phobetor",
+      "hash": "rtos-research",
+      "width": 1440,
+      "destination": "http://127.0.0.1:4175/products/phobetor?ref=firmware#rtos-research"
+    },
+    {
+      "from": "/products/phobetor",
+      "hash": "protocol-research",
+      "width": 1440,
+      "destination": "http://127.0.0.1:4175/products/phobetor?ref=firmware#protocol-research"
+    }
+  ],
+  "checkedLinks": [
+    "/",
+    "/practices",
+    "/products",
+    "/about",
+    "/contact",
+    "/contact?practice=phobetor",
+    "/products/phobetor#evidence-workflow",
+    "/products/phobetor#research-capability",
+    "/products/phobetor#funded-research",
+    "/products/phobetor#system-integration",
+    "/products/phobetor#research-deliverables",
+    "/contact#handling",
+    "/about#research-methodology",
+    "/about#evidence-policy",
+    "/practices/exquisite-access-development",
+    "/practices/ot-behavior-validation-survivability",
+    "/products/veiltrace",
+    "/products/phobetor",
+    "/contact#partnerships",
+    "/contact#encrypted-email",
+    "/contact?practice=access",
+    "/contact?practice=veiltrace"
+  ],
+  "checks": [
+    "Eight-stage workflow and keyboard navigation",
+    "Canonical and legacy anchors clear the header",
+    "Legacy query and hash preservation, including trailing slash",
+    "PHOBETOR engagement context and route focus",
+    "Public branding and metadata",
+    "Internal links",
+    "No runtime errors or external requests"
+  ],
+  "errors": [],
+  "external": []
+}

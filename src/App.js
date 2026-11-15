@@ -7,7 +7,6 @@ import About from './components/About';
 import Practices from './components/Practices';
 import Products from './components/Products';
 import Contact from './components/Contact';
-import FirmwareEmulation from './components/FirmwareEmulation';
 import { Link } from 'react-router-dom';
 import './index.css';
 import './components/BuyerPositioning.css';
@@ -20,15 +19,14 @@ const pageMeta = {
   '/practices/exquisite-access-development': ['Exquisite Access Development', 'Tailored access capabilities for unfamiliar or poorly documented systems through foreign materiel exploitation and specialized research.'],
   '/practices/ot-behavior-validation-survivability': ['OT Behavior Validation and Survivability', 'Test critical functions, failure, degraded operation, and recovery under defined conditions with IKELOS.'],
   '/products': ['Research products', 'PHOBETOR and VEILTRACE: research foundations for embedded implementations and complex IT and OT environments.'],
-  '/products/phobetor': ['PHOBETOR', 'Full-system emulation and vulnerability discovery building on Monkeysploit research. Explore the demonstrated embedded-Linux workflow and its scope limits.'],
+  '/products/phobetor': ['PHOBETOR', 'IKELOS Group’s platform for firmware vulnerability research, controlled execution, and system emulation, with funded RTOS and protocol-based discovery research.'],
   '/products/veiltrace': ['VEILTRACE', 'Dynamic, threat-representative network generation for modeling complex IT and OT environments and analyzing failure states.'],
   '/about': ['How we work', 'Scope, authorization, test boundaries, research methodology, evidence, and retesting for an IKELOS research engagement.'],
   '/contact': ['Discuss a research engagement', 'Start with a non-sensitive description of your research question. Agree scope, handling requirements, and approved channels before sharing technical material.'],
-  '/capabilities/firmware-emulation': ['Firmware Vulnerability Research & System Emulation', 'Technical background for PHOBETOR: firmware vulnerability discovery, controlled execution, evidence, and defined emulation fidelity.'],
 };
 
 function PageShell() {
-  const { pathname, hash } = useLocation();
+  const { pathname, search, hash } = useLocation();
   const previousPath = useRef(pathname);
   useEffect(() => {
     const [title, description] = pageMeta[pathname] || ['Page not found', 'Find your way back to IKELOS Group.'];
@@ -47,6 +45,7 @@ function PageShell() {
     }
   }, [pathname, hash]);
   if (pathname === '/' && hash === '#research-methodology') return <Navigate replace to="/about#research-methodology"/>;
+  if (pathname === '/capabilities/firmware-emulation' || pathname === '/capabilities/firmware-emulation/') return <Navigate replace to={{ pathname: '/products/phobetor', search, hash }}/>;
   return <>
     <a className="skip-link" href="#main-content">Skip to content</a>
     <Navbar />
@@ -62,7 +61,6 @@ function PageShell() {
         <Route path="/products/veiltrace" element={<Products product="veiltrace" />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/capabilities/firmware-emulation" element={<FirmwareEmulation />} />
         <Route path="*" element={<section className="page-hero wrap"><h1>Page not found</h1><Link className="text-link" to="/">Return home</Link></section>} />
       </Routes>
     </main>

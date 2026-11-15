@@ -77,7 +77,7 @@ export default function Services() {
         <EngagementDecision when="A suspected attack path or a component vulnerability has been identified, but its reachability and effect on the complete system remain uncertain." decision="Whether to block deployment, constrain operation, redesign an interface, accept residual risk, or commission further testing."/>
         <p>Follow system-level hypotheses into the implementation. Establish what the evidence supports about exploitability and operational consequences under defined access and test conditions.</p>
         </div><div className="research-topics">{researchTopics.map(({ title, question, methods, outputs, when, decision, capability }, i) => <article key={title}>
-          <CapabilityArt kind={i + 1}/><div><p className="eyebrow">Discipline / 0{i + 1}</p><h3>{title}</h3><p className="engineering-question">{question}</p><EngagementDecision when={when} decision={decision}/><p>{methods}</p><p className="capability-output"><strong>Scoped outputs</strong><br/>{outputs}</p>{capability && <Link className="text-link" to="/capabilities/firmware-emulation">{capability} <span aria-hidden="true">↗</span></Link>}</div>
+          <CapabilityArt kind={i + 1}/><div><p className="eyebrow">Discipline / 0{i + 1}</p><h3>{title}</h3><p className="engineering-question">{question}</p><EngagementDecision when={when} decision={decision}/><p>{methods}</p><p className="capability-output"><strong>Scoped outputs</strong><br/>{outputs}</p>{capability && <Link className="text-link" to="/products/phobetor#research-capability">{capability} <span aria-hidden="true">↗</span></Link>}</div>
         </article>)}</div>
     </section>
 

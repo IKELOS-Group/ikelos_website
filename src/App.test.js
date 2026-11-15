@@ -48,13 +48,21 @@ test.each([
   expect(document.title).toBe(title+' — IKELOS Group');
   expect(document.querySelector('meta[property="og:title"]').content).toBe(document.title);
   expect(document.querySelector('meta[name="description"]').content).toBe(document.querySelector('meta[property="og:description"]').content);
+  expect(document.body).not.toHaveTextContent(/monkeysploit|monkeyforge/i);
+  expect(document.head.innerHTML).not.toMatch(/monkeysploit|monkeyforge/i);
 });
 
-test('PHOBETOR separates product scope, source identity, and demonstrated platform limits',()=>{
+test('PHOBETOR brings firmware capabilities and funded research into the IKELOS product',()=>{
   window.history.replaceState({},'','/products/phobetor');render(<App/>);
   const main=screen.getByRole('main');
-  for(const claim of ['does not use the PHOBETOR name','ELF-based embedded Linux','x86-64 and AArch64','excludes RTOS and bare-metal','whole-system emulation','not an independent validation','may involve external models or APIs']) expect(main).toHaveTextContent(claim);
-  expect(screen.getByRole('link',{name:/Inspect the technical workflow/})).toHaveAttribute('href','/capabilities/firmware-emulation');
+  expect(main).toHaveTextContent('PHOBETOR is IKELOS Group’s platform');
+  expect(document.getElementById('research-capability')).toHaveTextContent('ELF-based embedded Linux firmware · x86-64 and AArch64');
+  expect(document.getElementById('funded-research')).toHaveTextContent('IKELOS Group funds PHOBETOR’s expansion');
+  for(const id of ['rtos-research','protocol-research']) expect(document.getElementById(id)).toHaveTextContent('In development.');
+  expect(screen.getAllByRole('tab')).toHaveLength(8);
+  expect(document.getElementById('system-integration')).toBeVisible();
+  expect(document.getElementById('research-deliverables')).toBeVisible();
+  expect(screen.getByRole('link',{name:/Explore the evidence workflow/})).toHaveAttribute('href','/products/phobetor#evidence-workflow');
   expect(main.querySelector('a[href$=".pdf"]')).toBeNull();
 });
 
