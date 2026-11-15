@@ -110,7 +110,7 @@ export default function SystemsModel() {
         <div className="rm-workspace">
           <nav className="rm-stage-rail" aria-label="Research workflow">
             <p className="rm-rail-label">Explore the investigation</p>
-            <ol>{researchStages.map((item,i) => <li key={item.title}><button ref={el => {controls.current[i] = el;}} onClick={() => selectStage(i)} onKeyDown={event => navigate(event,i)} aria-label={item.title} aria-current={stage === i ? 'step' : undefined} aria-controls="rm-stage-details"><span className="rm-stage-number" aria-hidden="true">0{i+1}</span><span><strong>{item.title}</strong><span className="rm-stage-short">{item.short}</span></span><span className="rm-stage-arrow" aria-hidden="true">↗</span></button></li>)}</ol>
+            <ol>{researchStages.map((item,i) => <li key={item.title}><button ref={el => {controls.current[i] = el;}} onClick={() => selectStage(i)} onKeyDown={event => navigate(event,i)} aria-label={item.title} aria-current={stage === i ? 'step' : undefined} aria-controls="rm-stage-details"><span className="rm-stage-number" aria-hidden="true">0{i+1}</span><span><strong>{item.title}</strong><span className="rm-stage-short">{item.short}</span></span><span className="rm-stage-arrow" aria-hidden="true">→</span></button></li>)}</ol>
             <p className="rm-loop-note"><span aria-hidden="true">↶</span> Evidence can reopen any stage.</p>
           </nav>
           <div className="rm-system-view">

@@ -1,9 +1,9 @@
 const {chromium}=require(process.env.PLAYWRIGHT_MODULE || '/tmp/ikelos-browser/node_modules/playwright');
 const fs=require('fs');const path=require('path');const assert=require('assert/strict');
-const out=path.resolve(process.env.REVIEW_OUTPUT || path.join(__dirname,'../validation/research-practices'));
+const out=path.resolve(process.env.REVIEW_OUTPUT || path.join(__dirname,'../validation/three-practice-redesign'));
 process.chdir(path.resolve(__dirname,'..'));
 const base=process.env.PREVIEW_URL || 'http://127.0.0.1:4175';
-const routes=['/','/practices','/practices/exquisite-access-development','/practices/ot-behavior-validation-survivability','/products','/products/phobetor','/products/veiltrace','/about','/contact','/services','/capabilities/firmware-emulation'];
+const routes=['/','/practices','/practices/exquisite-access-development','/practices/ot-behavior-validation-survivability','/practices/systems-behavior-validation-survivability-testing','/practices/cyber-effects-development-validation','/engagements','/products','/products/phobetor','/products/veiltrace','/about','/contact','/services','/capabilities/firmware-emulation'];
 (async()=>{
  fs.mkdirSync(out,{recursive:true});
  const browser=await chromium.launch({executablePath:process.env.CHROMIUM_EXECUTABLE || '/tmp/ikelos-browsers/chromium-1194/chrome-linux/chrome',headless:true,args:['--disable-gpu']});
@@ -38,7 +38,7 @@ const routes=['/','/practices','/practices/exquisite-access-development','/pract
   for(const link of links){if(!link.startsWith('/'))continue;const url=new URL(link,base);if(path.extname(url.pathname)){assert.equal((await page.request.get(url.href)).status(),200);continue;}await page.goto(url.href);assert.equal(await page.getByRole('heading',{name:'Page not found',exact:true}).count(),0,link);if(url.hash)assert.equal(await page.locator(url.hash).count(),1,link);checkedLinks.push(link);}
   checks.push('Every internal link resolves to a page or section.');
   await page.setViewportSize({width:390,height:844});await page.goto(base);await page.keyboard.press('Tab');assert.equal(await page.locator(':focus').textContent(),'Skip to content');await page.keyboard.press('Enter');assert.equal(await page.locator(':focus').getAttribute('id'),'main-content');
-  await page.getByRole('button',{name:'02 / Survivability',exact:true}).focus();await page.keyboard.press('Space');assert.equal(await page.getByRole('button',{name:'02 / Survivability',exact:true}).getAttribute('aria-pressed'),'true');assert(await page.locator('.lens-result').textContent().then(x=>x.includes('recovery')));
+  await page.getByRole('button',{name:'02 / Survivability',exact:true}).focus();await page.keyboard.press('Space');assert.equal(await page.getByRole('button',{name:'02 / Survivability',exact:true}).getAttribute('aria-pressed'),'true');assert(await page.locator('.lens-result').textContent().then(x=>x.includes('Which critical functions hold up?')));
   await page.screenshot({path:out+'/lens-keyboard-mobile.png'});
   await page.evaluate(()=>scrollTo(0,300));await page.getByRole('button',{name:'Menu'}).click();const dialog=page.getByRole('dialog');const close=dialog.getByRole('button',{name:'Close'});assert(await close.evaluate(el=>el===document.activeElement));await page.keyboard.press('Shift+Tab');assert(await dialog.getByRole('link',{name:'info@ikelosgroup.com'}).evaluate(el=>el===document.activeElement));await page.keyboard.press('Tab');assert(await close.evaluate(el=>el===document.activeElement));
   await page.addScriptTag({path:require.resolve('axe-core/axe.min.js')});assert.deepEqual(await page.evaluate(async()=>(await axe.run()).violations.map(v=>v.id)),[]);await page.screenshot({path:out+'/mobile-menu.png'});await page.keyboard.press('Escape');assert.equal(await dialog.count(),0);assert.equal(await page.evaluate(()=>scrollY),300);assert(await page.getByRole('button',{name:'Menu'}).evaluate(el=>el===document.activeElement));

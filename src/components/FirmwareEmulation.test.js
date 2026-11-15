@@ -21,10 +21,10 @@ test('direct entry renders PHOBETOR and updates document and Open Graph metadata
   expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('PHOBETOR');
   expect(document.title).toBe('PHOBETOR — IKELOS Group');
   expect(document.querySelector('meta[property="og:title"]').content).toBe(document.title);
-  expect(document.querySelector('meta[name="description"]').content).toMatch(/controlled execution/);
+  expect(document.querySelector('meta[name="description"]').content).toMatch(/bounded embedded Linux workflow/);
   expect(document.querySelector('meta[property="og:description"]').content).toBe(document.querySelector('meta[name="description"]').content);
   for (const link of within(screen.getByRole('main')).getAllByRole('link', { name: /Discuss a research engagement/ })) expect(link).toHaveAttribute('href', '/contact?practice=phobetor');
-  expect(within(screen.getByRole('navigation', { name: 'Main navigation' })).getAllByRole('link').map(link => link.textContent)).toEqual(['Practices', 'Research products', 'How we work', 'Discuss a research engagement ↗']);
+  expect(within(screen.getByRole('navigation', { name: 'Main navigation' })).getAllByRole('link').map(link => link.textContent)).toEqual(['Practices', 'Research foundations', 'For partners', 'Approach', 'Engage →']);
 });
 
 test('scope, fidelity, and evidence limits remain visible beside the capability claims', () => {
@@ -120,7 +120,7 @@ test.each(['', '#research-capability', '#evidence-workflow', '#system-integratio
 test('footer products list contains only PHOBETOR and VEILTRACE', () => {
   render(<App/>);
   const footer = within(screen.getByRole('navigation', { name: 'Footer navigation' }));
-  const products = within(footer.getByText('Research products').parentElement);
+  const products = within(footer.getByText('Research foundations').parentElement);
   expect(products.getAllByRole('link').map(link => [link.textContent, link.getAttribute('href')])).toEqual([
     ['PHOBETOR', route], ['VEILTRACE', '/products/veiltrace'],
   ]);
