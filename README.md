@@ -1,12 +1,10 @@
-# IKELOS Group — two research practices
+# IKELOS Group — three research practices
 
-React 18 / Create React App marketing site. Systems Sigil identity, locally served Inter and Orbitron, no backend, analytics, third-party font requests, or contact submission service.
+React 18 / Create React App marketing site. Mission-first Systems Sigil redesign, locally served Inter and Orbitron, no backend, analytics, third-party font requests, or contact submission service.
 
-This redesign is on `redesign/two-research-practices`. PHOBETOR now incorporates the firmware research material in the local checkout. No merge, push, or deployment is part of this work.
+## Run and verify
 
-## Run locally
-
-Use Node **22.22.2** (see `.nvmrc`). Dependencies and lockfile are unchanged.
+Use Node **22.22.2** (`.nvmrc`). Dependency versions and lockfile are unchanged.
 
 ```sh
 npm ci
@@ -16,52 +14,57 @@ npm run build
 node scripts/preview.cjs
 ```
 
-The last command serves `build/` at `http://127.0.0.1:4175`. Set `PORT` to use another local port. Stop with Ctrl+C. The preview implements SPA fallback for local review; it does not proxy the production Matrix service.
+The production preview uses `http://127.0.0.1:4175` and SPA fallback. `npm run dev` serves the same production build on port 4173 for managed preview compatibility. It does not compile source; rebuild before reviewing. Neither preview proxies the production Matrix service.
 
-## Structure
+## Information architecture
 
-- `/`: shared applied-research premise → two distinct practice paths → PHOBETOR and VEILTRACE foundations → research process → illustrative evidence package → engagement.
-- `/practices`: practice directory and research methods.
-- `/practices/exquisite-access-development`: tailored access capabilities; FME is a method within this practice; buying trigger, scope, conditional deliverables, and PHOBETOR connection.
-- `/practices/ot-behavior-validation-survivability`: critical functions, defined failure/degradation/adversarial conditions, behavior, recovery, bounded conclusions, and VEILTRACE/PHOBETOR connections.
-- `/products`: research-product directory.
-- `/products/phobetor`: IKELOS Group’s firmware research and system emulation platform, incorporating the capability overview, interactive evidence workflow, system model, applications, and deliverables. A dedicated funded-research section covers RTOS support and protocol-based vulnerability discovery as development work.
-- `/products/veiltrace`: dynamic, threat-representative network generation, complex IT/OT modeling, and failure-state analysis. No performance, customer, integration, or validation claims.
-- `/about`: engagement governance, retained interactive six-stage methodology, evidence policy, sample referral, historical reference.
-- `/contact`: non-sensitive introduction, optional local email-draft preparation, scoping workflow, external model/API processing notice, partnerships, approved channels, and OpenPGP.
-- `/capabilities/firmware-emulation`: compatibility redirect to `/products/phobetor`, preserving query parameters and section anchors with history replacement. All five existing capability anchors and the product’s `#research-basis` anchor remain. Navigation links directly to PHOBETOR.
+- `/`: explicit cyberwarfare R&D, warfighter and civilian-critical mission, three practices, prime/government paths, research foundations, illustrative evidence, engagement.
+- `/practices`: practice directory, outcome comparison, and methods.
+- `/practices/exquisite-access-development`: authorized research/FME, system understanding, access feasibility, bounded demonstrations.
+- `/practices/systems-behavior-validation-survivability-testing`: critical functions, defined conditions, behavior, recovery, and retest criteria.
+- `/practices/cyber-effects-development-validation`: specified effect, authorized laboratory development, controlled demonstration, measured limits.
+- `/engagements`: dedicated prime contractor partnership and government evaluation journeys, scope, deliverables, evidence, and acquisition-fit questions.
+- `/products`: PHOBETOR and VEILTRACE as research foundations rather than practices.
+- `/products/phobetor`: bounded embedded Linux research basis, workflow, target-specific system engineering, proposed extensions, evidence and limitations.
+- `/products/veiltrace`: demonstrated Ludus configuration feasibility versus proposed scale, hybrid OT/hardware, model-confidence and PHOBETOR-integration research.
+- `/about`: governance, written authority, safe test boundaries, interactive six-stage methodology, evidence policy, historical reference.
+- `/contact`: non-sensitive introduction, practice and buyer context, local email-draft helper, handling and external-model notice, partnerships and OpenPGP.
 
-`/services` remains a compatibility entry to the practice directory. Its `#analysis`, `#research`, `#consulting`, and `#partner` destinations remain useful, with links into the new hierarchy. All existing About/Contact anchors and `/#sample-deliverable` remain. `/#research-narrative` now identifies the practice introduction. `/#research-methodology` deliberately redirects in-app to `/about#research-methodology`.
+## Compatibility and accessibility
 
-Route changes retain title/description/Open Graph updates, scroll behavior, and main-content focus. Navigation highlights practice/product parents. The mobile modal retains focus containment, Escape dismissal, focus/scroll restoration, and inert cleanup. The hero has a 1.5-second decorative assembly and a keyboard-operable research-question selector; reduced motion removes the animation. SVG product diagrams and the hero model are labeled illustrative. The retained evidence package and research workbench explicitly distinguish fictional models and test plans from observations.
+`/services` retains all four historic anchors. `/capabilities/firmware-emulation` redirects with history replacement to PHOBETOR while preserving query strings and anchors. The prior `/practices/ot-behavior-validation-survivability` similarly redirects to the exact current practice name. Trailing-slash variants work. All original About/Contact and firmware anchors remain. `/#research-methodology` continues to `/about#research-methodology`; `/#research-narrative` and `/#sample-deliverable` remain useful.
 
-## Content and source boundaries
+Route changes retain title/description/Open Graph updates, scroll behavior, and main-content focus. Navigation highlights parent sections. The mobile dialog contains keyboard focus, closes with Escape, restores focus/scroll, and cleans up inert content. The three-question research selector uses pressed-state buttons and a polite result announcement. Decorative hero movement lasts 1.4 seconds; reduced motion removes all animation and transitions.
 
-The supplied source PDF remains a private research reference in `assets/`. Its SHA-256 and claim mapping are recorded in `validation/research-practices/claims-review.txt`. It is not included in `public/`, build output, or the preview package. `/assets/*.pdf` is ignored as an extra guard against future accidental source commits.
+## Content boundaries
 
-Public copy uses PHOBETOR and IKELOS Group branding throughout. IKELOS operates the platform and funds research into RTOS support and protocol-based vulnerability discovery, as supplied in the product brief. The current firmware workflow covers ELF-based embedded Linux / x86-64 / AArch64, cross-binary analysis, and component execution. Full-system emulation requires target-specific engineering; the funded research programs are explicitly in development. RTOS and bare-metal remain outside the current embedded Linux workflow. Internal source records are retained for claim tracing. No vendor counts, benchmark figures, exclusive-authorship claims, or licensing terms are published. VEILTRACE uses only the user-supplied product description; scoping questions are not portrayed as results. Product access and deliverables are scoped through engagements, with no subscriptions or self-service purchase paths.
+The three exact practices share operational technology and complex cyber-physical systems as their domain. The public positioning explicitly supports the warfighter and protects critical civilian operations. Confidence comes from specialist scope and accountable research, not invented rankings, customers, registrations, contract vehicles, clearances, certifications, benchmarks, or operational deployments.
+
+PHOBETOR's underlying research supports a bounded ELF-based embedded Linux / x86-64 / AArch64 workflow and component execution, not universal full-system emulation. RTOS and protocol-discovery extensions remain research directions. No ownership, release rights, production readiness, or new public paper link is asserted. Source traceability remains in historical validation records; private reference PDFs are not public build inputs.
+
+VEILTRACE's initial lab feasibility concerns generated functional Ludus configurations. It does not establish operational realism, validated OT behavior, or arbitrary-environment readiness. Broader scale, hybrid environments, confidence, and integration remain proposed work. No draft white paper is published.
+
+The evidence package is fictional and contains no test results. Access, implementation behavior, system effects, and operational consequences have separate evidence requirements. Controlled laboratory validation does not establish live operational effectiveness.
 
 ## Contact and hosting contracts
 
-- Business contact: `info@ikelosgroup.com`.
+- Business: `info@ikelosgroup.com`.
 - Encrypted correspondence: `secure_email@ikelosgroup.com`.
-- Public key: `/keys/ikelos-secure-email.asc`; download filename `ikelos-secure-email.asc`.
+- Key: `/keys/ikelos-secure-email.asc`, unchanged bytes.
 - Fingerprint: `5AD6 A645 E697 72E5 AA7C 0277 DB44 9499 7C6F 00D3`.
 
-Key bytes remain unchanged. Opening a mailto link does not encrypt mail. OpenPGP does not authorize controlled-data transmission. Visitors must establish handling requirements and an approved channel before sending classified information, CUI, export-controlled data, credentials, or proprietary technical material. AI-assisted research may use external models/APIs; model hosting, permitted transfers, and retention must be scoped. No all-local assurance is made.
+Ordinary email is for a high-level, non-sensitive introduction. Establish handling requirements and approved channels before classified information, CUI, export-controlled data, credentials, or proprietary technical material. Opening mailto does not encrypt; OpenPGP does not authorize controlled-data transmission. AI-assisted research may use external models/APIs; hosting, permitted transfers, inputs, and retention require scoping. No all-local assurance is made.
 
-The optional draft uses controlled React state and a mailto URI. Nothing is sent or stored by the website. The visitor reviews and sends through their mail application; the site reports only that a draft was requested. Plain email remains available without using the draft helper.
+The optional introduction helper creates a mailto draft using controlled local React state. Nothing is submitted or stored by the website. The visitor reviews and sends in their mail application. Buyer and practice context are preselected from links and remain editable.
 
-Cloudflare Pages contracts remain: build `npm run build`, output `build`, Node 22.22.2. Root, public, and built `_redirects` are identical. Three Matrix rules precede the SPA fallback. The no-JavaScript company contact is retained. No hosting registration or configuration change was made.
+Cloudflare Pages contract is unchanged: `npm run build`, output `build`, Node 22.22.2. Root/public/built `_redirects` preserve three Matrix rules before SPA fallback. The no-JavaScript contact remains. No production configuration, push, PR, or deployment is part of this branch.
 
-## Validation and preview
+## Validation
 
-The prior full-site review and visual preview are in `validation/research-practices/`. PHOBETOR integration checks and updated captures are in `validation/phobetor/`. Earlier validation directories describe their respective versions and are historical.
+See `validation/three-practice-redesign/REVIEW.md` for exact results and limitations, with machine-readable audits alongside it. Production screenshots accompany the portable review package. Prior validation folders are historical.
 
-`src/App.test.js` covers hierarchy, practice/product scope, routes, metadata, legacy anchors, methodology migration, context-preserving engagement, retained evidence interactions, contact/handling, and 404 recovery. `src/components/FirmwareEmulation.test.js` covers the integrated PHOBETOR workflow/evidence, keyboard interaction, metadata, canonical and legacy deep links, redirect history/query preservation, and engagement context.
+The 71 unit/integration tests cover the three practices, buyer contexts, metadata, legacy redirects and deep links, contact safety, product maturity, evidence and methodology interactions, and modal keyboard behavior. `scripts/research-review.cjs` and `scripts/phobetor-review.cjs` remain portable Playwright review entry points; browser/module locations are set through environment variables.
 
-`scripts/research-review.cjs` checks the production preview across all 11 routes at 320, 390, 768, and 1440px, axe WCAG checks, all internal links, 18 legacy hashes, keyboard navigation, menu focus/scroll restoration, retained research interactions, reduced motion, runtime/external-request errors, and exact key download. It uses external QA tooling without adding project dependencies. Set `PLAYWRIGHT_MODULE`, `CHROMIUM_EXECUTABLE`, `PREVIEW_URL`, and `REVIEW_OUTPUT` as needed. Browser runtime libraries may require an environment-specific `LD_LIBRARY_PATH`.
+In a managed preview environment, `node scripts/managed-review-harness.cjs` generates **local-only** files under `build/__qa/` for browser review at 320, 390, 768, and 1440px. Its `?audit=1` and `?links=1` modes produce inspectable JSON; `?width=390&route=/practices` provides a width-controlled iframe for visual and keyboard checks. This is a viewport-layout test, not device emulation. Rebuild before release to remove `build/__qa/`; the harness is never copied into `public/`.
 
-`scripts/phobetor-review.cjs` checks PHOBETOR and its related product/practice pages at the same four widths (20 views), public branding and metadata, axe WCAG checks, workflow keyboard interaction, 36 canonical/legacy deep links, the trailing-slash legacy URL, engagement context, and internal links. It saves desktop/mobile hero and funded-research captures alongside `validation/phobetor/results.json`. It uses the same QA environment variables.
-
-These are local Chromium checks, not an accessibility certification. Live hosting, Safari/Firefox, external historical-source availability, and a screen-reader audit are outside the verified scope. Earlier owner review items are recorded with their respective historical reviews.
+Local browser checks are not an accessibility certification. Production hosting, Safari/Firefox, real mobile devices, screen-reader testing, and external historical-source availability require separate verification.

@@ -1,0 +1,323 @@
+{
+  "complete": true,
+  "links": [
+    {
+      "link": "/#main-content",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/practices",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/products",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/engagements",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/about",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/contact",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/#practices",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/practices/exquisite-access-development",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/practices/systems-behavior-validation-survivability-testing",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/practices/cyber-effects-development-validation",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/engagements#prime-partners",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/engagements#government",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/products/phobetor",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/products/veiltrace",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/about#evidence-policy",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/contact#partnerships",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/contact#encrypted-email",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/practices#main-content",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/practices#practice-comparison",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/practices/exquisite-access-development#main-content",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/contact?practice=access",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/practices/systems-behavior-validation-survivability-testing#main-content",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/contact?practice=ot",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/practices/cyber-effects-development-validation#main-content",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/contact?practice=effects",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/engagements#main-content",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/engagements#engagement-evidence",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/contact?audience=prime#engagement-brief",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/contact?audience=government#engagement-brief",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/#sample-deliverable",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/products#main-content",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/products/phobetor#main-content",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/contact?practice=phobetor",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/products/phobetor#evidence-workflow",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/products/phobetor#research-capability",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/products/phobetor#funded-research",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/products/phobetor#system-integration",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/products/phobetor#research-deliverables",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/contact#handling",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/about#research-methodology",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/products/veiltrace#main-content",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/contact?practice=veiltrace",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/products/veiltrace#maturity",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/about#main-content",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/about#governance",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/about#walkthrough",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/contact#main-content",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/contact#engagement-brief",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/services#main-content",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/services#practice-comparison",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/capabilities/firmware-emulation#main-content",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    },
+    {
+      "link": "/practices/ot-behavior-validation-survivability#main-content",
+      "notFound": false,
+      "anchor": true,
+      "clearsHeader": true
+    }
+  ]
+}
