@@ -6,8 +6,9 @@ import { EngagementDecision } from './Shared';
 const researchTopics = [
   {
     title: 'Hardware and firmware',
+    capability: 'Explore firmware discovery and validation',
     question: 'What can the implementation do that the architecture assumes it cannot?',
-    methods: 'Combine black-box investigation and hardware interface characterization with firmware reverse engineering, emulation, and fuzzing. Build custom test fixtures and research platforms where the investigation requires them.',
+    methods: 'Combine black-box investigation and hardware interface characterization with firmware reverse engineering, emulation, and fuzzing. Trace cross-binary vulnerability hypotheses and investigate them through controlled component execution. Build custom test fixtures and research platforms where the investigation requires them.',
     outputs: 'Interface maps, implementation observations, candidate attack paths, and reproducible evidence for confirmed weaknesses.',
     when: 'The behavior or access controls of an embedded component are undocumented, uncertain, or central to a system-security assumption.',
     decision: 'Whether to change an implementation, restrict an interface, or pursue a candidate path with deeper testing.',
@@ -38,8 +39,9 @@ const researchTopics = [
   },
   {
     title: 'Research tooling and test platforms',
+    capability: 'Explore controlled execution and system emulation',
     question: 'What must we build to make this system observable and testable?',
-    methods: 'Make unfamiliar or undocumented systems observable and testable with custom reverse engineering and analysis tools, instrumented test fixtures, proof-of-concept demonstrations, and research platforms built around the scoped investigation.',
+    methods: 'Make unfamiliar or undocumented systems observable and testable with custom reverse engineering and analysis tools, instrumented test fixtures, proof-of-concept demonstrations, and research platforms built around the scoped investigation. Scope bespoke system emulation around explicit fidelity requirements, with original executable components and modeled interfaces where feasible.',
     outputs: 'Research tooling, technical observations, and proof-of-concept results with defined conditions and engineering implications.',
     when: 'Existing tools cannot expose the relevant system behavior or reproduce the conditions needed to test a hypothesis.',
     decision: 'What instrumentation, test environment, and repeatable procedure are needed to resolve the research question and support retesting.',
@@ -74,8 +76,8 @@ export default function Services() {
       <div className="prose">
         <EngagementDecision when="A suspected attack path or a component vulnerability has been identified, but its reachability and effect on the complete system remain uncertain." decision="Whether to block deployment, constrain operation, redesign an interface, accept residual risk, or commission further testing."/>
         <p>Follow system-level hypotheses into the implementation. Establish what the evidence supports about exploitability and operational consequences under defined access and test conditions.</p>
-        </div><div className="research-topics">{researchTopics.map(({ title, question, methods, outputs, when, decision }, i) => <article key={title}>
-          <CapabilityArt kind={i + 1}/><div><p className="eyebrow">Discipline / 0{i + 1}</p><h3>{title}</h3><p className="engineering-question">{question}</p><EngagementDecision when={when} decision={decision}/><p>{methods}</p><p className="capability-output"><strong>Scoped outputs</strong><br/>{outputs}</p></div>
+        </div><div className="research-topics">{researchTopics.map(({ title, question, methods, outputs, when, decision, capability }, i) => <article key={title}>
+          <CapabilityArt kind={i + 1}/><div><p className="eyebrow">Discipline / 0{i + 1}</p><h3>{title}</h3><p className="engineering-question">{question}</p><EngagementDecision when={when} decision={decision}/><p>{methods}</p><p className="capability-output"><strong>Scoped outputs</strong><br/>{outputs}</p>{capability && <Link className="text-link" to="/capabilities/firmware-emulation">{capability} <span aria-hidden="true">↗</span></Link>}</div>
         </article>)}</div>
     </section>
 

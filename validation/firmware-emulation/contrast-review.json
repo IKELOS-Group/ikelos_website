@@ -1,0 +1,826 @@
+[
+  {
+    "width": 375,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          {
+            "target": [
+              ".page-hero > .eyebrow"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "checks": [
+              {
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "data": {
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                }
+              }
+            ]
+          },
+          {
+            "target": [
+              ".fe-capability-name"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "checks": [
+              {
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "data": {
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                }
+              }
+            ]
+          },
+          {
+            "target": [
+              "#firmware-title"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "checks": [
+              {
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "data": {
+                  "fontSize": "22.5pt (30px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "3:1"
+                }
+              }
+            ]
+          },
+          {
+            "target": [
+              ".page-lede"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "checks": [
+              {
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "data": {
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                }
+              }
+            ]
+          },
+          {
+            "target": [
+              ".fe-hero-grid > div:nth-child(1) > .text-link"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "checks": [
+              {
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "data": {
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                }
+              }
+            ]
+          },
+          {
+            "target": [
+              ".fe-hero-grid > div:nth-child(1) > .text-link > span[aria-hidden=\"true\"]"
+            ],
+            "summary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "checks": [
+              {
+                "message": "Element content contains only non-text characters",
+                "data": {
+                  "messageKey": "nonBmp"
+                }
+              }
+            ]
+          },
+          {
+            "target": [
+              "text[y=\"102\"][x=\"108\"]"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "checks": [
+              {
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "data": {
+                  "fontSize": "9.8pt (13px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                }
+              }
+            ]
+          },
+          {
+            "target": [
+              ".fe-svg-small[y=\"120\"][x=\"108\"]"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "checks": [
+              {
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "data": {
+                  "fontSize": "7.5pt (10px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                }
+              }
+            ]
+          },
+          {
+            "target": [
+              "text[y=\"102\"][x=\"352\"]"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "checks": [
+              {
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "data": {
+                  "fontSize": "9.8pt (13px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                }
+              }
+            ]
+          },
+          {
+            "target": [
+              ".fe-svg-small[y=\"120\"][x=\"352\"]"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "checks": [
+              {
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "data": {
+                  "fontSize": "7.5pt (10px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                }
+              }
+            ]
+          },
+          {
+            "target": [
+              "text[y=\"204\"]"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "checks": [
+              {
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "data": {
+                  "fontSize": "9.8pt (13px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                }
+              }
+            ]
+          },
+          {
+            "target": [
+              "text[y=\"222\"]"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "checks": [
+              {
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "data": {
+                  "fontSize": "9.8pt (13px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                }
+              }
+            ]
+          },
+          {
+            "target": [
+              "text[y=\"301\"][x=\"108\"]"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "checks": [
+              {
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "data": {
+                  "fontSize": "9.8pt (13px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                }
+              }
+            ]
+          },
+          {
+            "target": [
+              ".fe-svg-small[y=\"319\"][x=\"108\"]"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "checks": [
+              {
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "data": {
+                  "fontSize": "7.5pt (10px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                }
+              }
+            ]
+          },
+          {
+            "target": [
+              "text[y=\"301\"][x=\"352\"]"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "checks": [
+              {
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "data": {
+                  "fontSize": "9.8pt (13px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                }
+              }
+            ]
+          },
+          {
+            "target": [
+              ".fe-svg-small[y=\"319\"][x=\"352\"]"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "checks": [
+              {
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "data": {
+                  "fontSize": "7.5pt (10px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                }
+              }
+            ]
+          },
+          {
+            "target": [
+              "text[y=\"40\"]"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "checks": [
+              {
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "data": {
+                  "fontSize": "7.5pt (10px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                }
+              }
+            ]
+          },
+          {
+            "target": [
+              "text[y=\"394\"]"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "checks": [
+              {
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "data": {
+                  "fontSize": "7.5pt (10px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                }
+              }
+            ]
+          },
+          {
+            "target": [
+              ".fe-hero-art > p"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "checks": [
+              {
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "data": {
+                  "fontSize": "7.5pt (10px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                }
+              }
+            ]
+          },
+          {
+            "target": [
+              ".page-jump-links > a:nth-child(1)"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "checks": [
+              {
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "data": {
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                }
+              }
+            ]
+          },
+          {
+            "target": [
+              ".page-jump-links > a:nth-child(2)"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "checks": [
+              {
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "data": {
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                }
+              }
+            ]
+          },
+          {
+            "target": [
+              ".page-jump-links > a:nth-child(3)"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "checks": [
+              {
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "data": {
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                }
+              }
+            ]
+          },
+          {
+            "target": [
+              ".page-jump-links > a:nth-child(4)"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "checks": [
+              {
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "data": {
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                }
+              }
+            ]
+          },
+          {
+            "target": [
+              ".fe-loop-note > span[aria-hidden=\"true\"]"
+            ],
+            "summary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "checks": [
+              {
+                "message": "Element content contains only non-text characters",
+                "data": {
+                  "messageKey": "nonBmp"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          {
+            "target": [
+              ".page-hero > .eyebrow"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "checks": [
+              {
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "data": {
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                }
+              }
+            ]
+          },
+          {
+            "target": [
+              ".fe-capability-name"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "checks": [
+              {
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "data": {
+                  "fontSize": "11.3pt (15px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                }
+              }
+            ]
+          },
+          {
+            "target": [
+              "#firmware-title"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "checks": [
+              {
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "data": {
+                  "fontSize": "48.0pt (64px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "3:1"
+                }
+              }
+            ]
+          },
+          {
+            "target": [
+              ".page-lede"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "checks": [
+              {
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "data": {
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                }
+              }
+            ]
+          },
+          {
+            "target": [
+              ".fe-hero-grid > div:nth-child(1) > .text-link"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "checks": [
+              {
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "data": {
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                }
+              }
+            ]
+          },
+          {
+            "target": [
+              ".fe-hero-grid > div:nth-child(1) > .text-link > span[aria-hidden=\"true\"]"
+            ],
+            "summary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "checks": [
+              {
+                "message": "Element content contains only non-text characters",
+                "data": {
+                  "messageKey": "nonBmp"
+                }
+              }
+            ]
+          },
+          {
+            "target": [
+              "text[y=\"102\"][x=\"108\"]"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "checks": [
+              {
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "data": {
+                  "fontSize": "9.8pt (13px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                }
+              }
+            ]
+          },
+          {
+            "target": [
+              ".fe-svg-small[y=\"120\"][x=\"108\"]"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "checks": [
+              {
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "data": {
+                  "fontSize": "7.5pt (10px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                }
+              }
+            ]
+          },
+          {
+            "target": [
+              "text[y=\"102\"][x=\"352\"]"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "checks": [
+              {
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "data": {
+                  "fontSize": "9.8pt (13px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                }
+              }
+            ]
+          },
+          {
+            "target": [
+              ".fe-svg-small[y=\"120\"][x=\"352\"]"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "checks": [
+              {
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "data": {
+                  "fontSize": "7.5pt (10px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                }
+              }
+            ]
+          },
+          {
+            "target": [
+              "text[y=\"204\"]"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "checks": [
+              {
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "data": {
+                  "fontSize": "9.8pt (13px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                }
+              }
+            ]
+          },
+          {
+            "target": [
+              "text[y=\"222\"]"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "checks": [
+              {
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "data": {
+                  "fontSize": "9.8pt (13px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                }
+              }
+            ]
+          },
+          {
+            "target": [
+              "text[y=\"301\"][x=\"108\"]"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "checks": [
+              {
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "data": {
+                  "fontSize": "9.8pt (13px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                }
+              }
+            ]
+          },
+          {
+            "target": [
+              ".fe-svg-small[y=\"319\"][x=\"108\"]"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "checks": [
+              {
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "data": {
+                  "fontSize": "7.5pt (10px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                }
+              }
+            ]
+          },
+          {
+            "target": [
+              "text[y=\"301\"][x=\"352\"]"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "checks": [
+              {
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "data": {
+                  "fontSize": "9.8pt (13px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                }
+              }
+            ]
+          },
+          {
+            "target": [
+              ".fe-svg-small[y=\"319\"][x=\"352\"]"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "checks": [
+              {
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "data": {
+                  "fontSize": "7.5pt (10px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                }
+              }
+            ]
+          },
+          {
+            "target": [
+              "text[y=\"40\"]"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "checks": [
+              {
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "data": {
+                  "fontSize": "7.5pt (10px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                }
+              }
+            ]
+          },
+          {
+            "target": [
+              "text[y=\"394\"]"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "checks": [
+              {
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "data": {
+                  "fontSize": "7.5pt (10px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                }
+              }
+            ]
+          },
+          {
+            "target": [
+              ".fe-hero-art > p"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "checks": [
+              {
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "data": {
+                  "fontSize": "7.5pt (10px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                }
+              }
+            ]
+          },
+          {
+            "target": [
+              ".page-jump-links > a:nth-child(1)"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "checks": [
+              {
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "data": {
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                }
+              }
+            ]
+          },
+          {
+            "target": [
+              ".page-jump-links > a:nth-child(2)"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "checks": [
+              {
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "data": {
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                }
+              }
+            ]
+          },
+          {
+            "target": [
+              ".page-jump-links > a:nth-child(3)"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "checks": [
+              {
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "data": {
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                }
+              }
+            ]
+          },
+          {
+            "target": [
+              ".page-jump-links > a:nth-child(4)"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "checks": [
+              {
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "data": {
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                }
+              }
+            ]
+          },
+          {
+            "target": [
+              ".fe-loop-note > span[aria-hidden=\"true\"]"
+            ],
+            "summary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "checks": [
+              {
+                "message": "Element content contains only non-text characters",
+                "data": {
+                  "messageKey": "nonBmp"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

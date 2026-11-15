@@ -1,0 +1,60 @@
+
+> ikelos-group-website@0.1.0 test
+> react-scripts test --watchAll=false --runInBand
+
+(node:21) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+PASS src/App.test.js
+  ● Console
+
+    console.error
+      Warning: `ReactDOMTestUtils.act` is deprecated in favor of `React.act`. Import `act` from `react` instead of `react-dom/test-utils`. See https://react.dev/warnings/react-dom-test-utils for more info.
+
+      17 |
+      18 | test('home exposes positioning, research model, capabilities, and scoped evidence', () => {
+    > 19 |   render(<App />);
+         |         ^
+      20 |   const main = within(screen.getByRole('main'));
+      21 |   expect(main.getByRole('heading', { level: 1 })).toHaveTextContent('First Principles.Decisive Effects.');
+      22 |   expect(main.getAllByRole('link', { name: /Scope a technical investigation/ })[0]).toHaveAttribute('href', '/contact');
+
+      at printWarning (node_modules/react-dom/cjs/react-dom-test-utils.development.js:71:30)
+      at error (node_modules/react-dom/cjs/react-dom-test-utils.development.js:45:7)
+      at actWithWarning (node_modules/react-dom/cjs/react-dom-test-utils.development.js:1736:7)
+      at node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/App.test.js:19:9)
+
+PASS src/components/FirmwareEmulation.test.js
+  ● Console
+
+    console.error
+      Warning: `ReactDOMTestUtils.act` is deprecated in favor of `React.act`. Import `act` from `react` instead of `react-dom/test-utils`. See https://react.dev/warnings/react-dom-test-utils for more info.
+
+      17 |
+      18 | test('direct entry renders the capability and updates document and Open Graph metadata', () => {
+    > 19 |   render(<App/>);
+         |         ^
+      20 |   expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Find the path.Prove the behavior.');
+      21 |   expect(document.title).toBe('Firmware Vulnerability Research & System Emulation — IKELOS Group');
+      22 |   expect(document.querySelector('meta[property="og:title"]').content).toBe(document.title);
+
+      at printWarning (node_modules/react-dom/cjs/react-dom-test-utils.development.js:71:30)
+      at error (node_modules/react-dom/cjs/react-dom-test-utils.development.js:45:7)
+      at actWithWarning (node_modules/react-dom/cjs/react-dom-test-utils.development.js:1736:7)
+      at node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/components/FirmwareEmulation.test.js:19:9)
+      at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
+      at runJest (node_modules/@jest/core/build/runJest.js:404:19)
+      at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
+      at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
+
+
+Test Suites: 2 passed, 2 total
+Tests:       45 passed, 45 total
+Snapshots:   0 total
+Time:        3.553 s
+Ran all test suites.

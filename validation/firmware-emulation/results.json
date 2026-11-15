@@ -1,0 +1,252 @@
+{
+  "browser": "Chromium",
+  "results": [
+    {
+      "label": "capability-320",
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      }
+    },
+    {
+      "label": "observed-evidence-320",
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      }
+    },
+    {
+      "label": "home-320",
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      }
+    },
+    {
+      "label": "services-320",
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      }
+    },
+    {
+      "label": "about-320",
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      }
+    },
+    {
+      "label": "contact-320",
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      }
+    },
+    {
+      "label": "capability-375",
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      }
+    },
+    {
+      "label": "observed-evidence-375",
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      }
+    },
+    {
+      "label": "home-375",
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      }
+    },
+    {
+      "label": "services-375",
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      }
+    },
+    {
+      "label": "about-375",
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      }
+    },
+    {
+      "label": "contact-375",
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      }
+    },
+    {
+      "label": "capability-768",
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      }
+    },
+    {
+      "label": "observed-evidence-768",
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      }
+    },
+    {
+      "label": "home-768",
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      }
+    },
+    {
+      "label": "services-768",
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      }
+    },
+    {
+      "label": "about-768",
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      }
+    },
+    {
+      "label": "contact-768",
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      }
+    },
+    {
+      "label": "capability-1440",
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      }
+    },
+    {
+      "label": "observed-evidence-1440",
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      }
+    },
+    {
+      "label": "home-1440",
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      }
+    },
+    {
+      "label": "services-1440",
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      }
+    },
+    {
+      "label": "about-1440",
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      }
+    },
+    {
+      "label": "contact-1440",
+      "overflow": false,
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      }
+    }
+  ],
+  "motion": {
+    "animation": "none",
+    "transition": "0s"
+  },
+  "errors": [],
+  "externalRequests": [],
+  "interactions": "All eight stages, arrows, wraparound, Home/End, tab panel focus, visible focus, 20 direct hashes, route focus, CTA, home/services/footer links, browser back, methodology link, mobile menu, skip link, reduced motion passed."
+}

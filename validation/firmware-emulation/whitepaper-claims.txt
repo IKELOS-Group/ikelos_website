@@ -1,0 +1,73 @@
+Technical source consistency review
+Reference: assets/monkey_vr_whitepaper.pdf, 6 pages, dated November 8, 2026.
+The supplied PDF and its embedded architecture figure were inspected locally.
+The PDF, extracted text, and extracted figure are not included in public/ or build/.
+No proprietary product names or developer identity are used in the website copy.
+
+CLAIM -> REFERENCE -> WEBSITE TREATMENT
+
+Firmware unpacking, ELF inventory, module graph, Ghidra reverse engineering:
+Page 2, Program model. Website describes inspectable models and inventories without
+claiming exhaustive recovery for every firmware image.
+
+Cross-binary dependency/dataflow and source-to-sink witnesses:
+Page 2, Deterministic flow engine; page 4, Cross-binary dataflow. Website distinguishes
+the static path hypothesis from demonstrated execution and preserves unknown links.
+
+Reachability, authentication, privilege, startup, executor context:
+Page 2, Outer facts and Report; page 4, integration. Website traces prerequisites and
+explicitly states that mechanism, reachability, and authentication are separate claims.
+No example exploit result from the reference is presented as IKELOS work.
+
+Evidence-constrained AI assistance and independent adversarial review:
+Page 2, Agentic review and Static verifier/triage; page 4, auditable agents. Website
+states researcher assessment and evidence requirements; reviewer agreement is not
+portrayed as validation. No claim of independent third-party accuracy validation.
+
+Validation contract connecting static analysis and execution:
+Page 2, Report; page 4, How they work together and architecture diagram. Website uses
+an original conceptual eight-stage workflow with no fictional live scan or results.
+
+Original component binaries, isolated execution, x86-64/AArch64:
+Pages 2-3, component rehosting and isolation; page 5, Scope. Website accurately limits
+current demonstrated tooling scope to ELF-based embedded Linux. It deliberately omits
+the reference's detailed isolation-control assertions in favor of controlled/isolated
+research environments, as requested.
+
+Observation, replay, modeled interfaces, fidelity, regression and fuzzing:
+Page 3, Clean-state replay, Observation, interface models, and shared API; page 4,
+integration; page 5, reusable environments. Website lists observation types and defined
+fidelity, without promising exact deterministic execution of nondeterministic guests.
+Simulated behavior is separated from original binary execution and observed effects.
+
+RTOS and bare-metal support:
+Page 5 explicitly places these outside current support. Website says these images are
+outside the current tooling scope, and presents RTOS engineering only as IKELOS's
+capability-development direction supplied in the project brief.
+
+Bespoke cyber-physical emulation and STPA-Sec integration:
+These are IKELOS strategic directions from the project brief and the existing site's
+methodology, not demonstrated outcomes in the whitepaper. Page 5 discusses additional
+system work per engagement; the site does not treat that as universal full-system
+emulation. The six IKELOS stages remain unchanged and are not called official STPA-Sec
+steps. The fictional system diagram carries no experimental results.
+
+Engagement applications and deliverables:
+Page 5, Fit for contract work and deliverables, supports product security, supply-chain,
+procurement, authorized research, program models, evidence, reports, PoCs, and reusable
+environments. Website scopes deliverables and does not promise findings or successful
+reproduction for every engagement. No vendor counts or performance/accuracy claims
+from the reference were republished.
+
+MODEL/API HANDLING — DETAIL TO CONFIRM
+Pages 1 and 4 describe model calls. Page 6 describes analyst-controlled infrastructure
+and says target data stays there, but does not specify model hosting, providers,
+external API requests, which evidence may be transmitted, or retention policies.
+The website therefore says model calls may involve external models/APIs, and that
+hosting, permitted transfers, and handling requirements must be established during
+engagement scoping. It does not assert all-local processing, no external transfers,
+or any provider-specific handling guarantee. Confirm actual architecture and handling
+before adding any more specific assurance or beginning an engagement involving such data.
+
+This review validates consistency with the supplied reference; it is not an independent
+evaluation of the framework or certification of operational capability.
